@@ -149,7 +149,8 @@ namespace POSeidon
             using (var db = new LiteDatabase(dbFileName))
             {
                 var col = db.GetCollection<User>("user");
-                return col.FindOne(Query.EQ("Id", id));
+                var user = col.FindOne(Query.EQ("Id", id));
+                return user;
             }
         }
 
@@ -159,7 +160,108 @@ namespace POSeidon
             {
                 var col = db.GetCollection<User>("user");
                 col.EnsureIndex("Username");
-                return col.FindOne(Query.EQ("Username", username));
+                var user = col.FindOne(Query.EQ("Username", username));
+                return user;
+            }
+        }
+
+        public static bool CreateProduct(Product product)
+        {
+            using (var db = new LiteDatabase(dbFileName))
+            {
+                var col = db.GetCollection<Product>("product");
+                col.EnsureIndex("Name");
+                var result = col.FindOne(Query.EQ("Name", product.Name));
+                if (result != null)
+                {
+                    return false;
+                }
+                product.Id = 0;
+                col.Insert(product);
+                return true;
+            }
+        }
+
+        public static bool CreateProduct(string name, double price, bool isCountable)
+        {
+            using (var db = new LiteDatabase(dbFileName))
+            {
+                var col = db.GetCollection<Product>("product");
+                col.EnsureIndex("Name");
+                var product = col.FindOne(Query.EQ("Name", name));
+                if (product != null)
+                {
+                    return false;
+                }
+                product = new Product
+                {
+                    Name = name,
+                    Price = price,
+                    IsCountable = isCountable
+                };
+                col.Insert(product);
+                return true;
+            }
+        }
+
+        public static Product GetProductById(int id)
+        {
+            using (var db = new LiteDatabase(dbFileName))
+            {
+                var col = db.GetCollection<Product>("product");
+                var product = col.FindOne(Query.EQ("Id", id));
+                return product;
+            }
+        }
+
+        public static Product GetProductByName(string name)
+        {
+            using (var db = new LiteDatabase(dbFileName))
+            {
+                var col = db.GetCollection<Product>("product");
+                col.EnsureIndex("Name");
+                var product = col.FindOne(Query.EQ("Name", name));
+                return product;
+            }
+        }
+
+        public static bool UpdateProduct(Product product)
+        {
+            using (var db = new LiteDatabase(dbFileName))
+            {
+                var col = db.GetCollection<Product>("product");
+                return col.Update(product);
+            }
+        }
+
+        public static bool DeleteProduct(Product product)
+        {
+            using (var db = new LiteDatabase(dbFileName))
+            {
+                var col = db.GetCollection<Product>("product");
+                int deletedRows = col.Delete(Query.EQ("Id", product.Id));
+                return deletedRows > 0;
+            }
+        }
+
+        public static bool DeleteProductById(int id)
+        {
+            using (var db = new LiteDatabase(dbFileName))
+            {
+                var col = db.GetCollection<Product>("product");
+                int deletedRows = col.Delete(Query.EQ("Id", id));
+                return deletedRows > 0;
+            }
+        }
+
+        public static bool DeleteProductByName(string name)
+        {
+            using (var db = new LiteDatabase(dbFileName))
+            {
+                var col = db.GetCollection<Product>("product");
+                col.EnsureIndex("Name");
+                int deletedRows = col.Delete(Query.EQ("Name", name));
+                return deletedRows > 0;
             }
         }
     }
