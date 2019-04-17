@@ -19,7 +19,7 @@ namespace POSeidon
         }
 
 
-        private void ButtonLogin_Click(object sender, EventArgs e)
+        private void LoginButton_Click(object sender, EventArgs e)
         {
             if (DBUtils.Auth(usernameTextBox.Text, passwordTextBox.Text))
             {

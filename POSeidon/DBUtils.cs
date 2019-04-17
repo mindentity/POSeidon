@@ -71,7 +71,44 @@ namespace POSeidon
             }
         }
 
-        public static bool DeleteUser(string username)
+        public static bool CreateUser(User user)
+        {
+            using (var db = new LiteDatabase(dbFileName))
+            {
+                var col = db.GetCollection<User>("user");
+                col.EnsureIndex("Username");
+                var result = col.FindOne(Query.EQ("Username", username));
+                if (result != null)
+                {
+                    return false;
+                }
+                user.Id = 0;
+                col.Insert(user);
+                return true;
+            }
+        }
+
+        public static bool DeleteUser(User user)
+        {
+            using (var db = new LiteDatabase(dbFileName))
+            {
+                var col = db.GetCollection<User>("user");
+                int deletedRows = col.Delete(Query.EQ("Id", user.Id));
+                return deletedRows > 0;
+            }
+        }
+
+        public static bool DeleteUserById(int id)
+        {
+            using (var db = new LiteDatabase(dbFileName))
+            {
+                var col = db.GetCollection<User>("user");
+                int deletedRows = col.Delete(Query.EQ("Id", id));
+                return deletedRows > 0;
+            }
+        }
+
+        public static bool DeleteUserByUsername(string username)
         {
             using (var db = new LiteDatabase(dbFileName))
             {
@@ -95,6 +132,34 @@ namespace POSeidon
                 }
                 user.Password = newPassword;
                 return col.Update(user);
+            }
+        }
+
+        public static bool UpdateUser(User user)
+        {
+            using (var db = new LiteDatabase(dbFileName))
+            {
+                var col = db.GetCollection<User>("user");
+                return col.Update(user);
+            }
+        }
+
+        public static User GetUserById(int id)
+        {
+            using (var db = new LiteDatabase(dbFileName))
+            {
+                var col = db.GetCollection<User>("user");
+                return col.FindOne(Query.EQ("Id", id));
+            }
+        }
+
+        public static User GetUserByUsername(string username)
+        {
+            using (var db = new LiteDatabase(dbFileName))
+            {
+                var col = db.GetCollection<User>("user");
+                col.EnsureIndex("Username");
+                return col.FindOne(Query.EQ("Username", username));
             }
         }
     }
