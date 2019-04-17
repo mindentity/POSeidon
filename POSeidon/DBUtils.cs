@@ -77,7 +77,7 @@ namespace POSeidon
             {
                 var col = db.GetCollection<User>("user");
                 col.EnsureIndex("Username");
-                var result = col.FindOne(Query.EQ("Username", username));
+                var result = col.FindOne(Query.EQ("Username", user.Username));
                 if (result != null)
                 {
                     return false;
@@ -162,6 +162,16 @@ namespace POSeidon
                 col.EnsureIndex("Username");
                 var user = col.FindOne(Query.EQ("Username", username));
                 return user;
+            }
+        }
+
+        public static IEnumerable<User> GetAllUsers()
+        {
+            using (var db = new LiteDatabase(dbFileName))
+            {
+                var col = db.GetCollection<User>("user");
+                var users = col.FindAll();
+                return users;
             }
         }
 
@@ -262,6 +272,16 @@ namespace POSeidon
                 col.EnsureIndex("Name");
                 int deletedRows = col.Delete(Query.EQ("Name", name));
                 return deletedRows > 0;
+            }
+        }
+
+        public static IEnumerable<Product> GetAllProducts()
+        {
+            using (var db = new LiteDatabase(dbFileName))
+            {
+                var col = db.GetCollection<Product>("product");
+                var products = col.FindAll();
+                return products;
             }
         }
     }
