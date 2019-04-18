@@ -24,6 +24,9 @@ namespace POSeidon
             if (DBUtils.Auth(usernameTextBox.Text, passwordTextBox.Text))
             {
                 MessageBox.Show("Authentication completed!");
+                this.Hide();
+                Homepage f2 = new Homepage(); //this is the change, code for redirect  
+                f2.ShowDialog();
             }
         }
 
