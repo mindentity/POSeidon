@@ -70,7 +70,7 @@
             this.loginButton.Margin = new System.Windows.Forms.Padding(4);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(133, 46);
-            this.loginButton.TabIndex = 4;
+            this.loginButton.TabIndex = 2;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.LoginButton_Click);
@@ -97,7 +97,7 @@
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '●';
             this.passwordTextBox.Size = new System.Drawing.Size(132, 30);
-            this.passwordTextBox.TabIndex = 7;
+            this.passwordTextBox.TabIndex = 1;
             // 
             // panel1
             // 
