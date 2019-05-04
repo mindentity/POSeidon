@@ -17,10 +17,5 @@ namespace POSeidon
             InitializeComponent();
         }
 
-        private void Homepage_Load(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

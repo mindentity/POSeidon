@@ -109,22 +109,27 @@
             this.panel1.Controls.Add(this.passwordTextBox);
             this.panel1.Controls.Add(this.passwordLabel);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(391, 135);
+            this.panel1.Location = new System.Drawing.Point(459, 254);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(322, 225);
+            this.panel1.Size = new System.Drawing.Size(287, 196);
             this.panel1.TabIndex = 8;
             // 
             // LoginForm
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::POSeidon.Properties.Resources.nature_background;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(1178, 721);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1200, 768);
+            this.MinimumSize = new System.Drawing.Size(1024, 768);
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "POSeidon";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

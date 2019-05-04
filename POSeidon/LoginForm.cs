@@ -27,6 +27,5 @@ namespace POSeidon
                 this.Close();
             }
         }
-
     }
 }
