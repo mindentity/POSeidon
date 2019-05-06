@@ -49,21 +49,21 @@
             this.salesAnalyticsTab = new System.Windows.Forms.TabPage();
             this.salesStatisticsPanel = new System.Windows.Forms.Panel();
             this.salesStatisticsChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label4 = new System.Windows.Forms.Label();
+            this.salesStatisticsTitleLabel = new System.Windows.Forms.Label();
             this.customerStatisticsTab = new System.Windows.Forms.TabPage();
             this.customerStatisticsPanel = new System.Windows.Forms.Panel();
             this.customerStatisticsChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label3 = new System.Windows.Forms.Label();
+            this.customerStatisticsTitleLable = new System.Windows.Forms.Label();
             this.salesHistoryTab = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
+            this.salesTitleLabel = new System.Windows.Forms.Label();
             this.salesHistoryTable = new System.Windows.Forms.TableLayoutPanel();
             this.settingsTab = new System.Windows.Forms.TabPage();
+            this.settingsPanel = new System.Windows.Forms.Panel();
             this.settingsWindowPanel = new System.Windows.Forms.Panel();
             this.settingsCheckbox2 = new System.Windows.Forms.CheckBox();
             this.settingsCheckbox1 = new System.Windows.Forms.CheckBox();
             this.saveButton = new System.Windows.Forms.Button();
             this.passwordLabel = new System.Windows.Forms.Label();
-            this.settingsPanel = new System.Windows.Forms.Panel();
             addProductButton = new System.Windows.Forms.Button();
             this.leftsideMainPanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
@@ -79,8 +79,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.customerStatisticsChart)).BeginInit();
             this.salesHistoryTab.SuspendLayout();
             this.settingsTab.SuspendLayout();
-            this.settingsWindowPanel.SuspendLayout();
             this.settingsPanel.SuspendLayout();
+            this.settingsWindowPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // addProductButton
@@ -250,7 +250,7 @@
             // 
             this.salesAnalyticsTab.BackColor = System.Drawing.Color.Gainsboro;
             this.salesAnalyticsTab.Controls.Add(this.salesStatisticsPanel);
-            this.salesAnalyticsTab.Controls.Add(this.label4);
+            this.salesAnalyticsTab.Controls.Add(this.salesStatisticsTitleLabel);
             this.salesAnalyticsTab.Location = new System.Drawing.Point(4, 54);
             this.salesAnalyticsTab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.salesAnalyticsTab.Name = "salesAnalyticsTab";
@@ -290,24 +290,24 @@
             this.salesStatisticsChart.TabIndex = 2;
             this.salesStatisticsChart.Text = "chart1";
             // 
-            // label4
+            // salesStatisticsTitleLabel
             // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(415, 22);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(208, 23);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "SALES STATISTICS";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.salesStatisticsTitleLabel.BackColor = System.Drawing.Color.Transparent;
+            this.salesStatisticsTitleLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.salesStatisticsTitleLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.salesStatisticsTitleLabel.Location = new System.Drawing.Point(415, 22);
+            this.salesStatisticsTitleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.salesStatisticsTitleLabel.Name = "salesStatisticsTitleLabel";
+            this.salesStatisticsTitleLabel.Size = new System.Drawing.Size(208, 23);
+            this.salesStatisticsTitleLabel.TabIndex = 6;
+            this.salesStatisticsTitleLabel.Text = "SALES STATISTICS";
+            this.salesStatisticsTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // customerStatisticsTab
             // 
             this.customerStatisticsTab.BackColor = System.Drawing.Color.LightCoral;
             this.customerStatisticsTab.Controls.Add(this.customerStatisticsPanel);
-            this.customerStatisticsTab.Controls.Add(this.label3);
+            this.customerStatisticsTab.Controls.Add(this.customerStatisticsTitleLable);
             this.customerStatisticsTab.Location = new System.Drawing.Point(4, 54);
             this.customerStatisticsTab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.customerStatisticsTab.Name = "customerStatisticsTab";
@@ -348,23 +348,23 @@
             this.customerStatisticsChart.TabIndex = 0;
             this.customerStatisticsChart.Text = "chart2";
             // 
-            // label3
+            // customerStatisticsTitleLable
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(400, 21);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(246, 23);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "CUSTOMER STATISTICS";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.customerStatisticsTitleLable.BackColor = System.Drawing.Color.Transparent;
+            this.customerStatisticsTitleLable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customerStatisticsTitleLable.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.customerStatisticsTitleLable.Location = new System.Drawing.Point(400, 21);
+            this.customerStatisticsTitleLable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.customerStatisticsTitleLable.Name = "customerStatisticsTitleLable";
+            this.customerStatisticsTitleLable.Size = new System.Drawing.Size(246, 23);
+            this.customerStatisticsTitleLable.TabIndex = 5;
+            this.customerStatisticsTitleLable.Text = "CUSTOMER STATISTICS";
+            this.customerStatisticsTitleLable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // salesHistoryTab
             // 
             this.salesHistoryTab.BackColor = System.Drawing.Color.PeachPuff;
-            this.salesHistoryTab.Controls.Add(this.label2);
+            this.salesHistoryTab.Controls.Add(this.salesTitleLabel);
             this.salesHistoryTab.Controls.Add(this.salesHistoryTable);
             this.salesHistoryTab.Location = new System.Drawing.Point(4, 54);
             this.salesHistoryTab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -374,18 +374,18 @@
             this.salesHistoryTab.TabIndex = 3;
             this.salesHistoryTab.Text = "Sales History";
             // 
-            // label2
+            // salesTitleLabel
             // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(437, 10);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 42);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "SALES HISTORY";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.salesTitleLabel.BackColor = System.Drawing.Color.Transparent;
+            this.salesTitleLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.salesTitleLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.salesTitleLabel.Location = new System.Drawing.Point(437, 10);
+            this.salesTitleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.salesTitleLabel.Name = "salesTitleLabel";
+            this.salesTitleLabel.Size = new System.Drawing.Size(173, 42);
+            this.salesTitleLabel.TabIndex = 4;
+            this.salesTitleLabel.Text = "SALES HISTORY";
+            this.salesTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // salesHistoryTable
             // 
@@ -430,9 +430,21 @@
             this.settingsTab.Location = new System.Drawing.Point(4, 54);
             this.settingsTab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.settingsTab.Name = "settingsTab";
-            this.settingsTab.Size = new System.Drawing.Size(1049, 640);
+            this.settingsTab.Size = new System.Drawing.Size(1053, 644);
             this.settingsTab.TabIndex = 4;
             this.settingsTab.Text = "Settings";
+            // 
+            // settingsPanel
+            // 
+            this.settingsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.settingsPanel.AutoSize = true;
+            this.settingsPanel.Controls.Add(this.settingsWindowPanel);
+            this.settingsPanel.Location = new System.Drawing.Point(23, 58);
+            this.settingsPanel.Name = "settingsPanel";
+            this.settingsPanel.Size = new System.Drawing.Size(994, 584);
+            this.settingsPanel.TabIndex = 10;
             // 
             // settingsWindowPanel
             // 
@@ -501,18 +513,6 @@
             this.passwordLabel.Text = "SETTINGS";
             this.passwordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // settingsPanel
-            // 
-            this.settingsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.settingsPanel.AutoSize = true;
-            this.settingsPanel.Controls.Add(this.settingsWindowPanel);
-            this.settingsPanel.Location = new System.Drawing.Point(23, 58);
-            this.settingsPanel.Name = "settingsPanel";
-            this.settingsPanel.Size = new System.Drawing.Size(994, 584);
-            this.settingsPanel.TabIndex = 10;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -551,10 +551,10 @@
             this.salesHistoryTab.ResumeLayout(false);
             this.settingsTab.ResumeLayout(false);
             this.settingsTab.PerformLayout();
-            this.settingsWindowPanel.ResumeLayout(false);
-            this.settingsWindowPanel.PerformLayout();
             this.settingsPanel.ResumeLayout(false);
             this.settingsPanel.PerformLayout();
+            this.settingsWindowPanel.ResumeLayout(false);
+            this.settingsWindowPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -575,13 +575,13 @@
         private System.Windows.Forms.TabPage salesAnalyticsTab;
         private System.Windows.Forms.Panel salesStatisticsPanel;
         private System.Windows.Forms.DataVisualization.Charting.Chart salesStatisticsChart;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label salesStatisticsTitleLabel;
         private System.Windows.Forms.TabPage customerStatisticsTab;
         private System.Windows.Forms.Panel customerStatisticsPanel;
         private System.Windows.Forms.DataVisualization.Charting.Chart customerStatisticsChart;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label customerStatisticsTitleLable;
         private System.Windows.Forms.TabPage salesHistoryTab;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label salesTitleLabel;
         private System.Windows.Forms.TableLayoutPanel salesHistoryTable;
         private System.Windows.Forms.TabPage settingsTab;
         private System.Windows.Forms.Panel settingsWindowPanel;
