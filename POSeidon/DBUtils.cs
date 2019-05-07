@@ -35,7 +35,7 @@ namespace POSeidon
                 
         }
 
-        public static bool Auth(string username, string password)
+        public static void Auth(string username, string password)
         {
             using (var db = new LiteDatabase(dbFileName))
             {
@@ -44,9 +44,12 @@ namespace POSeidon
                 var user = col.FindOne(Query.EQ("Username", username));
                 if (user == null)
                 {
-                    return false;
+                    throw new Exception("User does not exist!");
                 }
-                return user.Password == password;
+                if (user.Password != password)
+                {
+                    throw new Exception("Wrong password!");
+                }
             }
         }
 

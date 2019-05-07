@@ -21,10 +21,14 @@ namespace POSeidon
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            if (DBUtils.Auth(usernameTextBox.Text, passwordTextBox.Text))
+            try
             {
+                DBUtils.Auth(usernameTextBox.Text, passwordTextBox.Text);
                 this.DialogResult = DialogResult.OK;
                 this.Close();
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
