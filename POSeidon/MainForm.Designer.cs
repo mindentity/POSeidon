@@ -117,7 +117,7 @@
             this.leftsideMainPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.leftsideMainPanel.Name = "leftsideMainPanel";
             this.leftsideMainPanel.Padding = new System.Windows.Forms.Padding(0, 20, 0, 20);
-            this.leftsideMainPanel.Size = new System.Drawing.Size(234, 709);
+            this.leftsideMainPanel.Size = new System.Drawing.Size(234, 705);
             this.leftsideMainPanel.TabIndex = 0;
             // 
             // logoutButton
@@ -524,9 +524,10 @@
             this.ClientSize = new System.Drawing.Size(1348, 721);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.leftsideMainPanel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1366, 768);
             this.MinimumSize = new System.Drawing.Size(1366, 768);
             this.Name = "MainForm";
