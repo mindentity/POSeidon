@@ -93,7 +93,7 @@ namespace POSeidon
             using (var db = new LiteDatabase(dbFileName))
             {
                 var col = db.GetCollection<User>("user");
-                int deletedRows = col.Delete(Query.EQ("Id", user.Id));
+                int deletedRows = col.Delete(Query.EQ("_id", user.Id));
                 return deletedRows > 0;
             }
         }
@@ -103,7 +103,7 @@ namespace POSeidon
             using (var db = new LiteDatabase(dbFileName))
             {
                 var col = db.GetCollection<User>("user");
-                int deletedRows = col.Delete(Query.EQ("Id", id));
+                int deletedRows = col.Delete(Query.EQ("_id", id));
                 return deletedRows > 0;
             }
         }
@@ -149,7 +149,7 @@ namespace POSeidon
             using (var db = new LiteDatabase(dbFileName))
             {
                 var col = db.GetCollection<User>("user");
-                var user = col.FindOne(Query.EQ("Id", id));
+                var user = col.FindOne(Query.EQ("_id", id));
                 return user;
             }
         }
@@ -219,7 +219,7 @@ namespace POSeidon
             using (var db = new LiteDatabase(dbFileName))
             {
                 var col = db.GetCollection<Product>("product");
-                var product = col.FindOne(Query.EQ("Id", id));
+                var product = col.FindOne(Query.EQ("_id", id));
                 return product;
             }
         }
@@ -249,7 +249,7 @@ namespace POSeidon
             using (var db = new LiteDatabase(dbFileName))
             {
                 var col = db.GetCollection<Product>("product");
-                int deletedRows = col.Delete(Query.EQ("Id", product.Id));
+                int deletedRows = col.Delete(Query.EQ("_id", product.Id));
                 return deletedRows > 0;
             }
         }
@@ -259,7 +259,7 @@ namespace POSeidon
             using (var db = new LiteDatabase(dbFileName))
             {
                 var col = db.GetCollection<Product>("product");
-                int deletedRows = col.Delete(Query.EQ("Id", id));
+                int deletedRows = col.Delete(Query.EQ("_id", id));
                 return deletedRows > 0;
             }
         }
