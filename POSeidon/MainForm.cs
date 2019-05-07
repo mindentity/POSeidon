@@ -12,6 +12,8 @@ namespace POSeidon
 {
     public partial class MainForm : Form
     {
+        private IEnumerable<Product> Products { get; set; }
+
         public MainForm()
         {
             InitializeComponent();
@@ -20,6 +22,11 @@ namespace POSeidon
         private void LogoutButton_Click(object sender, EventArgs e)
         {
             Application.Restart();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            Products = DBUtils.GetAllProducts().ToList();
         }
     }
 }
