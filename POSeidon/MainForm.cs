@@ -17,5 +17,9 @@ namespace POSeidon
             InitializeComponent();
         }
 
+        private void LogoutButton_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
 }

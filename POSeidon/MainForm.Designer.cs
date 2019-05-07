@@ -93,11 +93,11 @@
             addProductButton.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             addProductButton.Image = global::POSeidon.Properties.Resources.rsz_plus;
             addProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            addProductButton.Location = new System.Drawing.Point(7, 13);
-            addProductButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            addProductButton.Location = new System.Drawing.Point(5, 11);
+            addProductButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             addProductButton.Name = "addProductButton";
-            addProductButton.Padding = new System.Windows.Forms.Padding(5);
-            addProductButton.Size = new System.Drawing.Size(328, 76);
+            addProductButton.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            addProductButton.Size = new System.Drawing.Size(246, 64);
             addProductButton.TabIndex = 1;
             addProductButton.Text = "ADD A NEW PRODUCT";
             addProductButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -113,11 +113,11 @@
             this.leftsideMainPanel.Controls.Add(this.logoutButton);
             this.leftsideMainPanel.Controls.Add(this.iconButton);
             this.leftsideMainPanel.Controls.Add(this.infoLabel);
-            this.leftsideMainPanel.Location = new System.Drawing.Point(10, 4);
-            this.leftsideMainPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.leftsideMainPanel.Location = new System.Drawing.Point(8, 3);
+            this.leftsideMainPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.leftsideMainPanel.Name = "leftsideMainPanel";
-            this.leftsideMainPanel.Padding = new System.Windows.Forms.Padding(0, 20, 0, 20);
-            this.leftsideMainPanel.Size = new System.Drawing.Size(234, 705);
+            this.leftsideMainPanel.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
+            this.leftsideMainPanel.Size = new System.Drawing.Size(176, 573);
             this.leftsideMainPanel.TabIndex = 0;
             // 
             // logoutButton
@@ -125,12 +125,13 @@
             this.logoutButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.logoutButton.AutoSize = true;
             this.logoutButton.BackgroundImage = global::POSeidon.Properties.Resources.rsz_1logout_50x60;
-            this.logoutButton.Location = new System.Drawing.Point(136, 241);
-            this.logoutButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.logoutButton.Location = new System.Drawing.Point(102, 196);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(64, 54);
+            this.logoutButton.Size = new System.Drawing.Size(48, 44);
             this.logoutButton.TabIndex = 4;
             this.logoutButton.UseVisualStyleBackColor = true;
+            this.logoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // iconButton
             // 
@@ -140,12 +141,12 @@
             this.iconButton.AutoSize = true;
             this.iconButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.iconButton.Image = global::POSeidon.Properties.Resources.rsz_poseidon_trident;
-            this.iconButton.Location = new System.Drawing.Point(10, 12);
-            this.iconButton.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.iconButton.MaximumSize = new System.Drawing.Size(200, 200);
-            this.iconButton.MinimumSize = new System.Drawing.Size(200, 200);
+            this.iconButton.Location = new System.Drawing.Point(8, 10);
+            this.iconButton.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.iconButton.MaximumSize = new System.Drawing.Size(150, 162);
+            this.iconButton.MinimumSize = new System.Drawing.Size(150, 162);
             this.iconButton.Name = "iconButton";
-            this.iconButton.Size = new System.Drawing.Size(200, 200);
+            this.iconButton.Size = new System.Drawing.Size(150, 162);
             this.iconButton.TabIndex = 0;
             this.iconButton.UseVisualStyleBackColor = true;
             // 
@@ -158,12 +159,13 @@
             this.infoLabel.BackColor = System.Drawing.SystemColors.Info;
             this.infoLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.infoLabel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.infoLabel.Location = new System.Drawing.Point(10, 368);
-            this.infoLabel.MaximumSize = new System.Drawing.Size(200, 340);
-            this.infoLabel.MinimumSize = new System.Drawing.Size(200, 300);
+            this.infoLabel.Location = new System.Drawing.Point(8, 299);
+            this.infoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.infoLabel.MaximumSize = new System.Drawing.Size(150, 277);
+            this.infoLabel.MinimumSize = new System.Drawing.Size(150, 244);
             this.infoLabel.Name = "infoLabel";
-            this.infoLabel.Padding = new System.Windows.Forms.Padding(40, 150, 40, 150);
-            this.infoLabel.Size = new System.Drawing.Size(200, 321);
+            this.infoLabel.Padding = new System.Windows.Forms.Padding(30, 122, 30, 122);
+            this.infoLabel.Size = new System.Drawing.Size(150, 262);
             this.infoLabel.TabIndex = 0;
             this.infoLabel.Text = "Information";
             this.infoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -176,9 +178,10 @@
             this.mainPanel.AutoScroll = true;
             this.mainPanel.AutoSize = true;
             this.mainPanel.Controls.Add(this.homepageTabControl);
-            this.mainPanel.Location = new System.Drawing.Point(246, 4);
+            this.mainPanel.Location = new System.Drawing.Point(184, 3);
+            this.mainPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1094, 733);
+            this.mainPanel.Size = new System.Drawing.Size(820, 596);
             this.mainPanel.TabIndex = 1;
             // 
             // homepageTabControl
@@ -193,13 +196,13 @@
             this.homepageTabControl.Controls.Add(this.settingsTab);
             this.homepageTabControl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.homepageTabControl.ItemSize = new System.Drawing.Size(200, 50);
-            this.homepageTabControl.Location = new System.Drawing.Point(3, 7);
-            this.homepageTabControl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.homepageTabControl.Location = new System.Drawing.Point(2, 6);
+            this.homepageTabControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.homepageTabControl.Name = "homepageTabControl";
             this.homepageTabControl.Padding = new System.Drawing.Point(30, 3);
             this.homepageTabControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.homepageTabControl.SelectedIndex = 0;
-            this.homepageTabControl.Size = new System.Drawing.Size(1061, 702);
+            this.homepageTabControl.Size = new System.Drawing.Size(796, 570);
             this.homepageTabControl.TabIndex = 3;
             // 
             // homeTab
@@ -207,10 +210,10 @@
             this.homeTab.BackColor = System.Drawing.Color.Transparent;
             this.homeTab.Controls.Add(this.homePanel);
             this.homeTab.Location = new System.Drawing.Point(4, 54);
-            this.homeTab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.homeTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.homeTab.Name = "homeTab";
-            this.homeTab.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.homeTab.Size = new System.Drawing.Size(1053, 644);
+            this.homeTab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.homeTab.Size = new System.Drawing.Size(788, 512);
             this.homeTab.TabIndex = 0;
             this.homeTab.Text = "Home";
             // 
@@ -224,10 +227,10 @@
             this.homePanel.BackColor = System.Drawing.Color.PowderBlue;
             this.homePanel.Controls.Add(this.homepageDataGridView);
             this.homePanel.Controls.Add(addProductButton);
-            this.homePanel.Location = new System.Drawing.Point(6, 0);
-            this.homePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.homePanel.Location = new System.Drawing.Point(4, 0);
+            this.homePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.homePanel.Name = "homePanel";
-            this.homePanel.Size = new System.Drawing.Size(1040, 659);
+            this.homePanel.Size = new System.Drawing.Size(780, 537);
             this.homePanel.TabIndex = 0;
             // 
             // homepageDataGridView
@@ -239,11 +242,11 @@
             this.homepageDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.homepageDataGridView.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.homepageDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.homepageDataGridView.Location = new System.Drawing.Point(7, 93);
-            this.homepageDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.homepageDataGridView.Location = new System.Drawing.Point(5, 76);
+            this.homepageDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.homepageDataGridView.Name = "homepageDataGridView";
             this.homepageDataGridView.RowTemplate.Height = 24;
-            this.homepageDataGridView.Size = new System.Drawing.Size(1030, 550);
+            this.homepageDataGridView.Size = new System.Drawing.Size(772, 449);
             this.homepageDataGridView.TabIndex = 7;
             // 
             // salesAnalyticsTab
@@ -252,10 +255,10 @@
             this.salesAnalyticsTab.Controls.Add(this.salesStatisticsPanel);
             this.salesAnalyticsTab.Controls.Add(this.salesStatisticsTitleLabel);
             this.salesAnalyticsTab.Location = new System.Drawing.Point(4, 54);
-            this.salesAnalyticsTab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.salesAnalyticsTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.salesAnalyticsTab.Name = "salesAnalyticsTab";
-            this.salesAnalyticsTab.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.salesAnalyticsTab.Size = new System.Drawing.Size(1053, 644);
+            this.salesAnalyticsTab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.salesAnalyticsTab.Size = new System.Drawing.Size(788, 512);
             this.salesAnalyticsTab.TabIndex = 1;
             this.salesAnalyticsTab.Text = "Sales Analytics";
             // 
@@ -266,9 +269,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.salesStatisticsPanel.AutoSize = true;
             this.salesStatisticsPanel.Controls.Add(this.salesStatisticsChart);
-            this.salesStatisticsPanel.Location = new System.Drawing.Point(64, 53);
+            this.salesStatisticsPanel.Location = new System.Drawing.Point(48, 43);
+            this.salesStatisticsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.salesStatisticsPanel.Name = "salesStatisticsPanel";
-            this.salesStatisticsPanel.Size = new System.Drawing.Size(919, 586);
+            this.salesStatisticsPanel.Size = new System.Drawing.Size(689, 476);
             this.salesStatisticsPanel.TabIndex = 7;
             // 
             // salesStatisticsChart
@@ -278,15 +282,15 @@
             this.salesStatisticsChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.salesStatisticsChart.Legends.Add(legend1);
-            this.salesStatisticsChart.Location = new System.Drawing.Point(56, 26);
-            this.salesStatisticsChart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.salesStatisticsChart.Location = new System.Drawing.Point(42, 21);
+            this.salesStatisticsChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.salesStatisticsChart.Name = "salesStatisticsChart";
-            this.salesStatisticsChart.Padding = new System.Windows.Forms.Padding(10);
+            this.salesStatisticsChart.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.salesStatisticsChart.Series.Add(series1);
-            this.salesStatisticsChart.Size = new System.Drawing.Size(794, 547);
+            this.salesStatisticsChart.Size = new System.Drawing.Size(596, 444);
             this.salesStatisticsChart.TabIndex = 2;
             this.salesStatisticsChart.Text = "chart1";
             // 
@@ -295,10 +299,9 @@
             this.salesStatisticsTitleLabel.BackColor = System.Drawing.Color.Transparent;
             this.salesStatisticsTitleLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.salesStatisticsTitleLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.salesStatisticsTitleLabel.Location = new System.Drawing.Point(415, 22);
-            this.salesStatisticsTitleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.salesStatisticsTitleLabel.Location = new System.Drawing.Point(311, 18);
             this.salesStatisticsTitleLabel.Name = "salesStatisticsTitleLabel";
-            this.salesStatisticsTitleLabel.Size = new System.Drawing.Size(208, 23);
+            this.salesStatisticsTitleLabel.Size = new System.Drawing.Size(156, 19);
             this.salesStatisticsTitleLabel.TabIndex = 6;
             this.salesStatisticsTitleLabel.Text = "SALES STATISTICS";
             this.salesStatisticsTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -309,9 +312,9 @@
             this.customerStatisticsTab.Controls.Add(this.customerStatisticsPanel);
             this.customerStatisticsTab.Controls.Add(this.customerStatisticsTitleLable);
             this.customerStatisticsTab.Location = new System.Drawing.Point(4, 54);
-            this.customerStatisticsTab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.customerStatisticsTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.customerStatisticsTab.Name = "customerStatisticsTab";
-            this.customerStatisticsTab.Size = new System.Drawing.Size(1053, 644);
+            this.customerStatisticsTab.Size = new System.Drawing.Size(788, 512);
             this.customerStatisticsTab.TabIndex = 2;
             this.customerStatisticsTab.Text = "Customer Statistics";
             // 
@@ -321,9 +324,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.customerStatisticsPanel.Controls.Add(this.customerStatisticsChart);
-            this.customerStatisticsPanel.Location = new System.Drawing.Point(75, 57);
+            this.customerStatisticsPanel.Location = new System.Drawing.Point(56, 46);
+            this.customerStatisticsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.customerStatisticsPanel.Name = "customerStatisticsPanel";
-            this.customerStatisticsPanel.Size = new System.Drawing.Size(897, 577);
+            this.customerStatisticsPanel.Size = new System.Drawing.Size(673, 469);
             this.customerStatisticsPanel.TabIndex = 6;
             // 
             // customerStatisticsChart
@@ -335,16 +339,16 @@
             this.customerStatisticsChart.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.customerStatisticsChart.Legends.Add(legend2);
-            this.customerStatisticsChart.Location = new System.Drawing.Point(26, 23);
-            this.customerStatisticsChart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.customerStatisticsChart.Location = new System.Drawing.Point(20, 19);
+            this.customerStatisticsChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.customerStatisticsChart.Name = "customerStatisticsChart";
-            this.customerStatisticsChart.Padding = new System.Windows.Forms.Padding(10);
+            this.customerStatisticsChart.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.customerStatisticsChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.customerStatisticsChart.Series.Add(series2);
-            this.customerStatisticsChart.Size = new System.Drawing.Size(843, 535);
+            this.customerStatisticsChart.Size = new System.Drawing.Size(632, 435);
             this.customerStatisticsChart.TabIndex = 0;
             this.customerStatisticsChart.Text = "chart2";
             // 
@@ -353,10 +357,9 @@
             this.customerStatisticsTitleLable.BackColor = System.Drawing.Color.Transparent;
             this.customerStatisticsTitleLable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customerStatisticsTitleLable.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.customerStatisticsTitleLable.Location = new System.Drawing.Point(400, 21);
-            this.customerStatisticsTitleLable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.customerStatisticsTitleLable.Location = new System.Drawing.Point(300, 17);
             this.customerStatisticsTitleLable.Name = "customerStatisticsTitleLable";
-            this.customerStatisticsTitleLable.Size = new System.Drawing.Size(246, 23);
+            this.customerStatisticsTitleLable.Size = new System.Drawing.Size(184, 19);
             this.customerStatisticsTitleLable.TabIndex = 5;
             this.customerStatisticsTitleLable.Text = "CUSTOMER STATISTICS";
             this.customerStatisticsTitleLable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -367,10 +370,10 @@
             this.salesHistoryTab.Controls.Add(this.salesTitleLabel);
             this.salesHistoryTab.Controls.Add(this.salesHistoryTable);
             this.salesHistoryTab.Location = new System.Drawing.Point(4, 54);
-            this.salesHistoryTab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.salesHistoryTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.salesHistoryTab.Name = "salesHistoryTab";
-            this.salesHistoryTab.Padding = new System.Windows.Forms.Padding(10);
-            this.salesHistoryTab.Size = new System.Drawing.Size(1053, 644);
+            this.salesHistoryTab.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.salesHistoryTab.Size = new System.Drawing.Size(788, 512);
             this.salesHistoryTab.TabIndex = 3;
             this.salesHistoryTab.Text = "Sales History";
             // 
@@ -379,10 +382,9 @@
             this.salesTitleLabel.BackColor = System.Drawing.Color.Transparent;
             this.salesTitleLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.salesTitleLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.salesTitleLabel.Location = new System.Drawing.Point(437, 10);
-            this.salesTitleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.salesTitleLabel.Location = new System.Drawing.Point(328, 8);
             this.salesTitleLabel.Name = "salesTitleLabel";
-            this.salesTitleLabel.Size = new System.Drawing.Size(173, 42);
+            this.salesTitleLabel.Size = new System.Drawing.Size(130, 34);
             this.salesTitleLabel.TabIndex = 4;
             this.salesTitleLabel.Text = "SALES HISTORY";
             this.salesTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -395,8 +397,8 @@
             this.salesHistoryTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.salesHistoryTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.salesHistoryTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.salesHistoryTable.Location = new System.Drawing.Point(70, 67);
-            this.salesHistoryTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.salesHistoryTable.Location = new System.Drawing.Point(52, 54);
+            this.salesHistoryTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.salesHistoryTable.Name = "salesHistoryTable";
             this.salesHistoryTable.RowCount = 20;
             this.salesHistoryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
@@ -419,7 +421,7 @@
             this.salesHistoryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.salesHistoryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.salesHistoryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.salesHistoryTable.Size = new System.Drawing.Size(900, 561);
+            this.salesHistoryTable.Size = new System.Drawing.Size(675, 456);
             this.salesHistoryTable.TabIndex = 0;
             // 
             // settingsTab
@@ -428,9 +430,9 @@
             this.settingsTab.Controls.Add(this.settingsPanel);
             this.settingsTab.Controls.Add(this.passwordLabel);
             this.settingsTab.Location = new System.Drawing.Point(4, 54);
-            this.settingsTab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.settingsTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.settingsTab.Name = "settingsTab";
-            this.settingsTab.Size = new System.Drawing.Size(1053, 644);
+            this.settingsTab.Size = new System.Drawing.Size(788, 512);
             this.settingsTab.TabIndex = 4;
             this.settingsTab.Text = "Settings";
             // 
@@ -441,9 +443,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.settingsPanel.AutoSize = true;
             this.settingsPanel.Controls.Add(this.settingsWindowPanel);
-            this.settingsPanel.Location = new System.Drawing.Point(23, 58);
+            this.settingsPanel.Location = new System.Drawing.Point(17, 47);
+            this.settingsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.settingsPanel.Name = "settingsPanel";
-            this.settingsPanel.Size = new System.Drawing.Size(994, 584);
+            this.settingsPanel.Size = new System.Drawing.Size(746, 474);
             this.settingsPanel.TabIndex = 10;
             // 
             // settingsWindowPanel
@@ -457,20 +460,20 @@
             this.settingsWindowPanel.Controls.Add(this.settingsCheckbox2);
             this.settingsWindowPanel.Controls.Add(this.settingsCheckbox1);
             this.settingsWindowPanel.Controls.Add(this.saveButton);
-            this.settingsWindowPanel.Location = new System.Drawing.Point(286, 111);
-            this.settingsWindowPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.settingsWindowPanel.Location = new System.Drawing.Point(214, 90);
+            this.settingsWindowPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.settingsWindowPanel.Name = "settingsWindowPanel";
-            this.settingsWindowPanel.Padding = new System.Windows.Forms.Padding(30);
-            this.settingsWindowPanel.Size = new System.Drawing.Size(440, 250);
+            this.settingsWindowPanel.Padding = new System.Windows.Forms.Padding(22, 24, 22, 24);
+            this.settingsWindowPanel.Size = new System.Drawing.Size(331, 204);
             this.settingsWindowPanel.TabIndex = 10;
             // 
             // settingsCheckbox2
             // 
             this.settingsCheckbox2.AutoSize = true;
-            this.settingsCheckbox2.Location = new System.Drawing.Point(59, 109);
-            this.settingsCheckbox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.settingsCheckbox2.Location = new System.Drawing.Point(44, 89);
+            this.settingsCheckbox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.settingsCheckbox2.Name = "settingsCheckbox2";
-            this.settingsCheckbox2.Size = new System.Drawing.Size(271, 25);
+            this.settingsCheckbox2.Size = new System.Drawing.Size(226, 23);
             this.settingsCheckbox2.TabIndex = 11;
             this.settingsCheckbox2.Text = "Relogin to see sales analytics";
             this.settingsCheckbox2.UseVisualStyleBackColor = true;
@@ -478,10 +481,10 @@
             // settingsCheckbox1
             // 
             this.settingsCheckbox1.AutoSize = true;
-            this.settingsCheckbox1.Location = new System.Drawing.Point(59, 60);
-            this.settingsCheckbox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.settingsCheckbox1.Location = new System.Drawing.Point(44, 49);
+            this.settingsCheckbox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.settingsCheckbox1.Name = "settingsCheckbox1";
-            this.settingsCheckbox1.Size = new System.Drawing.Size(306, 25);
+            this.settingsCheckbox1.Size = new System.Drawing.Size(250, 23);
             this.settingsCheckbox1.TabIndex = 10;
             this.settingsCheckbox1.Text = "Relogin to see customer statistics";
             this.settingsCheckbox1.UseVisualStyleBackColor = true;
@@ -492,10 +495,9 @@
             this.saveButton.FlatAppearance.BorderSize = 0;
             this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.saveButton.Location = new System.Drawing.Point(165, 166);
-            this.saveButton.Margin = new System.Windows.Forms.Padding(4);
+            this.saveButton.Location = new System.Drawing.Point(124, 135);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(133, 46);
+            this.saveButton.Size = new System.Drawing.Size(100, 37);
             this.saveButton.TabIndex = 4;
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = false;
@@ -505,31 +507,30 @@
             this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
             this.passwordLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.passwordLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.passwordLabel.Location = new System.Drawing.Point(470, 16);
-            this.passwordLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.passwordLabel.Location = new System.Drawing.Point(352, 13);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(121, 39);
+            this.passwordLabel.Size = new System.Drawing.Size(91, 32);
             this.passwordLabel.TabIndex = 3;
             this.passwordLabel.Text = "SETTINGS";
             this.passwordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1348, 721);
+            this.ClientSize = new System.Drawing.Size(1010, 586);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.leftsideMainPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1366, 768);
-            this.MinimumSize = new System.Drawing.Size(1366, 768);
+            this.MaximumSize = new System.Drawing.Size(1030, 632);
+            this.MinimumSize = new System.Drawing.Size(1028, 598);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "POSeidon";
