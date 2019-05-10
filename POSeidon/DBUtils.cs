@@ -70,25 +70,16 @@ namespace POSeidon
             }
         }
 
-        public static bool CreateUser(string username, string password)
+        public static bool CreateUser(string firstName, string lastName, string username, string password)
         {
-            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
+            User user = new User
             {
-                var col = db.GetCollection<User>("user");
-                col.EnsureIndex("Username");
-                var user = col.FindOne(Query.EQ("Username", username));
-                if (user != null)
-                {
-                    return false;
-                }
-                user = new User
-                {
-                    Username = username,
-                    Password = password
-                };
-                col.Insert(user);
-                return true;
-            }
+                FirstName = firstName,
+                LastName = lastName,
+                Username = username,
+                Password = password
+            };
+            return CreateUser(user);
         }
 
         public static bool CreateUser(User user)
@@ -110,12 +101,7 @@ namespace POSeidon
 
         public static bool DeleteUser(User user)
         {
-            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
-            {
-                var col = db.GetCollection<User>("user");
-                int deletedRows = col.Delete(Query.EQ("_id", user.Id));
-                return deletedRows > 0;
-            }
+            return DeleteUserById(user.Id);
         }
 
         public static bool DeleteUserById(int id)
@@ -212,26 +198,16 @@ namespace POSeidon
             }
         }
 
-        public static bool CreateProduct(string name, double price, bool isCountable)
+        public static bool CreateProduct(string name, double price, bool isCountable, int stockAmount = 0)
         {
-            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
+            Product product = new Product
             {
-                var col = db.GetCollection<Product>("product");
-                col.EnsureIndex("Name");
-                var product = col.FindOne(Query.EQ("Name", name));
-                if (product != null)
-                {
-                    return false;
-                }
-                product = new Product
-                {
-                    Name = name,
-                    Price = price,
-                    IsCountable = isCountable
-                };
-                col.Insert(product);
-                return true;
-            }
+                Name = name,
+                Price = price,
+                IsCountable = isCountable,
+                StockAmount = stockAmount
+            };
+            return CreateProduct(product);
         }
 
         public static Product GetProductById(int id)
@@ -266,12 +242,7 @@ namespace POSeidon
 
         public static bool DeleteProduct(Product product)
         {
-            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
-            {
-                var col = db.GetCollection<Product>("product");
-                int deletedRows = col.Delete(Query.EQ("_id", product.Id));
-                return deletedRows > 0;
-            }
+            return DeleteProductById(product.Id);
         }
 
         public static bool DeleteProductById(int id)
