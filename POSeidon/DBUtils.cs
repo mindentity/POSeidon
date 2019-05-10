@@ -37,19 +37,15 @@ namespace POSeidon
 
         private static void InitDB()
         {
-            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
+            var adminUser = new User
             {
-                var col = db.GetCollection<User>("user");
-                var adminUser = new User
-                {
-                    FirstName = config["Default"]["FirstName"],
-                    LastName = config["Default"]["LastName"],
-                    Username = config["Default"]["Username"],
-                    Password = config["Default"]["Password"],
-                };
-                col.Insert(adminUser);
-            }
-                
+                FirstName = config["Default"]["FirstName"],
+                LastName = config["Default"]["LastName"],
+                Username = config["Default"]["Username"],
+                Password = config["Default"]["Password"],
+                IsAdmin = true
+            };
+            CreateUser(adminUser);
         }
 
         public static void Auth(string username, string password)
@@ -57,7 +53,7 @@ namespace POSeidon
             using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
-                col.EnsureIndex("Username");
+                col.EnsureIndex("Username", true);
                 var user = col.FindOne(Query.EQ("Username", username));
                 if (user == null)
                 {
@@ -88,14 +84,16 @@ namespace POSeidon
             using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
-                col.EnsureIndex("Username");
-                var result = col.FindOne(Query.EQ("Username", user.Username));
-                if (result != null)
+                col.EnsureIndex("Username", true);
+                try
+                {
+                    col.Insert(user);
+                    return true;
+                }
+                catch
                 {
                     return false;
                 }
-                col.Insert(user);
-                return true;
             }
         }
 
@@ -119,7 +117,7 @@ namespace POSeidon
             using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
-                col.EnsureIndex("Username");
+                col.EnsureIndex("Username", true);
                 int deletedRows = col.Delete(Query.EQ("Username", username));
                 return deletedRows > 0;
             }
@@ -130,7 +128,7 @@ namespace POSeidon
             using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
-                col.EnsureIndex("Username");
+                col.EnsureIndex("Username", true);
                 var user = col.FindOne(Query.EQ("Username", username));
                 if (user == null)
                 {
@@ -165,7 +163,7 @@ namespace POSeidon
             using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
-                col.EnsureIndex("Username");
+                col.EnsureIndex("Username", true);
                 var user = col.FindOne(Query.EQ("Username", username));
                 return user;
             }
@@ -186,15 +184,16 @@ namespace POSeidon
             using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<Product>("product");
-                col.EnsureIndex("Name");
-                var result = col.FindOne(Query.EQ("Name", product.Name));
-                if (result != null)
+                col.EnsureIndex("Name", true);
+                try
+                {
+                    col.Insert(product);
+                    return true;
+                }
+                catch
                 {
                     return false;
                 }
-                product.Id = 0;
-                col.Insert(product);
-                return true;
             }
         }
 
@@ -225,7 +224,7 @@ namespace POSeidon
             using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<Product>("product");
-                col.EnsureIndex("Name");
+                col.EnsureIndex("Name", true);
                 var product = col.FindOne(Query.EQ("Name", name));
                 return product;
             }
@@ -260,7 +259,7 @@ namespace POSeidon
             using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<Product>("product");
-                col.EnsureIndex("Name");
+                col.EnsureIndex("Name", true);
                 int deletedRows = col.Delete(Query.EQ("Name", name));
                 return deletedRows > 0;
             }
