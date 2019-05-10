@@ -5,16 +5,31 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using LiteDB;
+using IniParser;
+using IniParser.Model;
+using System.Windows.Forms;
 
 namespace POSeidon
 {
     public static class DBUtils
     {
-        private static string dbFileName = @"pos.db";
+        public const string configFile = @"config.ini";
+        public static IniData config;
 
         static DBUtils()
         {
-            if (!File.Exists(dbFileName))
+            try
+            {
+                var parser = new FileIniDataParser();
+                config = parser.ReadFile(configFile);
+            }
+            catch
+            {
+                MessageBox.Show(String.Format("Failed to read {0}!", configFile), "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+            }
+
+            if (!File.Exists(config["Database"]["FilePath"]))
             {
                 InitDB();
             }
@@ -22,13 +37,15 @@ namespace POSeidon
 
         private static void InitDB()
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
                 var adminUser = new User
                 {
-                    Username = "admin",
-                    Password = "12345"
+                    FirstName = config["Default"]["FirstName"],
+                    LastName = config["Default"]["LastName"],
+                    Username = config["Default"]["Username"],
+                    Password = config["Default"]["Password"],
                 };
                 col.Insert(adminUser);
             }
@@ -37,7 +54,7 @@ namespace POSeidon
 
         public static void Auth(string username, string password)
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
                 col.EnsureIndex("Username");
@@ -55,7 +72,7 @@ namespace POSeidon
 
         public static bool CreateUser(string username, string password)
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
                 col.EnsureIndex("Username");
@@ -76,7 +93,7 @@ namespace POSeidon
 
         public static bool CreateUser(User user)
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
                 col.EnsureIndex("Username");
@@ -93,7 +110,7 @@ namespace POSeidon
 
         public static bool DeleteUser(User user)
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
                 int deletedRows = col.Delete(Query.EQ("_id", user.Id));
@@ -103,7 +120,7 @@ namespace POSeidon
 
         public static bool DeleteUserById(int id)
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
                 int deletedRows = col.Delete(Query.EQ("_id", id));
@@ -113,7 +130,7 @@ namespace POSeidon
 
         public static bool DeleteUserByUsername(string username)
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
                 col.EnsureIndex("Username");
@@ -124,7 +141,7 @@ namespace POSeidon
 
         public static bool ChangePassword(string username, string newPassword)
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
                 col.EnsureIndex("Username");
@@ -140,7 +157,7 @@ namespace POSeidon
 
         public static bool UpdateUser(User user)
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
                 return col.Update(user);
@@ -149,7 +166,7 @@ namespace POSeidon
 
         public static User GetUserById(int id)
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
                 var user = col.FindOne(Query.EQ("_id", id));
@@ -159,7 +176,7 @@ namespace POSeidon
 
         public static User GetUserByUsername(string username)
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
                 col.EnsureIndex("Username");
@@ -170,7 +187,7 @@ namespace POSeidon
 
         public static IEnumerable<User> GetAllUsers()
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
                 var users = col.FindAll();
@@ -180,7 +197,7 @@ namespace POSeidon
 
         public static bool CreateProduct(Product product)
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<Product>("product");
                 col.EnsureIndex("Name");
@@ -197,7 +214,7 @@ namespace POSeidon
 
         public static bool CreateProduct(string name, double price, bool isCountable)
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<Product>("product");
                 col.EnsureIndex("Name");
@@ -219,7 +236,7 @@ namespace POSeidon
 
         public static Product GetProductById(int id)
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<Product>("product");
                 var product = col.FindOne(Query.EQ("_id", id));
@@ -229,7 +246,7 @@ namespace POSeidon
 
         public static Product GetProductByName(string name)
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<Product>("product");
                 col.EnsureIndex("Name");
@@ -240,7 +257,7 @@ namespace POSeidon
 
         public static bool UpdateProduct(Product product)
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<Product>("product");
                 return col.Update(product);
@@ -249,7 +266,7 @@ namespace POSeidon
 
         public static bool DeleteProduct(Product product)
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<Product>("product");
                 int deletedRows = col.Delete(Query.EQ("_id", product.Id));
@@ -259,7 +276,7 @@ namespace POSeidon
 
         public static bool DeleteProductById(int id)
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<Product>("product");
                 int deletedRows = col.Delete(Query.EQ("_id", id));
@@ -269,7 +286,7 @@ namespace POSeidon
 
         public static bool DeleteProductByName(string name)
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<Product>("product");
                 col.EnsureIndex("Name");
@@ -280,7 +297,7 @@ namespace POSeidon
 
         public static IEnumerable<Product> GetAllProducts()
         {
-            using (var db = new LiteDatabase(dbFileName))
+            using (var db = new LiteDatabase(config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<Product>("product");
                 var products = col.FindAll();
