@@ -11,9 +11,9 @@ using System.Security.Cryptography;
 
 namespace POSeidon
 {
-    public partial class LoginForm : Form
+    public partial class loginForm : Form
     {
-        public LoginForm()
+        public loginForm()
         {
             InitializeComponent();
         }

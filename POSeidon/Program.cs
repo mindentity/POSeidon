@@ -27,10 +27,10 @@ namespace POSeidon
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                LoginForm loginForm = new LoginForm();
+                loginForm loginForm = new loginForm();
                 if (loginForm.ShowDialog() == DialogResult.OK)
                 {
-                    Application.Run(new MainForm());
+                    Application.Run(new mainForm());
                 }
                 mutex.ReleaseMutex();
             } else

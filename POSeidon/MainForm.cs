@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace POSeidon
 {
-    public partial class MainForm : Form
+    public partial class mainForm : Form
     {
         private IEnumerable<Product> Products { get; set; }
         private BindingSource bindingSource1 = new BindingSource();
 
-        public MainForm()
+        public mainForm()
         {
             InitializeComponent();
         }
