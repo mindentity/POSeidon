@@ -70,14 +70,15 @@ namespace POSeidon
             }
         }
 
-        public static bool CreateUser(string firstName, string lastName, string username, string password)
+        public static bool CreateUser(string firstName, string lastName, string username, string password, bool isAdmin = false)
         {
             User user = new User
             {
                 FirstName = firstName,
                 LastName = lastName,
                 Username = username,
-                Password = password
+                Password = password,
+                IsAdmin = isAdmin
             };
             return CreateUser(user);
         }
@@ -93,7 +94,6 @@ namespace POSeidon
                 {
                     return false;
                 }
-                user.Id = 0;
                 col.Insert(user);
                 return true;
             }
