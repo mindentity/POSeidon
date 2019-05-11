@@ -578,7 +578,6 @@
             this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "POSeidon";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.leftsideMainPanel.ResumeLayout(false);
             this.leftsideMainPanel.PerformLayout();
             this.mainPanel.ResumeLayout(false);
