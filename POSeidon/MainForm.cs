@@ -31,22 +31,16 @@ namespace POSeidon
             foreach (Product p in Products)
             {
                 bindingSource1.Add(p);
-               
             }
             homepageDataGridView.AutoGenerateColumns = false;
             homepageDataGridView.DataSource = bindingSource1;
 
         }
-        
+
         private void AddProductButton_Click(object sender, EventArgs e)
         {
-            /*
-            mDialog = new Form();
-            mDialog.FormClosed += (o, ea) => mDialog = null;
-            mDialog.Show(this);
-            while (mDialog != null) Application.DoEvents();
-            */
+            addProductForm addProductForm = new addProductForm();
+            addProductForm.ShowDialog();
         }
-            
     }
 }
