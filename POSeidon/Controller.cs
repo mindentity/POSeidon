@@ -9,10 +9,12 @@ namespace POSeidon
     public static class Controller
     {
         public static IList<Product> Products { get; set; }
+        public static IList<Supplier> Suppliers { get; set; }
 
         static Controller()
         {
             Products = DBUtils.GetAllProducts().ToList();
+            Suppliers = DBUtils.GetAllSuppliers().ToList();
         }
     }
 }

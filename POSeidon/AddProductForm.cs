@@ -19,6 +19,8 @@ namespace POSeidon
             newProductTypeComboBox.SelectedIndex = 0;
             existingProductComboBox.DataSource = Controller.Products;
             existingProductComboBox.DisplayMember = "Name";
+            productSupplierComboBox.DataSource = Controller.Suppliers;
+            productSupplierComboBox.DisplayMember = "Name";
         }
 
         private void ExistingProductRadioButton_CheckedChanged(object sender, EventArgs e)
