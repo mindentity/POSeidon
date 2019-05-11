@@ -15,7 +15,7 @@ namespace POSeidon
     {
         public static string ConfigFilePath { get; } = @"config.ini";
         public static IniData Config { get; }
-        
+
         static DBUtils()
         {
             try
@@ -272,6 +272,102 @@ namespace POSeidon
                 var col = db.GetCollection<Product>("product");
                 var products = col.FindAll();
                 return products;
+            }
+        }
+
+        public static bool CreateSupplier(string name, string phone, string email, string address)
+        {
+            Supplier supplier = new Supplier
+            {
+                Name = name,
+                Phone = phone,
+                Email = email,
+                Address = address
+            };
+            return CreateSupplier(supplier);
+        }
+
+        public static bool CreateSupplier(Supplier supplier)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Supplier>("supplier");
+                col.EnsureIndex("Name", true);
+                try
+                {
+                    col.Insert(supplier);
+                    return true;
+                }
+                catch
+                {
+                    return false;
+                }
+            }
+        }
+
+        public static Supplier GetSupplierById(int id)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Supplier>("supplier");
+                var supplier = col.FindOne(Query.EQ("_id", id));
+                return supplier;
+            }
+        }
+
+        public static Supplier GetSupplierByName(string name)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Supplier>("supplier");
+                col.EnsureIndex("Name", true);
+                var supplier = col.FindOne(Query.EQ("Name", name));
+                return supplier;
+            }
+        }
+
+        public static bool UpdateSupplier(Supplier supplier)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Supplier>("supplier");
+                return col.Update(supplier);
+            }
+        }
+
+        public static bool DeleteSupplier(Supplier supplier)
+        {
+            return DeleteSupplierById(supplier.Id);
+        }
+
+        public static bool DeleteSupplierById(int id)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Supplier>("supplier");
+                int deletedRows = col.Delete(Query.EQ("_id", id));
+                return deletedRows > 0;
+            }
+        }
+
+        public static bool DeleteSupplierByName(string name)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Supplier>("supplier");
+                col.EnsureIndex("Name", true);
+                int deletedRows = col.Delete(Query.EQ("Name", name));
+                return deletedRows > 0;
+            }
+        }
+
+        public static IEnumerable<Supplier> GetAllSuppliers()
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Supplier>("supplier");
+                var supplier = col.FindAll();
+                return supplier;
             }
         }
     }
