@@ -274,7 +274,15 @@ namespace POSeidon
             using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<Product>("product");
-                return col.Upsert(product);
+                try
+                {
+                    col.Upsert(product);
+                    return true;
+                }
+                catch
+                {
+                    return false;
+                }
             }
         }
 
