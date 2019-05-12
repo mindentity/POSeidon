@@ -75,6 +75,8 @@
     <Compile Include="AddProductForm.Designer.cs">
       <DependentUpon>AddProductForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Currency.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="Controller.cs" />
     <Compile Include="CustomerLog.cs" />
     <Compile Include="DBUtils.cs" />
