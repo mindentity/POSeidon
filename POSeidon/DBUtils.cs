@@ -416,5 +416,110 @@ namespace POSeidon
                 return supplier;
             }
         }
+
+        public static bool CreateCustomer(string firstName, string lastName, string phone, string email, string address)
+        {
+            Customer customer = new Customer
+            {
+                FirstName = firstName,
+                LastName = lastName,
+                Phone = phone,
+                Email = email,
+                Address = address
+            };
+            return CreateSupplier(customer);
+        }
+
+        public static bool CreateSupplier(Customer customer)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Customer>("customer");
+                col.EnsureIndex("Name", true);
+                try
+                {
+                    col.Insert(customer);
+                    return true;
+                }
+                catch
+                {
+                    return false;
+                }
+            }
+        }
+
+        public static Customer GetCustomerById(int id)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Customer>("customer");
+                var customer = col.FindById(id);
+                return customer;
+            }
+        }
+
+        public static Customer GetCustomerByName(string name)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Customer>("customer");
+                col.EnsureIndex("Name", true);
+                var customer = col.FindOne(Query.EQ("Name", name));
+                return customer;
+            }
+        }
+
+        public static bool UpdateCustomer(Customer customer)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Customer>("customer");
+                return col.Update(customer);
+            }
+        }
+
+        public static bool UpdateOrCreateSupplier(Customer customer)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Customer>("customer");
+                return col.Upsert(customer);
+            }
+        }
+
+        public static bool DeleteCustomer(Customer customer)
+        {
+            return DeleteCustomerById(customer.Id);
+        }
+
+        public static bool DeleteCustomerById(int id)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Customer>("customer");
+                return col.Delete(id);
+            }
+        }
+
+        public static bool DeleteCustomerByName(string name)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Customer>("customer");
+                col.EnsureIndex("Name", true);
+                int deletedRows = col.Delete(Query.EQ("Name", name));
+                return deletedRows > 0;
+            }
+        }
+
+        public static IEnumerable<Customer> GetAllCustomers()
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Customer>("customer");
+                var customer = col.FindAll();
+                return customer;
+            }
+        }
     }
 }
