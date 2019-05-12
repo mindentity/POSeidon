@@ -146,6 +146,7 @@
             this.existingProductComboBox.Name = "existingProductComboBox";
             this.existingProductComboBox.Size = new System.Drawing.Size(161, 21);
             this.existingProductComboBox.TabIndex = 0;
+            this.existingProductComboBox.SelectedIndexChanged += new System.EventHandler(this.ExistingProductComboBox_SelectedIndexChanged);
             // 
             // existingProductPriceTextBox
             // 
