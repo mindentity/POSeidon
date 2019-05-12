@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace POSeidon
 {
-    public partial class loginForm : Form
+    public partial class LoginForm : Form
     {
-        public loginForm()
+        public LoginForm()
         {
             InitializeComponent();
         }

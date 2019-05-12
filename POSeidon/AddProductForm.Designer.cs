@@ -1,6 +1,6 @@
 ﻿namespace POSeidon
 {
-    partial class addProductForm
+    partial class AddProductForm
     {
         /// <summary>
         /// Required designer variable.
@@ -32,8 +32,8 @@
             this.newProductRadioButton = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.addProductNavigator = new ComponentFactory.Krypton.Navigator.KryptonNavigator();
             this.existingProductPage = new ComponentFactory.Krypton.Navigator.KryptonPage();
-            this.existingProductUnitLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.existingProductCurrency = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.existingProductWeightUnitLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.existingProductWeightUnitComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.existingProductAmountTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.existingProductComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.existingProductPriceTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -41,11 +41,11 @@
             this.existingProductNameLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.existingProductPriceLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.newProductPage = new ComponentFactory.Krypton.Navigator.KryptonPage();
+            this.newProductWeightUnitLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.newProductWeightUnitComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.newProductTypeComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.productTypeLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.newProductTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.newProductUnitLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.newProductCurrencyLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.newProductNameTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.newProductAmountTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.newProductPriceTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.newProductAmountLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -58,9 +58,11 @@
             this.addProductNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.existingProductPage)).BeginInit();
             this.existingProductPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.existingProductWeightUnitComboBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.existingProductComboBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newProductPage)).BeginInit();
             this.newProductPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.newProductWeightUnitComboBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newProductTypeComboBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productSupplierComboBox)).BeginInit();
             this.SuspendLayout();
@@ -98,8 +100,8 @@
             // existingProductPage
             // 
             this.existingProductPage.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
-            this.existingProductPage.Controls.Add(this.existingProductUnitLabel);
-            this.existingProductPage.Controls.Add(this.existingProductCurrency);
+            this.existingProductPage.Controls.Add(this.existingProductWeightUnitLabel);
+            this.existingProductPage.Controls.Add(this.existingProductWeightUnitComboBox);
             this.existingProductPage.Controls.Add(this.existingProductAmountTextBox);
             this.existingProductPage.Controls.Add(this.existingProductComboBox);
             this.existingProductPage.Controls.Add(this.existingProductPriceTextBox);
@@ -115,21 +117,22 @@
             this.existingProductPage.ToolTipTitle = "Page ToolTip";
             this.existingProductPage.UniqueName = "c78de74bec554c85b82c5e889b4bd26f";
             // 
-            // existingProductUnitLabel
+            // existingProductWeightUnitLabel
             // 
-            this.existingProductUnitLabel.Location = new System.Drawing.Point(299, 104);
-            this.existingProductUnitLabel.Name = "existingProductUnitLabel";
-            this.existingProductUnitLabel.Size = new System.Drawing.Size(33, 20);
-            this.existingProductUnitLabel.TabIndex = 7;
-            this.existingProductUnitLabel.Values.Text = "Unit";
+            this.existingProductWeightUnitLabel.Location = new System.Drawing.Point(301, 105);
+            this.existingProductWeightUnitLabel.Name = "existingProductWeightUnitLabel";
+            this.existingProductWeightUnitLabel.Size = new System.Drawing.Size(29, 20);
+            this.existingProductWeightUnitLabel.TabIndex = 20;
+            this.existingProductWeightUnitLabel.Values.Text = "pcs";
             // 
-            // existingProductCurrency
+            // existingProductWeightUnitComboBox
             // 
-            this.existingProductCurrency.Location = new System.Drawing.Point(299, 54);
-            this.existingProductCurrency.Name = "existingProductCurrency";
-            this.existingProductCurrency.Size = new System.Drawing.Size(59, 20);
-            this.existingProductCurrency.TabIndex = 6;
-            this.existingProductCurrency.Values.Text = "Currency";
+            this.existingProductWeightUnitComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.existingProductWeightUnitComboBox.DropDownWidth = 61;
+            this.existingProductWeightUnitComboBox.Location = new System.Drawing.Point(301, 103);
+            this.existingProductWeightUnitComboBox.Name = "existingProductWeightUnitComboBox";
+            this.existingProductWeightUnitComboBox.Size = new System.Drawing.Size(61, 21);
+            this.existingProductWeightUnitComboBox.TabIndex = 6;
             // 
             // existingProductAmountTextBox
             // 
@@ -182,11 +185,11 @@
             // newProductPage
             // 
             this.newProductPage.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
+            this.newProductPage.Controls.Add(this.newProductWeightUnitLabel);
+            this.newProductPage.Controls.Add(this.newProductWeightUnitComboBox);
             this.newProductPage.Controls.Add(this.newProductTypeComboBox);
             this.newProductPage.Controls.Add(this.productTypeLabel);
-            this.newProductPage.Controls.Add(this.newProductTextBox);
-            this.newProductPage.Controls.Add(this.newProductUnitLabel);
-            this.newProductPage.Controls.Add(this.newProductCurrencyLabel);
+            this.newProductPage.Controls.Add(this.newProductNameTextBox);
             this.newProductPage.Controls.Add(this.newProductAmountTextBox);
             this.newProductPage.Controls.Add(this.newProductPriceTextBox);
             this.newProductPage.Controls.Add(this.newProductAmountLabel);
@@ -201,6 +204,23 @@
             this.newProductPage.ToolTipTitle = "Page ToolTip";
             this.newProductPage.UniqueName = "383dfda8b9b44f2aa16c37bb0fa934c8";
             // 
+            // newProductWeightUnitLabel
+            // 
+            this.newProductWeightUnitLabel.Location = new System.Drawing.Point(301, 139);
+            this.newProductWeightUnitLabel.Name = "newProductWeightUnitLabel";
+            this.newProductWeightUnitLabel.Size = new System.Drawing.Size(29, 20);
+            this.newProductWeightUnitLabel.TabIndex = 19;
+            this.newProductWeightUnitLabel.Values.Text = "pcs";
+            // 
+            // newProductWeightUnitComboBox
+            // 
+            this.newProductWeightUnitComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.newProductWeightUnitComboBox.DropDownWidth = 121;
+            this.newProductWeightUnitComboBox.Location = new System.Drawing.Point(301, 138);
+            this.newProductWeightUnitComboBox.Name = "newProductWeightUnitComboBox";
+            this.newProductWeightUnitComboBox.Size = new System.Drawing.Size(61, 21);
+            this.newProductWeightUnitComboBox.TabIndex = 18;
+            // 
             // newProductTypeComboBox
             // 
             this.newProductTypeComboBox.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Standalone;
@@ -213,6 +233,7 @@
             this.newProductTypeComboBox.Name = "newProductTypeComboBox";
             this.newProductTypeComboBox.Size = new System.Drawing.Size(161, 21);
             this.newProductTypeComboBox.TabIndex = 17;
+            this.newProductTypeComboBox.SelectedIndexChanged += new System.EventHandler(this.NewProductTypeComboBox_SelectedIndexChanged);
             // 
             // productTypeLabel
             // 
@@ -222,28 +243,12 @@
             this.productTypeLabel.TabIndex = 16;
             this.productTypeLabel.Values.Text = "Type:";
             // 
-            // newProductTextBox
+            // newProductNameTextBox
             // 
-            this.newProductTextBox.Location = new System.Drawing.Point(133, 12);
-            this.newProductTextBox.Name = "newProductTextBox";
-            this.newProductTextBox.Size = new System.Drawing.Size(161, 23);
-            this.newProductTextBox.TabIndex = 14;
-            // 
-            // newProductUnitLabel
-            // 
-            this.newProductUnitLabel.Location = new System.Drawing.Point(299, 140);
-            this.newProductUnitLabel.Name = "newProductUnitLabel";
-            this.newProductUnitLabel.Size = new System.Drawing.Size(33, 20);
-            this.newProductUnitLabel.TabIndex = 13;
-            this.newProductUnitLabel.Values.Text = "Unit";
-            // 
-            // newProductCurrencyLabel
-            // 
-            this.newProductCurrencyLabel.Location = new System.Drawing.Point(299, 54);
-            this.newProductCurrencyLabel.Name = "newProductCurrencyLabel";
-            this.newProductCurrencyLabel.Size = new System.Drawing.Size(59, 20);
-            this.newProductCurrencyLabel.TabIndex = 12;
-            this.newProductCurrencyLabel.Values.Text = "Currency";
+            this.newProductNameTextBox.Location = new System.Drawing.Point(133, 12);
+            this.newProductNameTextBox.Name = "newProductNameTextBox";
+            this.newProductNameTextBox.Size = new System.Drawing.Size(161, 23);
+            this.newProductNameTextBox.TabIndex = 14;
             // 
             // newProductAmountTextBox
             // 
@@ -290,6 +295,7 @@
             this.addProductButton.Size = new System.Drawing.Size(90, 25);
             this.addProductButton.TabIndex = 3;
             this.addProductButton.Values.Text = "Add";
+            this.addProductButton.Click += new System.EventHandler(this.AddProductButton_Click);
             // 
             // productSupplierLabel
             // 
@@ -307,7 +313,7 @@
             this.productSupplierComboBox.Size = new System.Drawing.Size(161, 21);
             this.productSupplierComboBox.TabIndex = 5;
             // 
-            // addProductForm
+            // AddProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -318,17 +324,19 @@
             this.Controls.Add(this.addProductNavigator);
             this.Controls.Add(this.newProductRadioButton);
             this.Controls.Add(this.existingProductRadioButton);
-            this.Name = "addProductForm";
+            this.Name = "AddProductForm";
             this.Text = "Add Product";
             ((System.ComponentModel.ISupportInitialize)(this.addProductNavigator)).EndInit();
             this.addProductNavigator.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.existingProductPage)).EndInit();
             this.existingProductPage.ResumeLayout(false);
             this.existingProductPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.existingProductWeightUnitComboBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.existingProductComboBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.newProductPage)).EndInit();
             this.newProductPage.ResumeLayout(false);
             this.newProductPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.newProductWeightUnitComboBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.newProductTypeComboBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productSupplierComboBox)).EndInit();
             this.ResumeLayout(false);
@@ -342,8 +350,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton newProductRadioButton;
         private ComponentFactory.Krypton.Navigator.KryptonNavigator addProductNavigator;
         private ComponentFactory.Krypton.Navigator.KryptonPage existingProductPage;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel existingProductUnitLabel;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel existingProductCurrency;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox existingProductAmountTextBox;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox existingProductComboBox;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox existingProductPriceTextBox;
@@ -352,9 +358,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel existingProductPriceLabel;
         private ComponentFactory.Krypton.Navigator.KryptonPage newProductPage;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel productTypeLabel;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox newProductTextBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel newProductUnitLabel;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel newProductCurrencyLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox newProductNameTextBox;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox newProductAmountTextBox;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox newProductPriceTextBox;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel newProductAmountLabel;
@@ -364,5 +368,9 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton addProductButton;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel productSupplierLabel;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox productSupplierComboBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox existingProductWeightUnitComboBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox newProductWeightUnitComboBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel existingProductWeightUnitLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel newProductWeightUnitLabel;
     }
 }

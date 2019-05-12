@@ -24,7 +24,7 @@ namespace POSeidon
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                loginForm loginForm = new loginForm();
+                LoginForm loginForm = new LoginForm();
                 if (loginForm.ShowDialog() == DialogResult.OK)
                 {
                     Application.Run(new MainForm());

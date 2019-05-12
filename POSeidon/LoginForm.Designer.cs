@@ -1,6 +1,6 @@
 ﻿namespace POSeidon
 {
-    partial class loginForm
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.passwordLabel = new System.Windows.Forms.Label();
             this.loginButton = new System.Windows.Forms.Button();
@@ -111,7 +111,7 @@
             this.panel1.Size = new System.Drawing.Size(216, 159);
             this.panel1.TabIndex = 8;
             // 
-            // loginForm
+            // LoginForm
             // 
             this.AcceptButton = this.loginButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -126,7 +126,7 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(905, 632);
             this.MinimumSize = new System.Drawing.Size(773, 598);
-            this.Name = "loginForm";
+            this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "POSeidon";
             this.panel1.ResumeLayout(false);

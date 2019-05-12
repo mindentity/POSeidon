@@ -26,7 +26,7 @@ namespace POSeidon
 
         private void AddProductButton_Click(object sender, EventArgs e)
         {
-            addProductForm addProductForm = new addProductForm();
+            AddProductForm addProductForm = new AddProductForm();
             addProductForm.ShowDialog();
         }
 
