@@ -169,6 +169,15 @@ namespace POSeidon
             }
         }
 
+        public static bool UpdateOrCreateUser(User user)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<User>("user");
+                return col.Upsert(user);
+            }
+        }
+
         public static User GetUserById(int id)
         {
             using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
@@ -218,7 +227,7 @@ namespace POSeidon
             }
         }
 
-        public static bool CreateProduct(string name, double price, bool isCountable, int stockAmount = 0)
+        public static bool CreateProduct(string name, decimal price, bool isCountable, int stockAmount = 0)
         {
             Product product = new Product
             {
@@ -257,6 +266,15 @@ namespace POSeidon
             {
                 var col = db.GetCollection<Product>("product");
                 return col.Update(product);
+            }
+        }
+
+        public static bool UpdateOrCreateProduct(Product product)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Product>("product");
+                return col.Upsert(product);
             }
         }
 
@@ -352,6 +370,15 @@ namespace POSeidon
             {
                 var col = db.GetCollection<Supplier>("supplier");
                 return col.Update(supplier);
+            }
+        }
+
+        public static bool UpdateOrCreateSupplier(Supplier supplier)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Supplier>("supplier");
+                return col.Upsert(supplier);
             }
         }
 
