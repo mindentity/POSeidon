@@ -16,6 +16,7 @@ namespace POSeidon
             homepageDataGridView.AutoGenerateColumns = false;
             homepageDataGridView.DataSource = Controller.Products;
             currencySettingsComboBox.DataSource = Controller.Settings.AvailableCurrencies;
+            weightUnitComboBox.DataSource = Controller.Settings.AvailableWeightUnits;
         }
 
         private void LogoutButton_Click(object sender, EventArgs e)
@@ -60,6 +61,7 @@ namespace POSeidon
                     currencySettingsPutSpaceCheckBox.Checked = true;
                     break;
             }
+            weightUnitComboBox.SelectedItem = Controller.Settings.WeightUnit;
         }
     }
 }

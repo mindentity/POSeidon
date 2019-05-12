@@ -7,7 +7,9 @@ namespace POSeidon
     {
         public int Id { get; set; }
         public NumberFormatInfo NumberFormat { get; set; }
-        public IList<Currency> AvailableCurrencies;
+        public IList<Currency> AvailableCurrencies { get; set; }
+        public IList<WeightUnit> AvailableWeightUnits { get; set; }
+        public WeightUnit WeightUnit { get; set; }
 
         public Settings()
         {
@@ -21,6 +23,13 @@ namespace POSeidon
                 new Currency { Name = "Turkish Lira", Symbol = "₺" },
                 new Currency { Name = "Yen", Symbol = "¥" }
             };
+            AvailableWeightUnits = new List<WeightUnit>()
+            {
+                new WeightUnit { Name = "Kilogram", Symbol = "kg", Ratio = 1000 },
+                new WeightUnit { Name = "Gram", Symbol = "g", Ratio = 1 },
+                new WeightUnit { Name = "Miligram", Symbol = "mg", Ratio = 0.001 }
+            };
+            WeightUnit = AvailableWeightUnits[0];
         }
     }
 }

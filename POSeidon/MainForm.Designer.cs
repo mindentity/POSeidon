@@ -65,6 +65,8 @@
             this.settingsPanel = new System.Windows.Forms.Panel();
             this.settingsWindowPanel = new System.Windows.Forms.Panel();
             this.currencySettingsGroupBox = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.currencySettingsGroupSizeNumericUpDown = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
+            this.currencySettingsGroupSizeLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.currencySettingsGroupSeparatorComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.currencySettingsDecimalSeparatorComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.currencySettingsGroupSeparatorLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -79,8 +81,8 @@
             this.settingsCheckbox1 = new System.Windows.Forms.CheckBox();
             this.saveButton = new System.Windows.Forms.Button();
             this.passwordLabel = new System.Windows.Forms.Label();
-            this.currencySettingsGroupSizeLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.currencySettingsGroupSizeNumericUpDown = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
+            this.weightUnitSettingsLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.weightUnitComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             addProductButton = new System.Windows.Forms.Button();
             this.leftsideMainPanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
@@ -105,6 +107,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.currencySettingsGroupSeparatorComboBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.currencySettingsDecimalSeparatorComboBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.currencySettingsComboBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weightUnitComboBox)).BeginInit();
             this.SuspendLayout();
             // 
             // addProductButton
@@ -508,6 +511,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.settingsPanel.AutoSize = true;
             this.settingsPanel.Controls.Add(this.settingsWindowPanel);
+            this.settingsPanel.Controls.Add(this.saveButton);
+            this.settingsPanel.Controls.Add(this.settingsCheckbox1);
+            this.settingsPanel.Controls.Add(this.settingsCheckbox2);
             this.settingsPanel.Location = new System.Drawing.Point(17, 47);
             this.settingsPanel.Margin = new System.Windows.Forms.Padding(2);
             this.settingsPanel.Name = "settingsPanel";
@@ -522,10 +528,9 @@
             this.settingsWindowPanel.AutoSize = true;
             this.settingsWindowPanel.BackColor = System.Drawing.Color.Transparent;
             this.settingsWindowPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.settingsWindowPanel.Controls.Add(this.weightUnitComboBox);
+            this.settingsWindowPanel.Controls.Add(this.weightUnitSettingsLabel);
             this.settingsWindowPanel.Controls.Add(this.currencySettingsGroupBox);
-            this.settingsWindowPanel.Controls.Add(this.settingsCheckbox2);
-            this.settingsWindowPanel.Controls.Add(this.settingsCheckbox1);
-            this.settingsWindowPanel.Controls.Add(this.saveButton);
             this.settingsWindowPanel.Location = new System.Drawing.Point(214, 15);
             this.settingsWindowPanel.Margin = new System.Windows.Forms.Padding(2);
             this.settingsWindowPanel.Name = "settingsWindowPanel";
@@ -555,6 +560,22 @@
             this.currencySettingsGroupBox.Size = new System.Drawing.Size(343, 270);
             this.currencySettingsGroupBox.TabIndex = 16;
             this.currencySettingsGroupBox.Values.Heading = "Currency Settings";
+            // 
+            // currencySettingsGroupSizeNumericUpDown
+            // 
+            this.currencySettingsGroupSizeNumericUpDown.DecimalPlaces = 99;
+            this.currencySettingsGroupSizeNumericUpDown.Location = new System.Drawing.Point(131, 193);
+            this.currencySettingsGroupSizeNumericUpDown.Name = "currencySettingsGroupSizeNumericUpDown";
+            this.currencySettingsGroupSizeNumericUpDown.Size = new System.Drawing.Size(120, 22);
+            this.currencySettingsGroupSizeNumericUpDown.TabIndex = 23;
+            // 
+            // currencySettingsGroupSizeLabel
+            // 
+            this.currencySettingsGroupSizeLabel.Location = new System.Drawing.Point(19, 195);
+            this.currencySettingsGroupSizeLabel.Name = "currencySettingsGroupSizeLabel";
+            this.currencySettingsGroupSizeLabel.Size = new System.Drawing.Size(72, 20);
+            this.currencySettingsGroupSizeLabel.TabIndex = 22;
+            this.currencySettingsGroupSizeLabel.Values.Text = "Group Size:";
             // 
             // currencySettingsGroupSeparatorComboBox
             // 
@@ -649,7 +670,7 @@
             // settingsCheckbox2
             // 
             this.settingsCheckbox2.AutoSize = true;
-            this.settingsCheckbox2.Location = new System.Drawing.Point(57, 342);
+            this.settingsCheckbox2.Location = new System.Drawing.Point(2, 356);
             this.settingsCheckbox2.Margin = new System.Windows.Forms.Padding(2);
             this.settingsCheckbox2.Name = "settingsCheckbox2";
             this.settingsCheckbox2.Size = new System.Drawing.Size(226, 23);
@@ -660,7 +681,7 @@
             // settingsCheckbox1
             // 
             this.settingsCheckbox1.AutoSize = true;
-            this.settingsCheckbox1.Location = new System.Drawing.Point(57, 302);
+            this.settingsCheckbox1.Location = new System.Drawing.Point(0, 405);
             this.settingsCheckbox1.Margin = new System.Windows.Forms.Padding(2);
             this.settingsCheckbox1.Name = "settingsCheckbox1";
             this.settingsCheckbox1.Size = new System.Drawing.Size(250, 23);
@@ -674,7 +695,7 @@
             this.saveButton.FlatAppearance.BorderSize = 0;
             this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.saveButton.Location = new System.Drawing.Point(137, 388);
+            this.saveButton.Location = new System.Drawing.Point(668, 405);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(100, 37);
             this.saveButton.TabIndex = 4;
@@ -693,21 +714,22 @@
             this.passwordLabel.Text = "SETTINGS";
             this.passwordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // currencySettingsGroupSizeLabel
+            // weightUnitSettingsLabel
             // 
-            this.currencySettingsGroupSizeLabel.Location = new System.Drawing.Point(19, 195);
-            this.currencySettingsGroupSizeLabel.Name = "currencySettingsGroupSizeLabel";
-            this.currencySettingsGroupSizeLabel.Size = new System.Drawing.Size(72, 20);
-            this.currencySettingsGroupSizeLabel.TabIndex = 22;
-            this.currencySettingsGroupSizeLabel.Values.Text = "Group Size:";
+            this.weightUnitSettingsLabel.Location = new System.Drawing.Point(37, 320);
+            this.weightUnitSettingsLabel.Name = "weightUnitSettingsLabel";
+            this.weightUnitSettingsLabel.Size = new System.Drawing.Size(79, 20);
+            this.weightUnitSettingsLabel.TabIndex = 17;
+            this.weightUnitSettingsLabel.Values.Text = "Weight Unit:";
             // 
-            // currencySettingsGroupSizeNumericUpDown
+            // weightUnitComboBox
             // 
-            this.currencySettingsGroupSizeNumericUpDown.DecimalPlaces = 99;
-            this.currencySettingsGroupSizeNumericUpDown.Location = new System.Drawing.Point(131, 193);
-            this.currencySettingsGroupSizeNumericUpDown.Name = "currencySettingsGroupSizeNumericUpDown";
-            this.currencySettingsGroupSizeNumericUpDown.Size = new System.Drawing.Size(120, 22);
-            this.currencySettingsGroupSizeNumericUpDown.TabIndex = 23;
+            this.weightUnitComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.weightUnitComboBox.DropDownWidth = 121;
+            this.weightUnitComboBox.Location = new System.Drawing.Point(149, 319);
+            this.weightUnitComboBox.Name = "weightUnitComboBox";
+            this.weightUnitComboBox.Size = new System.Drawing.Size(121, 21);
+            this.weightUnitComboBox.TabIndex = 18;
             // 
             // MainForm
             // 
@@ -760,6 +782,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.currencySettingsGroupSeparatorComboBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.currencySettingsDecimalSeparatorComboBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.currencySettingsComboBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weightUnitComboBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -811,5 +834,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel currencySettingsDecimalSeparatorLabel;
         private ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown currencySettingsGroupSizeNumericUpDown;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel currencySettingsGroupSizeLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox weightUnitComboBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel weightUnitSettingsLabel;
     }
 }
