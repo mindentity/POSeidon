@@ -8,6 +8,7 @@ using LiteDB;
 using IniParser;
 using IniParser.Model;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace POSeidon
 {
@@ -35,6 +36,19 @@ namespace POSeidon
             }
         }
 
+        private static void CreateSettings()
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Settings>("settings");
+                var settings = new Settings
+                {
+                    NumberFormat = Thread.CurrentThread.CurrentCulture.NumberFormat
+                };
+                col.Insert(settings);
+            }
+        }
+
         private static void InitDB()
         {
             var adminUser = new User
@@ -46,6 +60,17 @@ namespace POSeidon
                 IsAdmin = true
             };
             CreateUser(adminUser);
+            CreateSettings();
+        }
+
+        public static Settings GetSettings()
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Settings>("settings");
+                var settings = col.FindById(1);
+                return settings;
+            }
         }
 
         public static void Auth(string username, string password)
@@ -107,8 +132,7 @@ namespace POSeidon
             using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
-                int deletedRows = col.Delete(Query.EQ("_id", id));
-                return deletedRows > 0;
+                return col.Delete(id);
             }
         }
 
@@ -153,7 +177,7 @@ namespace POSeidon
             using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<User>("user");
-                var user = col.FindOne(Query.EQ("_id", id));
+                var user = col.FindById(id);
                 return user;
             }
         }
@@ -214,7 +238,7 @@ namespace POSeidon
             using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<Product>("product");
-                var product = col.FindOne(Query.EQ("_id", id));
+                var product = col.FindById(id);
                 return product;
             }
         }
@@ -249,8 +273,7 @@ namespace POSeidon
             using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<Product>("product");
-                int deletedRows = col.Delete(Query.EQ("_id", id));
-                return deletedRows > 0;
+                return col.Delete(id);
             }
         }
 
@@ -310,7 +333,7 @@ namespace POSeidon
             using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<Supplier>("supplier");
-                var supplier = col.FindOne(Query.EQ("_id", id));
+                var supplier = col.FindById(id);
                 return supplier;
             }
         }
@@ -345,8 +368,7 @@ namespace POSeidon
             using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<Supplier>("supplier");
-                int deletedRows = col.Delete(Query.EQ("_id", id));
-                return deletedRows > 0;
+                return col.Delete(id);
             }
         }
 
