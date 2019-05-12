@@ -521,5 +521,46 @@ namespace POSeidon
                 return customer;
             }
         }
+        
+        public static bool CreateLog(Log log)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Log>("log");
+                try
+                {
+                    col.Insert(log);
+                    return true;
+                }
+                catch
+                {
+                    return false;
+                }
+                
+            }
+        }
+
+        public static bool DeleteLog(Log log)
+        {
+            return DeleteLogById(log.Id);
+        }
+
+        public static bool DeleteLogById(int id)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Log>("log");
+                return col.Delete(id);
+            }
+        }
+
+        public static Log GetLogById(int id)
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Log>("log");
+                return col.FindById(id);
+            }
+        }
     }
 }
