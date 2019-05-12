@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 
 namespace POSeidon
 {
@@ -25,11 +26,11 @@ namespace POSeidon
             };
             AvailableWeightUnits = new List<WeightUnit>()
             {
-                new WeightUnit { Name = "Kilogram", Symbol = "kg", Ratio = 1000 },
-                new WeightUnit { Name = "Gram", Symbol = "g", Ratio = 1 },
-                new WeightUnit { Name = "Miligram", Symbol = "mg", Ratio = 0.001 }
+                new WeightUnit { Name = "Kilogram", Symbol = "kg", Ratio = 1 },
+                new WeightUnit { Name = "Gram", Symbol = "g", Ratio = 1e-3 },
+                new WeightUnit { Name = "Miligram", Symbol = "mg", Ratio = 1e-6 }
             };
-            WeightUnit = AvailableWeightUnits[0];
+            WeightUnit = AvailableWeightUnits.First();
         }
     }
 }
