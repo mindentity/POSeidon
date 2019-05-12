@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace POSeidon
@@ -30,7 +27,7 @@ namespace POSeidon
                 loginForm loginForm = new loginForm();
                 if (loginForm.ShowDialog() == DialogResult.OK)
                 {
-                    Application.Run(new mainForm());
+                    Application.Run(new MainForm());
                 }
                 mutex.ReleaseMutex();
             } else
