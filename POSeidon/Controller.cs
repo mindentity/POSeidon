@@ -1,20 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 
 namespace POSeidon
 {
     public static class Controller
     {
-        public static IList<Product> Products { get; set; }
-        public static IList<Supplier> Suppliers { get; set; }
+        public static BindingList<Product> Products { get; set; }
+        public static BindingList<Supplier> Suppliers { get; set; }
         public static Settings Settings { get; set; }
         public static ShoppingCart ShoppingCart { get; set; }
 
         static Controller()
         {
-            Products = DBUtils.GetAllProducts().ToList();
-            Suppliers = DBUtils.GetAllSuppliers().ToList();
+            Products = new BindingList<Product>(DBUtils.GetAllProducts().ToList());
+            Suppliers = new BindingList<Supplier>(DBUtils.GetAllSuppliers().ToList());
             Settings = DBUtils.GetSettings();
             ShoppingCart = new ShoppingCart
             {

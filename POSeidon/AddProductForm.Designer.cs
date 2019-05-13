@@ -51,9 +51,12 @@
             this.newProductAmountLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.newProductNameLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.newProductPriceLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.addProductButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.productSupplierLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.productSupplierComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.newProductSupplierLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.newProductSupplierComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.addExistingProductButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.existingProductSupplierComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.existingProductSupplierLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.addNewProductButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.addProductNavigator)).BeginInit();
             this.addProductNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.existingProductPage)).BeginInit();
@@ -64,7 +67,8 @@
             this.newProductPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.newProductWeightUnitComboBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newProductTypeComboBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productSupplierComboBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newProductSupplierComboBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.existingProductSupplierComboBox)).BeginInit();
             this.SuspendLayout();
             // 
             // existingProductRadioButton
@@ -94,12 +98,15 @@
             this.existingProductPage,
             this.newProductPage});
             this.addProductNavigator.SelectedIndex = 0;
-            this.addProductNavigator.Size = new System.Drawing.Size(380, 246);
+            this.addProductNavigator.Size = new System.Drawing.Size(380, 319);
             this.addProductNavigator.TabIndex = 2;
             // 
             // existingProductPage
             // 
             this.existingProductPage.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
+            this.existingProductPage.Controls.Add(this.existingProductSupplierComboBox);
+            this.existingProductPage.Controls.Add(this.addExistingProductButton);
+            this.existingProductPage.Controls.Add(this.existingProductSupplierLabel);
             this.existingProductPage.Controls.Add(this.existingProductWeightUnitLabel);
             this.existingProductPage.Controls.Add(this.existingProductWeightUnitComboBox);
             this.existingProductPage.Controls.Add(this.existingProductAmountTextBox);
@@ -112,7 +119,7 @@
             this.existingProductPage.LastVisibleSet = true;
             this.existingProductPage.MinimumSize = new System.Drawing.Size(50, 50);
             this.existingProductPage.Name = "existingProductPage";
-            this.existingProductPage.Size = new System.Drawing.Size(380, 246);
+            this.existingProductPage.Size = new System.Drawing.Size(380, 319);
             this.existingProductPage.Text = "Existing Product";
             this.existingProductPage.ToolTipTitle = "Page ToolTip";
             this.existingProductPage.UniqueName = "c78de74bec554c85b82c5e889b4bd26f";
@@ -185,7 +192,10 @@
             // newProductPage
             // 
             this.newProductPage.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
+            this.newProductPage.Controls.Add(this.addNewProductButton);
+            this.newProductPage.Controls.Add(this.newProductSupplierComboBox);
             this.newProductPage.Controls.Add(this.newProductWeightUnitLabel);
+            this.newProductPage.Controls.Add(this.newProductSupplierLabel);
             this.newProductPage.Controls.Add(this.newProductWeightUnitComboBox);
             this.newProductPage.Controls.Add(this.newProductTypeComboBox);
             this.newProductPage.Controls.Add(this.productTypeLabel);
@@ -199,7 +209,7 @@
             this.newProductPage.LastVisibleSet = true;
             this.newProductPage.MinimumSize = new System.Drawing.Size(50, 50);
             this.newProductPage.Name = "newProductPage";
-            this.newProductPage.Size = new System.Drawing.Size(378, 219);
+            this.newProductPage.Size = new System.Drawing.Size(378, 292);
             this.newProductPage.Text = "New Product";
             this.newProductPage.ToolTipTitle = "Page ToolTip";
             this.newProductPage.UniqueName = "383dfda8b9b44f2aa16c37bb0fa934c8";
@@ -288,39 +298,61 @@
             this.newProductPriceLabel.TabIndex = 7;
             this.newProductPriceLabel.Values.Text = "Price:";
             // 
-            // addProductButton
+            // newProductSupplierLabel
             // 
-            this.addProductButton.Location = new System.Drawing.Point(387, 380);
-            this.addProductButton.Name = "addProductButton";
-            this.addProductButton.Size = new System.Drawing.Size(90, 25);
-            this.addProductButton.TabIndex = 3;
-            this.addProductButton.Values.Text = "Add";
-            this.addProductButton.Click += new System.EventHandler(this.AddProductButton_Click);
+            this.newProductSupplierLabel.Location = new System.Drawing.Point(23, 178);
+            this.newProductSupplierLabel.Name = "newProductSupplierLabel";
+            this.newProductSupplierLabel.Size = new System.Drawing.Size(58, 20);
+            this.newProductSupplierLabel.TabIndex = 4;
+            this.newProductSupplierLabel.Values.Text = "Supplier:";
             // 
-            // productSupplierLabel
+            // newProductSupplierComboBox
             // 
-            this.productSupplierLabel.Location = new System.Drawing.Point(111, 349);
-            this.productSupplierLabel.Name = "productSupplierLabel";
-            this.productSupplierLabel.Size = new System.Drawing.Size(58, 20);
-            this.productSupplierLabel.TabIndex = 4;
-            this.productSupplierLabel.Values.Text = "Supplier:";
+            this.newProductSupplierComboBox.DropDownWidth = 161;
+            this.newProductSupplierComboBox.Location = new System.Drawing.Point(133, 176);
+            this.newProductSupplierComboBox.Name = "newProductSupplierComboBox";
+            this.newProductSupplierComboBox.Size = new System.Drawing.Size(161, 21);
+            this.newProductSupplierComboBox.TabIndex = 5;
             // 
-            // productSupplierComboBox
+            // addExistingProductButton
             // 
-            this.productSupplierComboBox.DropDownWidth = 161;
-            this.productSupplierComboBox.Location = new System.Drawing.Point(221, 347);
-            this.productSupplierComboBox.Name = "productSupplierComboBox";
-            this.productSupplierComboBox.Size = new System.Drawing.Size(161, 21);
-            this.productSupplierComboBox.TabIndex = 5;
+            this.addExistingProductButton.Location = new System.Drawing.Point(272, 208);
+            this.addExistingProductButton.Name = "addExistingProductButton";
+            this.addExistingProductButton.Size = new System.Drawing.Size(90, 25);
+            this.addExistingProductButton.TabIndex = 6;
+            this.addExistingProductButton.Values.Text = "Add";
+            this.addExistingProductButton.Click += new System.EventHandler(this.AddExistingProductButton_Click);
+            // 
+            // existingProductSupplierComboBox
+            // 
+            this.existingProductSupplierComboBox.DropDownWidth = 161;
+            this.existingProductSupplierComboBox.Location = new System.Drawing.Point(133, 150);
+            this.existingProductSupplierComboBox.Name = "existingProductSupplierComboBox";
+            this.existingProductSupplierComboBox.Size = new System.Drawing.Size(161, 21);
+            this.existingProductSupplierComboBox.TabIndex = 7;
+            // 
+            // existingProductSupplierLabel
+            // 
+            this.existingProductSupplierLabel.Location = new System.Drawing.Point(23, 152);
+            this.existingProductSupplierLabel.Name = "existingProductSupplierLabel";
+            this.existingProductSupplierLabel.Size = new System.Drawing.Size(58, 20);
+            this.existingProductSupplierLabel.TabIndex = 6;
+            this.existingProductSupplierLabel.Values.Text = "Supplier:";
+            // 
+            // addNewProductButton
+            // 
+            this.addNewProductButton.Location = new System.Drawing.Point(272, 239);
+            this.addNewProductButton.Name = "addNewProductButton";
+            this.addNewProductButton.Size = new System.Drawing.Size(90, 25);
+            this.addNewProductButton.TabIndex = 20;
+            this.addNewProductButton.Values.Text = "Add";
+            this.addNewProductButton.Click += new System.EventHandler(this.AddNewProductButton_Click);
             // 
             // AddProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 417);
-            this.Controls.Add(this.productSupplierComboBox);
-            this.Controls.Add(this.productSupplierLabel);
-            this.Controls.Add(this.addProductButton);
             this.Controls.Add(this.addProductNavigator);
             this.Controls.Add(this.newProductRadioButton);
             this.Controls.Add(this.existingProductRadioButton);
@@ -338,7 +370,8 @@
             this.newProductPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.newProductWeightUnitComboBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.newProductTypeComboBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productSupplierComboBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newProductSupplierComboBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.existingProductSupplierComboBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -365,12 +398,15 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel newProductNameLabel;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel newProductPriceLabel;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox newProductTypeComboBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton addProductButton;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel productSupplierLabel;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox productSupplierComboBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel newProductSupplierLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox newProductSupplierComboBox;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox existingProductWeightUnitComboBox;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox newProductWeightUnitComboBox;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel existingProductWeightUnitLabel;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel newProductWeightUnitLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox existingProductSupplierComboBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton addExistingProductButton;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel existingProductSupplierLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton addNewProductButton;
     }
 }

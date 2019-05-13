@@ -8,8 +8,6 @@ namespace POSeidon
 {
     public partial class MainForm : Form
     {
-        private IEnumerable<Product> Products { get; set; }
-
         public MainForm()
         {
             InitializeComponent();

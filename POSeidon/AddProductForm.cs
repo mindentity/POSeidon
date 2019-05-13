@@ -13,8 +13,10 @@ namespace POSeidon
             newProductTypeComboBox.SelectedIndex = 0;
             existingProductComboBox.DataSource = Controller.Products;
             existingProductComboBox.DisplayMember = "Name";
-            productSupplierComboBox.DataSource = Controller.Suppliers;
-            productSupplierComboBox.DisplayMember = "Name";
+            newProductSupplierComboBox.DataSource = Controller.Suppliers;
+            newProductSupplierComboBox.DisplayMember = "Name";
+            existingProductSupplierComboBox.DataSource = Controller.Suppliers;
+            existingProductSupplierComboBox.DisplayMember = "Name";
             existingProductWeightUnitComboBox.DataSource = Controller.Settings.AvailableWeightUnits;
             existingProductWeightUnitComboBox.DisplayMember = "Symbol";
             newProductWeightUnitComboBox.DataSource = Controller.Settings.AvailableWeightUnits;
@@ -51,43 +53,50 @@ namespace POSeidon
             }
         }
 
-        private void AddProductButton_Click(object sender, EventArgs e)
+        private void AddExistingProductButton_Click(object sender, EventArgs e)
         {
-            Product product;
-            double amount;
-            if (existingProductRadioButton.Checked)
+            var product = existingProductComboBox.SelectedItem as Product;
+            var price = Decimal.Parse(existingProductPriceTextBox.Text, NumberStyles.Currency);
+            var amount = Double.Parse(existingProductAmountTextBox.Text);
+            if (!product.IsCountable)
             {
-                product = existingProductComboBox.SelectedItem as Product;
-                var price = Decimal.Parse(existingProductPriceTextBox.Text, NumberStyles.Currency);
-                amount = Double.Parse(existingProductAmountTextBox.Text);
-                if (!product.IsCountable)
-                {
-                    var weightUnit = existingProductWeightUnitComboBox.SelectedItem as WeightUnit;
-                    amount *= weightUnit.Ratio;
-                }
-                product.Price = price;
+                var weightUnit = existingProductWeightUnitComboBox.SelectedItem as WeightUnit;
+                amount *= weightUnit.Ratio;
+            }
+            product.Price = price;
+            var supplier = newProductSupplierComboBox.SelectedItem as Supplier;
+            if (Controller.AddProduct(product, supplier, amount))
+            {
+                Controller.Products.ResetBindings();
+                MessageBox.Show("Product is added successfully!", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                var name = newProductNameTextBox.Text;
-                var price = Decimal.Parse(newProductPriceTextBox.Text, NumberStyles.Currency);
-                amount = Double.Parse(newProductAmountTextBox.Text);
-                var isCountable = newProductTypeComboBox.SelectedIndex == 0;
-                if (!isCountable)
-                {
-                    var weightUnit = newProductWeightUnitComboBox.SelectedItem as WeightUnit;
-                    amount *= weightUnit.Ratio;
-                }
-                product = new Product
-                {
-                    Name = name,
-                    Price = price,
-                    IsCountable = isCountable,
-                };
+                MessageBox.Show("Failed to add product!", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            var supplier = productSupplierComboBox.SelectedItem as Supplier;
+        }
+
+        private void AddNewProductButton_Click(object sender, EventArgs e)
+        {
+            var name = newProductNameTextBox.Text;
+            var price = Decimal.Parse(newProductPriceTextBox.Text, NumberStyles.Currency);
+            var amount = Double.Parse(newProductAmountTextBox.Text);
+            var isCountable = newProductTypeComboBox.SelectedIndex == 0;
+            if (!isCountable)
+            {
+                var weightUnit = newProductWeightUnitComboBox.SelectedItem as WeightUnit;
+                amount *= weightUnit.Ratio;
+            }
+            var product = new Product
+            {
+                Name = name,
+                Price = price,
+                IsCountable = isCountable,
+            };
+            var supplier = newProductSupplierComboBox.SelectedItem as Supplier;
             if (Controller.AddProduct(product, supplier, amount))
             {
+                Controller.Products.Add(product);
                 MessageBox.Show("Product is added successfully!", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
