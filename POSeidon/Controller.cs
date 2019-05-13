@@ -7,6 +7,8 @@ namespace POSeidon
 {
     public static class Controller
     {
+        public static BindingList<CustomerLog> CustomerLogs { get; set; }
+        public static BindingList<SupplierLog> SupplierLogs { get; set; }
         public static BindingList<Product> Products { get; set; }
         public static BindingList<Supplier> Suppliers { get; set; }
         public static Settings Settings { get; set; }
@@ -14,6 +16,8 @@ namespace POSeidon
 
         static Controller()
         {
+            CustomerLogs = new BindingList<CustomerLog>(DBUtils.GetAllCustomerLogs().ToList());
+            SupplierLogs = new BindingList<SupplierLog>(DBUtils.GetAllSupplierLogs().ToList());
             Products = new BindingList<Product>(DBUtils.GetAllProducts().ToList());
             Suppliers = new BindingList<Supplier>(DBUtils.GetAllSuppliers().ToList());
             Settings = DBUtils.GetSettings();

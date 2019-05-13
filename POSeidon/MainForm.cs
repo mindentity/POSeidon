@@ -13,6 +13,8 @@ namespace POSeidon
             InitializeComponent();
             homepageDataGridView.AutoGenerateColumns = false;
             homepageDataGridView.DataSource = Controller.Products;
+            salesHistoryDataGridView.AutoGenerateColumns = true;
+            salesHistoryDataGridView.DataSource = Controller.SupplierLogs;
             currencySettingsComboBox.DataSource = Controller.Settings.AvailableCurrencies;
             weightUnitComboBox.DataSource = Controller.Settings.AvailableWeightUnits;
         }

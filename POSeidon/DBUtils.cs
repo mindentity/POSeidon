@@ -570,5 +570,25 @@ namespace POSeidon
                 return col.FindById(id);
             }
         }
+
+        public static IEnumerable<CustomerLog> GetAllCustomerLogs()
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<CustomerLog>("log");
+                var customerLogs = col.Find(x => x.Type == Log.LogType.Customer);
+                return customerLogs;
+            }
+        }
+
+        public static IEnumerable<SupplierLog> GetAllSupplierLogs()
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<SupplierLog>("log");
+                var supplierLogs = col.Find(x => x.Type == Log.LogType.Supplier);
+                return supplierLogs;
+            }
+        }
     }
 }
