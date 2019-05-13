@@ -118,5 +118,6 @@ namespace POSeidon
                 newProductWeightUnitComboBox.Show();
             }
         }
+
     }
 }
