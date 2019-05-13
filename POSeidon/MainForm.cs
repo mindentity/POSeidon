@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
@@ -62,6 +63,19 @@ namespace POSeidon
                     break;
             }
             weightUnitComboBox.SelectedItem = Controller.Settings.WeightUnit;
+        }
+
+        private void HomepageDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var gridView = sender as DataGridView;
+
+            if (gridView.Columns[e.ColumnIndex] is DataGridViewImageColumn && e.RowIndex >= 0)
+            {
+                BindingList<Product> products = gridView.DataSource as BindingList<Product>;
+                Product product = products.ElementAt(e.RowIndex);
+                Controller.ShoppingCart.AddProduct(product, 1);
+                MessageBox.Show("Product has been added to the shopping cart.", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

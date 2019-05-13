@@ -13,12 +13,22 @@ namespace POSeidon
 
         public void AddProduct(Product product, double amount)
         {
-            ShoppingCartItem item = new ShoppingCartItem
+            ShoppingCartItem item = (from x in Items
+                                     where x.Product.Id == product.Id
+                                     select x).FirstOrDefault();
+            if (item == null)
             {
-                Product = product,
-                Amount = amount
-            };
-            AddItem(item);
+                item = new ShoppingCartItem
+                {
+                    Product = product,
+                    Amount = amount
+                };
+                AddItem(item);
+            }
+            else
+            {
+                item.Amount += amount;
+            }
         }
 
         public void AddItem(ShoppingCartItem item)
