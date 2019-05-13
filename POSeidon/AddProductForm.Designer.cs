@@ -113,6 +113,7 @@
             this.addProductNavigator.Location = new System.Drawing.Point(6, 4);
             this.addProductNavigator.Margin = new System.Windows.Forms.Padding(4);
             this.addProductNavigator.Name = "addProductNavigator";
+            this.addProductNavigator.NavigatorMode = ComponentFactory.Krypton.Navigator.NavigatorMode.Panel;
             this.addProductNavigator.Pages.AddRange(new ComponentFactory.Krypton.Navigator.KryptonPage[] {
             this.existingProductPage,
             this.newProductPage});
@@ -130,7 +131,7 @@
             this.existingProductPage.Margin = new System.Windows.Forms.Padding(4);
             this.existingProductPage.MinimumSize = new System.Drawing.Size(67, 66);
             this.existingProductPage.Name = "existingProductPage";
-            this.existingProductPage.Size = new System.Drawing.Size(495, 439);
+            this.existingProductPage.Size = new System.Drawing.Size(497, 466);
             this.existingProductPage.StateCommon.Page.Color1 = System.Drawing.Color.WhiteSmoke;
             this.existingProductPage.Text = "Existing Product";
             this.existingProductPage.ToolTipTitle = "Page ToolTip";
@@ -146,7 +147,7 @@
             this.existingProductSupplierInfoGroupBox.Location = new System.Drawing.Point(-3, 217);
             this.existingProductSupplierInfoGroupBox.Name = "existingProductSupplierInfoGroupBox";
             this.existingProductSupplierInfoGroupBox.Size = new System.Drawing.Size(495, 246);
-            this.existingProductSupplierInfoGroupBox.TabIndex = 5;
+            this.existingProductSupplierInfoGroupBox.TabIndex = 1;
             this.existingProductSupplierInfoGroupBox.TabStop = false;
             this.existingProductSupplierInfoGroupBox.Text = "Supplier Info";
             // 
@@ -160,7 +161,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.existingProductPurchasePriceTextBox.StateCommon.Border.Rounding = 5;
-            this.existingProductPurchasePriceTextBox.TabIndex = 27;
+            this.existingProductPurchasePriceTextBox.TabIndex = 1;
             // 
             // existingProductPurchasePriceAddProductLabel
             // 
@@ -192,7 +193,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.existingProductSupplierComboBox.StateCommon.ComboBox.Border.Rounding = 5;
-            this.existingProductSupplierComboBox.TabIndex = 25;
+            this.existingProductSupplierComboBox.TabIndex = 0;
             // 
             // addExistingProductButton
             // 
@@ -204,7 +205,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.addExistingProductButton.StateCommon.Border.Rounding = 5;
-            this.addExistingProductButton.TabIndex = 23;
+            this.addExistingProductButton.TabIndex = 2;
             this.addExistingProductButton.Values.Text = "Add";
             this.addExistingProductButton.Click += new System.EventHandler(this.AddExistingProductButton_Click);
             // 
@@ -221,7 +222,7 @@
             this.existingProductInfoGroupBox.Location = new System.Drawing.Point(-3, 0);
             this.existingProductInfoGroupBox.Name = "existingProductInfoGroupBox";
             this.existingProductInfoGroupBox.Size = new System.Drawing.Size(495, 206);
-            this.existingProductInfoGroupBox.TabIndex = 5;
+            this.existingProductInfoGroupBox.TabIndex = 0;
             this.existingProductInfoGroupBox.TabStop = false;
             this.existingProductInfoGroupBox.Text = "Product Info";
             // 
@@ -343,7 +344,7 @@
             this.newProductSupplierInfoGroupBox.Location = new System.Drawing.Point(-3, 212);
             this.newProductSupplierInfoGroupBox.Name = "newProductSupplierInfoGroupBox";
             this.newProductSupplierInfoGroupBox.Size = new System.Drawing.Size(498, 251);
-            this.newProductSupplierInfoGroupBox.TabIndex = 5;
+            this.newProductSupplierInfoGroupBox.TabIndex = 1;
             this.newProductSupplierInfoGroupBox.TabStop = false;
             this.newProductSupplierInfoGroupBox.Text = "Supplier Info";
             // 
@@ -357,7 +358,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.newProductPurchasePriceTextBox.StateCommon.Border.Rounding = 5;
-            this.newProductPurchasePriceTextBox.TabIndex = 28;
+            this.newProductPurchasePriceTextBox.TabIndex = 1;
             // 
             // newProductPurchasePriceLabel
             // 
@@ -389,7 +390,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.newProductSupplierComboBox.StateCommon.ComboBox.Border.Rounding = 5;
-            this.newProductSupplierComboBox.TabIndex = 5;
+            this.newProductSupplierComboBox.TabIndex = 0;
             // 
             // addNewProductButton
             // 
@@ -401,7 +402,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.addNewProductButton.StateCommon.Border.Rounding = 5;
-            this.addNewProductButton.TabIndex = 20;
+            this.addNewProductButton.TabIndex = 2;
             this.addNewProductButton.Values.Text = "Add";
             this.addNewProductButton.Click += new System.EventHandler(this.AddNewProductButton_Click);
             // 
@@ -420,7 +421,7 @@
             this.newProductProductInfoGroupBox.Location = new System.Drawing.Point(-3, 0);
             this.newProductProductInfoGroupBox.Name = "newProductProductInfoGroupBox";
             this.newProductProductInfoGroupBox.Size = new System.Drawing.Size(495, 206);
-            this.newProductProductInfoGroupBox.TabIndex = 5;
+            this.newProductProductInfoGroupBox.TabIndex = 0;
             this.newProductProductInfoGroupBox.TabStop = false;
             this.newProductProductInfoGroupBox.Text = "Product Info";
             // 
@@ -452,7 +453,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.newProductAmountTextBox.StateCommon.Border.Rounding = 5;
-            this.newProductAmountTextBox.TabIndex = 11;
+            this.newProductAmountTextBox.TabIndex = 3;
             // 
             // newProductWeightUnitLabel
             // 
@@ -484,7 +485,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.newProductPriceTextBox.StateCommon.Border.Rounding = 5;
-            this.newProductPriceTextBox.TabIndex = 10;
+            this.newProductPriceTextBox.TabIndex = 1;
             // 
             // newProductNameTextBox
             // 
@@ -496,7 +497,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.newProductNameTextBox.StateCommon.Border.Rounding = 5;
-            this.newProductNameTextBox.TabIndex = 14;
+            this.newProductNameTextBox.TabIndex = 0;
             // 
             // newProductWeightUnitComboBox
             // 
@@ -537,7 +538,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.newProductTypeComboBox.StateCommon.ComboBox.Border.Rounding = 5;
-            this.newProductTypeComboBox.TabIndex = 17;
+            this.newProductTypeComboBox.TabIndex = 2;
             this.newProductTypeComboBox.SelectedIndexChanged += new System.EventHandler(this.NewProductTypeComboBox_SelectedIndexChanged);
             // 
             // addProductTypePanel
@@ -552,7 +553,7 @@
             this.addProductTypePanel.Location = new System.Drawing.Point(32, 37);
             this.addProductTypePanel.Name = "addProductTypePanel";
             this.addProductTypePanel.Size = new System.Drawing.Size(200, 103);
-            this.addProductTypePanel.TabIndex = 3;
+            this.addProductTypePanel.TabIndex = 0;
             // 
             // existingProductAddProductPanel
             // 

@@ -10,6 +10,7 @@ namespace POSeidon
         public addProductForm()
         {
             InitializeComponent();
+            existingProductComboBox.Focus();
             existingProductWeightUnitComboBox.DataSource = Controller.Settings.AvailableWeightUnits;
             existingProductWeightUnitComboBox.DisplayMember = "Symbol";
             newProductWeightUnitComboBox.DataSource = Controller.Settings.AvailableWeightUnits;
@@ -29,10 +30,12 @@ namespace POSeidon
             if (rb.Checked)
             {
                 addProductNavigator.SelectedIndex = 0;
+                existingProductComboBox.Focus();
             }
             else
             {
                 addProductNavigator.SelectedIndex = 1;
+                newProductNameTextBox.Focus();
             }
         }
 
