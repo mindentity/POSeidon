@@ -63,6 +63,16 @@ namespace POSeidon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_to_cart_64px {
+            get {
+                object obj = ResourceManager.GetObject("add_to_cart_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap nature_background {
             get {
                 object obj = ResourceManager.GetObject("nature-background", resourceCulture);
@@ -76,6 +86,16 @@ namespace POSeidon.Properties {
         internal static System.Drawing.Bitmap nature_background_2 {
             get {
                 object obj = ResourceManager.GetObject("nature-background-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap order {
+            get {
+                object obj = ResourceManager.GetObject("order", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

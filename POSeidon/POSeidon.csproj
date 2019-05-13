@@ -161,5 +161,14 @@
   <ItemGroup>
     <None Include="Resources\rsz_1logout_50x60.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-to-cart-128px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-to-cart-64px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
