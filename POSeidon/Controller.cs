@@ -43,5 +43,15 @@ namespace POSeidon
             }
             return false;
         }
+
+        public static bool DeleteProduct(Product product)
+        {
+            ShoppingCartItem item = ShoppingCart.Items.FirstOrDefault(x => x.Product.Id == product.Id);
+            if (item != null)
+            {
+                ShoppingCart.Items.Remove(item);
+            }
+            return DBUtils.DeleteProduct(product);
+        }
     }
 }
