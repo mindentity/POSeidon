@@ -9,12 +9,18 @@ namespace POSeidon
         public static IList<Product> Products { get; set; }
         public static IList<Supplier> Suppliers { get; set; }
         public static Settings Settings { get; set; }
+        public static ShoppingCart ShoppingCart { get; set; }
 
         static Controller()
         {
             Products = DBUtils.GetAllProducts().ToList();
             Suppliers = DBUtils.GetAllSuppliers().ToList();
             Settings = DBUtils.GetSettings();
+            ShoppingCart = new ShoppingCart
+            {
+                Items = new List<ShoppingCartItem>(),
+                TotalPrice = 0.0M
+            };
         }
 
         public static bool AddProduct(Product product, Supplier supplier, double amount)

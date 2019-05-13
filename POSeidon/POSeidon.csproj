@@ -78,6 +78,8 @@
     <Compile Include="AddProductForm.Designer.cs">
       <DependentUpon>AddProductForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShoppingCartItem.cs" />
+    <Compile Include="ShoppingCart.cs" />
     <Compile Include="WeightUnit.cs" />
     <Compile Include="Currency.cs" />
     <Compile Include="Settings.cs" />
