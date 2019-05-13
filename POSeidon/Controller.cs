@@ -28,7 +28,7 @@ namespace POSeidon
             };
         }
 
-        public static bool AddProduct(Product product, Supplier supplier, double amount)
+        public static bool AddProduct(Product product, double amount, Supplier supplier, decimal purchasePrice)
         {
             product.StockAmount += amount;
             if (DBUtils.UpdateOrCreateProduct(product))
@@ -41,7 +41,8 @@ namespace POSeidon
                     SupplierName = supplier.Name,
                     SupplierPhone = supplier.Phone,
                     SupplierAddress = supplier.Address,
-                    SupplierEmail = supplier.Email
+                    SupplierEmail = supplier.Email,
+                    PurchasePrice = purchasePrice
                 };
                 DBUtils.CreateLog(log);
                 return true;

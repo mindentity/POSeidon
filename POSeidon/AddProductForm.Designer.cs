@@ -1,6 +1,6 @@
 ﻿namespace POSeidon
 {
-    partial class AddProductForm
+    partial class addProductForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddProductForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addProductForm));
             this.existingProductRadioButton = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.newProductRadioButton = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.addProductNavigator = new ComponentFactory.Krypton.Navigator.KryptonNavigator();
             this.existingProductPage = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.existingProductSupplierInfoGroupBox = new System.Windows.Forms.GroupBox();
-            this.purchasePriceTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.purchasePriceAddProductLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.existingProductPurchasePriceTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.existingProductPurchasePriceAddProductLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.existingProductSupplierLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.existingProductSupplierComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.addExistingProductButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -50,7 +50,7 @@
             this.existingProductWeightUnitComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.newProductPage = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.newProductSupplierInfoGroupBox = new System.Windows.Forms.GroupBox();
-            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.newProductPurchasePriceTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.newProductPurchasePriceLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.newProductSupplierLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.newProductSupplierComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
@@ -68,7 +68,6 @@
             this.newProductTypeComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.addProductTypePanel = new System.Windows.Forms.Panel();
             this.existingProductAddProductPanel = new System.Windows.Forms.Panel();
-            this.newProductPurchasePriceTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.addProductNavigator)).BeginInit();
             this.addProductNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.existingProductPage)).BeginInit();
@@ -95,7 +94,7 @@
             this.existingProductRadioButton.Location = new System.Drawing.Point(17, 16);
             this.existingProductRadioButton.Margin = new System.Windows.Forms.Padding(4);
             this.existingProductRadioButton.Name = "existingProductRadioButton";
-            this.existingProductRadioButton.Size = new System.Drawing.Size(133, 24);
+            this.existingProductRadioButton.Size = new System.Drawing.Size(110, 20);
             this.existingProductRadioButton.TabIndex = 0;
             this.existingProductRadioButton.Values.Text = "Existing product";
             this.existingProductRadioButton.CheckedChanged += new System.EventHandler(this.ExistingProductRadioButton_CheckedChanged);
@@ -105,7 +104,7 @@
             this.newProductRadioButton.Location = new System.Drawing.Point(17, 67);
             this.newProductRadioButton.Margin = new System.Windows.Forms.Padding(4);
             this.newProductRadioButton.Name = "newProductRadioButton";
-            this.newProductRadioButton.Size = new System.Drawing.Size(112, 24);
+            this.newProductRadioButton.Size = new System.Drawing.Size(93, 20);
             this.newProductRadioButton.TabIndex = 1;
             this.newProductRadioButton.Values.Text = "New product";
             // 
@@ -114,11 +113,10 @@
             this.addProductNavigator.Location = new System.Drawing.Point(6, 4);
             this.addProductNavigator.Margin = new System.Windows.Forms.Padding(4);
             this.addProductNavigator.Name = "addProductNavigator";
-            this.addProductNavigator.NavigatorMode = ComponentFactory.Krypton.Navigator.NavigatorMode.Panel;
             this.addProductNavigator.Pages.AddRange(new ComponentFactory.Krypton.Navigator.KryptonPage[] {
             this.existingProductPage,
             this.newProductPage});
-            this.addProductNavigator.SelectedIndex = 1;
+            this.addProductNavigator.SelectedIndex = 0;
             this.addProductNavigator.Size = new System.Drawing.Size(497, 466);
             this.addProductNavigator.TabIndex = 2;
             // 
@@ -132,7 +130,7 @@
             this.existingProductPage.Margin = new System.Windows.Forms.Padding(4);
             this.existingProductPage.MinimumSize = new System.Drawing.Size(67, 66);
             this.existingProductPage.Name = "existingProductPage";
-            this.existingProductPage.Size = new System.Drawing.Size(495, 435);
+            this.existingProductPage.Size = new System.Drawing.Size(495, 439);
             this.existingProductPage.StateCommon.Page.Color1 = System.Drawing.Color.WhiteSmoke;
             this.existingProductPage.Text = "Existing Product";
             this.existingProductPage.ToolTipTitle = "Page ToolTip";
@@ -140,8 +138,8 @@
             // 
             // existingProductSupplierInfoGroupBox
             // 
-            this.existingProductSupplierInfoGroupBox.Controls.Add(this.purchasePriceTextBox);
-            this.existingProductSupplierInfoGroupBox.Controls.Add(this.purchasePriceAddProductLabel);
+            this.existingProductSupplierInfoGroupBox.Controls.Add(this.existingProductPurchasePriceTextBox);
+            this.existingProductSupplierInfoGroupBox.Controls.Add(this.existingProductPurchasePriceAddProductLabel);
             this.existingProductSupplierInfoGroupBox.Controls.Add(this.existingProductSupplierLabel);
             this.existingProductSupplierInfoGroupBox.Controls.Add(this.existingProductSupplierComboBox);
             this.existingProductSupplierInfoGroupBox.Controls.Add(this.addExistingProductButton);
@@ -152,43 +150,44 @@
             this.existingProductSupplierInfoGroupBox.TabStop = false;
             this.existingProductSupplierInfoGroupBox.Text = "Supplier Info";
             // 
-            // purchasePriceTextBox
+            // existingProductPurchasePriceTextBox
             // 
-            this.purchasePriceTextBox.Location = new System.Drawing.Point(161, 80);
-            this.purchasePriceTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.purchasePriceTextBox.Name = "purchasePriceTextBox";
-            this.purchasePriceTextBox.Size = new System.Drawing.Size(215, 31);
-            this.purchasePriceTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.existingProductPurchasePriceTextBox.Location = new System.Drawing.Point(161, 80);
+            this.existingProductPurchasePriceTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.existingProductPurchasePriceTextBox.Name = "existingProductPurchasePriceTextBox";
+            this.existingProductPurchasePriceTextBox.Size = new System.Drawing.Size(215, 27);
+            this.existingProductPurchasePriceTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.purchasePriceTextBox.StateCommon.Border.Rounding = 5;
-            this.purchasePriceTextBox.TabIndex = 27;
+            this.existingProductPurchasePriceTextBox.StateCommon.Border.Rounding = 5;
+            this.existingProductPurchasePriceTextBox.TabIndex = 27;
             // 
-            // purchasePriceAddProductLabel
+            // existingProductPurchasePriceAddProductLabel
             // 
-            this.purchasePriceAddProductLabel.Location = new System.Drawing.Point(16, 80);
-            this.purchasePriceAddProductLabel.Margin = new System.Windows.Forms.Padding(4);
-            this.purchasePriceAddProductLabel.Name = "purchasePriceAddProductLabel";
-            this.purchasePriceAddProductLabel.Size = new System.Drawing.Size(113, 24);
-            this.purchasePriceAddProductLabel.TabIndex = 26;
-            this.purchasePriceAddProductLabel.Values.Text = "Purchase Price:";
+            this.existingProductPurchasePriceAddProductLabel.Location = new System.Drawing.Point(16, 80);
+            this.existingProductPurchasePriceAddProductLabel.Margin = new System.Windows.Forms.Padding(4);
+            this.existingProductPurchasePriceAddProductLabel.Name = "existingProductPurchasePriceAddProductLabel";
+            this.existingProductPurchasePriceAddProductLabel.Size = new System.Drawing.Size(92, 20);
+            this.existingProductPurchasePriceAddProductLabel.TabIndex = 26;
+            this.existingProductPurchasePriceAddProductLabel.Values.Text = "Purchase Price:";
             // 
             // existingProductSupplierLabel
             // 
             this.existingProductSupplierLabel.Location = new System.Drawing.Point(16, 34);
             this.existingProductSupplierLabel.Margin = new System.Windows.Forms.Padding(4);
             this.existingProductSupplierLabel.Name = "existingProductSupplierLabel";
-            this.existingProductSupplierLabel.Size = new System.Drawing.Size(71, 24);
+            this.existingProductSupplierLabel.Size = new System.Drawing.Size(58, 20);
             this.existingProductSupplierLabel.TabIndex = 24;
             this.existingProductSupplierLabel.Values.Text = "Supplier:";
             // 
             // existingProductSupplierComboBox
             // 
+            this.existingProductSupplierComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.existingProductSupplierComboBox.DropDownWidth = 161;
             this.existingProductSupplierComboBox.Location = new System.Drawing.Point(161, 33);
             this.existingProductSupplierComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.existingProductSupplierComboBox.Name = "existingProductSupplierComboBox";
-            this.existingProductSupplierComboBox.Size = new System.Drawing.Size(215, 29);
+            this.existingProductSupplierComboBox.Size = new System.Drawing.Size(215, 25);
             this.existingProductSupplierComboBox.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -207,6 +206,7 @@
             this.addExistingProductButton.StateCommon.Border.Rounding = 5;
             this.addExistingProductButton.TabIndex = 23;
             this.addExistingProductButton.Values.Text = "Add";
+            this.addExistingProductButton.Click += new System.EventHandler(this.AddExistingProductButton_Click);
             // 
             // existingProductInfoGroupBox
             // 
@@ -230,7 +230,7 @@
             this.existingProductPriceLabel.Location = new System.Drawing.Point(19, 84);
             this.existingProductPriceLabel.Margin = new System.Windows.Forms.Padding(4);
             this.existingProductPriceLabel.Name = "existingProductPriceLabel";
-            this.existingProductPriceLabel.Size = new System.Drawing.Size(48, 24);
+            this.existingProductPriceLabel.Size = new System.Drawing.Size(40, 20);
             this.existingProductPriceLabel.TabIndex = 4;
             this.existingProductPriceLabel.Values.Text = "Price:";
             // 
@@ -239,7 +239,7 @@
             this.existingProductNameLabel.Location = new System.Drawing.Point(19, 31);
             this.existingProductNameLabel.Margin = new System.Windows.Forms.Padding(4);
             this.existingProductNameLabel.Name = "existingProductNameLabel";
-            this.existingProductNameLabel.Size = new System.Drawing.Size(56, 24);
+            this.existingProductNameLabel.Size = new System.Drawing.Size(46, 20);
             this.existingProductNameLabel.TabIndex = 3;
             this.existingProductNameLabel.Values.Text = "Name:";
             // 
@@ -248,7 +248,7 @@
             this.existingProductAmountLabel.Location = new System.Drawing.Point(19, 131);
             this.existingProductAmountLabel.Margin = new System.Windows.Forms.Padding(4);
             this.existingProductAmountLabel.Name = "existingProductAmountLabel";
-            this.existingProductAmountLabel.Size = new System.Drawing.Size(70, 24);
+            this.existingProductAmountLabel.Size = new System.Drawing.Size(57, 20);
             this.existingProductAmountLabel.TabIndex = 5;
             this.existingProductAmountLabel.Values.Text = "Amount:";
             // 
@@ -257,7 +257,7 @@
             this.existingProductPriceTextBox.Location = new System.Drawing.Point(165, 81);
             this.existingProductPriceTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.existingProductPriceTextBox.Name = "existingProductPriceTextBox";
-            this.existingProductPriceTextBox.Size = new System.Drawing.Size(215, 31);
+            this.existingProductPriceTextBox.Size = new System.Drawing.Size(215, 27);
             this.existingProductPriceTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -271,7 +271,7 @@
             this.existingProductComboBox.Location = new System.Drawing.Point(165, 30);
             this.existingProductComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.existingProductComboBox.Name = "existingProductComboBox";
-            this.existingProductComboBox.Size = new System.Drawing.Size(215, 29);
+            this.existingProductComboBox.Size = new System.Drawing.Size(215, 25);
             this.existingProductComboBox.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -295,7 +295,7 @@
             this.existingProductAmountTextBox.Location = new System.Drawing.Point(164, 128);
             this.existingProductAmountTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.existingProductAmountTextBox.Name = "existingProductAmountTextBox";
-            this.existingProductAmountTextBox.Size = new System.Drawing.Size(215, 31);
+            this.existingProductAmountTextBox.Size = new System.Drawing.Size(215, 27);
             this.existingProductAmountTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -309,7 +309,7 @@
             this.existingProductWeightUnitComboBox.Location = new System.Drawing.Point(390, 126);
             this.existingProductWeightUnitComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.existingProductWeightUnitComboBox.Name = "existingProductWeightUnitComboBox";
-            this.existingProductWeightUnitComboBox.Size = new System.Drawing.Size(81, 29);
+            this.existingProductWeightUnitComboBox.Size = new System.Drawing.Size(81, 25);
             this.existingProductWeightUnitComboBox.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.WhiteSmoke;
             this.existingProductWeightUnitComboBox.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -327,7 +327,7 @@
             this.newProductPage.Margin = new System.Windows.Forms.Padding(4);
             this.newProductPage.MinimumSize = new System.Drawing.Size(67, 66);
             this.newProductPage.Name = "newProductPage";
-            this.newProductPage.Size = new System.Drawing.Size(497, 466);
+            this.newProductPage.Size = new System.Drawing.Size(495, 439);
             this.newProductPage.StateCommon.Page.Color1 = System.Drawing.Color.WhiteSmoke;
             this.newProductPage.Text = "New Product";
             this.newProductPage.ToolTipTitle = "Page ToolTip";
@@ -335,7 +335,7 @@
             // 
             // newProductSupplierInfoGroupBox
             // 
-            this.newProductSupplierInfoGroupBox.Controls.Add(this.kryptonTextBox1);
+            this.newProductSupplierInfoGroupBox.Controls.Add(this.newProductPurchasePriceTextBox);
             this.newProductSupplierInfoGroupBox.Controls.Add(this.newProductPurchasePriceLabel);
             this.newProductSupplierInfoGroupBox.Controls.Add(this.newProductSupplierLabel);
             this.newProductSupplierInfoGroupBox.Controls.Add(this.newProductSupplierComboBox);
@@ -347,24 +347,24 @@
             this.newProductSupplierInfoGroupBox.TabStop = false;
             this.newProductSupplierInfoGroupBox.Text = "Supplier Info";
             // 
-            // kryptonTextBox1
+            // newProductPurchasePriceTextBox
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(162, 82);
-            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(215, 31);
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.newProductPurchasePriceTextBox.Location = new System.Drawing.Point(162, 82);
+            this.newProductPurchasePriceTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.newProductPurchasePriceTextBox.Name = "newProductPurchasePriceTextBox";
+            this.newProductPurchasePriceTextBox.Size = new System.Drawing.Size(215, 27);
+            this.newProductPurchasePriceTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateCommon.Border.Rounding = 5;
-            this.kryptonTextBox1.TabIndex = 28;
+            this.newProductPurchasePriceTextBox.StateCommon.Border.Rounding = 5;
+            this.newProductPurchasePriceTextBox.TabIndex = 28;
             // 
             // newProductPurchasePriceLabel
             // 
             this.newProductPurchasePriceLabel.Location = new System.Drawing.Point(16, 82);
             this.newProductPurchasePriceLabel.Margin = new System.Windows.Forms.Padding(4);
             this.newProductPurchasePriceLabel.Name = "newProductPurchasePriceLabel";
-            this.newProductPurchasePriceLabel.Size = new System.Drawing.Size(113, 24);
+            this.newProductPurchasePriceLabel.Size = new System.Drawing.Size(92, 20);
             this.newProductPurchasePriceLabel.TabIndex = 22;
             this.newProductPurchasePriceLabel.Values.Text = "Purchase Price:";
             // 
@@ -373,17 +373,18 @@
             this.newProductSupplierLabel.Location = new System.Drawing.Point(16, 36);
             this.newProductSupplierLabel.Margin = new System.Windows.Forms.Padding(4);
             this.newProductSupplierLabel.Name = "newProductSupplierLabel";
-            this.newProductSupplierLabel.Size = new System.Drawing.Size(71, 24);
+            this.newProductSupplierLabel.Size = new System.Drawing.Size(58, 20);
             this.newProductSupplierLabel.TabIndex = 4;
             this.newProductSupplierLabel.Values.Text = "Supplier:";
             // 
             // newProductSupplierComboBox
             // 
+            this.newProductSupplierComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.newProductSupplierComboBox.DropDownWidth = 161;
             this.newProductSupplierComboBox.Location = new System.Drawing.Point(162, 35);
             this.newProductSupplierComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.newProductSupplierComboBox.Name = "newProductSupplierComboBox";
-            this.newProductSupplierComboBox.Size = new System.Drawing.Size(215, 29);
+            this.newProductSupplierComboBox.Size = new System.Drawing.Size(215, 25);
             this.newProductSupplierComboBox.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -428,7 +429,7 @@
             this.newProductNameLabel.Location = new System.Drawing.Point(16, 30);
             this.newProductNameLabel.Margin = new System.Windows.Forms.Padding(4);
             this.newProductNameLabel.Name = "newProductNameLabel";
-            this.newProductNameLabel.Size = new System.Drawing.Size(56, 24);
+            this.newProductNameLabel.Size = new System.Drawing.Size(46, 20);
             this.newProductNameLabel.TabIndex = 6;
             this.newProductNameLabel.Values.Text = "Name:";
             // 
@@ -437,7 +438,7 @@
             this.newProductPriceLabel.Location = new System.Drawing.Point(16, 73);
             this.newProductPriceLabel.Margin = new System.Windows.Forms.Padding(4);
             this.newProductPriceLabel.Name = "newProductPriceLabel";
-            this.newProductPriceLabel.Size = new System.Drawing.Size(48, 24);
+            this.newProductPriceLabel.Size = new System.Drawing.Size(40, 20);
             this.newProductPriceLabel.TabIndex = 7;
             this.newProductPriceLabel.Values.Text = "Price:";
             // 
@@ -446,7 +447,7 @@
             this.newProductAmountTextBox.Location = new System.Drawing.Point(162, 158);
             this.newProductAmountTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.newProductAmountTextBox.Name = "newProductAmountTextBox";
-            this.newProductAmountTextBox.Size = new System.Drawing.Size(215, 31);
+            this.newProductAmountTextBox.Size = new System.Drawing.Size(215, 27);
             this.newProductAmountTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -469,7 +470,7 @@
             this.newProductAmountLabel.Location = new System.Drawing.Point(17, 155);
             this.newProductAmountLabel.Margin = new System.Windows.Forms.Padding(4);
             this.newProductAmountLabel.Name = "newProductAmountLabel";
-            this.newProductAmountLabel.Size = new System.Drawing.Size(70, 24);
+            this.newProductAmountLabel.Size = new System.Drawing.Size(57, 20);
             this.newProductAmountLabel.TabIndex = 8;
             this.newProductAmountLabel.Values.Text = "Amount:";
             // 
@@ -478,7 +479,7 @@
             this.newProductPriceTextBox.Location = new System.Drawing.Point(162, 73);
             this.newProductPriceTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.newProductPriceTextBox.Name = "newProductPriceTextBox";
-            this.newProductPriceTextBox.Size = new System.Drawing.Size(215, 31);
+            this.newProductPriceTextBox.Size = new System.Drawing.Size(215, 27);
             this.newProductPriceTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -490,7 +491,7 @@
             this.newProductNameTextBox.Location = new System.Drawing.Point(161, 30);
             this.newProductNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.newProductNameTextBox.Name = "newProductNameTextBox";
-            this.newProductNameTextBox.Size = new System.Drawing.Size(215, 31);
+            this.newProductNameTextBox.Size = new System.Drawing.Size(215, 27);
             this.newProductNameTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -504,7 +505,7 @@
             this.newProductWeightUnitComboBox.Location = new System.Drawing.Point(398, 157);
             this.newProductWeightUnitComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.newProductWeightUnitComboBox.Name = "newProductWeightUnitComboBox";
-            this.newProductWeightUnitComboBox.Size = new System.Drawing.Size(81, 29);
+            this.newProductWeightUnitComboBox.Size = new System.Drawing.Size(81, 25);
             this.newProductWeightUnitComboBox.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.WhiteSmoke;
             this.newProductWeightUnitComboBox.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -517,7 +518,7 @@
             this.productTypeLabel.Location = new System.Drawing.Point(16, 115);
             this.productTypeLabel.Margin = new System.Windows.Forms.Padding(4);
             this.productTypeLabel.Name = "productTypeLabel";
-            this.productTypeLabel.Size = new System.Drawing.Size(48, 24);
+            this.productTypeLabel.Size = new System.Drawing.Size(39, 20);
             this.productTypeLabel.TabIndex = 16;
             this.productTypeLabel.Values.Text = "Type:";
             // 
@@ -531,7 +532,7 @@
             this.newProductTypeComboBox.Location = new System.Drawing.Point(161, 115);
             this.newProductTypeComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.newProductTypeComboBox.Name = "newProductTypeComboBox";
-            this.newProductTypeComboBox.Size = new System.Drawing.Size(215, 29);
+            this.newProductTypeComboBox.Size = new System.Drawing.Size(215, 25);
             this.newProductTypeComboBox.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -562,21 +563,9 @@
             this.existingProductAddProductPanel.Size = new System.Drawing.Size(523, 478);
             this.existingProductAddProductPanel.TabIndex = 4;
             // 
-            // newProductPurchasePriceTextBox
+            // addProductForm
             // 
-            this.newProductPurchasePriceTextBox.Location = new System.Drawing.Point(162, 79);
-            this.newProductPurchasePriceTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.newProductPurchasePriceTextBox.Name = "newProductPurchasePriceTextBox";
-            this.newProductPurchasePriceTextBox.Size = new System.Drawing.Size(215, 31);
-            this.newProductPurchasePriceTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.newProductPurchasePriceTextBox.StateCommon.Border.Rounding = 5;
-            this.newProductPurchasePriceTextBox.TabIndex = 21;
-            // 
-            // AddProductForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(836, 545);
@@ -586,7 +575,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "AddProductForm";
+            this.Name = "addProductForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Product";
             ((System.ComponentModel.ISupportInitialize)(this.addProductNavigator)).EndInit();
@@ -645,15 +634,14 @@
         private System.Windows.Forms.Panel addProductTypePanel;
         private System.Windows.Forms.Panel existingProductAddProductPanel;
         private System.Windows.Forms.GroupBox existingProductSupplierInfoGroupBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox purchasePriceTextBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel purchasePriceAddProductLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox existingProductPurchasePriceTextBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel existingProductPurchasePriceAddProductLabel;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel existingProductSupplierLabel;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox existingProductSupplierComboBox;
         private ComponentFactory.Krypton.Toolkit.KryptonButton addExistingProductButton;
         private System.Windows.Forms.GroupBox existingProductInfoGroupBox;
         private System.Windows.Forms.GroupBox newProductProductInfoGroupBox;
         private System.Windows.Forms.GroupBox newProductSupplierInfoGroupBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel newProductPurchasePriceLabel;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel newProductSupplierLabel;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox newProductSupplierComboBox;
