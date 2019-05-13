@@ -74,7 +74,7 @@ namespace POSeidon
                 BindingList<Product> products = gridView.DataSource as BindingList<Product>;
                 Product product = products.ElementAt(e.RowIndex);
                 Controller.ShoppingCart.AddProduct(product, 1);
-                MessageBox.Show("Product has been added to the shopping cart.", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Product added to cart.", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

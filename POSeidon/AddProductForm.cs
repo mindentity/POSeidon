@@ -68,7 +68,7 @@ namespace POSeidon
             if (Controller.AddProduct(product, supplier, amount))
             {
                 Controller.Products.ResetBindings();
-                MessageBox.Show("Product is added successfully!", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Product added successfully.", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -97,7 +97,7 @@ namespace POSeidon
             if (Controller.AddProduct(product, supplier, amount))
             {
                 Controller.Products.Add(product);
-                MessageBox.Show("Product is added successfully!", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Product added successfully.", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
