@@ -68,8 +68,8 @@ namespace POSeidon
         private void HomepageDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             var gridView = sender as DataGridView;
-
-            if (gridView.Columns[e.ColumnIndex] is DataGridViewImageColumn && e.RowIndex >= 0)
+            
+            if (e.ColumnIndex >= 0 && gridView.Columns[e.ColumnIndex] is DataGridViewImageColumn && e.RowIndex >= 0)
             {
                 BindingList<Product> products = gridView.DataSource as BindingList<Product>;
                 Product product = products.ElementAt(e.RowIndex);
