@@ -356,9 +356,12 @@
             this.homepageDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.homepageDataGridView.Location = new System.Drawing.Point(1, 76);
             this.homepageDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.homepageDataGridView.MultiSelect = false;
             this.homepageDataGridView.Name = "homepageDataGridView";
             this.homepageDataGridView.ReadOnly = true;
+            this.homepageDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.homepageDataGridView.RowTemplate.Height = 24;
+            this.homepageDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.homepageDataGridView.Size = new System.Drawing.Size(785, 444);
             this.homepageDataGridView.TabIndex = 7;
             this.homepageDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HomepageDataGridView_CellClick);
