@@ -31,23 +31,27 @@ namespace POSeidon
         public static bool AddProduct(Product product, double amount, Supplier supplier, decimal purchasePrice)
         {
             product.StockAmount += amount;
-            if (DBUtils.UpdateOrCreateProduct(product))
+            if (!DBUtils.UpdateOrCreateProduct(product))
             {
-                var log = new SupplierLog
-                {
-                    Date = DateTime.UtcNow,
-                    ProductAmount = amount,
-                    ProductName = product.Name,
-                    SupplierName = supplier.Name,
-                    SupplierPhone = supplier.Phone,
-                    SupplierAddress = supplier.Address,
-                    SupplierEmail = supplier.Email,
-                    PurchasePrice = purchasePrice
-                };
-                DBUtils.CreateLog(log);
-                return true;
+                return false;
             }
-            return false;
+            var log = new SupplierLog
+            {
+                Date = DateTime.UtcNow,
+                ProductAmount = amount,
+                ProductName = product.Name,
+                SupplierName = supplier.Name,
+                SupplierPhone = supplier.Phone,
+                SupplierAddress = supplier.Address,
+                SupplierEmail = supplier.Email,
+                PurchasePrice = purchasePrice
+            };
+            if (!DBUtils.CreateLog(log))
+            {
+                return false;
+            }
+            Controller.SupplierLogs.Add(log);
+            return true;
         }
 
         public static bool DeleteProduct(Product product)
