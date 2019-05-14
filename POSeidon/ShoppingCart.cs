@@ -56,5 +56,11 @@ namespace POSeidon
             }
             return false;
         }
+
+        public void Clear()
+        {
+            Items.Clear();
+            TotalPrice = 0.0M;
+        }
     }
 }
