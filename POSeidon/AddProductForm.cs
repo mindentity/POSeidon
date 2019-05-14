@@ -30,12 +30,12 @@ namespace POSeidon
             if (rb.Checked)
             {
                 addProductNavigator.SelectedIndex = 0;
-                existingProductComboBox.Focus();
+                existingProductComboBox.Select();
             }
             else
             {
                 addProductNavigator.SelectedIndex = 1;
-                newProductNameTextBox.Focus();
+                newProductNameTextBox.Select();
             }
         }
 

@@ -96,6 +96,7 @@
             this.existingProductRadioButton.Name = "existingProductRadioButton";
             this.existingProductRadioButton.Size = new System.Drawing.Size(110, 20);
             this.existingProductRadioButton.TabIndex = 0;
+            this.existingProductRadioButton.TabStop = false;
             this.existingProductRadioButton.Values.Text = "Existing product";
             this.existingProductRadioButton.CheckedChanged += new System.EventHandler(this.ExistingProductRadioButton_CheckedChanged);
             // 
@@ -106,6 +107,7 @@
             this.newProductRadioButton.Name = "newProductRadioButton";
             this.newProductRadioButton.Size = new System.Drawing.Size(93, 20);
             this.newProductRadioButton.TabIndex = 1;
+            this.newProductRadioButton.TabStop = false;
             this.newProductRadioButton.Values.Text = "New product";
             // 
             // addProductNavigator
@@ -553,7 +555,7 @@
             this.addProductTypePanel.Location = new System.Drawing.Point(32, 37);
             this.addProductTypePanel.Name = "addProductTypePanel";
             this.addProductTypePanel.Size = new System.Drawing.Size(200, 103);
-            this.addProductTypePanel.TabIndex = 0;
+            this.addProductTypePanel.TabIndex = 1;
             // 
             // existingProductAddProductPanel
             // 
@@ -562,7 +564,7 @@
             this.existingProductAddProductPanel.Location = new System.Drawing.Point(301, 37);
             this.existingProductAddProductPanel.Name = "existingProductAddProductPanel";
             this.existingProductAddProductPanel.Size = new System.Drawing.Size(523, 478);
-            this.existingProductAddProductPanel.TabIndex = 4;
+            this.existingProductAddProductPanel.TabIndex = 0;
             // 
             // addProductForm
             // 
