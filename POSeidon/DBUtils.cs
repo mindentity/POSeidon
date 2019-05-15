@@ -435,15 +435,14 @@ namespace POSeidon
                 Email = email,
                 Address = address
             };
-            return CreateSupplier(customer);
+            return CreateCustomer(customer);
         }
 
-        public static bool CreateSupplier(Customer customer)
+        public static bool CreateCustomer(Customer customer)
         {
             using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
             {
                 var col = db.GetCollection<Customer>("customer");
-                col.EnsureIndex("Name", true);
                 try
                 {
                     col.Insert(customer);
@@ -466,17 +465,6 @@ namespace POSeidon
             }
         }
 
-        public static Customer GetCustomerByName(string name)
-        {
-            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
-            {
-                var col = db.GetCollection<Customer>("customer");
-                col.EnsureIndex("Name", true);
-                var customer = col.FindOne(Query.EQ("Name", name));
-                return customer;
-            }
-        }
-
         public static bool UpdateCustomer(Customer customer)
         {
             using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
@@ -486,7 +474,7 @@ namespace POSeidon
             }
         }
 
-        public static bool UpdateOrCreateSupplier(Customer customer)
+        public static bool UpdateOrCreateCustomer(Customer customer)
         {
             using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
             {
@@ -506,17 +494,6 @@ namespace POSeidon
             {
                 var col = db.GetCollection<Customer>("customer");
                 return col.Delete(id);
-            }
-        }
-
-        public static bool DeleteCustomerByName(string name)
-        {
-            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
-            {
-                var col = db.GetCollection<Customer>("customer");
-                col.EnsureIndex("Name", true);
-                int deletedRows = col.Delete(Query.EQ("Name", name));
-                return deletedRows > 0;
             }
         }
 

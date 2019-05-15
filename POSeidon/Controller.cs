@@ -65,5 +65,15 @@ namespace POSeidon
             }
             return DBUtils.DeleteProduct(product);
         }
+
+        public static bool AddCustomer(Customer customer)
+        {
+            if (!DBUtils.CreateCustomer(customer))
+            {
+                return false;
+            }
+            Controller.Customers.Add(customer);
+            return true;
+        }
     }
 }

@@ -16,5 +16,27 @@ namespace POSeidon
         {
             InitializeComponent();
         }
+
+        private void AddCustomerFormButton_Click(object sender, EventArgs e)
+        {
+            var customer = new Customer
+            {
+                FirstName = firstNameTextBox.Text,
+                LastName = lastNameTextBox.Text,
+                Email = emailTextBox.Text,
+                Phone = phoneTextBox.Text,
+                Address = addressTextBox.Text
+            };
+            if (Controller.AddCustomer(customer))
+            {
+                Controller.Customers.ResetBindings();
+                MessageBox.Show("Customer added successfully.", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Failed to add customer!", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

@@ -111,5 +111,10 @@ namespace POSeidon
             suppliersTabDataGridView.DataSource = suppliers.ToList();
         }
 
+        private void AddCustomerButton_Click(object sender, EventArgs e)
+        {
+            AddCustomerForm addCustomerForm = new AddCustomerForm();
+            addCustomerForm.ShowDialog();
+        }
     }
 }
