@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Button addProductButton;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -42,10 +40,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.Windows.Forms.Button addProductButton;
             this.leftsideMainPanel = new System.Windows.Forms.Panel();
-            this.shoppingCartLeftSidePanelButton = new System.Windows.Forms.Button();
-            this.logoutButton = new System.Windows.Forms.Button();
-            this.iconButton = new System.Windows.Forms.Button();
             this.infoLabel = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.mainPanel = new System.Windows.Forms.Panel();
@@ -57,7 +54,6 @@
             this.productNameHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productPriceHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productStockHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productAddHomePageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.StatisticsTab = new System.Windows.Forms.TabPage();
             this.statisticsPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.statisticsHomepageNavigator = new ComponentFactory.Krypton.Navigator.KryptonNavigator();
@@ -79,7 +75,6 @@
             this.supplierPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplierEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplierAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deleteSupplierDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.salesAndPurchasingTab = new System.Windows.Forms.TabPage();
             this.salesAndPurchasingPanel = new System.Windows.Forms.Panel();
             this.salesAndPurchasingNavigator = new ComponentFactory.Krypton.Navigator.KryptonNavigator();
@@ -89,14 +84,12 @@
             this.salePriceSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.saleAmountSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalPriceSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cancelLogSalesHistoryDataGridViewImageBoxColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.purchasingNavigatorPage = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.purchasingDataGridView = new System.Windows.Forms.DataGridView();
             this.productNamePurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productPricePurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productPurchasingAmountPurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalPricePurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cancelLogPurchasingDataGridViewImageBoxColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.settingsTab = new System.Windows.Forms.TabPage();
             this.settingsPanel = new System.Windows.Forms.Panel();
             this.settingsChildPanel1 = new System.Windows.Forms.Panel();
@@ -120,6 +113,7 @@
             this.currencySettingsComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.saveButton = new System.Windows.Forms.Button();
             this.passwordLabel = new System.Windows.Forms.Label();
+            this.searchImageSuppliersPanel = new System.Windows.Forms.Panel();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.customerFirstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -128,6 +122,18 @@
             this.customerEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customerAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deleteCustomerDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.searchImageHomePanel = new System.Windows.Forms.Panel();
+            this.productAddHomePageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.deleteCustomerDataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.deleteSupplierDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.cancelLogSalesHistoryDataGridViewImageBoxColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.cancelLogPurchasingDataGridViewImageBoxColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.shoppingCartLeftSidePanelButton = new System.Windows.Forms.Button();
+            this.logoutButton = new System.Windows.Forms.Button();
+            this.iconButton = new System.Windows.Forms.Button();
             addProductButton = new System.Windows.Forms.Button();
             this.leftsideMainPanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
@@ -342,6 +348,7 @@
             this.homePanel.AutoSize = true;
             this.homePanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.homePanel.BackColor = System.Drawing.Color.PowderBlue;
+            this.homePanel.Controls.Add(this.searchImageHomePanel);
             this.homePanel.Controls.Add(this.productSearchTextBox);
             this.homePanel.Controls.Add(this.homepageDataGridView);
             this.homePanel.Controls.Add(addProductButton);
@@ -422,13 +429,6 @@
             this.productStockHomePageDataGridViewTextBoxColumn.HeaderText = "Stock Amount";
             this.productStockHomePageDataGridViewTextBoxColumn.Name = "productStockHomePageDataGridViewTextBoxColumn";
             this.productStockHomePageDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productAddHomePageDataGridViewImageColumn
-            // 
-            this.productAddHomePageDataGridViewImageColumn.HeaderText = "Add";
-            this.productAddHomePageDataGridViewImageColumn.Image = ((System.Drawing.Image)(resources.GetObject("productAddHomePageDataGridViewImageColumn.Image")));
-            this.productAddHomePageDataGridViewImageColumn.Name = "productAddHomePageDataGridViewImageColumn";
-            this.productAddHomePageDataGridViewImageColumn.ReadOnly = true;
             // 
             // StatisticsTab
             // 
@@ -645,6 +645,7 @@
             // suppliersTab
             // 
             this.suppliersTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.suppliersTab.Controls.Add(this.searchImageSuppliersPanel);
             this.suppliersTab.Controls.Add(this.suppliersSearchTextBox);
             this.suppliersTab.Controls.Add(this.addSupplierButton);
             this.suppliersTab.Controls.Add(this.suppliersTabDataGridView);
@@ -738,12 +739,6 @@
             this.supplierAddressDataGridViewTextBoxColumn.DataPropertyName = "Address";
             this.supplierAddressDataGridViewTextBoxColumn.HeaderText = "Address";
             this.supplierAddressDataGridViewTextBoxColumn.Name = "supplierAddressDataGridViewTextBoxColumn";
-            // 
-            // deleteSupplierDataGridViewImageColumn
-            // 
-            this.deleteSupplierDataGridViewImageColumn.HeaderText = "Delete";
-            this.deleteSupplierDataGridViewImageColumn.Image = global::POSeidon.Properties.Resources.delete;
-            this.deleteSupplierDataGridViewImageColumn.Name = "deleteSupplierDataGridViewImageColumn";
             // 
             // salesAndPurchasingTab
             // 
@@ -854,12 +849,6 @@
             this.totalPriceSalesDataGridViewTextBoxColumn.HeaderText = "Total Price";
             this.totalPriceSalesDataGridViewTextBoxColumn.Name = "totalPriceSalesDataGridViewTextBoxColumn";
             // 
-            // cancelLogSalesHistoryDataGridViewImageBoxColumn
-            // 
-            this.cancelLogSalesHistoryDataGridViewImageBoxColumn.HeaderText = "Cancel";
-            this.cancelLogSalesHistoryDataGridViewImageBoxColumn.Image = global::POSeidon.Properties.Resources.delete;
-            this.cancelLogSalesHistoryDataGridViewImageBoxColumn.Name = "cancelLogSalesHistoryDataGridViewImageBoxColumn";
-            // 
             // purchasingNavigatorPage
             // 
             this.purchasingNavigatorPage.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
@@ -928,12 +917,6 @@
             // 
             this.totalPricePurchasingDataGridViewTextBoxColumn.HeaderText = "Total Price";
             this.totalPricePurchasingDataGridViewTextBoxColumn.Name = "totalPricePurchasingDataGridViewTextBoxColumn";
-            // 
-            // cancelLogPurchasingDataGridViewImageBoxColumn
-            // 
-            this.cancelLogPurchasingDataGridViewImageBoxColumn.HeaderText = "Cancel";
-            this.cancelLogPurchasingDataGridViewImageBoxColumn.Image = global::POSeidon.Properties.Resources.delete;
-            this.cancelLogPurchasingDataGridViewImageBoxColumn.Name = "cancelLogPurchasingDataGridViewImageBoxColumn";
             // 
             // settingsTab
             // 
@@ -1191,6 +1174,15 @@
             this.passwordLabel.Text = "SETTINGS";
             this.passwordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // searchImageSuppliersPanel
+            // 
+            this.searchImageSuppliersPanel.BackgroundImage = global::POSeidon.Properties.Resources.search;
+            this.searchImageSuppliersPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.searchImageSuppliersPanel.Location = new System.Drawing.Point(806, 12);
+            this.searchImageSuppliersPanel.Name = "searchImageSuppliersPanel";
+            this.searchImageSuppliersPanel.Size = new System.Drawing.Size(49, 31);
+            this.searchImageSuppliersPanel.TabIndex = 14;
+            // 
             // dataGridViewImageColumn1
             // 
             this.dataGridViewImageColumn1.HeaderText = "Add";
@@ -1240,6 +1232,111 @@
             this.deleteCustomerDataGridViewImageColumn.HeaderText = "Delete";
             this.deleteCustomerDataGridViewImageColumn.Image = global::POSeidon.Properties.Resources.delete;
             this.deleteCustomerDataGridViewImageColumn.Name = "deleteCustomerDataGridViewImageColumn";
+            // 
+            // searchImageHomePanel
+            // 
+            this.searchImageHomePanel.BackgroundImage = global::POSeidon.Properties.Resources.search;
+            this.searchImageHomePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.searchImageHomePanel.Location = new System.Drawing.Point(799, 22);
+            this.searchImageHomePanel.Name = "searchImageHomePanel";
+            this.searchImageHomePanel.Size = new System.Drawing.Size(49, 31);
+            this.searchImageHomePanel.TabIndex = 15;
+            // 
+            // productAddHomePageDataGridViewImageColumn
+            // 
+            this.productAddHomePageDataGridViewImageColumn.HeaderText = "Add";
+            this.productAddHomePageDataGridViewImageColumn.Image = ((System.Drawing.Image)(resources.GetObject("productAddHomePageDataGridViewImageColumn.Image")));
+            this.productAddHomePageDataGridViewImageColumn.Name = "productAddHomePageDataGridViewImageColumn";
+            this.productAddHomePageDataGridViewImageColumn.ReadOnly = true;
+            // 
+            // addProductButton
+            // 
+            addProductButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            addProductButton.AutoSize = true;
+            addProductButton.BackColor = System.Drawing.Color.White;
+            addProductButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            addProductButton.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            addProductButton.Image = global::POSeidon.Properties.Resources.rsz_plus;
+            addProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            addProductButton.Location = new System.Drawing.Point(3, 9);
+            addProductButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            addProductButton.Name = "addProductButton";
+            addProductButton.Padding = new System.Windows.Forms.Padding(5);
+            addProductButton.Size = new System.Drawing.Size(332, 79);
+            addProductButton.TabIndex = 1;
+            addProductButton.Text = "ADD A NEW PRODUCT";
+            addProductButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            addProductButton.UseVisualStyleBackColor = false;
+            addProductButton.Click += new System.EventHandler(this.AddProductButton_Click);
+            // 
+            // deleteSupplierDataGridViewImageColumn
+            // 
+            this.deleteSupplierDataGridViewImageColumn.HeaderText = "Delete";
+            this.deleteSupplierDataGridViewImageColumn.Image = global::POSeidon.Properties.Resources.delete;
+            this.deleteSupplierDataGridViewImageColumn.Name = "deleteSupplierDataGridViewImageColumn";
+            // 
+            // cancelLogSalesHistoryDataGridViewImageBoxColumn
+            // 
+            this.cancelLogSalesHistoryDataGridViewImageBoxColumn.HeaderText = "Cancel";
+            this.cancelLogSalesHistoryDataGridViewImageBoxColumn.Image = global::POSeidon.Properties.Resources.delete;
+            this.cancelLogSalesHistoryDataGridViewImageBoxColumn.Name = "cancelLogSalesHistoryDataGridViewImageBoxColumn";
+            // 
+            // cancelLogPurchasingDataGridViewImageBoxColumn
+            // 
+            this.cancelLogPurchasingDataGridViewImageBoxColumn.HeaderText = "Cancel";
+            this.cancelLogPurchasingDataGridViewImageBoxColumn.Image = global::POSeidon.Properties.Resources.delete;
+            this.cancelLogPurchasingDataGridViewImageBoxColumn.Name = "cancelLogPurchasingDataGridViewImageBoxColumn";
+            // 
+            // shoppingCartLeftSidePanelButton
+            // 
+            this.shoppingCartLeftSidePanelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shoppingCartLeftSidePanelButton.AutoSize = true;
+            this.shoppingCartLeftSidePanelButton.BackColor = System.Drawing.Color.Transparent;
+            this.shoppingCartLeftSidePanelButton.BackgroundImage = global::POSeidon.Properties.Resources.order;
+            this.shoppingCartLeftSidePanelButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.shoppingCartLeftSidePanelButton.Location = new System.Drawing.Point(28, 241);
+            this.shoppingCartLeftSidePanelButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.shoppingCartLeftSidePanelButton.Name = "shoppingCartLeftSidePanelButton";
+            this.shoppingCartLeftSidePanelButton.Size = new System.Drawing.Size(93, 89);
+            this.shoppingCartLeftSidePanelButton.TabIndex = 5;
+            this.shoppingCartLeftSidePanelButton.UseVisualStyleBackColor = false;
+            this.shoppingCartLeftSidePanelButton.Click += new System.EventHandler(this.ShoppingCartLeftSidePanelButton_Click);
+            // 
+            // logoutButton
+            // 
+            this.logoutButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.logoutButton.AutoSize = true;
+            this.logoutButton.BackColor = System.Drawing.Color.Transparent;
+            this.logoutButton.BackgroundImage = global::POSeidon.Properties.Resources.rsz_1logout_50x60;
+            this.logoutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.logoutButton.Location = new System.Drawing.Point(147, 241);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Size = new System.Drawing.Size(64, 54);
+            this.logoutButton.TabIndex = 4;
+            this.logoutButton.UseVisualStyleBackColor = false;
+            this.logoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
+            // 
+            // iconButton
+            // 
+            this.iconButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton.AutoSize = true;
+            this.iconButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.iconButton.Image = global::POSeidon.Properties.Resources.rsz_poseidon_trident;
+            this.iconButton.Location = new System.Drawing.Point(11, 12);
+            this.iconButton.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.iconButton.MaximumSize = new System.Drawing.Size(200, 199);
+            this.iconButton.MinimumSize = new System.Drawing.Size(200, 199);
+            this.iconButton.Name = "iconButton";
+            this.iconButton.Size = new System.Drawing.Size(200, 199);
+            this.iconButton.TabIndex = 0;
+            this.iconButton.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -1408,5 +1505,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn customerEmailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn customerAddressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn deleteCustomerDataGridViewImageColumn;
+        private System.Windows.Forms.Panel searchImageHomePanel;
+        private System.Windows.Forms.Panel searchImageSuppliersPanel;
     }
 }
