@@ -110,5 +110,6 @@ namespace POSeidon
                             select x;
             suppliersTabDataGridView.DataSource = suppliers.ToList();
         }
+
     }
 }
