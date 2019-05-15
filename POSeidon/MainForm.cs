@@ -77,5 +77,11 @@ namespace POSeidon
                 MessageBox.Show("Product added to cart.", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void ShoppingCartLeftSidePanelButton_Click(object sender, EventArgs e)
+        {
+            ShoppingCartForm shoppingCartForm = new ShoppingCartForm();
+            shoppingCartForm.ShowDialog();
+        }
     }
 }

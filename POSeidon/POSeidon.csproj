@@ -78,8 +78,15 @@
     <Compile Include="AddProductForm.Designer.cs">
       <DependentUpon>AddProductForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShoppingCartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShoppingCartForm.Designer.cs">
+      <DependentUpon>ShoppingCartForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ShoppingCartItem.cs" />
     <Compile Include="ShoppingCart.cs" />
+    <Compile Include="UIUtils.cs" />
     <Compile Include="WeightUnit.cs" />
     <Compile Include="Currency.cs" />
     <Compile Include="Settings.cs" />
@@ -125,6 +132,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ShoppingCartForm.resx">
+      <DependentUpon>ShoppingCartForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="config.ini">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
