@@ -18,6 +18,8 @@ namespace POSeidon
             salesHistoryDataGridView.DataSource = Controller.SupplierLogs;
             suppliersTabDataGridView.AutoGenerateColumns = false;
             suppliersTabDataGridView.DataSource = Controller.Suppliers;
+            customersTabDataGridView.AutoGenerateColumns = false;
+            customersTabDataGridView.DataSource = Controller.Customers;
             currencySettingsComboBox.DataSource = Controller.Settings.AvailableCurrencies;
             weightUnitComboBox.DataSource = Controller.Settings.AvailableWeightUnits;
         }

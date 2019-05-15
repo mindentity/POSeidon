@@ -11,6 +11,7 @@ namespace POSeidon
         public static BindingList<SupplierLog> SupplierLogs { get; set; }
         public static BindingList<Product> Products { get; set; }
         public static BindingList<Supplier> Suppliers { get; set; }
+        public static BindingList<Customer> Customers { get; set; }
         public static Settings Settings { get; set; }
         public static ShoppingCart ShoppingCart { get; set; }
 
@@ -20,6 +21,7 @@ namespace POSeidon
             SupplierLogs = new BindingList<SupplierLog>(DBUtils.GetAllSupplierLogs().ToList());
             Products = new BindingList<Product>(DBUtils.GetAllProducts().ToList());
             Suppliers = new BindingList<Supplier>(DBUtils.GetAllSuppliers().ToList());
+            Customers = new BindingList<Customer>(DBUtils.GetAllCustomers().ToList());
             Settings = DBUtils.GetSettings();
             ShoppingCart = new ShoppingCart
             {

@@ -1207,26 +1207,31 @@
             // 
             // customerFirstNameDataGridViewTextBoxColumn
             // 
+            this.customerFirstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
             this.customerFirstNameDataGridViewTextBoxColumn.HeaderText = "First Name";
             this.customerFirstNameDataGridViewTextBoxColumn.Name = "customerFirstNameDataGridViewTextBoxColumn";
             // 
             // customerLastNameDataGridViewTextBoxColumn
             // 
+            this.customerLastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
             this.customerLastNameDataGridViewTextBoxColumn.HeaderText = "Last Name";
             this.customerLastNameDataGridViewTextBoxColumn.Name = "customerLastNameDataGridViewTextBoxColumn";
             // 
             // customerPhoneDataGridViewTextBoxColumn
             // 
+            this.customerPhoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
             this.customerPhoneDataGridViewTextBoxColumn.HeaderText = "Phone";
             this.customerPhoneDataGridViewTextBoxColumn.Name = "customerPhoneDataGridViewTextBoxColumn";
             // 
             // customerEmailDataGridViewTextBoxColumn
             // 
+            this.customerEmailDataGridViewTextBoxColumn.DataPropertyName = "Email";
             this.customerEmailDataGridViewTextBoxColumn.HeaderText = "Email";
             this.customerEmailDataGridViewTextBoxColumn.Name = "customerEmailDataGridViewTextBoxColumn";
             // 
             // customerAddressDataGridViewTextBoxColumn
             // 
+            this.customerAddressDataGridViewTextBoxColumn.DataPropertyName = "Address";
             this.customerAddressDataGridViewTextBoxColumn.HeaderText = "Address";
             this.customerAddressDataGridViewTextBoxColumn.Name = "customerAddressDataGridViewTextBoxColumn";
             // 
