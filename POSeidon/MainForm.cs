@@ -82,8 +82,15 @@ namespace POSeidon
 
         private void ShoppingCartLeftSidePanelButton_Click(object sender, EventArgs e)
         {
-            ShoppingCartForm shoppingCartForm = new ShoppingCartForm();
-            shoppingCartForm.ShowDialog();
+            if (Controller.ShoppingCart.Items.Count > 0)
+            {
+                ShoppingCartForm shoppingCartForm = new ShoppingCartForm();
+                shoppingCartForm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Shopping cart is empty!", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void ProductSearchTextBox_TextChanged(object sender, EventArgs e)
