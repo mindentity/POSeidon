@@ -16,6 +16,8 @@ namespace POSeidon
             homepageDataGridView.DataSource = Controller.Products;
             salesHistoryDataGridView.AutoGenerateColumns = true;
             salesHistoryDataGridView.DataSource = Controller.SupplierLogs;
+            suppliersTabDataGridView.AutoGenerateColumns = false;
+            suppliersTabDataGridView.DataSource = Controller.Suppliers;
             currencySettingsComboBox.DataSource = Controller.Settings.AvailableCurrencies;
             weightUnitComboBox.DataSource = Controller.Settings.AvailableWeightUnits;
         }
@@ -90,6 +92,14 @@ namespace POSeidon
                            where x.Name.IndexOf(productSearchTextBox.Text, StringComparison.OrdinalIgnoreCase) >= 0
                            select x;
             homepageDataGridView.DataSource = products.ToList();
+        }
+
+        private void SuppliersSearchTextBox_TextChanged(object sender, EventArgs e)
+        {
+            var suppliers = from x in Controller.Suppliers
+                            where x.Name.IndexOf(suppliersSearchTextBox.Text, StringComparison.OrdinalIgnoreCase) >= 0
+                            select x;
+            suppliersTabDataGridView.DataSource = suppliers.ToList();
         }
     }
 }

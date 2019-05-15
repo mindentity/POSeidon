@@ -76,13 +76,7 @@
             this.customerAddressDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deleteCustomerDataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.suppliersTab = new System.Windows.Forms.TabPage();
-            this.suppliersTabLabe = new System.Windows.Forms.Label();
             this.suppliersTabDataGridView = new System.Windows.Forms.DataGridView();
-            this.supplierNameDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplierPhoneDataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplierEmailDataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplierAddressDataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deleteSupplierDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.salesAndPurchasingTab = new System.Windows.Forms.TabPage();
             this.salesAndPurchasingPanel = new System.Windows.Forms.Panel();
             this.salesAndPurchasingNavigator = new ComponentFactory.Krypton.Navigator.KryptonNavigator();
@@ -126,6 +120,12 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.productSearchTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.supplierNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplierPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplierEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplierAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deleteSupplierDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.suppliersSearchTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             addProductButton = new System.Windows.Forms.Button();
             this.leftsideMainPanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
@@ -647,7 +647,7 @@
             // suppliersTab
             // 
             this.suppliersTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.suppliersTab.Controls.Add(this.suppliersTabLabe);
+            this.suppliersTab.Controls.Add(this.suppliersSearchTextBox);
             this.suppliersTab.Controls.Add(this.suppliersTabDataGridView);
             this.suppliersTab.Location = new System.Drawing.Point(4, 54);
             this.suppliersTab.Margin = new System.Windows.Forms.Padding(2);
@@ -655,18 +655,6 @@
             this.suppliersTab.Size = new System.Drawing.Size(788, 489);
             this.suppliersTab.TabIndex = 5;
             this.suppliersTab.Text = "Suppliers";
-            // 
-            // suppliersTabLabe
-            // 
-            this.suppliersTabLabe.BackColor = System.Drawing.Color.Transparent;
-            this.suppliersTabLabe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.suppliersTabLabe.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.suppliersTabLabe.Location = new System.Drawing.Point(331, 4);
-            this.suppliersTabLabe.Name = "suppliersTabLabe";
-            this.suppliersTabLabe.Size = new System.Drawing.Size(130, 34);
-            this.suppliersTabLabe.TabIndex = 10;
-            this.suppliersTabLabe.Text = "SUPPLIERS";
-            this.suppliersTabLabe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // suppliersTabDataGridView
             // 
@@ -681,10 +669,10 @@
             this.suppliersTabDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(210)))), ((int)(((byte)(232)))));
             this.suppliersTabDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.suppliersTabDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.supplierNameDataGridViewTextBoxColumn5,
-            this.supplierPhoneDataGridViewTextBoxColumn6,
-            this.supplierEmailDataGridViewTextBoxColumn8,
-            this.supplierAddressDataGridViewTextBoxColumn8,
+            this.supplierNameDataGridViewTextBoxColumn,
+            this.supplierPhoneDataGridViewTextBoxColumn,
+            this.supplierEmailDataGridViewTextBoxColumn,
+            this.supplierAddressDataGridViewTextBoxColumn,
             this.deleteSupplierDataGridViewImageColumn});
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
@@ -701,32 +689,6 @@
             this.suppliersTabDataGridView.RowTemplate.Height = 24;
             this.suppliersTabDataGridView.Size = new System.Drawing.Size(790, 460);
             this.suppliersTabDataGridView.TabIndex = 9;
-            // 
-            // supplierNameDataGridViewTextBoxColumn5
-            // 
-            this.supplierNameDataGridViewTextBoxColumn5.HeaderText = "Name";
-            this.supplierNameDataGridViewTextBoxColumn5.Name = "supplierNameDataGridViewTextBoxColumn5";
-            // 
-            // supplierPhoneDataGridViewTextBoxColumn6
-            // 
-            this.supplierPhoneDataGridViewTextBoxColumn6.HeaderText = "Phone";
-            this.supplierPhoneDataGridViewTextBoxColumn6.Name = "supplierPhoneDataGridViewTextBoxColumn6";
-            // 
-            // supplierEmailDataGridViewTextBoxColumn8
-            // 
-            this.supplierEmailDataGridViewTextBoxColumn8.HeaderText = "Email";
-            this.supplierEmailDataGridViewTextBoxColumn8.Name = "supplierEmailDataGridViewTextBoxColumn8";
-            // 
-            // supplierAddressDataGridViewTextBoxColumn8
-            // 
-            this.supplierAddressDataGridViewTextBoxColumn8.HeaderText = "Address";
-            this.supplierAddressDataGridViewTextBoxColumn8.Name = "supplierAddressDataGridViewTextBoxColumn8";
-            // 
-            // deleteSupplierDataGridViewImageColumn
-            // 
-            this.deleteSupplierDataGridViewImageColumn.HeaderText = "Delete";
-            this.deleteSupplierDataGridViewImageColumn.Image = global::POSeidon.Properties.Resources.delete;
-            this.deleteSupplierDataGridViewImageColumn.Name = "deleteSupplierDataGridViewImageColumn";
             // 
             // salesAndPurchasingTab
             // 
@@ -1196,6 +1158,44 @@
             this.productSearchTextBox.TabIndex = 8;
             this.productSearchTextBox.TextChanged += new System.EventHandler(this.ProductSearchTextBox_TextChanged);
             // 
+            // supplierNameDataGridViewTextBoxColumn
+            // 
+            this.supplierNameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.supplierNameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.supplierNameDataGridViewTextBoxColumn.Name = "supplierNameDataGridViewTextBoxColumn";
+            // 
+            // supplierPhoneDataGridViewTextBoxColumn
+            // 
+            this.supplierPhoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
+            this.supplierPhoneDataGridViewTextBoxColumn.HeaderText = "Phone";
+            this.supplierPhoneDataGridViewTextBoxColumn.Name = "supplierPhoneDataGridViewTextBoxColumn";
+            // 
+            // supplierEmailDataGridViewTextBoxColumn
+            // 
+            this.supplierEmailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.supplierEmailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.supplierEmailDataGridViewTextBoxColumn.Name = "supplierEmailDataGridViewTextBoxColumn";
+            // 
+            // supplierAddressDataGridViewTextBoxColumn
+            // 
+            this.supplierAddressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.supplierAddressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.supplierAddressDataGridViewTextBoxColumn.Name = "supplierAddressDataGridViewTextBoxColumn";
+            // 
+            // deleteSupplierDataGridViewImageColumn
+            // 
+            this.deleteSupplierDataGridViewImageColumn.HeaderText = "Delete";
+            this.deleteSupplierDataGridViewImageColumn.Image = global::POSeidon.Properties.Resources.delete;
+            this.deleteSupplierDataGridViewImageColumn.Name = "deleteSupplierDataGridViewImageColumn";
+            // 
+            // suppliersSearchTextBox
+            // 
+            this.suppliersSearchTextBox.Location = new System.Drawing.Point(569, 12);
+            this.suppliersSearchTextBox.Name = "suppliersSearchTextBox";
+            this.suppliersSearchTextBox.Size = new System.Drawing.Size(216, 23);
+            this.suppliersSearchTextBox.TabIndex = 10;
+            this.suppliersSearchTextBox.TextChanged += new System.EventHandler(this.SuppliersSearchTextBox_TextChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1241,6 +1241,7 @@
             this.customersTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.customerTabDataGridView)).EndInit();
             this.suppliersTab.ResumeLayout(false);
+            this.suppliersTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.suppliersTabDataGridView)).EndInit();
             this.salesAndPurchasingTab.ResumeLayout(false);
             this.salesAndPurchasingTab.PerformLayout();
@@ -1332,13 +1333,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn customerAddressDataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewImageColumn deleteCustomerDataGridViewImageColumn3;
         private System.Windows.Forms.DataGridView suppliersTabDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn supplierNameDataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn supplierPhoneDataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn supplierEmailDataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn supplierAddressDataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewImageColumn deleteSupplierDataGridViewImageColumn;
         private System.Windows.Forms.Label customersTabLabel;
-        private System.Windows.Forms.Label suppliersTabLabe;
         private System.Windows.Forms.Panel salesAndPurchasingPanel;
         private ComponentFactory.Krypton.Navigator.KryptonNavigator salesAndPurchasingNavigator;
         private ComponentFactory.Krypton.Navigator.KryptonPage salesNavigatorPage;
@@ -1360,5 +1355,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn productStockHomePageDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn productAddHomePageDataGridViewImageColumn;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox productSearchTextBox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn supplierNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn supplierPhoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn supplierEmailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn supplierAddressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewImageColumn deleteSupplierDataGridViewImageColumn;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox suppliersSearchTextBox;
     }
 }
