@@ -83,5 +83,13 @@ namespace POSeidon
             ShoppingCartForm shoppingCartForm = new ShoppingCartForm();
             shoppingCartForm.ShowDialog();
         }
+
+        private void ProductSearchTextBox_TextChanged(object sender, EventArgs e)
+        {
+            var products = from x in Controller.Products
+                           where x.Name.IndexOf(productSearchTextBox.Text, StringComparison.OrdinalIgnoreCase) >= 0
+                           select x;
+            homepageDataGridView.DataSource = products.ToList();
+        }
     }
 }

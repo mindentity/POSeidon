@@ -30,6 +30,8 @@
         {
             System.Windows.Forms.Button addProductButton;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -40,8 +42,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.leftsideMainPanel = new System.Windows.Forms.Panel();
             this.shoppingCartLeftSidePanelButton = new System.Windows.Forms.Button();
             this.logoutButton = new System.Windows.Forms.Button();
@@ -53,6 +53,10 @@
             this.homeTab = new System.Windows.Forms.TabPage();
             this.homePanel = new System.Windows.Forms.Panel();
             this.homepageDataGridView = new System.Windows.Forms.DataGridView();
+            this.productNameHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productPriceHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productStockHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productAddHomePageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.StatisticsTab = new System.Windows.Forms.TabPage();
             this.statisticsPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.statisticsHomepageNavigator = new ComponentFactory.Krypton.Navigator.KryptonNavigator();
@@ -121,10 +125,7 @@
             this.passwordLabel = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.productNameHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productPriceHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productStockHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productAddHomePageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.productSearchTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             addProductButton = new System.Windows.Forms.Button();
             this.leftsideMainPanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
@@ -339,6 +340,7 @@
             this.homePanel.AutoSize = true;
             this.homePanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.homePanel.BackColor = System.Drawing.Color.PowderBlue;
+            this.homePanel.Controls.Add(this.productSearchTextBox);
             this.homePanel.Controls.Add(this.homepageDataGridView);
             this.homePanel.Controls.Add(addProductButton);
             this.homePanel.Location = new System.Drawing.Point(4, 0);
@@ -385,6 +387,37 @@
             this.homepageDataGridView.Size = new System.Drawing.Size(786, 425);
             this.homepageDataGridView.TabIndex = 7;
             this.homepageDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HomepageDataGridView_CellClick);
+            // 
+            // productNameHomePageDataGridViewTextBoxColumn
+            // 
+            this.productNameHomePageDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.productNameHomePageDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.productNameHomePageDataGridViewTextBoxColumn.Name = "productNameHomePageDataGridViewTextBoxColumn";
+            this.productNameHomePageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productPriceHomePageDataGridViewTextBoxColumn
+            // 
+            this.productPriceHomePageDataGridViewTextBoxColumn.DataPropertyName = "Price";
+            dataGridViewCellStyle1.Format = "C2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.productPriceHomePageDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            this.productPriceHomePageDataGridViewTextBoxColumn.HeaderText = "Price";
+            this.productPriceHomePageDataGridViewTextBoxColumn.Name = "productPriceHomePageDataGridViewTextBoxColumn";
+            this.productPriceHomePageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productStockHomePageDataGridViewTextBoxColumn
+            // 
+            this.productStockHomePageDataGridViewTextBoxColumn.DataPropertyName = "StockAmountText";
+            this.productStockHomePageDataGridViewTextBoxColumn.HeaderText = "Stock Amount";
+            this.productStockHomePageDataGridViewTextBoxColumn.Name = "productStockHomePageDataGridViewTextBoxColumn";
+            this.productStockHomePageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productAddHomePageDataGridViewImageColumn
+            // 
+            this.productAddHomePageDataGridViewImageColumn.HeaderText = "Add";
+            this.productAddHomePageDataGridViewImageColumn.Image = ((System.Drawing.Image)(resources.GetObject("productAddHomePageDataGridViewImageColumn.Image")));
+            this.productAddHomePageDataGridViewImageColumn.Name = "productAddHomePageDataGridViewImageColumn";
+            this.productAddHomePageDataGridViewImageColumn.ReadOnly = true;
             // 
             // StatisticsTab
             // 
@@ -1155,36 +1188,13 @@
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 201;
             // 
-            // productNameHomePageDataGridViewTextBoxColumn
+            // productSearchTextBox
             // 
-            this.productNameHomePageDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.productNameHomePageDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.productNameHomePageDataGridViewTextBoxColumn.Name = "productNameHomePageDataGridViewTextBoxColumn";
-            this.productNameHomePageDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productPriceHomePageDataGridViewTextBoxColumn
-            // 
-            this.productPriceHomePageDataGridViewTextBoxColumn.DataPropertyName = "Price";
-            dataGridViewCellStyle1.Format = "C2";
-            dataGridViewCellStyle1.NullValue = null;
-            this.productPriceHomePageDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
-            this.productPriceHomePageDataGridViewTextBoxColumn.HeaderText = "Price";
-            this.productPriceHomePageDataGridViewTextBoxColumn.Name = "productPriceHomePageDataGridViewTextBoxColumn";
-            this.productPriceHomePageDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productStockHomePageDataGridViewTextBoxColumn
-            // 
-            this.productStockHomePageDataGridViewTextBoxColumn.DataPropertyName = "StockAmountText";
-            this.productStockHomePageDataGridViewTextBoxColumn.HeaderText = "Stock Amount";
-            this.productStockHomePageDataGridViewTextBoxColumn.Name = "productStockHomePageDataGridViewTextBoxColumn";
-            this.productStockHomePageDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productAddHomePageDataGridViewImageColumn
-            // 
-            this.productAddHomePageDataGridViewImageColumn.HeaderText = "Add";
-            this.productAddHomePageDataGridViewImageColumn.Image = ((System.Drawing.Image)(resources.GetObject("productAddHomePageDataGridViewImageColumn.Image")));
-            this.productAddHomePageDataGridViewImageColumn.Name = "productAddHomePageDataGridViewImageColumn";
-            this.productAddHomePageDataGridViewImageColumn.ReadOnly = true;
+            this.productSearchTextBox.Location = new System.Drawing.Point(522, 26);
+            this.productSearchTextBox.Name = "productSearchTextBox";
+            this.productSearchTextBox.Size = new System.Drawing.Size(257, 23);
+            this.productSearchTextBox.TabIndex = 8;
+            this.productSearchTextBox.TextChanged += new System.EventHandler(this.ProductSearchTextBox_TextChanged);
             // 
             // MainForm
             // 
@@ -1349,5 +1359,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn productPriceHomePageDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productStockHomePageDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn productAddHomePageDataGridViewImageColumn;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox productSearchTextBox;
     }
 }
