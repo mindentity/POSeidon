@@ -52,6 +52,7 @@
             this.homepageTabControl = new System.Windows.Forms.TabControl();
             this.homeTab = new System.Windows.Forms.TabPage();
             this.homePanel = new System.Windows.Forms.Panel();
+            this.productSearchTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.homepageDataGridView = new System.Windows.Forms.DataGridView();
             this.productNameHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productPriceHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,6 +68,7 @@
             this.salesStatisticsPanel = new System.Windows.Forms.Panel();
             this.salesChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.customersTab = new System.Windows.Forms.TabPage();
+            this.addCustomerButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.customersTabLabel = new System.Windows.Forms.Label();
             this.customerTabDataGridView = new System.Windows.Forms.DataGridView();
             this.customerFirstNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,7 +78,14 @@
             this.customerAddressDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deleteCustomerDataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.suppliersTab = new System.Windows.Forms.TabPage();
+            this.suppliersSearchTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.addSupplierButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.suppliersTabDataGridView = new System.Windows.Forms.DataGridView();
+            this.supplierNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplierPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplierEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplierAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deleteSupplierDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.salesAndPurchasingTab = new System.Windows.Forms.TabPage();
             this.salesAndPurchasingPanel = new System.Windows.Forms.Panel();
             this.salesAndPurchasingNavigator = new ComponentFactory.Krypton.Navigator.KryptonNavigator();
@@ -119,16 +128,6 @@
             this.passwordLabel = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.productSearchTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.supplierNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.suppliersTabLabel = new System.Windows.Forms.Label();
-            this.supplierPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplierEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplierAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deleteSupplierDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.suppliersSearchTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.addCustomerButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.addSupplierButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             addProductButton = new System.Windows.Forms.Button();
             this.leftsideMainPanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
@@ -191,7 +190,7 @@
             addProductButton.Location = new System.Drawing.Point(3, 9);
             addProductButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             addProductButton.Name = "addProductButton";
-            addProductButton.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            addProductButton.Padding = new System.Windows.Forms.Padding(5);
             addProductButton.Size = new System.Drawing.Size(332, 79);
             addProductButton.TabIndex = 1;
             addProductButton.Text = "ADD A NEW PRODUCT";
@@ -350,6 +349,14 @@
             this.homePanel.Name = "homePanel";
             this.homePanel.Size = new System.Drawing.Size(1048, 689);
             this.homePanel.TabIndex = 0;
+            // 
+            // productSearchTextBox
+            // 
+            this.productSearchTextBox.Location = new System.Drawing.Point(522, 26);
+            this.productSearchTextBox.Name = "productSearchTextBox";
+            this.productSearchTextBox.Size = new System.Drawing.Size(257, 27);
+            this.productSearchTextBox.TabIndex = 8;
+            this.productSearchTextBox.TextChanged += new System.EventHandler(this.ProductSearchTextBox_TextChanged);
             // 
             // homepageDataGridView
             // 
@@ -569,6 +576,22 @@
             this.customersTab.TabIndex = 2;
             this.customersTab.Text = "Customers";
             // 
+            // addCustomerButton
+            // 
+            this.addCustomerButton.Location = new System.Drawing.Point(31, 38);
+            this.addCustomerButton.Name = "addCustomerButton";
+            this.addCustomerButton.Size = new System.Drawing.Size(208, 57);
+            this.addCustomerButton.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.addCustomerButton.StateCommon.Border.Rounding = 5;
+            this.addCustomerButton.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.addCustomerButton.StateNormal.Border.Rounding = 5;
+            this.addCustomerButton.TabIndex = 12;
+            this.addCustomerButton.Values.Text = "Add a customer";
+            // 
             // customersTabLabel
             // 
             this.customersTabLabel.BackColor = System.Drawing.Color.Transparent;
@@ -653,7 +676,6 @@
             this.suppliersTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.suppliersTab.Controls.Add(this.suppliersSearchTextBox);
             this.suppliersTab.Controls.Add(this.addSupplierButton);
-            this.suppliersTab.Controls.Add(this.suppliersTabLabel);
             this.suppliersTab.Controls.Add(this.suppliersTabDataGridView);
             this.suppliersTab.Location = new System.Drawing.Point(4, 54);
             this.suppliersTab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -662,18 +684,29 @@
             this.suppliersTab.TabIndex = 5;
             this.suppliersTab.Text = "Suppliers";
             // 
-            // suppliersTabLabel
+            // suppliersSearchTextBox
             // 
-            this.suppliersTabLabel.BackColor = System.Drawing.Color.Transparent;
-            this.suppliersTabLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.suppliersTabLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.suppliersTabLabel.Location = new System.Drawing.Point(441, 5);
-            this.suppliersTabLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.suppliersTabLabel.Name = "suppliersTabLabel";
-            this.suppliersTabLabel.Size = new System.Drawing.Size(173, 42);
-            this.suppliersTabLabel.TabIndex = 10;
-            this.suppliersTabLabel.Text = "SUPPLIERS";
-            this.suppliersTabLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.suppliersSearchTextBox.Location = new System.Drawing.Point(569, 12);
+            this.suppliersSearchTextBox.Name = "suppliersSearchTextBox";
+            this.suppliersSearchTextBox.Size = new System.Drawing.Size(216, 27);
+            this.suppliersSearchTextBox.TabIndex = 10;
+            this.suppliersSearchTextBox.TextChanged += new System.EventHandler(this.SuppliersSearchTextBox_TextChanged);
+            // 
+            // addSupplierButton
+            // 
+            this.addSupplierButton.Location = new System.Drawing.Point(33, 38);
+            this.addSupplierButton.Name = "addSupplierButton";
+            this.addSupplierButton.Size = new System.Drawing.Size(208, 57);
+            this.addSupplierButton.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.addSupplierButton.StateCommon.Border.Rounding = 5;
+            this.addSupplierButton.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.addSupplierButton.StateNormal.Border.Rounding = 5;
+            this.addSupplierButton.TabIndex = 13;
+            this.addSupplierButton.Values.Text = "Add a supplier";
             // 
             // suppliersTabDataGridView
             // 
@@ -708,6 +741,36 @@
             this.suppliersTabDataGridView.RowTemplate.Height = 24;
             this.suppliersTabDataGridView.Size = new System.Drawing.Size(1053, 494);
             this.suppliersTabDataGridView.TabIndex = 9;
+            // 
+            // supplierNameDataGridViewTextBoxColumn
+            // 
+            this.supplierNameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.supplierNameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.supplierNameDataGridViewTextBoxColumn.Name = "supplierNameDataGridViewTextBoxColumn";
+            // 
+            // supplierPhoneDataGridViewTextBoxColumn
+            // 
+            this.supplierPhoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
+            this.supplierPhoneDataGridViewTextBoxColumn.HeaderText = "Phone";
+            this.supplierPhoneDataGridViewTextBoxColumn.Name = "supplierPhoneDataGridViewTextBoxColumn";
+            // 
+            // supplierEmailDataGridViewTextBoxColumn
+            // 
+            this.supplierEmailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.supplierEmailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.supplierEmailDataGridViewTextBoxColumn.Name = "supplierEmailDataGridViewTextBoxColumn";
+            // 
+            // supplierAddressDataGridViewTextBoxColumn
+            // 
+            this.supplierAddressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.supplierAddressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.supplierAddressDataGridViewTextBoxColumn.Name = "supplierAddressDataGridViewTextBoxColumn";
+            // 
+            // deleteSupplierDataGridViewImageColumn
+            // 
+            this.deleteSupplierDataGridViewImageColumn.HeaderText = "Delete";
+            this.deleteSupplierDataGridViewImageColumn.Image = global::POSeidon.Properties.Resources.delete;
+            this.deleteSupplierDataGridViewImageColumn.Name = "deleteSupplierDataGridViewImageColumn";
             // 
             // salesAndPurchasingTab
             // 
@@ -986,7 +1049,7 @@
             this.weightUnitComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.weightUnitComboBox.DropDownWidth = 121;
             this.weightUnitComboBox.Location = new System.Drawing.Point(199, 393);
-            this.weightUnitComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.weightUnitComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.weightUnitComboBox.Name = "weightUnitComboBox";
             this.weightUnitComboBox.Size = new System.Drawing.Size(161, 25);
             this.weightUnitComboBox.TabIndex = 18;
@@ -994,7 +1057,7 @@
             // weightUnitSettingsLabel
             // 
             this.weightUnitSettingsLabel.Location = new System.Drawing.Point(49, 394);
-            this.weightUnitSettingsLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.weightUnitSettingsLabel.Margin = new System.Windows.Forms.Padding(4);
             this.weightUnitSettingsLabel.Name = "weightUnitSettingsLabel";
             this.weightUnitSettingsLabel.Size = new System.Drawing.Size(97, 24);
             this.weightUnitSettingsLabel.TabIndex = 17;
@@ -1006,7 +1069,7 @@
             this.currencySettingsGroupBox.GroupBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ControlToolTip;
             this.currencySettingsGroupBox.GroupBorderStyle = ComponentFactory.Krypton.Toolkit.PaletteBorderStyle.ButtonAlternate;
             this.currencySettingsGroupBox.Location = new System.Drawing.Point(21, 33);
-            this.currencySettingsGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.currencySettingsGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.currencySettingsGroupBox.Name = "currencySettingsGroupBox";
             // 
             // currencySettingsGroupBox.Panel
@@ -1031,7 +1094,7 @@
             // 
             this.currencySettingsGroupSizeNumericUpDown.DecimalPlaces = 99;
             this.currencySettingsGroupSizeNumericUpDown.Location = new System.Drawing.Point(175, 238);
-            this.currencySettingsGroupSizeNumericUpDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.currencySettingsGroupSizeNumericUpDown.Margin = new System.Windows.Forms.Padding(4);
             this.currencySettingsGroupSizeNumericUpDown.Name = "currencySettingsGroupSizeNumericUpDown";
             this.currencySettingsGroupSizeNumericUpDown.Size = new System.Drawing.Size(160, 26);
             this.currencySettingsGroupSizeNumericUpDown.TabIndex = 23;
@@ -1039,7 +1102,7 @@
             // currencySettingsGroupSizeLabel
             // 
             this.currencySettingsGroupSizeLabel.Location = new System.Drawing.Point(25, 240);
-            this.currencySettingsGroupSizeLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.currencySettingsGroupSizeLabel.Margin = new System.Windows.Forms.Padding(4);
             this.currencySettingsGroupSizeLabel.Name = "currencySettingsGroupSizeLabel";
             this.currencySettingsGroupSizeLabel.Size = new System.Drawing.Size(89, 24);
             this.currencySettingsGroupSizeLabel.TabIndex = 22;
@@ -1053,7 +1116,7 @@
             ".",
             ","});
             this.currencySettingsGroupSeparatorComboBox.Location = new System.Drawing.Point(175, 202);
-            this.currencySettingsGroupSeparatorComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.currencySettingsGroupSeparatorComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.currencySettingsGroupSeparatorComboBox.Name = "currencySettingsGroupSeparatorComboBox";
             this.currencySettingsGroupSeparatorComboBox.Size = new System.Drawing.Size(161, 25);
             this.currencySettingsGroupSeparatorComboBox.TabIndex = 21;
@@ -1066,7 +1129,7 @@
             ".",
             ","});
             this.currencySettingsDecimalSeparatorComboBox.Location = new System.Drawing.Point(175, 153);
-            this.currencySettingsDecimalSeparatorComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.currencySettingsDecimalSeparatorComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.currencySettingsDecimalSeparatorComboBox.Name = "currencySettingsDecimalSeparatorComboBox";
             this.currencySettingsDecimalSeparatorComboBox.Size = new System.Drawing.Size(161, 25);
             this.currencySettingsDecimalSeparatorComboBox.TabIndex = 20;
@@ -1074,7 +1137,7 @@
             // currencySettingsGroupSeparatorLabel
             // 
             this.currencySettingsGroupSeparatorLabel.Location = new System.Drawing.Point(25, 204);
-            this.currencySettingsGroupSeparatorLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.currencySettingsGroupSeparatorLabel.Margin = new System.Windows.Forms.Padding(4);
             this.currencySettingsGroupSeparatorLabel.Name = "currencySettingsGroupSeparatorLabel";
             this.currencySettingsGroupSeparatorLabel.Size = new System.Drawing.Size(128, 24);
             this.currencySettingsGroupSeparatorLabel.TabIndex = 19;
@@ -1083,7 +1146,7 @@
             // currencySettingsDecimalSeparatorLabel
             // 
             this.currencySettingsDecimalSeparatorLabel.Location = new System.Drawing.Point(25, 155);
-            this.currencySettingsDecimalSeparatorLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.currencySettingsDecimalSeparatorLabel.Margin = new System.Windows.Forms.Padding(4);
             this.currencySettingsDecimalSeparatorLabel.Name = "currencySettingsDecimalSeparatorLabel";
             this.currencySettingsDecimalSeparatorLabel.Size = new System.Drawing.Size(140, 24);
             this.currencySettingsDecimalSeparatorLabel.TabIndex = 18;
@@ -1092,7 +1155,7 @@
             // currencySettingsPutSpaceCheckBox
             // 
             this.currencySettingsPutSpaceCheckBox.Location = new System.Drawing.Point(25, 118);
-            this.currencySettingsPutSpaceCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.currencySettingsPutSpaceCheckBox.Margin = new System.Windows.Forms.Padding(4);
             this.currencySettingsPutSpaceCheckBox.Name = "currencySettingsPutSpaceCheckBox";
             this.currencySettingsPutSpaceCheckBox.Size = new System.Drawing.Size(358, 24);
             this.currencySettingsPutSpaceCheckBox.TabIndex = 17;
@@ -1101,7 +1164,7 @@
             // currencySettingsSymbolPlacementRightRadioButton
             // 
             this.currencySettingsSymbolPlacementRightRadioButton.Location = new System.Drawing.Point(257, 70);
-            this.currencySettingsSymbolPlacementRightRadioButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.currencySettingsSymbolPlacementRightRadioButton.Margin = new System.Windows.Forms.Padding(4);
             this.currencySettingsSymbolPlacementRightRadioButton.Name = "currencySettingsSymbolPlacementRightRadioButton";
             this.currencySettingsSymbolPlacementRightRadioButton.Size = new System.Drawing.Size(60, 24);
             this.currencySettingsSymbolPlacementRightRadioButton.TabIndex = 16;
@@ -1111,7 +1174,7 @@
             // 
             this.currencySettingsSymbolPlacementLeftRadioButton.Checked = true;
             this.currencySettingsSymbolPlacementLeftRadioButton.Location = new System.Drawing.Point(175, 71);
-            this.currencySettingsSymbolPlacementLeftRadioButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.currencySettingsSymbolPlacementLeftRadioButton.Margin = new System.Windows.Forms.Padding(4);
             this.currencySettingsSymbolPlacementLeftRadioButton.Name = "currencySettingsSymbolPlacementLeftRadioButton";
             this.currencySettingsSymbolPlacementLeftRadioButton.Size = new System.Drawing.Size(49, 24);
             this.currencySettingsSymbolPlacementLeftRadioButton.TabIndex = 15;
@@ -1120,7 +1183,7 @@
             // currencySettingsLabel
             // 
             this.currencySettingsLabel.Location = new System.Drawing.Point(25, 18);
-            this.currencySettingsLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.currencySettingsLabel.Margin = new System.Windows.Forms.Padding(4);
             this.currencySettingsLabel.Name = "currencySettingsLabel";
             this.currencySettingsLabel.Size = new System.Drawing.Size(75, 24);
             this.currencySettingsLabel.TabIndex = 13;
@@ -1129,7 +1192,7 @@
             // currencySettingsSymbolPlacementLabel
             // 
             this.currencySettingsSymbolPlacementLabel.Location = new System.Drawing.Point(25, 71);
-            this.currencySettingsSymbolPlacementLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.currencySettingsSymbolPlacementLabel.Margin = new System.Windows.Forms.Padding(4);
             this.currencySettingsSymbolPlacementLabel.Name = "currencySettingsSymbolPlacementLabel";
             this.currencySettingsSymbolPlacementLabel.Size = new System.Drawing.Size(141, 24);
             this.currencySettingsSymbolPlacementLabel.TabIndex = 14;
@@ -1140,7 +1203,7 @@
             this.currencySettingsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.currencySettingsComboBox.DropDownWidth = 178;
             this.currencySettingsComboBox.Location = new System.Drawing.Point(175, 18);
-            this.currencySettingsComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.currencySettingsComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.currencySettingsComboBox.Name = "currencySettingsComboBox";
             this.currencySettingsComboBox.Size = new System.Drawing.Size(237, 25);
             this.currencySettingsComboBox.TabIndex = 12;
@@ -1152,7 +1215,7 @@
             this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.saveButton.Location = new System.Drawing.Point(411, 497);
-            this.saveButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(4);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(133, 46);
             this.saveButton.TabIndex = 4;
@@ -1185,83 +1248,6 @@
             this.dataGridViewImageColumn2.Image = global::POSeidon.Properties.Resources.delete;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 201;
-            // 
-            // productSearchTextBox
-            // 
-            this.productSearchTextBox.Location = new System.Drawing.Point(522, 26);
-            this.productSearchTextBox.Name = "productSearchTextBox";
-            this.productSearchTextBox.Size = new System.Drawing.Size(257, 23);
-            this.productSearchTextBox.TabIndex = 8;
-            this.productSearchTextBox.TextChanged += new System.EventHandler(this.ProductSearchTextBox_TextChanged);
-            // 
-            // supplierNameDataGridViewTextBoxColumn
-            // 
-            this.supplierNameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.supplierNameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.supplierNameDataGridViewTextBoxColumn.Name = "supplierNameDataGridViewTextBoxColumn";
-            // 
-            // supplierPhoneDataGridViewTextBoxColumn
-            // 
-            this.supplierPhoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
-            this.supplierPhoneDataGridViewTextBoxColumn.HeaderText = "Phone";
-            this.supplierPhoneDataGridViewTextBoxColumn.Name = "supplierPhoneDataGridViewTextBoxColumn";
-            // 
-            // supplierEmailDataGridViewTextBoxColumn
-            // 
-            this.supplierEmailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.supplierEmailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.supplierEmailDataGridViewTextBoxColumn.Name = "supplierEmailDataGridViewTextBoxColumn";
-            // 
-            // supplierAddressDataGridViewTextBoxColumn
-            // 
-            this.supplierAddressDataGridViewTextBoxColumn.DataPropertyName = "Address";
-            this.supplierAddressDataGridViewTextBoxColumn.HeaderText = "Address";
-            this.supplierAddressDataGridViewTextBoxColumn.Name = "supplierAddressDataGridViewTextBoxColumn";
-            // 
-            // deleteSupplierDataGridViewImageColumn
-            // 
-            this.deleteSupplierDataGridViewImageColumn.HeaderText = "Delete";
-            this.deleteSupplierDataGridViewImageColumn.Image = global::POSeidon.Properties.Resources.delete;
-            this.deleteSupplierDataGridViewImageColumn.Name = "deleteSupplierDataGridViewImageColumn";
-            // 
-            // suppliersSearchTextBox
-            // 
-            this.suppliersSearchTextBox.Location = new System.Drawing.Point(569, 12);
-            this.suppliersSearchTextBox.Name = "suppliersSearchTextBox";
-            this.suppliersSearchTextBox.Size = new System.Drawing.Size(216, 23);
-            this.suppliersSearchTextBox.TabIndex = 10;
-            this.suppliersSearchTextBox.TextChanged += new System.EventHandler(this.SuppliersSearchTextBox_TextChanged);
-            // addCustomerButton
-            // 
-            this.addCustomerButton.Location = new System.Drawing.Point(31, 38);
-            this.addCustomerButton.Name = "addCustomerButton";
-            this.addCustomerButton.Size = new System.Drawing.Size(208, 57);
-            this.addCustomerButton.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.addCustomerButton.StateCommon.Border.Rounding = 5;
-            this.addCustomerButton.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.addCustomerButton.StateNormal.Border.Rounding = 5;
-            this.addCustomerButton.TabIndex = 12;
-            this.addCustomerButton.Values.Text = "Add a customer";
-            // 
-            // addSupplierButton
-            // 
-            this.addSupplierButton.Location = new System.Drawing.Point(33, 38);
-            this.addSupplierButton.Name = "addSupplierButton";
-            this.addSupplierButton.Size = new System.Drawing.Size(208, 57);
-            this.addSupplierButton.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.addSupplierButton.StateCommon.Border.Rounding = 5;
-            this.addSupplierButton.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.addSupplierButton.StateNormal.Border.Rounding = 5;
-            this.addSupplierButton.TabIndex = 13;
-            this.addSupplierButton.Values.Text = "Add a supplier";
             // 
             // MainForm
             // 
@@ -1400,7 +1386,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn customerAddressDataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewImageColumn deleteCustomerDataGridViewImageColumn3;
         private System.Windows.Forms.DataGridView suppliersTabDataGridView;
-        private System.Windows.Forms.Label suppliersTabLabel;
         private System.Windows.Forms.Label customersTabLabel;
         private System.Windows.Forms.Panel salesAndPurchasingPanel;
         private ComponentFactory.Krypton.Navigator.KryptonNavigator salesAndPurchasingNavigator;
