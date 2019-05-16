@@ -191,7 +191,7 @@
             addProductButton.Location = new System.Drawing.Point(3, 9);
             addProductButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             addProductButton.Name = "addProductButton";
-            addProductButton.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            addProductButton.Padding = new System.Windows.Forms.Padding(5);
             addProductButton.Size = new System.Drawing.Size(178, 72);
             addProductButton.TabIndex = 1;
             addProductButton.Text = "ADD PRODUCT";
@@ -211,7 +211,7 @@
             this.leftsideMainPanel.Controls.Add(this.iconButton);
             this.leftsideMainPanel.Controls.Add(this.infoLabel);
             this.leftsideMainPanel.Location = new System.Drawing.Point(8, 3);
-            this.leftsideMainPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.leftsideMainPanel.Margin = new System.Windows.Forms.Padding(2);
             this.leftsideMainPanel.Name = "leftsideMainPanel";
             this.leftsideMainPanel.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
             this.leftsideMainPanel.Size = new System.Drawing.Size(202, 573);
@@ -294,7 +294,7 @@
             this.mainPanel.AutoSize = true;
             this.mainPanel.Controls.Add(this.homepageTabControl);
             this.mainPanel.Location = new System.Drawing.Point(208, 3);
-            this.mainPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mainPanel.Margin = new System.Windows.Forms.Padding(2);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(796, 573);
             this.mainPanel.TabIndex = 1;
@@ -313,7 +313,7 @@
             this.homepageTabControl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.homepageTabControl.ItemSize = new System.Drawing.Size(200, 50);
             this.homepageTabControl.Location = new System.Drawing.Point(2, 6);
-            this.homepageTabControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.homepageTabControl.Margin = new System.Windows.Forms.Padding(2);
             this.homepageTabControl.Name = "homepageTabControl";
             this.homepageTabControl.Padding = new System.Drawing.Point(30, 3);
             this.homepageTabControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -326,9 +326,9 @@
             this.homeTab.BackColor = System.Drawing.Color.Transparent;
             this.homeTab.Controls.Add(this.homePanel);
             this.homeTab.Location = new System.Drawing.Point(4, 54);
-            this.homeTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.homeTab.Margin = new System.Windows.Forms.Padding(2);
             this.homeTab.Name = "homeTab";
-            this.homeTab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.homeTab.Padding = new System.Windows.Forms.Padding(2);
             this.homeTab.Size = new System.Drawing.Size(788, 489);
             this.homeTab.TabIndex = 0;
             this.homeTab.Text = "Home";
@@ -345,7 +345,7 @@
             this.homePanel.Controls.Add(this.homepageDataGridView);
             this.homePanel.Controls.Add(addProductButton);
             this.homePanel.Location = new System.Drawing.Point(4, 0);
-            this.homePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.homePanel.Margin = new System.Windows.Forms.Padding(2);
             this.homePanel.Name = "homePanel";
             this.homePanel.Size = new System.Drawing.Size(786, 560);
             this.homePanel.TabIndex = 0;
@@ -362,7 +362,7 @@
             // productSearchTextBox
             // 
             this.productSearchTextBox.Location = new System.Drawing.Point(413, 43);
-            this.productSearchTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.productSearchTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.productSearchTextBox.Name = "productSearchTextBox";
             this.productSearchTextBox.Size = new System.Drawing.Size(193, 23);
             this.productSearchTextBox.TabIndex = 8;
@@ -396,7 +396,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.homepageDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.homepageDataGridView.Location = new System.Drawing.Point(-2, 91);
-            this.homepageDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.homepageDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.homepageDataGridView.MultiSelect = false;
             this.homepageDataGridView.Name = "homepageDataGridView";
             this.homepageDataGridView.ReadOnly = true;
@@ -443,9 +443,9 @@
             this.StatisticsTab.BackColor = System.Drawing.Color.Gainsboro;
             this.StatisticsTab.Controls.Add(this.statisticsPanel);
             this.StatisticsTab.Location = new System.Drawing.Point(4, 54);
-            this.StatisticsTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.StatisticsTab.Margin = new System.Windows.Forms.Padding(2);
             this.StatisticsTab.Name = "StatisticsTab";
-            this.StatisticsTab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.StatisticsTab.Padding = new System.Windows.Forms.Padding(2);
             this.StatisticsTab.Size = new System.Drawing.Size(788, 489);
             this.StatisticsTab.TabIndex = 1;
             this.StatisticsTab.Text = "Statistics";
@@ -457,7 +457,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.statisticsPanel.Controls.Add(this.statisticsHomepageNavigator);
             this.statisticsPanel.Location = new System.Drawing.Point(0, 0);
-            this.statisticsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.statisticsPanel.Margin = new System.Windows.Forms.Padding(2);
             this.statisticsPanel.Name = "statisticsPanel";
             this.statisticsPanel.Size = new System.Drawing.Size(788, 500);
             this.statisticsPanel.StateCommon.Color1 = System.Drawing.Color.Gainsboro;
@@ -466,13 +466,13 @@
             // statisticsHomepageNavigator
             // 
             this.statisticsHomepageNavigator.Location = new System.Drawing.Point(0, 0);
-            this.statisticsHomepageNavigator.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.statisticsHomepageNavigator.Margin = new System.Windows.Forms.Padding(2);
             this.statisticsHomepageNavigator.Name = "statisticsHomepageNavigator";
             this.statisticsHomepageNavigator.NavigatorMode = ComponentFactory.Krypton.Navigator.NavigatorMode.BarRibbonTabGroup;
             this.statisticsHomepageNavigator.Pages.AddRange(new ComponentFactory.Krypton.Navigator.KryptonPage[] {
             this.customerStatisticsPage,
             this.salesStatisticsPage});
-            this.statisticsHomepageNavigator.SelectedIndex = 0;
+            this.statisticsHomepageNavigator.SelectedIndex = 1;
             this.statisticsHomepageNavigator.Size = new System.Drawing.Size(1044, 596);
             this.statisticsHomepageNavigator.TabIndex = 0;
             this.statisticsHomepageNavigator.Text = "kryptonNavigator1";
@@ -483,7 +483,7 @@
             this.customerStatisticsPage.Controls.Add(this.customerStatisticsPanel);
             this.customerStatisticsPage.Flags = 65534;
             this.customerStatisticsPage.LastVisibleSet = true;
-            this.customerStatisticsPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.customerStatisticsPage.Margin = new System.Windows.Forms.Padding(2);
             this.customerStatisticsPage.MinimumSize = new System.Drawing.Size(38, 41);
             this.customerStatisticsPage.Name = "customerStatisticsPage";
             this.customerStatisticsPage.Size = new System.Drawing.Size(1042, 567);
@@ -498,7 +498,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.customerStatisticsPanel.Controls.Add(this.customerStatisticsChart);
             this.customerStatisticsPanel.Location = new System.Drawing.Point(123, 15);
-            this.customerStatisticsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.customerStatisticsPanel.Margin = new System.Windows.Forms.Padding(2);
             this.customerStatisticsPanel.Name = "customerStatisticsPanel";
             this.customerStatisticsPanel.Size = new System.Drawing.Size(900, 533);
             this.customerStatisticsPanel.TabIndex = 7;
@@ -513,9 +513,9 @@
             legend1.Name = "Legend7";
             this.customerStatisticsChart.Legends.Add(legend1);
             this.customerStatisticsChart.Location = new System.Drawing.Point(20, 19);
-            this.customerStatisticsChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.customerStatisticsChart.Margin = new System.Windows.Forms.Padding(2);
             this.customerStatisticsChart.Name = "customerStatisticsChart";
-            this.customerStatisticsChart.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.customerStatisticsChart.Padding = new System.Windows.Forms.Padding(8);
             this.customerStatisticsChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
             series1.ChartArea = "ChartArea7";
             series1.Legend = "Legend7";
@@ -531,10 +531,10 @@
             this.salesStatisticsPage.Controls.Add(this.salesStatisticsPanel);
             this.salesStatisticsPage.Flags = 65534;
             this.salesStatisticsPage.LastVisibleSet = true;
-            this.salesStatisticsPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.salesStatisticsPage.Margin = new System.Windows.Forms.Padding(2);
             this.salesStatisticsPage.MinimumSize = new System.Drawing.Size(38, 41);
             this.salesStatisticsPage.Name = "salesStatisticsPage";
-            this.salesStatisticsPage.Size = new System.Drawing.Size(782, 457);
+            this.salesStatisticsPage.Size = new System.Drawing.Size(1042, 567);
             this.salesStatisticsPage.Text = "Sales";
             this.salesStatisticsPage.ToolTipTitle = "Page ToolTip";
             this.salesStatisticsPage.UniqueName = "1f51a78fbc9a446f981d86768a13541a";
@@ -546,9 +546,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.salesStatisticsPanel.Controls.Add(this.salesChart);
             this.salesStatisticsPanel.Location = new System.Drawing.Point(123, 15);
-            this.salesStatisticsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.salesStatisticsPanel.Margin = new System.Windows.Forms.Padding(2);
             this.salesStatisticsPanel.Name = "salesStatisticsPanel";
-            this.salesStatisticsPanel.Size = new System.Drawing.Size(640, 423);
+            this.salesStatisticsPanel.Size = new System.Drawing.Size(900, 533);
             this.salesStatisticsPanel.TabIndex = 8;
             // 
             // salesChart
@@ -561,15 +561,15 @@
             legend2.Name = "Legend8";
             this.salesChart.Legends.Add(legend2);
             this.salesChart.Location = new System.Drawing.Point(20, 19);
-            this.salesChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.salesChart.Margin = new System.Windows.Forms.Padding(2);
             this.salesChart.Name = "salesChart";
-            this.salesChart.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.salesChart.Padding = new System.Windows.Forms.Padding(8);
             this.salesChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             series2.ChartArea = "ChartArea8";
             series2.Legend = "Legend8";
             series2.Name = "Series8";
             this.salesChart.Series.Add(series2);
-            this.salesChart.Size = new System.Drawing.Size(600, 388);
+            this.salesChart.Size = new System.Drawing.Size(860, 498);
             this.salesChart.TabIndex = 0;
             this.salesChart.Text = "Sales Chart";
             // 
@@ -579,7 +579,7 @@
             this.customersTab.Controls.Add(this.addCustomerButton);
             this.customersTab.Controls.Add(this.customersTabDataGridView);
             this.customersTab.Location = new System.Drawing.Point(4, 54);
-            this.customersTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.customersTab.Margin = new System.Windows.Forms.Padding(2);
             this.customersTab.Name = "customersTab";
             this.customersTab.Size = new System.Drawing.Size(788, 489);
             this.customersTab.TabIndex = 2;
@@ -588,7 +588,7 @@
             // addCustomerButton
             // 
             this.addCustomerButton.Location = new System.Drawing.Point(23, 31);
-            this.addCustomerButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addCustomerButton.Margin = new System.Windows.Forms.Padding(2);
             this.addCustomerButton.Name = "addCustomerButton";
             this.addCustomerButton.Size = new System.Drawing.Size(156, 46);
             this.addCustomerButton.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -632,7 +632,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.customersTabDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.customersTabDataGridView.Location = new System.Drawing.Point(0, 98);
-            this.customersTabDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.customersTabDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.customersTabDataGridView.Name = "customersTabDataGridView";
             this.customersTabDataGridView.RowTemplate.Height = 24;
             this.customersTabDataGridView.Size = new System.Drawing.Size(788, 401);
@@ -682,7 +682,7 @@
             this.suppliersTab.Controls.Add(this.addSupplierButton);
             this.suppliersTab.Controls.Add(this.suppliersTabDataGridView);
             this.suppliersTab.Location = new System.Drawing.Point(4, 54);
-            this.suppliersTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.suppliersTab.Margin = new System.Windows.Forms.Padding(2);
             this.suppliersTab.Name = "suppliersTab";
             this.suppliersTab.Size = new System.Drawing.Size(788, 489);
             this.suppliersTab.TabIndex = 5;
@@ -700,7 +700,7 @@
             // suppliersSearchTextBox
             // 
             this.suppliersSearchTextBox.Location = new System.Drawing.Point(427, 10);
-            this.suppliersSearchTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.suppliersSearchTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.suppliersSearchTextBox.Name = "suppliersSearchTextBox";
             this.suppliersSearchTextBox.Size = new System.Drawing.Size(162, 23);
             this.suppliersSearchTextBox.TabIndex = 10;
@@ -709,7 +709,7 @@
             // addSupplierButton
             // 
             this.addSupplierButton.Location = new System.Drawing.Point(25, 31);
-            this.addSupplierButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addSupplierButton.Margin = new System.Windows.Forms.Padding(2);
             this.addSupplierButton.Name = "addSupplierButton";
             this.addSupplierButton.Size = new System.Drawing.Size(156, 46);
             this.addSupplierButton.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -751,7 +751,7 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.suppliersTabDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
             this.suppliersTabDataGridView.Location = new System.Drawing.Point(0, 98);
-            this.suppliersTabDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.suppliersTabDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.suppliersTabDataGridView.Name = "suppliersTabDataGridView";
             this.suppliersTabDataGridView.RowTemplate.Height = 24;
             this.suppliersTabDataGridView.Size = new System.Drawing.Size(788, 401);
@@ -792,9 +792,9 @@
             this.salesAndPurchasingTab.BackColor = System.Drawing.Color.PeachPuff;
             this.salesAndPurchasingTab.Controls.Add(this.salesAndPurchasingPanel);
             this.salesAndPurchasingTab.Location = new System.Drawing.Point(4, 54);
-            this.salesAndPurchasingTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.salesAndPurchasingTab.Margin = new System.Windows.Forms.Padding(2);
             this.salesAndPurchasingTab.Name = "salesAndPurchasingTab";
-            this.salesAndPurchasingTab.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.salesAndPurchasingTab.Padding = new System.Windows.Forms.Padding(8);
             this.salesAndPurchasingTab.Size = new System.Drawing.Size(788, 489);
             this.salesAndPurchasingTab.TabIndex = 3;
             this.salesAndPurchasingTab.Text = "Sales and Purchasing";
@@ -808,7 +808,7 @@
             this.salesAndPurchasingPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(207)))), ((int)(((byte)(237)))));
             this.salesAndPurchasingPanel.Controls.Add(this.salesAndPurchasingNavigator);
             this.salesAndPurchasingPanel.Location = new System.Drawing.Point(0, 0);
-            this.salesAndPurchasingPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.salesAndPurchasingPanel.Margin = new System.Windows.Forms.Padding(2);
             this.salesAndPurchasingPanel.Name = "salesAndPurchasingPanel";
             this.salesAndPurchasingPanel.Size = new System.Drawing.Size(1075, 617);
             this.salesAndPurchasingPanel.TabIndex = 0;
@@ -816,7 +816,7 @@
             // salesAndPurchasingNavigator
             // 
             this.salesAndPurchasingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.salesAndPurchasingNavigator.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.salesAndPurchasingNavigator.Margin = new System.Windows.Forms.Padding(2);
             this.salesAndPurchasingNavigator.Name = "salesAndPurchasingNavigator";
             this.salesAndPurchasingNavigator.NavigatorMode = ComponentFactory.Krypton.Navigator.NavigatorMode.BarRibbonTabGroup;
             this.salesAndPurchasingNavigator.Pages.AddRange(new ComponentFactory.Krypton.Navigator.KryptonPage[] {
@@ -834,7 +834,7 @@
             this.salesNavigatorPage.Controls.Add(this.salesHistoryDataGridView);
             this.salesNavigatorPage.Flags = 65534;
             this.salesNavigatorPage.LastVisibleSet = true;
-            this.salesNavigatorPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.salesNavigatorPage.Margin = new System.Windows.Forms.Padding(2);
             this.salesNavigatorPage.MinimumSize = new System.Drawing.Size(38, 41);
             this.salesNavigatorPage.Name = "salesNavigatorPage";
             this.salesNavigatorPage.Size = new System.Drawing.Size(788, 473);
@@ -870,7 +870,7 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.salesHistoryDataGridView.DefaultCellStyle = dataGridViewCellStyle5;
             this.salesHistoryDataGridView.Location = new System.Drawing.Point(2, 2);
-            this.salesHistoryDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.salesHistoryDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.salesHistoryDataGridView.Name = "salesHistoryDataGridView";
             this.salesHistoryDataGridView.RowTemplate.Height = 24;
             this.salesHistoryDataGridView.Size = new System.Drawing.Size(785, 472);
@@ -909,7 +909,7 @@
             this.purchasingNavigatorPage.Controls.Add(this.purchasingDataGridView);
             this.purchasingNavigatorPage.Flags = 65534;
             this.purchasingNavigatorPage.LastVisibleSet = true;
-            this.purchasingNavigatorPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.purchasingNavigatorPage.Margin = new System.Windows.Forms.Padding(2);
             this.purchasingNavigatorPage.MinimumSize = new System.Drawing.Size(38, 41);
             this.purchasingNavigatorPage.Name = "purchasingNavigatorPage";
             this.purchasingNavigatorPage.Size = new System.Drawing.Size(1051, 586);
@@ -945,7 +945,7 @@
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.purchasingDataGridView.DefaultCellStyle = dataGridViewCellStyle6;
             this.purchasingDataGridView.Location = new System.Drawing.Point(-1, 2);
-            this.purchasingDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.purchasingDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.purchasingDataGridView.Name = "purchasingDataGridView";
             this.purchasingDataGridView.RowTemplate.Height = 24;
             this.purchasingDataGridView.Size = new System.Drawing.Size(1048, 584);
@@ -983,7 +983,7 @@
             this.settingsTab.Controls.Add(this.settingsPanel);
             this.settingsTab.Controls.Add(this.passwordLabel);
             this.settingsTab.Location = new System.Drawing.Point(4, 54);
-            this.settingsTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.settingsTab.Margin = new System.Windows.Forms.Padding(2);
             this.settingsTab.Name = "settingsTab";
             this.settingsTab.Size = new System.Drawing.Size(788, 489);
             this.settingsTab.TabIndex = 4;
@@ -1000,7 +1000,7 @@
             this.settingsPanel.Controls.Add(this.settingsChildPanel2);
             this.settingsPanel.Controls.Add(this.saveButton);
             this.settingsPanel.Location = new System.Drawing.Point(0, 35);
-            this.settingsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.settingsPanel.Margin = new System.Windows.Forms.Padding(2);
             this.settingsPanel.Name = "settingsPanel";
             this.settingsPanel.Size = new System.Drawing.Size(788, 463);
             this.settingsPanel.TabIndex = 10;
@@ -1014,7 +1014,7 @@
             this.settingsChildPanel1.Controls.Add(this.settingsCheckbox2);
             this.settingsChildPanel1.Controls.Add(this.settingsCheckbox1);
             this.settingsChildPanel1.Location = new System.Drawing.Point(12, 15);
-            this.settingsChildPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.settingsChildPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.settingsChildPanel1.Name = "settingsChildPanel1";
             this.settingsChildPanel1.Size = new System.Drawing.Size(283, 145);
             this.settingsChildPanel1.TabIndex = 12;
@@ -1023,7 +1023,7 @@
             // 
             this.settingsCheckbox2.AutoSize = true;
             this.settingsCheckbox2.Location = new System.Drawing.Point(9, 15);
-            this.settingsCheckbox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.settingsCheckbox2.Margin = new System.Windows.Forms.Padding(2);
             this.settingsCheckbox2.Name = "settingsCheckbox2";
             this.settingsCheckbox2.Size = new System.Drawing.Size(226, 23);
             this.settingsCheckbox2.TabIndex = 11;
@@ -1034,7 +1034,7 @@
             // 
             this.settingsCheckbox1.AutoSize = true;
             this.settingsCheckbox1.Location = new System.Drawing.Point(9, 64);
-            this.settingsCheckbox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.settingsCheckbox1.Margin = new System.Windows.Forms.Padding(2);
             this.settingsCheckbox1.Name = "settingsCheckbox1";
             this.settingsCheckbox1.Size = new System.Drawing.Size(250, 23);
             this.settingsCheckbox1.TabIndex = 10;
@@ -1053,7 +1053,7 @@
             this.settingsChildPanel2.Controls.Add(this.weightUnitSettingsLabel);
             this.settingsChildPanel2.Controls.Add(this.currencySettingsGroupBox);
             this.settingsChildPanel2.Location = new System.Drawing.Point(326, 15);
-            this.settingsChildPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.settingsChildPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.settingsChildPanel2.Name = "settingsChildPanel2";
             this.settingsChildPanel2.Padding = new System.Windows.Forms.Padding(22, 24, 22, 24);
             this.settingsChildPanel2.Size = new System.Drawing.Size(388, 375);
@@ -1260,7 +1260,7 @@
             this.Controls.Add(this.leftsideMainPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1030, 625);
             this.MinimumSize = new System.Drawing.Size(1026, 591);

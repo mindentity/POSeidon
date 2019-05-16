@@ -77,8 +77,15 @@ namespace POSeidon
             {
                 BindingList<Product> products = gridView.DataSource as BindingList<Product>;
                 Product product = products.ElementAt(e.RowIndex);
-                Controller.ShoppingCart.AddProduct(product, 1);
-                MessageBox.Show("Product added to cart.", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (Controller.ShoppingCart.AddProduct(product))
+                {
+                    MessageBox.Show("Product added to cart.", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                else
+                {
+                    MessageBox.Show("Not enough stock!", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 

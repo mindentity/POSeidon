@@ -567,5 +567,15 @@ namespace POSeidon
                 return supplierLogs;
             }
         }
+
+        public static bool DecreaseProductStockByAmount(Product product, double amount)
+        {
+            if (amount > product.StockAmount)
+            {
+                return false;
+            }
+            product.StockAmount -= amount;
+            return UpdateProduct(product);
+        }
     }
 }

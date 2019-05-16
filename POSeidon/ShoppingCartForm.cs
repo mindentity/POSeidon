@@ -12,11 +12,20 @@ namespace POSeidon
 {
     public partial class ShoppingCartForm : Form
     {
+        private BindingSource totalPriceBindingSource;
+
         public ShoppingCartForm()
         {
             InitializeComponent();
             shoppingCartDataGridView.AutoGenerateColumns = false;
             shoppingCartDataGridView.DataSource = Controller.ShoppingCart.Items;
+            totalPriceBindingSource = new BindingSource();
+            totalPriceBindingSource.DataSource = Controller.ShoppingCart;
+            totalPriceTextBox.DataBindings.Add(
+                "Text", totalPriceBindingSource, "TotalPrice", true,
+                DataSourceUpdateMode.OnPropertyChanged, 0.0M, "C2"
+            );
+            shoppingCartDataGridView.CellValueChanged += ShoppingCartDataGridView_CellValueChanged;
         }
 
         private void ShoppingCartDataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
@@ -45,6 +54,7 @@ namespace POSeidon
                     }
                     cell.Value = cell.Items[0];
                     row.Cells[3] = cell;
+                    row.Cells[3].ReadOnly = false;
                 }
             }
         }
@@ -57,19 +67,41 @@ namespace POSeidon
                 var item = shoppingCartDataGridView.Rows[e.RowIndex].DataBoundItem as ShoppingCartItem;
                 try
                 {
-                    if (item.Product.IsCountable)
+                    var oldAmount = (double) shoppingCartDataGridView[e.ColumnIndex, e.RowIndex].Value;
+                    var newAmount = Double.Parse(e.FormattedValue.ToString());
+                    if (newAmount > 0 && newAmount <= item.Product.StockAmount)
                     {
-                        Int32.Parse(e.FormattedValue.ToString());
+                        Controller.ShoppingCart.TotalPrice += (decimal)(newAmount - oldAmount) * item.Product.Price;
+
                     }
                     else
                     {
-                        Double.Parse(e.FormattedValue.ToString());
+                        e.Cancel = true;
                     }
+
                 }
                 catch
                 {
                     e.Cancel = true;
                 }
+            }
+        }
+
+        private void CheckoutButton_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure to proceed to checkout?", "POSeidon", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                Controller.ShoppingCart.Checkout();
+                MessageBox.Show("Checkout is successful.", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+        }
+
+        private void ShoppingCartDataGridView_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 2)
+            {
+                totalPriceBindingSource.ResetCurrentItem();
             }
         }
     }

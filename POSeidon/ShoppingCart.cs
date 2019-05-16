@@ -11,8 +11,12 @@ namespace POSeidon
         public IList<ShoppingCartItem> Items { get; set; }
         public decimal TotalPrice { get; set; }
 
-        public void AddProduct(Product product, double amount)
+        public bool AddProduct(Product product, double amount=0)
         {
+            if (product.StockAmount == 0 || amount > product.StockAmount)
+            {
+                return false;
+            }
             ShoppingCartItem item = (from x in Items
                                      where x.Product.Id == product.Id
                                      select x).FirstOrDefault();
@@ -28,7 +32,9 @@ namespace POSeidon
             else
             {
                 item.Amount += amount;
+                TotalPrice += item.Product.Price * (decimal) amount;
             }
+            return true;
         }
 
         public void AddItem(ShoppingCartItem item)
@@ -61,6 +67,36 @@ namespace POSeidon
         {
             Items.Clear();
             TotalPrice = 0.0M;
+        }
+
+        public void Checkout(Customer customer=null)
+        {
+            DateTime date = DateTime.UtcNow;
+            foreach (var item in Items)
+            {
+                if (DBUtils.DecreaseProductStockByAmount(item.Product, item.Amount))
+                {
+                    var log = new CustomerLog
+                    {
+                        Date = date,
+                        ProductName = item.Product.Name,
+                        ProductPrice = item.Product.Price,
+                        ProductAmount = item.Amount,
+                        ProductTotalPrice = (decimal) item.Amount * item.Product.Price
+                    };
+                    if (customer != null)
+                    {
+                        log.CustomerFirstName = customer.FirstName;
+                        log.CustomerLastName = customer.LastName;
+                        log.CustomerPhone = customer.Phone;
+                        log.CustomerAddress = customer.Address;
+                    }
+                    DBUtils.CreateLog(log);
+                }
+                
+            }
+            Controller.Products.ResetBindings();
+            Clear();
         }
     }
 }

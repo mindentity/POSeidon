@@ -32,6 +32,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShoppingCartForm));
             this.shoppingCartFormPanel = new System.Windows.Forms.Panel();
+            this.totalPriceTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.totalPriceLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.checkoutButton = new System.Windows.Forms.Button();
             this.shoppingCartDataGridView = new System.Windows.Forms.DataGridView();
             this.productNameShoppingCartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,28 +50,51 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.shoppingCartFormPanel.AutoSize = true;
+            this.shoppingCartFormPanel.Controls.Add(this.totalPriceTextBox);
+            this.shoppingCartFormPanel.Controls.Add(this.totalPriceLabel);
             this.shoppingCartFormPanel.Controls.Add(this.checkoutButton);
             this.shoppingCartFormPanel.Controls.Add(this.shoppingCartDataGridView);
             this.shoppingCartFormPanel.Location = new System.Drawing.Point(1, 1);
+            this.shoppingCartFormPanel.Margin = new System.Windows.Forms.Padding(2);
             this.shoppingCartFormPanel.Name = "shoppingCartFormPanel";
-            this.shoppingCartFormPanel.Size = new System.Drawing.Size(1070, 554);
+            this.shoppingCartFormPanel.Size = new System.Drawing.Size(802, 450);
             this.shoppingCartFormPanel.TabIndex = 0;
+            // 
+            // totalPriceTextBox
+            // 
+            this.totalPriceTextBox.Enabled = false;
+            this.totalPriceTextBox.Location = new System.Drawing.Point(49, 413);
+            this.totalPriceTextBox.Name = "totalPriceTextBox";
+            this.totalPriceTextBox.ReadOnly = true;
+            this.totalPriceTextBox.Size = new System.Drawing.Size(100, 23);
+            this.totalPriceTextBox.TabIndex = 5;
+            // 
+            // totalPriceLabel
+            // 
+            this.totalPriceLabel.Location = new System.Drawing.Point(3, 416);
+            this.totalPriceLabel.Name = "totalPriceLabel";
+            this.totalPriceLabel.Size = new System.Drawing.Size(40, 20);
+            this.totalPriceLabel.TabIndex = 4;
+            this.totalPriceLabel.Values.Text = "Total:";
             // 
             // checkoutButton
             // 
             this.checkoutButton.BackColor = System.Drawing.Color.Orange;
             this.checkoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkoutButton.Location = new System.Drawing.Point(924, 512);
-            this.checkoutButton.Margin = new System.Windows.Forms.Padding(4);
+            this.checkoutButton.Location = new System.Drawing.Point(693, 416);
             this.checkoutButton.Name = "checkoutButton";
-            this.checkoutButton.Size = new System.Drawing.Size(98, 28);
+            this.checkoutButton.Size = new System.Drawing.Size(74, 23);
             this.checkoutButton.TabIndex = 3;
             this.checkoutButton.Text = "Checkout";
             this.checkoutButton.UseVisualStyleBackColor = false;
+            this.checkoutButton.Click += new System.EventHandler(this.CheckoutButton_Click);
             // 
             // shoppingCartDataGridView
             // 
+            this.shoppingCartDataGridView.AllowUserToAddRows = false;
             this.shoppingCartDataGridView.AllowUserToDeleteRows = false;
+            this.shoppingCartDataGridView.AllowUserToResizeColumns = false;
+            this.shoppingCartDataGridView.AllowUserToResizeRows = false;
             this.shoppingCartDataGridView.BackgroundColor = System.Drawing.Color.MediumAquamarine;
             this.shoppingCartDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.shoppingCartDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -77,10 +102,9 @@
             this.productPriceShoppingCartDataGridViewTextBoxColumn,
             this.productAmountShoppingCartDataGridViewTextBoxColumn,
             this.weightUnitShoppingCartDataGridViewTextBoxColumn});
-            this.shoppingCartDataGridView.Location = new System.Drawing.Point(3, 23);
-            this.shoppingCartDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.shoppingCartDataGridView.Location = new System.Drawing.Point(2, 19);
             this.shoppingCartDataGridView.Name = "shoppingCartDataGridView";
-            this.shoppingCartDataGridView.Size = new System.Drawing.Size(1063, 473);
+            this.shoppingCartDataGridView.Size = new System.Drawing.Size(797, 384);
             this.shoppingCartDataGridView.TabIndex = 2;
             this.shoppingCartDataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.ShoppingCartDataGridView_CellFormatting);
             this.shoppingCartDataGridView.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.ShoppingCartDataGridView_CellValidating);
@@ -124,17 +148,17 @@
             // 
             // ShoppingCartForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.shoppingCartFormPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "ShoppingCartForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shopping Cart";
             this.shoppingCartFormPanel.ResumeLayout(false);
+            this.shoppingCartFormPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shoppingCartDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -146,6 +170,8 @@
         private System.Windows.Forms.Panel shoppingCartFormPanel;
         private System.Windows.Forms.Button checkoutButton;
         private System.Windows.Forms.DataGridView shoppingCartDataGridView;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox totalPriceTextBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel totalPriceLabel;
         private System.Windows.Forms.DataGridViewTextBoxColumn productNameShoppingCartDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productPriceShoppingCartDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productAmountShoppingCartDataGridViewTextBoxColumn;

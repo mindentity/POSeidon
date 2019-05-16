@@ -25,8 +25,7 @@ namespace POSeidon
             Settings = DBUtils.GetSettings();
             ShoppingCart = new ShoppingCart
             {
-                Items = new List<ShoppingCartItem>(),
-                TotalPrice = 0.0M
+                Items = new List<ShoppingCartItem>()
             };
         }
 
