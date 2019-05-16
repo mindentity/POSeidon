@@ -12,6 +12,6 @@
         public string SupplierPhone { get; set; }
         public string SupplierEmail { get; set; }
         public string SupplierAddress { get; set; }
-        public decimal PurchasePrice { get; set; }
+        public decimal TotalCost { get; set; }
     }
 }

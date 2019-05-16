@@ -22,6 +22,8 @@ namespace POSeidon
             customersTabDataGridView.DataSource = Controller.Customers;
             currencySettingsComboBox.DataSource = Controller.Settings.AvailableCurrencies;
             weightUnitComboBox.DataSource = Controller.Settings.AvailableWeightUnits;
+            purchasingDataGridView.AutoGenerateColumns = false;
+            purchasingDataGridView.DataSource = Controller.SupplierLogs;
         }
 
         private void LogoutButton_Click(object sender, EventArgs e)
@@ -122,6 +124,30 @@ namespace POSeidon
         {
             AddCustomerForm addCustomerForm = new AddCustomerForm();
             addCustomerForm.ShowDialog();
+        }
+
+        private void CustomerStatisticsPage_Enter(object sender, EventArgs e)
+        {
+            var data = from x in Controller.CustomerLogs
+                       group x.ProductAmount by x.ProductName into g
+                       select new
+                       {
+                           ProductName = g.Key,
+                           Amount = g.Sum()
+                       };
+
+            
+        }
+
+        private void SupplierStatisticsChart_Enter(object sender, EventArgs e)
+        {
+            var data = from x in Controller.SupplierLogs
+                       group x.ProductAmount by x.ProductName into g
+                       select new
+                       {
+                           SupplierName = g.Key,
+                           Amount = g.Sum()
+                       };
         }
     }
 }
