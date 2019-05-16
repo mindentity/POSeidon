@@ -86,8 +86,7 @@ namespace POSeidon
                     };
                     if (customer != null)
                     {
-                        log.CustomerFirstName = customer.FirstName;
-                        log.CustomerLastName = customer.LastName;
+                        log.CustomerName = customer.FullName;
                         log.CustomerPhone = customer.Phone;
                         log.CustomerAddress = customer.Address;
                     }

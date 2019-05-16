@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.Button addProductButton;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.leftsideMainPanel = new System.Windows.Forms.Panel();
             this.shoppingCartLeftSidePanelButton = new System.Windows.Forms.Button();
             this.logoutButton = new System.Windows.Forms.Button();
@@ -94,6 +94,10 @@
             this.salesHistoryDataGridView = new System.Windows.Forms.DataGridView();
             this.purchasingNavigatorPage = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.purchasingDataGridView = new System.Windows.Forms.DataGridView();
+            this.productNamePurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productAmountPurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalCostPurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cancelLogPurchasingDataGridViewImageBoxColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.settingsTab = new System.Windows.Forms.TabPage();
             this.settingsPanel = new System.Windows.Forms.Panel();
             this.settingsChildPanel1 = new System.Windows.Forms.Panel();
@@ -119,14 +123,14 @@
             this.passwordLabel = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.productNamePurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productAmountPurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totalCostPurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cancelLogPurchasingDataGridViewImageBoxColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.productNameSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.salePriceSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productAmountSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalPriceSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerNameSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerPhoneSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerEmailSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerAddressSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cancelLogSalesHistoryDataGridViewImageBoxColumn = new System.Windows.Forms.DataGridViewImageColumn();
             addProductButton = new System.Windows.Forms.Button();
             this.leftsideMainPanel.SuspendLayout();
@@ -385,15 +389,15 @@
             this.productPriceHomePageDataGridViewTextBoxColumn,
             this.productStockHomePageDataGridViewTextBoxColumn,
             this.productAddHomePageDataGridViewImageColumn});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.homepageDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.homepageDataGridView.DefaultCellStyle = dataGridViewCellStyle9;
             this.homepageDataGridView.Location = new System.Drawing.Point(-2, 91);
             this.homepageDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.homepageDataGridView.MultiSelect = false;
@@ -416,9 +420,9 @@
             // productPriceHomePageDataGridViewTextBoxColumn
             // 
             this.productPriceHomePageDataGridViewTextBoxColumn.DataPropertyName = "Price";
-            dataGridViewCellStyle1.Format = "C2";
-            dataGridViewCellStyle1.NullValue = null;
-            this.productPriceHomePageDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle8.Format = "C2";
+            dataGridViewCellStyle8.NullValue = null;
+            this.productPriceHomePageDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle8;
             this.productPriceHomePageDataGridViewTextBoxColumn.HeaderText = "Price";
             this.productPriceHomePageDataGridViewTextBoxColumn.Name = "productPriceHomePageDataGridViewTextBoxColumn";
             this.productPriceHomePageDataGridViewTextBoxColumn.ReadOnly = true;
@@ -509,19 +513,19 @@
             this.customerStatisticsChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea7";
-            this.customerStatisticsChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend7";
-            this.customerStatisticsChart.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea7";
+            this.customerStatisticsChart.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend7";
+            this.customerStatisticsChart.Legends.Add(legend3);
             this.customerStatisticsChart.Location = new System.Drawing.Point(20, 19);
             this.customerStatisticsChart.Margin = new System.Windows.Forms.Padding(2);
             this.customerStatisticsChart.Name = "customerStatisticsChart";
             this.customerStatisticsChart.Padding = new System.Windows.Forms.Padding(8);
             this.customerStatisticsChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series1.ChartArea = "ChartArea7";
-            series1.Legend = "Legend7";
-            series1.Name = "Series7";
-            this.customerStatisticsChart.Series.Add(series1);
+            series3.ChartArea = "ChartArea7";
+            series3.Legend = "Legend7";
+            series3.Name = "Series7";
+            this.customerStatisticsChart.Series.Add(series3);
             this.customerStatisticsChart.Size = new System.Drawing.Size(859, 499);
             this.customerStatisticsChart.TabIndex = 0;
             this.customerStatisticsChart.Text = "Customer Statistics";
@@ -557,19 +561,19 @@
             this.supplierStatisticsChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea2.Name = "ChartArea8";
-            this.supplierStatisticsChart.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend8";
-            this.supplierStatisticsChart.Legends.Add(legend2);
+            chartArea4.Name = "ChartArea8";
+            this.supplierStatisticsChart.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend8";
+            this.supplierStatisticsChart.Legends.Add(legend4);
             this.supplierStatisticsChart.Location = new System.Drawing.Point(20, 19);
             this.supplierStatisticsChart.Margin = new System.Windows.Forms.Padding(2);
             this.supplierStatisticsChart.Name = "supplierStatisticsChart";
             this.supplierStatisticsChart.Padding = new System.Windows.Forms.Padding(8);
             this.supplierStatisticsChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series2.ChartArea = "ChartArea8";
-            series2.Legend = "Legend8";
-            series2.Name = "Series8";
-            this.supplierStatisticsChart.Series.Add(series2);
+            series4.ChartArea = "ChartArea8";
+            series4.Legend = "Legend8";
+            series4.Name = "Series8";
+            this.supplierStatisticsChart.Series.Add(series4);
             this.supplierStatisticsChart.Size = new System.Drawing.Size(860, 498);
             this.supplierStatisticsChart.TabIndex = 0;
             this.supplierStatisticsChart.Text = "Sales Chart";
@@ -626,15 +630,15 @@
             this.customerEmailDataGridViewTextBoxColumn,
             this.customerAddressDataGridViewTextBoxColumn,
             this.deleteCustomerDataGridViewImageColumn});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.customersTabDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.customersTabDataGridView.DefaultCellStyle = dataGridViewCellStyle10;
             this.customersTabDataGridView.Location = new System.Drawing.Point(0, 98);
             this.customersTabDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.customersTabDataGridView.Name = "customersTabDataGridView";
@@ -747,15 +751,15 @@
             this.supplierEmailDataGridViewTextBoxColumn,
             this.supplierAddressDataGridViewTextBoxColumn,
             this.deleteSupplierDataGridViewImageColumn});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.suppliersTabDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.suppliersTabDataGridView.DefaultCellStyle = dataGridViewCellStyle11;
             this.suppliersTabDataGridView.Location = new System.Drawing.Point(0, 98);
             this.suppliersTabDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.suppliersTabDataGridView.Name = "suppliersTabDataGridView";
@@ -847,6 +851,7 @@
             this.salesNavigatorPage.Text = "Sales";
             this.salesNavigatorPage.ToolTipTitle = "Page ToolTip";
             this.salesNavigatorPage.UniqueName = "6c08f90acd56447b9d6f9ea6bd5cfcc4";
+            this.salesNavigatorPage.Enter += new System.EventHandler(this.SalesNavigatorPage_Enter);
             // 
             // salesHistoryDataGridView
             // 
@@ -865,16 +870,20 @@
             this.salePriceSalesDataGridViewTextBoxColumn,
             this.productAmountSalesDataGridViewTextBoxColumn,
             this.totalPriceSalesDataGridViewTextBoxColumn,
+            this.customerNameSalesDataGridViewTextBoxColumn,
+            this.customerPhoneSalesDataGridViewTextBoxColumn,
+            this.customerEmailSalesDataGridViewTextBoxColumn,
+            this.customerAddressSalesDataGridViewTextBoxColumn,
             this.cancelLogSalesHistoryDataGridViewImageBoxColumn});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.salesHistoryDataGridView.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.salesHistoryDataGridView.DefaultCellStyle = dataGridViewCellStyle7;
             this.salesHistoryDataGridView.Location = new System.Drawing.Point(2, 2);
             this.salesHistoryDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.salesHistoryDataGridView.Name = "salesHistoryDataGridView";
@@ -914,21 +923,45 @@
             this.productAmountPurchasingDataGridViewTextBoxColumn,
             this.totalCostPurchasingDataGridViewTextBoxColumn,
             this.cancelLogPurchasingDataGridViewImageBoxColumn});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.purchasingDataGridView.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.purchasingDataGridView.DefaultCellStyle = dataGridViewCellStyle12;
             this.purchasingDataGridView.Location = new System.Drawing.Point(-1, 2);
             this.purchasingDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.purchasingDataGridView.Name = "purchasingDataGridView";
             this.purchasingDataGridView.RowTemplate.Height = 24;
             this.purchasingDataGridView.Size = new System.Drawing.Size(1048, 584);
             this.purchasingDataGridView.TabIndex = 9;
+            // 
+            // productNamePurchasingDataGridViewTextBoxColumn
+            // 
+            this.productNamePurchasingDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
+            this.productNamePurchasingDataGridViewTextBoxColumn.HeaderText = "Product";
+            this.productNamePurchasingDataGridViewTextBoxColumn.Name = "productNamePurchasingDataGridViewTextBoxColumn";
+            // 
+            // productAmountPurchasingDataGridViewTextBoxColumn
+            // 
+            this.productAmountPurchasingDataGridViewTextBoxColumn.DataPropertyName = "ProductAmount";
+            this.productAmountPurchasingDataGridViewTextBoxColumn.HeaderText = "Amount";
+            this.productAmountPurchasingDataGridViewTextBoxColumn.Name = "productAmountPurchasingDataGridViewTextBoxColumn";
+            // 
+            // totalCostPurchasingDataGridViewTextBoxColumn
+            // 
+            this.totalCostPurchasingDataGridViewTextBoxColumn.DataPropertyName = "TotalCost";
+            this.totalCostPurchasingDataGridViewTextBoxColumn.HeaderText = "Total Cost";
+            this.totalCostPurchasingDataGridViewTextBoxColumn.Name = "totalCostPurchasingDataGridViewTextBoxColumn";
+            // 
+            // cancelLogPurchasingDataGridViewImageBoxColumn
+            // 
+            this.cancelLogPurchasingDataGridViewImageBoxColumn.HeaderText = "Cancel";
+            this.cancelLogPurchasingDataGridViewImageBoxColumn.Image = global::POSeidon.Properties.Resources.delete;
+            this.cancelLogPurchasingDataGridViewImageBoxColumn.Name = "cancelLogPurchasingDataGridViewImageBoxColumn";
             // 
             // settingsTab
             // 
@@ -1201,53 +1234,61 @@
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 201;
             // 
-            // productNamePurchasingDataGridViewTextBoxColumn
-            // 
-            this.productNamePurchasingDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
-            this.productNamePurchasingDataGridViewTextBoxColumn.HeaderText = "Product";
-            this.productNamePurchasingDataGridViewTextBoxColumn.Name = "productNamePurchasingDataGridViewTextBoxColumn";
-            // 
-            // productAmountPurchasingDataGridViewTextBoxColumn
-            // 
-            this.productAmountPurchasingDataGridViewTextBoxColumn.DataPropertyName = "ProductAmount";
-            this.productAmountPurchasingDataGridViewTextBoxColumn.HeaderText = "Amount";
-            this.productAmountPurchasingDataGridViewTextBoxColumn.Name = "productAmountPurchasingDataGridViewTextBoxColumn";
-            // 
-            // totalCostPurchasingDataGridViewTextBoxColumn
-            // 
-            this.totalCostPurchasingDataGridViewTextBoxColumn.DataPropertyName = "TotalCost";
-            this.totalCostPurchasingDataGridViewTextBoxColumn.HeaderText = "Total Cost";
-            this.totalCostPurchasingDataGridViewTextBoxColumn.Name = "totalCostPurchasingDataGridViewTextBoxColumn";
-            // 
-            // cancelLogPurchasingDataGridViewImageBoxColumn
-            // 
-            this.cancelLogPurchasingDataGridViewImageBoxColumn.HeaderText = "Cancel";
-            this.cancelLogPurchasingDataGridViewImageBoxColumn.Image = global::POSeidon.Properties.Resources.delete;
-            this.cancelLogPurchasingDataGridViewImageBoxColumn.Name = "cancelLogPurchasingDataGridViewImageBoxColumn";
-            // 
             // productNameSalesDataGridViewTextBoxColumn
             // 
             this.productNameSalesDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
             this.productNameSalesDataGridViewTextBoxColumn.HeaderText = "Product";
             this.productNameSalesDataGridViewTextBoxColumn.Name = "productNameSalesDataGridViewTextBoxColumn";
+            this.productNameSalesDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // salePriceSalesDataGridViewTextBoxColumn
             // 
             this.salePriceSalesDataGridViewTextBoxColumn.DataPropertyName = "ProductPrice";
             this.salePriceSalesDataGridViewTextBoxColumn.HeaderText = "Price";
             this.salePriceSalesDataGridViewTextBoxColumn.Name = "salePriceSalesDataGridViewTextBoxColumn";
+            this.salePriceSalesDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // productAmountSalesDataGridViewTextBoxColumn
             // 
             this.productAmountSalesDataGridViewTextBoxColumn.DataPropertyName = "ProductAmount";
             this.productAmountSalesDataGridViewTextBoxColumn.HeaderText = "Amount";
             this.productAmountSalesDataGridViewTextBoxColumn.Name = "productAmountSalesDataGridViewTextBoxColumn";
+            this.productAmountSalesDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // totalPriceSalesDataGridViewTextBoxColumn
             // 
             this.totalPriceSalesDataGridViewTextBoxColumn.DataPropertyName = "ProductTotalPrice";
             this.totalPriceSalesDataGridViewTextBoxColumn.HeaderText = "Total Price";
             this.totalPriceSalesDataGridViewTextBoxColumn.Name = "totalPriceSalesDataGridViewTextBoxColumn";
+            this.totalPriceSalesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // customerNameSalesDataGridViewTextBoxColumn
+            // 
+            this.customerNameSalesDataGridViewTextBoxColumn.DataPropertyName = "CustomerName";
+            this.customerNameSalesDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.customerNameSalesDataGridViewTextBoxColumn.Name = "customerNameSalesDataGridViewTextBoxColumn";
+            this.customerNameSalesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // customerPhoneSalesDataGridViewTextBoxColumn
+            // 
+            this.customerPhoneSalesDataGridViewTextBoxColumn.DataPropertyName = "CustomerPhone";
+            this.customerPhoneSalesDataGridViewTextBoxColumn.HeaderText = "Phone";
+            this.customerPhoneSalesDataGridViewTextBoxColumn.Name = "customerPhoneSalesDataGridViewTextBoxColumn";
+            this.customerPhoneSalesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // customerEmailSalesDataGridViewTextBoxColumn
+            // 
+            this.customerEmailSalesDataGridViewTextBoxColumn.DataPropertyName = "CustomerEmail";
+            this.customerEmailSalesDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.customerEmailSalesDataGridViewTextBoxColumn.Name = "customerEmailSalesDataGridViewTextBoxColumn";
+            this.customerEmailSalesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // customerAddressSalesDataGridViewTextBoxColumn
+            // 
+            this.customerAddressSalesDataGridViewTextBoxColumn.DataPropertyName = "CustomerAddress";
+            this.customerAddressSalesDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.customerAddressSalesDataGridViewTextBoxColumn.Name = "customerAddressSalesDataGridViewTextBoxColumn";
+            this.customerAddressSalesDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // cancelLogSalesHistoryDataGridViewImageBoxColumn
             // 
@@ -1420,6 +1461,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn salePriceSalesDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productAmountSalesDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn totalPriceSalesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerNameSalesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerPhoneSalesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerEmailSalesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerAddressSalesDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn cancelLogSalesHistoryDataGridViewImageBoxColumn;
     }
 }

@@ -14,8 +14,8 @@ namespace POSeidon
             InitializeComponent();
             homepageDataGridView.AutoGenerateColumns = false;
             homepageDataGridView.DataSource = Controller.Products;
-            salesHistoryDataGridView.AutoGenerateColumns = true;
-            salesHistoryDataGridView.DataSource = Controller.SupplierLogs;
+            salesHistoryDataGridView.AutoGenerateColumns = false;
+            salesHistoryDataGridView.DataSource = Controller.CustomerLogs;
             suppliersTabDataGridView.AutoGenerateColumns = false;
             suppliersTabDataGridView.DataSource = Controller.Suppliers;
             customersTabDataGridView.AutoGenerateColumns = false;
@@ -148,6 +148,11 @@ namespace POSeidon
                            SupplierName = g.Key,
                            Amount = g.Sum()
                        };
+        }
+
+        private void SalesNavigatorPage_Enter(object sender, EventArgs e)
+        {
+            Controller.SupplierLogs.ResetBindings();
         }
     }
 }
