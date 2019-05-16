@@ -126,7 +126,13 @@ namespace POSeidon
             addCustomerForm.ShowDialog();
         }
 
-        private void CustomerStatisticsPage_Enter(object sender, EventArgs e)
+
+        private void SalesNavigatorPage_Enter(object sender, EventArgs e)
+        {
+            Controller.SupplierLogs.ResetBindings();
+        }
+
+        private void StatisticsTab_Enter(object sender, EventArgs e)
         {
             var data = from x in Controller.CustomerLogs
                        group x.ProductAmount by x.ProductName into g
@@ -135,24 +141,14 @@ namespace POSeidon
                            ProductName = g.Key,
                            Amount = g.Sum()
                        };
-
-            
+            customerStatisticsChart.DataSource = data.ToList();
+            customerStatisticsChart.DataBind();
         }
 
-        private void SupplierStatisticsChart_Enter(object sender, EventArgs e)
+        private void AddSupplierButton_Click(object sender, EventArgs e)
         {
-            var data = from x in Controller.SupplierLogs
-                       group x.ProductAmount by x.ProductName into g
-                       select new
-                       {
-                           SupplierName = g.Key,
-                           Amount = g.Sum()
-                       };
-        }
-
-        private void SalesNavigatorPage_Enter(object sender, EventArgs e)
-        {
-            Controller.SupplierLogs.ResetBindings();
+            addSupplierForm addSupplierForm = new addSupplierForm();
+            addSupplierForm.ShowDialog();
         }
     }
 }

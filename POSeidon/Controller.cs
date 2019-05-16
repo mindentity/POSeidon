@@ -74,5 +74,15 @@ namespace POSeidon
             Controller.Customers.Add(customer);
             return true;
         }
+
+        public static bool AddSupplier(Supplier supplier)
+        {
+            if (!DBUtils.CreateSupplier(supplier))
+            {
+                return false;
+            }
+            Controller.Suppliers.Add(supplier);
+            return true;
+        }
     }
 }

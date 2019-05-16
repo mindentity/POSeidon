@@ -1,6 +1,6 @@
 ﻿namespace POSeidon
 {
-    partial class AddSupplierForm
+    partial class addSupplierForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,135 +28,152 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddSupplierForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addSupplierForm));
             this.addSupplierFormPanel = new System.Windows.Forms.Panel();
-            this.supplierNameAddSuplierFormLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.supplierPhoneAddSuplierFormLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.supplierAddressAddSuplierFormLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.supplierEmailAddSuplierFormLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.supplierNameAddSuplierFormTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.supplierPhoneAddSuplierFormTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.supplierEmailAddSuplierFormTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.supplierAddressAddSuplierFormTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.addSupplierFormButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.addButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.addressTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.emailTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.phoneTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.nameTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.emailLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.addressLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.phoneLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.nameLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.addSupplierFormPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // addSupplierFormPanel
             // 
-            this.addSupplierFormPanel.Controls.Add(this.addSupplierFormButton);
-            this.addSupplierFormPanel.Controls.Add(this.supplierAddressAddSuplierFormTextBox);
-            this.addSupplierFormPanel.Controls.Add(this.supplierEmailAddSuplierFormTextBox);
-            this.addSupplierFormPanel.Controls.Add(this.supplierPhoneAddSuplierFormTextBox);
-            this.addSupplierFormPanel.Controls.Add(this.supplierNameAddSuplierFormTextBox);
-            this.addSupplierFormPanel.Controls.Add(this.supplierEmailAddSuplierFormLabel);
-            this.addSupplierFormPanel.Controls.Add(this.supplierAddressAddSuplierFormLabel);
-            this.addSupplierFormPanel.Controls.Add(this.supplierPhoneAddSuplierFormLabel);
-            this.addSupplierFormPanel.Controls.Add(this.supplierNameAddSuplierFormLabel);
+            this.addSupplierFormPanel.Controls.Add(this.addButton);
+            this.addSupplierFormPanel.Controls.Add(this.addressTextBox);
+            this.addSupplierFormPanel.Controls.Add(this.emailTextBox);
+            this.addSupplierFormPanel.Controls.Add(this.phoneTextBox);
+            this.addSupplierFormPanel.Controls.Add(this.nameTextBox);
+            this.addSupplierFormPanel.Controls.Add(this.emailLabel);
+            this.addSupplierFormPanel.Controls.Add(this.addressLabel);
+            this.addSupplierFormPanel.Controls.Add(this.phoneLabel);
+            this.addSupplierFormPanel.Controls.Add(this.nameLabel);
             this.addSupplierFormPanel.Location = new System.Drawing.Point(1, 1);
+            this.addSupplierFormPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addSupplierFormPanel.Name = "addSupplierFormPanel";
-            this.addSupplierFormPanel.Size = new System.Drawing.Size(1025, 563);
+            this.addSupplierFormPanel.Size = new System.Drawing.Size(769, 457);
             this.addSupplierFormPanel.TabIndex = 0;
             // 
-            // supplierNameAddSuplierFormLabel
+            // addButton
             // 
-            this.supplierNameAddSuplierFormLabel.Location = new System.Drawing.Point(260, 150);
-            this.supplierNameAddSuplierFormLabel.Name = "supplierNameAddSuplierFormLabel";
-            this.supplierNameAddSuplierFormLabel.Size = new System.Drawing.Size(56, 24);
-            this.supplierNameAddSuplierFormLabel.TabIndex = 0;
-            this.supplierNameAddSuplierFormLabel.Values.Text = "Name:";
-            // 
-            // supplierPhoneAddSuplierFormLabel
-            // 
-            this.supplierPhoneAddSuplierFormLabel.Location = new System.Drawing.Point(260, 228);
-            this.supplierPhoneAddSuplierFormLabel.Name = "supplierPhoneAddSuplierFormLabel";
-            this.supplierPhoneAddSuplierFormLabel.Size = new System.Drawing.Size(58, 24);
-            this.supplierPhoneAddSuplierFormLabel.TabIndex = 1;
-            this.supplierPhoneAddSuplierFormLabel.Values.Text = "Phone:";
-            // 
-            // supplierAddressAddSuplierFormLabel
-            // 
-            this.supplierAddressAddSuplierFormLabel.Location = new System.Drawing.Point(260, 374);
-            this.supplierAddressAddSuplierFormLabel.Name = "supplierAddressAddSuplierFormLabel";
-            this.supplierAddressAddSuplierFormLabel.Size = new System.Drawing.Size(70, 24);
-            this.supplierAddressAddSuplierFormLabel.TabIndex = 2;
-            this.supplierAddressAddSuplierFormLabel.Values.Text = "Address:";
-            // 
-            // supplierEmailAddSuplierFormLabel
-            // 
-            this.supplierEmailAddSuplierFormLabel.Location = new System.Drawing.Point(260, 300);
-            this.supplierEmailAddSuplierFormLabel.Name = "supplierEmailAddSuplierFormLabel";
-            this.supplierEmailAddSuplierFormLabel.Size = new System.Drawing.Size(51, 24);
-            this.supplierEmailAddSuplierFormLabel.TabIndex = 3;
-            this.supplierEmailAddSuplierFormLabel.Values.Text = "Email:";
-            // 
-            // supplierNameAddSuplierFormTextBox
-            // 
-            this.supplierNameAddSuplierFormTextBox.Location = new System.Drawing.Point(486, 147);
-            this.supplierNameAddSuplierFormTextBox.Name = "supplierNameAddSuplierFormTextBox";
-            this.supplierNameAddSuplierFormTextBox.Size = new System.Drawing.Size(135, 31);
-            this.supplierNameAddSuplierFormTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.addButton.Location = new System.Drawing.Point(563, 369);
+            this.addButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(111, 32);
+            this.addButton.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.supplierNameAddSuplierFormTextBox.StateCommon.Border.Rounding = 5;
-            this.supplierNameAddSuplierFormTextBox.TabIndex = 4;
+            this.addButton.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.addButton.StateCommon.Border.Rounding = 5;
+            this.addButton.TabIndex = 8;
+            this.addButton.Values.Text = "ADD";
+            this.addButton.Click += new System.EventHandler(this.AddSupplierFormButton_Click);
             // 
-            // supplierPhoneAddSuplierFormTextBox
+            // addressTextBox
             // 
-            this.supplierPhoneAddSuplierFormTextBox.Location = new System.Drawing.Point(486, 228);
-            this.supplierPhoneAddSuplierFormTextBox.Name = "supplierPhoneAddSuplierFormTextBox";
-            this.supplierPhoneAddSuplierFormTextBox.Size = new System.Drawing.Size(135, 31);
-            this.supplierPhoneAddSuplierFormTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.addressTextBox.Location = new System.Drawing.Point(364, 301);
+            this.addressTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addressTextBox.Name = "addressTextBox";
+            this.addressTextBox.Size = new System.Drawing.Size(101, 27);
+            this.addressTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.supplierPhoneAddSuplierFormTextBox.StateCommon.Border.Rounding = 5;
-            this.supplierPhoneAddSuplierFormTextBox.TabIndex = 5;
+            this.addressTextBox.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.addressTextBox.StateCommon.Border.Rounding = 5;
+            this.addressTextBox.TabIndex = 7;
             // 
-            // supplierEmailAddSuplierFormTextBox
+            // emailTextBox
             // 
-            this.supplierEmailAddSuplierFormTextBox.Location = new System.Drawing.Point(486, 297);
-            this.supplierEmailAddSuplierFormTextBox.Name = "supplierEmailAddSuplierFormTextBox";
-            this.supplierEmailAddSuplierFormTextBox.Size = new System.Drawing.Size(135, 31);
-            this.supplierEmailAddSuplierFormTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.emailTextBox.Location = new System.Drawing.Point(364, 241);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(101, 27);
+            this.emailTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.supplierEmailAddSuplierFormTextBox.StateCommon.Border.Rounding = 5;
-            this.supplierEmailAddSuplierFormTextBox.TabIndex = 6;
+            this.emailTextBox.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.emailTextBox.StateCommon.Border.Rounding = 5;
+            this.emailTextBox.TabIndex = 6;
             // 
-            // supplierAddressAddSuplierFormTextBox
+            // phoneTextBox
             // 
-            this.supplierAddressAddSuplierFormTextBox.Location = new System.Drawing.Point(486, 371);
-            this.supplierAddressAddSuplierFormTextBox.Name = "supplierAddressAddSuplierFormTextBox";
-            this.supplierAddressAddSuplierFormTextBox.Size = new System.Drawing.Size(135, 31);
-            this.supplierAddressAddSuplierFormTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.phoneTextBox.Location = new System.Drawing.Point(364, 185);
+            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.phoneTextBox.Name = "phoneTextBox";
+            this.phoneTextBox.Size = new System.Drawing.Size(101, 27);
+            this.phoneTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.supplierAddressAddSuplierFormTextBox.StateCommon.Border.Rounding = 5;
-            this.supplierAddressAddSuplierFormTextBox.TabIndex = 7;
+            this.phoneTextBox.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.phoneTextBox.StateCommon.Border.Rounding = 5;
+            this.phoneTextBox.TabIndex = 5;
             // 
-            // addSupplierFormButton
+            // nameTextBox
             // 
-            this.addSupplierFormButton.Location = new System.Drawing.Point(751, 454);
-            this.addSupplierFormButton.Name = "addSupplierFormButton";
-            this.addSupplierFormButton.Size = new System.Drawing.Size(148, 40);
-            this.addSupplierFormButton.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.nameTextBox.Location = new System.Drawing.Point(364, 119);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(101, 27);
+            this.nameTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.addSupplierFormButton.StateCommon.Border.Rounding = 5;
-            this.addSupplierFormButton.TabIndex = 8;
-            this.addSupplierFormButton.Values.Text = "ADD";
+            this.nameTextBox.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.nameTextBox.StateCommon.Border.Rounding = 5;
+            this.nameTextBox.TabIndex = 4;
             // 
-            // AddSupplierForm
+            // emailLabel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.emailLabel.Location = new System.Drawing.Point(195, 244);
+            this.emailLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.emailLabel.Name = "emailLabel";
+            this.emailLabel.Size = new System.Drawing.Size(42, 20);
+            this.emailLabel.TabIndex = 3;
+            this.emailLabel.Values.Text = "Email:";
+            // 
+            // addressLabel
+            // 
+            this.addressLabel.Location = new System.Drawing.Point(195, 304);
+            this.addressLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addressLabel.Name = "addressLabel";
+            this.addressLabel.Size = new System.Drawing.Size(57, 20);
+            this.addressLabel.TabIndex = 2;
+            this.addressLabel.Values.Text = "Address:";
+            // 
+            // phoneLabel
+            // 
+            this.phoneLabel.Location = new System.Drawing.Point(195, 185);
+            this.phoneLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.phoneLabel.Name = "phoneLabel";
+            this.phoneLabel.Size = new System.Drawing.Size(48, 20);
+            this.phoneLabel.TabIndex = 1;
+            this.phoneLabel.Values.Text = "Phone:";
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.Location = new System.Drawing.Point(195, 122);
+            this.nameLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(46, 20);
+            this.nameLabel.TabIndex = 0;
+            this.nameLabel.Values.Text = "Name:";
+            // 
+            // addSupplierForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 567);
+            this.ClientSize = new System.Drawing.Size(772, 461);
             this.Controls.Add(this.addSupplierFormPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
-            this.Name = "AddSupplierForm";
+            this.Name = "addSupplierForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Add a Supplier";
+            this.Text = "Add Supplier";
             this.addSupplierFormPanel.ResumeLayout(false);
             this.addSupplierFormPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -166,14 +183,14 @@
         #endregion
 
         private System.Windows.Forms.Panel addSupplierFormPanel;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox supplierAddressAddSuplierFormTextBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox supplierEmailAddSuplierFormTextBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox supplierPhoneAddSuplierFormTextBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox supplierNameAddSuplierFormTextBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel supplierEmailAddSuplierFormLabel;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel supplierAddressAddSuplierFormLabel;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel supplierPhoneAddSuplierFormLabel;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel supplierNameAddSuplierFormLabel;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton addSupplierFormButton;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox addressTextBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox emailTextBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox phoneTextBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox nameTextBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel emailLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel addressLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel phoneLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel nameLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton addButton;
     }
 }
