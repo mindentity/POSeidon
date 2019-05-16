@@ -10,7 +10,10 @@
 
         public string StockAmountText
         {
-            get { return $"{StockAmount} {Controller.Settings.WeightUnit.Symbol}";  }
+            get {
+                string unit = IsCountable ? "pcs" : Controller.Settings.WeightUnit.Symbol;
+                return $"{StockAmount} {unit}";
+            }
         }
     }
 }

@@ -69,6 +69,7 @@ namespace POSeidon
                 var item = shoppingCartDataGridView.Rows[e.RowIndex].DataBoundItem as ShoppingCartItem;
                 try
                 {
+                    
                     var oldAmount = (double) shoppingCartDataGridView[e.ColumnIndex, e.RowIndex].Value;
                     var newAmount = Double.Parse(e.FormattedValue.ToString());
                     if (newAmount > 0 && newAmount <= item.Product.StockAmount)
