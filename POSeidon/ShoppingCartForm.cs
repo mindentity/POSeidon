@@ -26,6 +26,8 @@ namespace POSeidon
                 DataSourceUpdateMode.OnPropertyChanged, 0.0M, "C2"
             );
             shoppingCartDataGridView.CellValueChanged += ShoppingCartDataGridView_CellValueChanged;
+            customerComboBox.DataSource = Controller.Customers;
+            customerComboBox.DisplayMember = "FullName";
         }
 
         private void ShoppingCartDataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
@@ -91,7 +93,12 @@ namespace POSeidon
         {
             if (MessageBox.Show("Are you sure to proceed to checkout?", "POSeidon", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                Controller.ShoppingCart.Checkout();
+                Customer customer = null;
+                if (customerCheckBox.Checked)
+                {
+                    customer = customerComboBox.SelectedItem as Customer;
+                }
+                Controller.ShoppingCart.Checkout(customer);
                 MessageBox.Show("Checkout is successful.", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }
@@ -102,6 +109,18 @@ namespace POSeidon
             if (e.ColumnIndex == 2)
             {
                 totalPriceBindingSource.ResetCurrentItem();
+            }
+        }
+
+        private void CustomerCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (customerCheckBox.Checked)
+            {
+                customerComboBox.Enabled = true;
+            }
+            else
+            {
+                customerComboBox.Enabled = false;
             }
         }
     }

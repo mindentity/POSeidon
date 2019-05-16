@@ -40,8 +40,11 @@
             this.productPriceShoppingCartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productAmountShoppingCartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.weightUnitShoppingCartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerCheckBox = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
+            this.customerComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.shoppingCartFormPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shoppingCartDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerComboBox)).BeginInit();
             this.SuspendLayout();
             // 
             // shoppingCartFormPanel
@@ -50,6 +53,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.shoppingCartFormPanel.AutoSize = true;
+            this.shoppingCartFormPanel.Controls.Add(this.customerComboBox);
+            this.shoppingCartFormPanel.Controls.Add(this.customerCheckBox);
             this.shoppingCartFormPanel.Controls.Add(this.totalPriceTextBox);
             this.shoppingCartFormPanel.Controls.Add(this.totalPriceLabel);
             this.shoppingCartFormPanel.Controls.Add(this.checkoutButton);
@@ -146,6 +151,25 @@
             this.weightUnitShoppingCartDataGridViewTextBoxColumn.Name = "weightUnitShoppingCartDataGridViewTextBoxColumn";
             this.weightUnitShoppingCartDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // customerCheckBox
+            // 
+            this.customerCheckBox.Location = new System.Drawing.Point(400, 416);
+            this.customerCheckBox.Name = "customerCheckBox";
+            this.customerCheckBox.Size = new System.Drawing.Size(79, 20);
+            this.customerCheckBox.TabIndex = 6;
+            this.customerCheckBox.Values.Text = "Customer:";
+            this.customerCheckBox.CheckedChanged += new System.EventHandler(this.CustomerCheckBox_CheckedChanged);
+            // 
+            // customerComboBox
+            // 
+            this.customerComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.customerComboBox.DropDownWidth = 129;
+            this.customerComboBox.Enabled = false;
+            this.customerComboBox.Location = new System.Drawing.Point(485, 415);
+            this.customerComboBox.Name = "customerComboBox";
+            this.customerComboBox.Size = new System.Drawing.Size(129, 21);
+            this.customerComboBox.TabIndex = 7;
+            // 
             // ShoppingCartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -160,6 +184,7 @@
             this.shoppingCartFormPanel.ResumeLayout(false);
             this.shoppingCartFormPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shoppingCartDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerComboBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,5 +201,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn productPriceShoppingCartDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productAmountShoppingCartDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn weightUnitShoppingCartDataGridViewTextBoxColumn;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox customerComboBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckBox customerCheckBox;
     }
 }
