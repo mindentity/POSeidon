@@ -40,7 +40,7 @@ namespace POSeidon
         public void AddItem(ShoppingCartItem item)
         {
             Items.Add(item);
-            TotalPrice += item.Product.Price;
+            TotalPrice += item.Product.Price * (decimal) item.Amount;
         }
 
         public bool RemoveProduct(Product product)
