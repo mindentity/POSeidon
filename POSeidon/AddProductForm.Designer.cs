@@ -1,6 +1,6 @@
 ﻿namespace POSeidon
 {
-    partial class addProductForm
+    partial class AddProductForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addProductForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddProductForm));
             this.existingProductRadioButton = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.newProductRadioButton = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.addProductNavigator = new ComponentFactory.Krypton.Navigator.KryptonNavigator();
@@ -67,7 +67,7 @@
             this.productTypeLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.newProductTypeComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.addProductTypePanel = new System.Windows.Forms.Panel();
-            this.existingProductAddProductPanel = new System.Windows.Forms.Panel();
+            this.addProductPanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.addProductNavigator)).BeginInit();
             this.addProductNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.existingProductPage)).BeginInit();
@@ -85,7 +85,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.newProductWeightUnitComboBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newProductTypeComboBox)).BeginInit();
             this.addProductTypePanel.SuspendLayout();
-            this.existingProductAddProductPanel.SuspendLayout();
+            this.addProductPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // existingProductRadioButton
@@ -112,15 +112,16 @@
             // 
             // addProductNavigator
             // 
-            this.addProductNavigator.Location = new System.Drawing.Point(6, 4);
+            this.addProductNavigator.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addProductNavigator.Location = new System.Drawing.Point(0, 0);
             this.addProductNavigator.Margin = new System.Windows.Forms.Padding(4);
             this.addProductNavigator.Name = "addProductNavigator";
             this.addProductNavigator.NavigatorMode = ComponentFactory.Krypton.Navigator.NavigatorMode.Panel;
             this.addProductNavigator.Pages.AddRange(new ComponentFactory.Krypton.Navigator.KryptonPage[] {
             this.existingProductPage,
             this.newProductPage});
-            this.addProductNavigator.SelectedIndex = 0;
-            this.addProductNavigator.Size = new System.Drawing.Size(497, 466);
+            this.addProductNavigator.SelectedIndex = 1;
+            this.addProductNavigator.Size = new System.Drawing.Size(519, 474);
             this.addProductNavigator.TabIndex = 2;
             // 
             // existingProductPage
@@ -133,7 +134,7 @@
             this.existingProductPage.Margin = new System.Windows.Forms.Padding(4);
             this.existingProductPage.MinimumSize = new System.Drawing.Size(67, 66);
             this.existingProductPage.Name = "existingProductPage";
-            this.existingProductPage.Size = new System.Drawing.Size(497, 466);
+            this.existingProductPage.Size = new System.Drawing.Size(495, 439);
             this.existingProductPage.StateCommon.Page.Color1 = System.Drawing.Color.WhiteSmoke;
             this.existingProductPage.Text = "Existing Product";
             this.existingProductPage.ToolTipTitle = "Page ToolTip";
@@ -146,9 +147,10 @@
             this.existingProductSupplierInfoGroupBox.Controls.Add(this.existingProductSupplierLabel);
             this.existingProductSupplierInfoGroupBox.Controls.Add(this.existingProductSupplierComboBox);
             this.existingProductSupplierInfoGroupBox.Controls.Add(this.addExistingProductButton);
-            this.existingProductSupplierInfoGroupBox.Location = new System.Drawing.Point(-3, 217);
+            this.existingProductSupplierInfoGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.existingProductSupplierInfoGroupBox.Location = new System.Drawing.Point(0, 206);
             this.existingProductSupplierInfoGroupBox.Name = "existingProductSupplierInfoGroupBox";
-            this.existingProductSupplierInfoGroupBox.Size = new System.Drawing.Size(495, 246);
+            this.existingProductSupplierInfoGroupBox.Size = new System.Drawing.Size(495, 233);
             this.existingProductSupplierInfoGroupBox.TabIndex = 1;
             this.existingProductSupplierInfoGroupBox.TabStop = false;
             this.existingProductSupplierInfoGroupBox.Text = "Supplier Info";
@@ -221,7 +223,8 @@
             this.existingProductInfoGroupBox.Controls.Add(this.existingProductWeightUnitLabel);
             this.existingProductInfoGroupBox.Controls.Add(this.existingProductAmountTextBox);
             this.existingProductInfoGroupBox.Controls.Add(this.existingProductWeightUnitComboBox);
-            this.existingProductInfoGroupBox.Location = new System.Drawing.Point(-3, 0);
+            this.existingProductInfoGroupBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.existingProductInfoGroupBox.Location = new System.Drawing.Point(0, 0);
             this.existingProductInfoGroupBox.Name = "existingProductInfoGroupBox";
             this.existingProductInfoGroupBox.Size = new System.Drawing.Size(495, 206);
             this.existingProductInfoGroupBox.TabIndex = 0;
@@ -330,7 +333,7 @@
             this.newProductPage.Margin = new System.Windows.Forms.Padding(4);
             this.newProductPage.MinimumSize = new System.Drawing.Size(67, 66);
             this.newProductPage.Name = "newProductPage";
-            this.newProductPage.Size = new System.Drawing.Size(495, 439);
+            this.newProductPage.Size = new System.Drawing.Size(519, 474);
             this.newProductPage.StateCommon.Page.Color1 = System.Drawing.Color.WhiteSmoke;
             this.newProductPage.Text = "New Product";
             this.newProductPage.ToolTipTitle = "Page ToolTip";
@@ -343,9 +346,10 @@
             this.newProductSupplierInfoGroupBox.Controls.Add(this.newProductSupplierLabel);
             this.newProductSupplierInfoGroupBox.Controls.Add(this.newProductSupplierComboBox);
             this.newProductSupplierInfoGroupBox.Controls.Add(this.addNewProductButton);
-            this.newProductSupplierInfoGroupBox.Location = new System.Drawing.Point(-3, 212);
+            this.newProductSupplierInfoGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.newProductSupplierInfoGroupBox.Location = new System.Drawing.Point(0, 206);
             this.newProductSupplierInfoGroupBox.Name = "newProductSupplierInfoGroupBox";
-            this.newProductSupplierInfoGroupBox.Size = new System.Drawing.Size(498, 251);
+            this.newProductSupplierInfoGroupBox.Size = new System.Drawing.Size(519, 268);
             this.newProductSupplierInfoGroupBox.TabIndex = 1;
             this.newProductSupplierInfoGroupBox.TabStop = false;
             this.newProductSupplierInfoGroupBox.Text = "Supplier Info";
@@ -420,9 +424,10 @@
             this.newProductProductInfoGroupBox.Controls.Add(this.newProductWeightUnitComboBox);
             this.newProductProductInfoGroupBox.Controls.Add(this.productTypeLabel);
             this.newProductProductInfoGroupBox.Controls.Add(this.newProductTypeComboBox);
-            this.newProductProductInfoGroupBox.Location = new System.Drawing.Point(-3, 0);
+            this.newProductProductInfoGroupBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.newProductProductInfoGroupBox.Location = new System.Drawing.Point(0, 0);
             this.newProductProductInfoGroupBox.Name = "newProductProductInfoGroupBox";
-            this.newProductProductInfoGroupBox.Size = new System.Drawing.Size(495, 206);
+            this.newProductProductInfoGroupBox.Size = new System.Drawing.Size(519, 206);
             this.newProductProductInfoGroupBox.TabIndex = 0;
             this.newProductProductInfoGroupBox.TabStop = false;
             this.newProductProductInfoGroupBox.Text = "Product Info";
@@ -557,28 +562,29 @@
             this.addProductTypePanel.Size = new System.Drawing.Size(200, 103);
             this.addProductTypePanel.TabIndex = 1;
             // 
-            // existingProductAddProductPanel
+            // addProductPanel
             // 
-            this.existingProductAddProductPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.existingProductAddProductPanel.Controls.Add(this.addProductNavigator);
-            this.existingProductAddProductPanel.Location = new System.Drawing.Point(301, 37);
-            this.existingProductAddProductPanel.Name = "existingProductAddProductPanel";
-            this.existingProductAddProductPanel.Size = new System.Drawing.Size(523, 478);
-            this.existingProductAddProductPanel.TabIndex = 0;
+            this.addProductPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.addProductPanel.Controls.Add(this.addProductNavigator);
+            this.addProductPanel.Location = new System.Drawing.Point(301, 37);
+            this.addProductPanel.Name = "addProductPanel";
+            this.addProductPanel.Size = new System.Drawing.Size(523, 478);
+            this.addProductPanel.TabIndex = 0;
             // 
-            // addProductForm
+            // AddProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(836, 545);
-            this.Controls.Add(this.existingProductAddProductPanel);
+            this.Controls.Add(this.addProductPanel);
             this.Controls.Add(this.addProductTypePanel);
             this.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "addProductForm";
+            this.Name = "AddProductForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Product";
             ((System.ComponentModel.ISupportInitialize)(this.addProductNavigator)).EndInit();
@@ -603,7 +609,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.newProductTypeComboBox)).EndInit();
             this.addProductTypePanel.ResumeLayout(false);
             this.addProductTypePanel.PerformLayout();
-            this.existingProductAddProductPanel.ResumeLayout(false);
+            this.addProductPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -635,7 +641,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel existingProductWeightUnitLabel;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel newProductWeightUnitLabel;
         private System.Windows.Forms.Panel addProductTypePanel;
-        private System.Windows.Forms.Panel existingProductAddProductPanel;
+        private System.Windows.Forms.Panel addProductPanel;
         private System.Windows.Forms.GroupBox existingProductSupplierInfoGroupBox;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox existingProductPurchasePriceTextBox;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel existingProductPurchasePriceAddProductLabel;

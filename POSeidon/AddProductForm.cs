@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace POSeidon
 {
-    public partial class addProductForm : Form
+    public partial class AddProductForm : Form
     {
-        public addProductForm()
+        public AddProductForm()
         {
             InitializeComponent();
             existingProductComboBox.Focus();
