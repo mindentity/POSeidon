@@ -53,22 +53,22 @@
             this.addSupplierFormPanel.Controls.Add(this.addressLabel);
             this.addSupplierFormPanel.Controls.Add(this.phoneLabel);
             this.addSupplierFormPanel.Controls.Add(this.nameLabel);
-            this.addSupplierFormPanel.Location = new System.Drawing.Point(1, 1);
-            this.addSupplierFormPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addSupplierFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addSupplierFormPanel.Location = new System.Drawing.Point(0, 0);
+            this.addSupplierFormPanel.Margin = new System.Windows.Forms.Padding(2);
             this.addSupplierFormPanel.Name = "addSupplierFormPanel";
-            this.addSupplierFormPanel.Size = new System.Drawing.Size(769, 457);
+            this.addSupplierFormPanel.Size = new System.Drawing.Size(532, 328);
             this.addSupplierFormPanel.TabIndex = 0;
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(563, 369);
-            this.addButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addButton.Location = new System.Drawing.Point(330, 255);
+            this.addButton.Margin = new System.Windows.Forms.Padding(2);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(111, 32);
             this.addButton.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.addButton.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.addButton.StateCommon.Border.Rounding = 5;
             this.addButton.TabIndex = 8;
             this.addButton.Values.Text = "ADD";
@@ -76,60 +76,56 @@
             // 
             // addressTextBox
             // 
-            this.addressTextBox.Location = new System.Drawing.Point(364, 301);
-            this.addressTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addressTextBox.Location = new System.Drawing.Point(165, 187);
+            this.addressTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.addressTextBox.Name = "addressTextBox";
-            this.addressTextBox.Size = new System.Drawing.Size(101, 27);
+            this.addressTextBox.Size = new System.Drawing.Size(276, 27);
             this.addressTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.addressTextBox.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.addressTextBox.StateCommon.Border.Rounding = 5;
             this.addressTextBox.TabIndex = 7;
             // 
             // emailTextBox
             // 
-            this.emailTextBox.Location = new System.Drawing.Point(364, 241);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.emailTextBox.Location = new System.Drawing.Point(165, 135);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(101, 27);
+            this.emailTextBox.Size = new System.Drawing.Size(276, 27);
             this.emailTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.emailTextBox.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.emailTextBox.StateCommon.Border.Rounding = 5;
             this.emailTextBox.TabIndex = 6;
             // 
             // phoneTextBox
             // 
-            this.phoneTextBox.Location = new System.Drawing.Point(364, 185);
-            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.phoneTextBox.Location = new System.Drawing.Point(165, 83);
+            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(101, 27);
+            this.phoneTextBox.Size = new System.Drawing.Size(276, 27);
             this.phoneTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.phoneTextBox.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.phoneTextBox.StateCommon.Border.Rounding = 5;
             this.phoneTextBox.TabIndex = 5;
             // 
             // nameTextBox
             // 
-            this.nameTextBox.Location = new System.Drawing.Point(364, 119);
-            this.nameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nameTextBox.Location = new System.Drawing.Point(165, 33);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(101, 27);
+            this.nameTextBox.Size = new System.Drawing.Size(276, 27);
             this.nameTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.nameTextBox.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.nameTextBox.StateCommon.Border.Rounding = 5;
             this.nameTextBox.TabIndex = 4;
             // 
             // emailLabel
             // 
-            this.emailLabel.Location = new System.Drawing.Point(195, 244);
-            this.emailLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.emailLabel.Location = new System.Drawing.Point(55, 143);
+            this.emailLabel.Margin = new System.Windows.Forms.Padding(2);
             this.emailLabel.Name = "emailLabel";
             this.emailLabel.Size = new System.Drawing.Size(42, 20);
             this.emailLabel.TabIndex = 3;
@@ -137,8 +133,8 @@
             // 
             // addressLabel
             // 
-            this.addressLabel.Location = new System.Drawing.Point(195, 304);
-            this.addressLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addressLabel.Location = new System.Drawing.Point(55, 195);
+            this.addressLabel.Margin = new System.Windows.Forms.Padding(2);
             this.addressLabel.Name = "addressLabel";
             this.addressLabel.Size = new System.Drawing.Size(57, 20);
             this.addressLabel.TabIndex = 2;
@@ -146,8 +142,8 @@
             // 
             // phoneLabel
             // 
-            this.phoneLabel.Location = new System.Drawing.Point(195, 185);
-            this.phoneLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.phoneLabel.Location = new System.Drawing.Point(55, 89);
+            this.phoneLabel.Margin = new System.Windows.Forms.Padding(2);
             this.phoneLabel.Name = "phoneLabel";
             this.phoneLabel.Size = new System.Drawing.Size(48, 20);
             this.phoneLabel.TabIndex = 1;
@@ -155,8 +151,8 @@
             // 
             // nameLabel
             // 
-            this.nameLabel.Location = new System.Drawing.Point(195, 122);
-            this.nameLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nameLabel.Location = new System.Drawing.Point(55, 39);
+            this.nameLabel.Margin = new System.Windows.Forms.Padding(2);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(46, 20);
             this.nameLabel.TabIndex = 0;
@@ -166,10 +162,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(772, 461);
+            this.ClientSize = new System.Drawing.Size(532, 328);
             this.Controls.Add(this.addSupplierFormPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "addSupplierForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

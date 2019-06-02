@@ -57,18 +57,20 @@
             this.addCustomerFormPanel.Controls.Add(this.addressLabel);
             this.addCustomerFormPanel.Controls.Add(this.phoneLabel);
             this.addCustomerFormPanel.Controls.Add(this.firstNameLabel);
-            this.addCustomerFormPanel.Location = new System.Drawing.Point(1, 1);
-            this.addCustomerFormPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addCustomerFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addCustomerFormPanel.Location = new System.Drawing.Point(0, 0);
+            this.addCustomerFormPanel.Margin = new System.Windows.Forms.Padding(2);
             this.addCustomerFormPanel.Name = "addCustomerFormPanel";
-            this.addCustomerFormPanel.Size = new System.Drawing.Size(756, 421);
+            this.addCustomerFormPanel.Size = new System.Drawing.Size(626, 373);
             this.addCustomerFormPanel.TabIndex = 0;
             // 
             // lastNameTextBox
             // 
-            this.lastNameTextBox.Location = new System.Drawing.Point(308, 122);
-            this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lastNameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lastNameTextBox.Location = new System.Drawing.Point(224, 89);
+            this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.lastNameTextBox.Name = "lastNameTextBox";
-            this.lastNameTextBox.Size = new System.Drawing.Size(101, 27);
+            this.lastNameTextBox.Size = new System.Drawing.Size(290, 27);
             this.lastNameTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -77,8 +79,9 @@
             // 
             // lastNameLabel
             // 
-            this.lastNameLabel.Location = new System.Drawing.Point(139, 122);
-            this.lastNameLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lastNameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lastNameLabel.Location = new System.Drawing.Point(55, 89);
+            this.lastNameLabel.Margin = new System.Windows.Forms.Padding(2);
             this.lastNameLabel.Name = "lastNameLabel";
             this.lastNameLabel.Size = new System.Drawing.Size(71, 20);
             this.lastNameLabel.TabIndex = 18;
@@ -86,8 +89,9 @@
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(507, 319);
-            this.addButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.addButton.Location = new System.Drawing.Point(403, 299);
+            this.addButton.Margin = new System.Windows.Forms.Padding(2);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(111, 32);
             this.addButton.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -100,10 +104,11 @@
             // 
             // addressTextBox
             // 
-            this.addressTextBox.Location = new System.Drawing.Point(308, 274);
-            this.addressTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addressTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.addressTextBox.Location = new System.Drawing.Point(224, 241);
+            this.addressTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.addressTextBox.Name = "addressTextBox";
-            this.addressTextBox.Size = new System.Drawing.Size(101, 27);
+            this.addressTextBox.Size = new System.Drawing.Size(290, 27);
             this.addressTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -112,10 +117,11 @@
             // 
             // emailTextBox
             // 
-            this.emailTextBox.Location = new System.Drawing.Point(308, 226);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.emailTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.emailTextBox.Location = new System.Drawing.Point(224, 193);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(101, 27);
+            this.emailTextBox.Size = new System.Drawing.Size(290, 27);
             this.emailTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -124,10 +130,11 @@
             // 
             // phoneTextBox
             // 
-            this.phoneTextBox.Location = new System.Drawing.Point(308, 176);
-            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.phoneTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.phoneTextBox.Location = new System.Drawing.Point(224, 143);
+            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(101, 27);
+            this.phoneTextBox.Size = new System.Drawing.Size(290, 27);
             this.phoneTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -136,10 +143,11 @@
             // 
             // firstNameTextBox
             // 
-            this.firstNameTextBox.Location = new System.Drawing.Point(308, 70);
-            this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.firstNameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.firstNameTextBox.Location = new System.Drawing.Point(224, 37);
+            this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.firstNameTextBox.Name = "firstNameTextBox";
-            this.firstNameTextBox.Size = new System.Drawing.Size(101, 27);
+            this.firstNameTextBox.Size = new System.Drawing.Size(290, 27);
             this.firstNameTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -148,8 +156,9 @@
             // 
             // emailLabel
             // 
-            this.emailLabel.Location = new System.Drawing.Point(139, 228);
-            this.emailLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.emailLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.emailLabel.Location = new System.Drawing.Point(55, 195);
+            this.emailLabel.Margin = new System.Windows.Forms.Padding(2);
             this.emailLabel.Name = "emailLabel";
             this.emailLabel.Size = new System.Drawing.Size(42, 20);
             this.emailLabel.TabIndex = 12;
@@ -157,8 +166,9 @@
             // 
             // addressLabel
             // 
-            this.addressLabel.Location = new System.Drawing.Point(139, 276);
-            this.addressLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addressLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.addressLabel.Location = new System.Drawing.Point(55, 243);
+            this.addressLabel.Margin = new System.Windows.Forms.Padding(2);
             this.addressLabel.Name = "addressLabel";
             this.addressLabel.Size = new System.Drawing.Size(57, 20);
             this.addressLabel.TabIndex = 11;
@@ -166,8 +176,9 @@
             // 
             // phoneLabel
             // 
-            this.phoneLabel.Location = new System.Drawing.Point(139, 176);
-            this.phoneLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.phoneLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.phoneLabel.Location = new System.Drawing.Point(55, 143);
+            this.phoneLabel.Margin = new System.Windows.Forms.Padding(2);
             this.phoneLabel.Name = "phoneLabel";
             this.phoneLabel.Size = new System.Drawing.Size(48, 20);
             this.phoneLabel.TabIndex = 10;
@@ -175,8 +186,9 @@
             // 
             // firstNameLabel
             // 
-            this.firstNameLabel.Location = new System.Drawing.Point(139, 72);
-            this.firstNameLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.firstNameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.firstNameLabel.Location = new System.Drawing.Point(55, 39);
+            this.firstNameLabel.Margin = new System.Windows.Forms.Padding(2);
             this.firstNameLabel.Name = "firstNameLabel";
             this.firstNameLabel.Size = new System.Drawing.Size(72, 20);
             this.firstNameLabel.TabIndex = 9;
@@ -186,14 +198,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(755, 419);
+            this.ClientSize = new System.Drawing.Size(626, 373);
             this.Controls.Add(this.addCustomerFormPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "AddCustomerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Add a Customer";
+            this.Text = "Add Customer";
             this.addCustomerFormPanel.ResumeLayout(false);
             this.addCustomerFormPanel.PerformLayout();
             this.ResumeLayout(false);

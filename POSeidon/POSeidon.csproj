@@ -90,12 +90,6 @@
     <Compile Include="AddSupplierForm.Designer.cs">
       <DependentUpon>AddSupplierForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Backup.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Backup.Designer.cs">
-      <DependentUpon>Backup.cs</DependentUpon>
-    </Compile>
     <Compile Include="ShoppingCartForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,9 +133,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddSupplierForm.resx">
       <DependentUpon>AddSupplierForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Backup.resx">
-      <DependentUpon>Backup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
