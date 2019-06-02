@@ -60,6 +60,15 @@ namespace POSeidon
             CreateSettings();
         }
 
+        public static bool UpdateSettings()
+        {
+            using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
+            {
+                var col = db.GetCollection<Settings>("settings");
+                return col.Update(Controller.Settings);
+            }
+        }
+
         public static Settings GetSettings()
         {
             using (var db = new LiteDatabase(Config["Database"]["FilePath"]))

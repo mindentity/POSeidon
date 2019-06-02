@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace POSeidon
@@ -49,7 +50,6 @@ namespace POSeidon
             }
             currencySettingsDecimalSeparatorComboBox.SelectedItem = nfi.CurrencyDecimalSeparator;
             currencySettingsGroupSeparatorComboBox.SelectedItem = nfi.CurrencyGroupSeparator;
-            currencySettingsGroupSizeNumericUpDown.Value = nfi.CurrencyGroupSizes.FirstOrDefault();
 
             switch (nfi.CurrencyPositivePattern)
             {
@@ -187,7 +187,33 @@ namespace POSeidon
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-
+            Controller.Settings.NumberFormat.CurrencyDecimalSeparator = (string) currencySettingsDecimalSeparatorComboBox.SelectedItem;
+            Controller.Settings.NumberFormat.CurrencyGroupSeparator = (string) currencySettingsGroupSeparatorComboBox.SelectedItem;
+            Controller.Settings.NumberFormat.CurrencySymbol = ((Currency) currencySettingsComboBox.SelectedItem).Symbol;
+            if (currencySettingsSymbolPlacementLeftRadioButton.Checked)
+            {
+                Controller.Settings.NumberFormat.CurrencyPositivePattern = 0;
+            }
+            else
+            {
+                Controller.Settings.NumberFormat.CurrencyPositivePattern = 1;
+            }
+            if (currencySettingsPutSpaceCheckBox.Checked)
+            {
+                Controller.Settings.NumberFormat.CurrencyPositivePattern += 2;
+            }
+            var cultureInfo = Thread.CurrentThread.CurrentCulture.Clone() as CultureInfo;
+            cultureInfo.NumberFormat = Controller.Settings.NumberFormat;
+            Controller.Settings.WeightUnit = (WeightUnit)weightUnitComboBox.SelectedItem;
+            if (DBUtils.UpdateSettings())
+            {
+                Thread.CurrentThread.CurrentCulture = cultureInfo;
+                MessageBox.Show("Settings are saved.", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Failed to save the settings!", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

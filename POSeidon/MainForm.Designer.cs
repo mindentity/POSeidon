@@ -31,23 +31,23 @@
             System.Windows.Forms.Button addProductButton;
             System.Windows.Forms.Button addCustomerButton;
             System.Windows.Forms.Button addSupplierButton;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.leftsideMainPanel = new System.Windows.Forms.Panel();
             this.nameTextLabel = new System.Windows.Forms.Label();
             this.usernameTextLabel = new System.Windows.Forms.Label();
@@ -130,8 +130,6 @@
             this.weightUnitSettingsLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.weightUnitComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.currencySettingsGroupBox = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.currencySettingsGroupSizeNumericUpDown = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
-            this.currencySettingsGroupSizeLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.currencySettingsGroupSeparatorComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.currencySettingsDecimalSeparatorComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.currencySettingsGroupSeparatorLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -416,15 +414,15 @@
             this.productPriceHomePageDataGridViewTextBoxColumn,
             this.productStockHomePageDataGridViewTextBoxColumn,
             this.productAddHomePageDataGridViewImageColumn});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.homePageDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.homePageDataGridView.DefaultCellStyle = dataGridViewCellStyle11;
             this.homePageDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.homePageDataGridView.Location = new System.Drawing.Point(0, 0);
             this.homePageDataGridView.MultiSelect = false;
@@ -447,9 +445,9 @@
             // productPriceHomePageDataGridViewTextBoxColumn
             // 
             this.productPriceHomePageDataGridViewTextBoxColumn.DataPropertyName = "Price";
-            dataGridViewCellStyle1.Format = "C2";
-            dataGridViewCellStyle1.NullValue = null;
-            this.productPriceHomePageDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.Format = "C2";
+            dataGridViewCellStyle10.NullValue = null;
+            this.productPriceHomePageDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle10;
             this.productPriceHomePageDataGridViewTextBoxColumn.HeaderText = "Price";
             this.productPriceHomePageDataGridViewTextBoxColumn.Name = "productPriceHomePageDataGridViewTextBoxColumn";
             this.productPriceHomePageDataGridViewTextBoxColumn.ReadOnly = true;
@@ -543,17 +541,17 @@
             // 
             // statisticsChart
             // 
-            chartArea1.AxisY.Title = "Amount";
-            chartArea1.Name = "ChartArea1";
-            this.statisticsChart.ChartAreas.Add(chartArea1);
+            chartArea4.AxisY.Title = "Amount";
+            chartArea4.Name = "ChartArea1";
+            this.statisticsChart.ChartAreas.Add(chartArea4);
             this.statisticsChart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.statisticsChart.Location = new System.Drawing.Point(0, 0);
             this.statisticsChart.Name = "statisticsChart";
-            series1.ChartArea = "ChartArea1";
-            series1.Name = "Series1";
-            series1.XValueMember = "ProductName";
-            series1.YValueMembers = "Amount";
-            this.statisticsChart.Series.Add(series1);
+            series4.ChartArea = "ChartArea1";
+            series4.Name = "Series1";
+            series4.XValueMember = "ProductName";
+            series4.YValueMembers = "Amount";
+            this.statisticsChart.Series.Add(series4);
             this.statisticsChart.Size = new System.Drawing.Size(966, 486);
             this.statisticsChart.TabIndex = 0;
             this.statisticsChart.Text = "chart1";
@@ -596,15 +594,15 @@
             this.customerEmailDataGridViewTextBoxColumn,
             this.customerAddressDataGridViewTextBoxColumn,
             this.deleteCustomerDataGridViewImageColumn});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.customersTabDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.customersTabDataGridView.DefaultCellStyle = dataGridViewCellStyle12;
             this.customersTabDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customersTabDataGridView.Location = new System.Drawing.Point(0, 0);
             this.customersTabDataGridView.Margin = new System.Windows.Forms.Padding(2);
@@ -742,15 +740,15 @@
             this.supplierEmailDataGridViewTextBoxColumn,
             this.supplierAddressDataGridViewTextBoxColumn,
             this.deleteSupplierDataGridViewImageColumn});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.suppliersTabDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle13.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.suppliersTabDataGridView.DefaultCellStyle = dataGridViewCellStyle13;
             this.suppliersTabDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.suppliersTabDataGridView.Location = new System.Drawing.Point(0, 0);
             this.suppliersTabDataGridView.Margin = new System.Windows.Forms.Padding(2);
@@ -920,15 +918,15 @@
             this.customerEmailSalesHistoryDataGridViewTextBoxColumn,
             this.customerAddressSalesHistoryDataGridViewTextBoxColumn,
             this.dateSalesHistoryDataGridViewTextBoxColumn});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.salesHistoryDataGridView.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle16.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.salesHistoryDataGridView.DefaultCellStyle = dataGridViewCellStyle16;
             this.salesHistoryDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.salesHistoryDataGridView.Location = new System.Drawing.Point(0, 0);
             this.salesHistoryDataGridView.Margin = new System.Windows.Forms.Padding(2);
@@ -951,9 +949,9 @@
             // productPriceSalesHistoryDataGridViewTextBoxColumn
             // 
             this.productPriceSalesHistoryDataGridViewTextBoxColumn.DataPropertyName = "ProductPrice";
-            dataGridViewCellStyle5.Format = "C2";
-            dataGridViewCellStyle5.NullValue = null;
-            this.productPriceSalesHistoryDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle14.Format = "C2";
+            dataGridViewCellStyle14.NullValue = null;
+            this.productPriceSalesHistoryDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle14;
             this.productPriceSalesHistoryDataGridViewTextBoxColumn.HeaderText = "Price";
             this.productPriceSalesHistoryDataGridViewTextBoxColumn.Name = "productPriceSalesHistoryDataGridViewTextBoxColumn";
             this.productPriceSalesHistoryDataGridViewTextBoxColumn.ReadOnly = true;
@@ -970,9 +968,9 @@
             // productTotalPriceSalesHistoryDataGridViewTextBoxColumn
             // 
             this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn.DataPropertyName = "ProductTotalPrice";
-            dataGridViewCellStyle6.Format = "C2";
-            dataGridViewCellStyle6.NullValue = null;
-            this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle15.Format = "C2";
+            dataGridViewCellStyle15.NullValue = null;
+            this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle15;
             this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn.HeaderText = "Total";
             this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn.Name = "productTotalPriceSalesHistoryDataGridViewTextBoxColumn";
             this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn.ReadOnly = true;
@@ -1052,15 +1050,15 @@
             this.addressPurchasingDataGridViewTextBoxColumn,
             this.totalPurchasingDataGridViewTextBoxColumn,
             this.datePurchasingDataGridViewTextBoxColumn});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.purchasingDataGridView.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle18.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.purchasingDataGridView.DefaultCellStyle = dataGridViewCellStyle18;
             this.purchasingDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.purchasingDataGridView.Location = new System.Drawing.Point(0, 0);
             this.purchasingDataGridView.Margin = new System.Windows.Forms.Padding(2);
@@ -1123,9 +1121,9 @@
             // totalPurchasingDataGridViewTextBoxColumn
             // 
             this.totalPurchasingDataGridViewTextBoxColumn.DataPropertyName = "TotalCost";
-            dataGridViewCellStyle8.Format = "C2";
-            dataGridViewCellStyle8.NullValue = null;
-            this.totalPurchasingDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle17.Format = "C2";
+            dataGridViewCellStyle17.NullValue = null;
+            this.totalPurchasingDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle17;
             this.totalPurchasingDataGridViewTextBoxColumn.HeaderText = "Total";
             this.totalPurchasingDataGridViewTextBoxColumn.Name = "totalPurchasingDataGridViewTextBoxColumn";
             this.totalPurchasingDataGridViewTextBoxColumn.ReadOnly = true;
@@ -1257,8 +1255,6 @@
             // 
             // currencySettingsGroupBox.Panel
             // 
-            this.currencySettingsGroupBox.Panel.Controls.Add(this.currencySettingsGroupSizeNumericUpDown);
-            this.currencySettingsGroupBox.Panel.Controls.Add(this.currencySettingsGroupSizeLabel);
             this.currencySettingsGroupBox.Panel.Controls.Add(this.currencySettingsGroupSeparatorComboBox);
             this.currencySettingsGroupBox.Panel.Controls.Add(this.currencySettingsDecimalSeparatorComboBox);
             this.currencySettingsGroupBox.Panel.Controls.Add(this.currencySettingsGroupSeparatorLabel);
@@ -1272,22 +1268,6 @@
             this.currencySettingsGroupBox.Size = new System.Drawing.Size(350, 250);
             this.currencySettingsGroupBox.TabIndex = 16;
             this.currencySettingsGroupBox.Values.Heading = "Currency Settings";
-            // 
-            // currencySettingsGroupSizeNumericUpDown
-            // 
-            this.currencySettingsGroupSizeNumericUpDown.DecimalPlaces = 99;
-            this.currencySettingsGroupSizeNumericUpDown.Location = new System.Drawing.Point(131, 193);
-            this.currencySettingsGroupSizeNumericUpDown.Name = "currencySettingsGroupSizeNumericUpDown";
-            this.currencySettingsGroupSizeNumericUpDown.Size = new System.Drawing.Size(120, 22);
-            this.currencySettingsGroupSizeNumericUpDown.TabIndex = 23;
-            // 
-            // currencySettingsGroupSizeLabel
-            // 
-            this.currencySettingsGroupSizeLabel.Location = new System.Drawing.Point(19, 195);
-            this.currencySettingsGroupSizeLabel.Name = "currencySettingsGroupSizeLabel";
-            this.currencySettingsGroupSizeLabel.Size = new System.Drawing.Size(72, 20);
-            this.currencySettingsGroupSizeLabel.TabIndex = 22;
-            this.currencySettingsGroupSizeLabel.Values.Text = "Group Size:";
             // 
             // currencySettingsGroupSeparatorComboBox
             // 
@@ -1404,19 +1384,19 @@
             this.supplierStatisticsChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea2.Name = "ChartArea8";
-            this.supplierStatisticsChart.ChartAreas.Add(chartArea2);
-            legend1.Name = "Legend8";
-            this.supplierStatisticsChart.Legends.Add(legend1);
+            chartArea5.Name = "ChartArea8";
+            this.supplierStatisticsChart.ChartAreas.Add(chartArea5);
+            legend2.Name = "Legend8";
+            this.supplierStatisticsChart.Legends.Add(legend2);
             this.supplierStatisticsChart.Location = new System.Drawing.Point(20, 19);
             this.supplierStatisticsChart.Margin = new System.Windows.Forms.Padding(2);
             this.supplierStatisticsChart.Name = "supplierStatisticsChart";
             this.supplierStatisticsChart.Padding = new System.Windows.Forms.Padding(8);
             this.supplierStatisticsChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series2.ChartArea = "ChartArea8";
-            series2.Legend = "Legend8";
-            series2.Name = "Series8";
-            this.supplierStatisticsChart.Series.Add(series2);
+            series5.ChartArea = "ChartArea8";
+            series5.Legend = "Legend8";
+            series5.Name = "Series8";
+            this.supplierStatisticsChart.Series.Add(series5);
             this.supplierStatisticsChart.Size = new System.Drawing.Size(570, 494);
             this.supplierStatisticsChart.TabIndex = 0;
             // 
@@ -1433,18 +1413,18 @@
             this.customerStatisticsChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea3.Name = "ChartArea7";
-            this.customerStatisticsChart.ChartAreas.Add(chartArea3);
+            chartArea6.Name = "ChartArea7";
+            this.customerStatisticsChart.ChartAreas.Add(chartArea6);
             this.customerStatisticsChart.Location = new System.Drawing.Point(20, 19);
             this.customerStatisticsChart.Margin = new System.Windows.Forms.Padding(2);
             this.customerStatisticsChart.Name = "customerStatisticsChart";
             this.customerStatisticsChart.Padding = new System.Windows.Forms.Padding(8);
             this.customerStatisticsChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series3.ChartArea = "ChartArea7";
-            series3.Name = "test";
-            series3.XValueMember = "ProductName";
-            series3.YValueMembers = "Amount";
-            this.customerStatisticsChart.Series.Add(series3);
+            series6.ChartArea = "ChartArea7";
+            series6.Name = "test";
+            series6.XValueMember = "ProductName";
+            series6.YValueMembers = "Amount";
+            this.customerStatisticsChart.Series.Add(series6);
             this.customerStatisticsChart.Size = new System.Drawing.Size(569, 400);
             this.customerStatisticsChart.TabIndex = 0;
             // 
@@ -1587,8 +1567,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox weightUnitComboBox;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel weightUnitSettingsLabel;
         private ComponentFactory.Krypton.Toolkit.KryptonGroupBox currencySettingsGroupBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown currencySettingsGroupSizeNumericUpDown;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel currencySettingsGroupSizeLabel;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox currencySettingsGroupSeparatorComboBox;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox currencySettingsDecimalSeparatorComboBox;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel currencySettingsGroupSeparatorLabel;
