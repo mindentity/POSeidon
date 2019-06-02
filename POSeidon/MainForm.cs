@@ -12,8 +12,8 @@ namespace POSeidon
         public MainForm()
         {
             InitializeComponent();
-            homepageDataGridView.AutoGenerateColumns = false;
-            homepageDataGridView.DataSource = Controller.Products;
+            homePageDataGridView.AutoGenerateColumns = false;
+            homePageDataGridView.DataSource = Controller.Products;
             salesHistoryDataGridView.AutoGenerateColumns = false;
             salesHistoryDataGridView.DataSource = Controller.CustomerLogs;
             suppliersTabDataGridView.AutoGenerateColumns = false;
@@ -111,7 +111,7 @@ namespace POSeidon
             var products = from x in Controller.Products
                            where x.Name.IndexOf(productSearchTextBox.Text, StringComparison.OrdinalIgnoreCase) >= 0
                            select x;
-            homepageDataGridView.DataSource = products.ToList();
+            homePageDataGridView.DataSource = new BindingList<Product>(products.ToList());
         }
 
         private void SuppliersSearchTextBox_TextChanged(object sender, EventArgs e)

@@ -72,7 +72,7 @@ namespace POSeidon
                     
                     var oldAmount = (double) shoppingCartDataGridView[e.ColumnIndex, e.RowIndex].Value;
                     var newAmount = Double.Parse(e.FormattedValue.ToString());
-                    if (newAmount > 0 && newAmount <= item.Product.StockAmount)
+                    if (newAmount >= 0 && newAmount <= item.Product.StockAmount)
                     {
                         Controller.ShoppingCart.TotalPrice += (decimal)(newAmount - oldAmount) * item.Product.Price;
 
@@ -122,6 +122,19 @@ namespace POSeidon
             else
             {
                 customerComboBox.Enabled = false;
+            }
+        }
+
+        private void ShoppingCartDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var gridView = sender as DataGridView;
+
+            if (e.ColumnIndex >= 0 && gridView.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
+            {
+                BindingList<ShoppingCartItem> items = (BindingList<ShoppingCartItem>) gridView.DataSource;
+                ShoppingCartItem item = items.ElementAt(e.RowIndex);
+                Controller.ShoppingCart.RemoveItem(item);
+                Controller.ShoppingCart.Items.ResetBindings();
             }
         }
     }

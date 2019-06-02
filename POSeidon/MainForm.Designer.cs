@@ -59,7 +59,7 @@
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.homeTab = new System.Windows.Forms.TabPage();
             this.homePageMainPanel = new System.Windows.Forms.Panel();
-            this.homepageDataGridView = new System.Windows.Forms.DataGridView();
+            this.homePageDataGridView = new System.Windows.Forms.DataGridView();
             this.productNameHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productPriceHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productStockHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -157,7 +157,7 @@
             this.mainTabControl.SuspendLayout();
             this.homeTab.SuspendLayout();
             this.homePageMainPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.homepageDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homePageDataGridView)).BeginInit();
             this.homePageHeaderPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -392,7 +392,7 @@
             // 
             // homePageMainPanel
             // 
-            this.homePageMainPanel.Controls.Add(this.homepageDataGridView);
+            this.homePageMainPanel.Controls.Add(this.homePageDataGridView);
             this.homePageMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.homePageMainPanel.Location = new System.Drawing.Point(0, 100);
             this.homePageMainPanel.Margin = new System.Windows.Forms.Padding(2);
@@ -400,18 +400,18 @@
             this.homePageMainPanel.Size = new System.Drawing.Size(970, 390);
             this.homePageMainPanel.TabIndex = 8;
             // 
-            // homepageDataGridView
+            // homePageDataGridView
             // 
-            this.homepageDataGridView.AllowUserToAddRows = false;
-            this.homepageDataGridView.AllowUserToDeleteRows = false;
-            this.homepageDataGridView.AllowUserToOrderColumns = true;
-            this.homepageDataGridView.AllowUserToResizeColumns = false;
-            this.homepageDataGridView.AllowUserToResizeRows = false;
-            this.homepageDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.homepageDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.homepageDataGridView.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.homepageDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.homepageDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.homePageDataGridView.AllowUserToAddRows = false;
+            this.homePageDataGridView.AllowUserToDeleteRows = false;
+            this.homePageDataGridView.AllowUserToOrderColumns = true;
+            this.homePageDataGridView.AllowUserToResizeColumns = false;
+            this.homePageDataGridView.AllowUserToResizeRows = false;
+            this.homePageDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.homePageDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.homePageDataGridView.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.homePageDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.homePageDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.productNameHomePageDataGridViewTextBoxColumn,
             this.productPriceHomePageDataGridViewTextBoxColumn,
             this.productStockHomePageDataGridViewTextBoxColumn,
@@ -424,18 +424,18 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.homepageDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
-            this.homepageDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.homepageDataGridView.Location = new System.Drawing.Point(0, 0);
-            this.homepageDataGridView.MultiSelect = false;
-            this.homepageDataGridView.Name = "homepageDataGridView";
-            this.homepageDataGridView.ReadOnly = true;
-            this.homepageDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.homepageDataGridView.RowTemplate.Height = 24;
-            this.homepageDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.homepageDataGridView.Size = new System.Drawing.Size(970, 390);
-            this.homepageDataGridView.TabIndex = 7;
-            this.homepageDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HomePageDataGridView_CellClick);
+            this.homePageDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.homePageDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.homePageDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.homePageDataGridView.MultiSelect = false;
+            this.homePageDataGridView.Name = "homePageDataGridView";
+            this.homePageDataGridView.ReadOnly = true;
+            this.homePageDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.homePageDataGridView.RowTemplate.Height = 24;
+            this.homePageDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.homePageDataGridView.Size = new System.Drawing.Size(970, 390);
+            this.homePageDataGridView.TabIndex = 7;
+            this.homePageDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HomePageDataGridView_CellClick);
             // 
             // productNameHomePageDataGridViewTextBoxColumn
             // 
@@ -504,6 +504,7 @@
             this.productSearchTextBox.Name = "productSearchTextBox";
             this.productSearchTextBox.Size = new System.Drawing.Size(231, 24);
             this.productSearchTextBox.TabIndex = 16;
+            this.productSearchTextBox.TextChanged += new System.EventHandler(this.ProductSearchTextBox_TextChanged);
             // 
             // pictureBox1
             // 
@@ -842,6 +843,7 @@
             this.supplierSearchTextBox.Name = "supplierSearchTextBox";
             this.supplierSearchTextBox.Size = new System.Drawing.Size(231, 24);
             this.supplierSearchTextBox.TabIndex = 18;
+            this.supplierSearchTextBox.TextChanged += new System.EventHandler(this.SuppliersSearchTextBox_TextChanged);
             // 
             // salesAndPurchasingTab
             // 
@@ -1482,7 +1484,7 @@
             this.mainTabControl.ResumeLayout(false);
             this.homeTab.ResumeLayout(false);
             this.homePageMainPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.homepageDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homePageDataGridView)).EndInit();
             this.homePageHeaderPanel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -1550,7 +1552,7 @@
         private System.Windows.Forms.TabControl mainTabControl;
         private System.Windows.Forms.TabPage homeTab;
         private System.Windows.Forms.Panel homePageMainPanel;
-        private System.Windows.Forms.DataGridView homepageDataGridView;
+        private System.Windows.Forms.DataGridView homePageDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn productNameHomePageDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productPriceHomePageDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productStockHomePageDataGridViewTextBoxColumn;

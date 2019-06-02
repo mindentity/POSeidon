@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +9,7 @@ namespace POSeidon
 {
     public class ShoppingCart
     {
-        public IList<ShoppingCartItem> Items { get; set; }
+        public BindingList<ShoppingCartItem> Items { get; set; }
         public decimal TotalPrice { get; set; }
 
         public bool AddProduct(Product product, double amount=0)
@@ -74,7 +75,7 @@ namespace POSeidon
             DateTime date = DateTime.UtcNow;
             foreach (var item in Items)
             {
-                if (DBUtils.DecreaseProductStockByAmount(item.Product, item.Amount))
+                if (item.Amount > 0 && DBUtils.DecreaseProductStockByAmount(item.Product, item.Amount))
                 {
                     var log = new CustomerLog
                     {
