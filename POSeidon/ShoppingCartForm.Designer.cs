@@ -32,6 +32,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShoppingCartForm));
             this.shoppingCartFormPanel = new System.Windows.Forms.Panel();
+            this.customerComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.customerCheckBox = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
             this.totalPriceTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.totalPriceLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.checkoutButton = new System.Windows.Forms.Button();
@@ -40,11 +42,9 @@
             this.productPriceShoppingCartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productAmountShoppingCartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.weightUnitShoppingCartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customerCheckBox = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
-            this.customerComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.shoppingCartFormPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.shoppingCartDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerComboBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingCartDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // shoppingCartFormPanel
@@ -65,10 +65,29 @@
             this.shoppingCartFormPanel.Size = new System.Drawing.Size(802, 450);
             this.shoppingCartFormPanel.TabIndex = 0;
             // 
+            // customerComboBox
+            // 
+            this.customerComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.customerComboBox.DropDownWidth = 129;
+            this.customerComboBox.Enabled = false;
+            this.customerComboBox.Location = new System.Drawing.Point(96, 418);
+            this.customerComboBox.Name = "customerComboBox";
+            this.customerComboBox.Size = new System.Drawing.Size(207, 21);
+            this.customerComboBox.TabIndex = 7;
+            // 
+            // customerCheckBox
+            // 
+            this.customerCheckBox.Location = new System.Drawing.Point(11, 419);
+            this.customerCheckBox.Name = "customerCheckBox";
+            this.customerCheckBox.Size = new System.Drawing.Size(79, 20);
+            this.customerCheckBox.TabIndex = 6;
+            this.customerCheckBox.Values.Text = "Customer:";
+            this.customerCheckBox.CheckedChanged += new System.EventHandler(this.CustomerCheckBox_CheckedChanged);
+            // 
             // totalPriceTextBox
             // 
             this.totalPriceTextBox.Enabled = false;
-            this.totalPriceTextBox.Location = new System.Drawing.Point(49, 413);
+            this.totalPriceTextBox.Location = new System.Drawing.Point(583, 416);
             this.totalPriceTextBox.Name = "totalPriceTextBox";
             this.totalPriceTextBox.ReadOnly = true;
             this.totalPriceTextBox.Size = new System.Drawing.Size(100, 23);
@@ -76,7 +95,7 @@
             // 
             // totalPriceLabel
             // 
-            this.totalPriceLabel.Location = new System.Drawing.Point(3, 416);
+            this.totalPriceLabel.Location = new System.Drawing.Point(537, 419);
             this.totalPriceLabel.Name = "totalPriceLabel";
             this.totalPriceLabel.Size = new System.Drawing.Size(40, 20);
             this.totalPriceLabel.TabIndex = 4;
@@ -86,7 +105,7 @@
             // 
             this.checkoutButton.BackColor = System.Drawing.Color.Orange;
             this.checkoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkoutButton.Location = new System.Drawing.Point(693, 416);
+            this.checkoutButton.Location = new System.Drawing.Point(703, 416);
             this.checkoutButton.Name = "checkoutButton";
             this.checkoutButton.Size = new System.Drawing.Size(74, 23);
             this.checkoutButton.TabIndex = 3;
@@ -151,31 +170,13 @@
             this.weightUnitShoppingCartDataGridViewTextBoxColumn.Name = "weightUnitShoppingCartDataGridViewTextBoxColumn";
             this.weightUnitShoppingCartDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // customerCheckBox
-            // 
-            this.customerCheckBox.Location = new System.Drawing.Point(400, 416);
-            this.customerCheckBox.Name = "customerCheckBox";
-            this.customerCheckBox.Size = new System.Drawing.Size(79, 20);
-            this.customerCheckBox.TabIndex = 6;
-            this.customerCheckBox.Values.Text = "Customer:";
-            this.customerCheckBox.CheckedChanged += new System.EventHandler(this.CustomerCheckBox_CheckedChanged);
-            // 
-            // customerComboBox
-            // 
-            this.customerComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.customerComboBox.DropDownWidth = 129;
-            this.customerComboBox.Enabled = false;
-            this.customerComboBox.Location = new System.Drawing.Point(485, 415);
-            this.customerComboBox.Name = "customerComboBox";
-            this.customerComboBox.Size = new System.Drawing.Size(129, 21);
-            this.customerComboBox.TabIndex = 7;
-            // 
             // ShoppingCartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.shoppingCartFormPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "ShoppingCartForm";
@@ -183,8 +184,8 @@
             this.Text = "Shopping Cart";
             this.shoppingCartFormPanel.ResumeLayout(false);
             this.shoppingCartFormPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.shoppingCartDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerComboBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingCartDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

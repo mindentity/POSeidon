@@ -9,8 +9,6 @@ namespace POSeidon
 {
     public partial class MainForm : Form
     {
-        private BindingSource itemCountBindingSource;
-
         public MainForm()
         {
             InitializeComponent();
@@ -81,7 +79,7 @@ namespace POSeidon
             
             if (e.ColumnIndex >= 0 && gridView.Columns[e.ColumnIndex] is DataGridViewImageColumn && e.RowIndex >= 0)
             {
-                List<Product> products = (List<Product>) gridView.DataSource;
+                BindingList<Product> products = (BindingList<Product>) gridView.DataSource;
                 Product product = products.ElementAt(e.RowIndex);
                 if (Controller.ShoppingCart.AddProduct(product))
                 {
