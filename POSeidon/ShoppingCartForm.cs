@@ -85,10 +85,14 @@ namespace POSeidon
                 var item = shoppingCartDataGridView.Rows[e.RowIndex].DataBoundItem as ShoppingCartItem;
                 try
                 {
-                    var ratio = (double) shoppingCartDataGridView["weightUnitShoppingCartDataGridViewTextBoxColumn", e.RowIndex].Value;
                     var oldAmount = (double) shoppingCartDataGridView[e.ColumnIndex, e.RowIndex].Value;
                     var newAmount = Double.Parse(e.FormattedValue.ToString());
-                    if (newAmount >= 0 && newAmount * ratio <= item.Product.StockAmount)
+                    if (!item.Product.IsCountable)
+                    {
+                        var ratio = (double)shoppingCartDataGridView["weightUnitShoppingCartDataGridViewTextBoxColumn", e.RowIndex].Value;
+                        newAmount *= ratio;
+                    }
+                    if (newAmount >= 0 && newAmount <= item.Product.StockAmount)
                     {
                         Controller.ShoppingCart.TotalPrice += (decimal)(newAmount - oldAmount) * item.Product.Price;
 

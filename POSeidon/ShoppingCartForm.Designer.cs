@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShoppingCartForm));
             this.shoppingCartFormPanel = new System.Windows.Forms.Panel();
             this.customerComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
@@ -92,6 +93,7 @@
             this.totalPriceTextBox.Name = "totalPriceTextBox";
             this.totalPriceTextBox.ReadOnly = true;
             this.totalPriceTextBox.Size = new System.Drawing.Size(100, 23);
+            this.totalPriceTextBox.StateDisabled.Content.Color1 = System.Drawing.Color.Teal;
             this.totalPriceTextBox.TabIndex = 5;
             // 
             // totalPriceLabel
@@ -179,6 +181,8 @@
             // 
             // totalPriceShoppingCartDataGridViewTextBoxColumn
             // 
+            dataGridViewCellStyle2.NullValue = "$0.00";
+            this.totalPriceShoppingCartDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
             this.totalPriceShoppingCartDataGridViewTextBoxColumn.HeaderText = "Total";
             this.totalPriceShoppingCartDataGridViewTextBoxColumn.Name = "totalPriceShoppingCartDataGridViewTextBoxColumn";
             this.totalPriceShoppingCartDataGridViewTextBoxColumn.ReadOnly = true;
