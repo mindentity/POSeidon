@@ -29,46 +29,50 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.Button addProductButton;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.Button addCustomerButton;
+            System.Windows.Forms.Button addSupplierButton;
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.leftsideMainPanel = new System.Windows.Forms.Panel();
+            this.nameTextLabel = new System.Windows.Forms.Label();
+            this.usernameTextLabel = new System.Windows.Forms.Label();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.usernameLabel = new System.Windows.Forms.Label();
             this.shoppingCartLeftSidePanelButton = new System.Windows.Forms.Button();
             this.logoutButton = new System.Windows.Forms.Button();
-            this.iconButton = new System.Windows.Forms.Button();
-            this.infoLabel = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.homepageTabControl = new System.Windows.Forms.TabControl();
+            this.mainTabControl = new System.Windows.Forms.TabControl();
             this.homeTab = new System.Windows.Forms.TabPage();
-            this.homePanel = new System.Windows.Forms.Panel();
-            this.searchImageHomePanel = new System.Windows.Forms.Panel();
-            this.productSearchTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.homePageMainPanel = new System.Windows.Forms.Panel();
             this.homepageDataGridView = new System.Windows.Forms.DataGridView();
             this.productNameHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productPriceHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productStockHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productAddHomePageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.homePageHeaderPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.productSearchTextBox = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.statisticsTab = new System.Windows.Forms.TabPage();
-            this.statisticsPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.statisticsHomepageNavigator = new ComponentFactory.Krypton.Navigator.KryptonNavigator();
-            this.customerStatisticsPage = new ComponentFactory.Krypton.Navigator.KryptonPage();
-            this.customerStatisticsPanel = new System.Windows.Forms.Panel();
-            this.customerStatisticsChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.supplierStatisticsPage = new ComponentFactory.Krypton.Navigator.KryptonPage();
-            this.salesStatisticsPanel = new System.Windows.Forms.Panel();
-            this.supplierStatisticsChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.statisticsPagePanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.statisticsChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.customersTab = new System.Windows.Forms.TabPage();
-            this.addCustomerButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.customersPageMainPanel = new System.Windows.Forms.Panel();
             this.customersTabDataGridView = new System.Windows.Forms.DataGridView();
             this.customerFirstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customerLastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,35 +80,54 @@
             this.customerEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customerAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deleteCustomerDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.customersPageHeaderPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.customerSearchTextBox = new System.Windows.Forms.TextBox();
             this.suppliersTab = new System.Windows.Forms.TabPage();
-            this.searchImageSuppliersPanel = new System.Windows.Forms.Panel();
-            this.suppliersSearchTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.addSupplierButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.suppliersPageMainPanel = new System.Windows.Forms.Panel();
             this.suppliersTabDataGridView = new System.Windows.Forms.DataGridView();
             this.supplierNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplierPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplierEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplierAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deleteSupplierDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.suppliersPageHeaderPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.supplierSearchTextBox = new System.Windows.Forms.TextBox();
             this.salesAndPurchasingTab = new System.Windows.Forms.TabPage();
             this.salesAndPurchasingPanel = new System.Windows.Forms.Panel();
             this.salesAndPurchasingNavigator = new ComponentFactory.Krypton.Navigator.KryptonNavigator();
             this.salesNavigatorPage = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.salesHistoryDataGridView = new System.Windows.Forms.DataGridView();
+            this.productNameSalesHistoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productPriceSalesHistoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productAmountSalesHistoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerNameSalesHistoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerPhoneSalesHistoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerEmailSalesHistoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerAddressSalesHistoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateSalesHistoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.purchasingNavigatorPage = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.purchasingDataGridView = new System.Windows.Forms.DataGridView();
-            this.productNamePurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productAmountPurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totalCostPurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cancelLogPurchasingDataGridViewImageBoxColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.productPurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amountPurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplierPurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phonePurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailPurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressPurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalPurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datePurchasingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.settingsTab = new System.Windows.Forms.TabPage();
             this.settingsPanel = new System.Windows.Forms.Panel();
-            this.settingsChildPanel1 = new System.Windows.Forms.Panel();
-            this.settingsCheckbox2 = new System.Windows.Forms.CheckBox();
-            this.settingsCheckbox1 = new System.Windows.Forms.CheckBox();
-            this.settingsChildPanel2 = new System.Windows.Forms.Panel();
-            this.weightUnitComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.languageSettingsLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.languageSettingsComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.saveButton = new System.Windows.Forms.Button();
             this.weightUnitSettingsLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.weightUnitComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.currencySettingsGroupBox = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
             this.currencySettingsGroupSizeNumericUpDown = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
             this.currencySettingsGroupSizeLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -118,43 +141,41 @@
             this.currencySettingsLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.currencySettingsSymbolPlacementLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.currencySettingsComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.saveButton = new System.Windows.Forms.Button();
-            this.passwordLabel = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.productNameSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salePriceSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productAmountSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totalPriceSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customerNameSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customerPhoneSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customerEmailSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customerAddressSalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cancelLogSalesHistoryDataGridViewImageBoxColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.supplierStatisticsChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.customerStatisticsPanel = new System.Windows.Forms.Panel();
+            this.customerStatisticsChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.customerStatisticsPage = new ComponentFactory.Krypton.Navigator.KryptonPage();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             addProductButton = new System.Windows.Forms.Button();
+            addCustomerButton = new System.Windows.Forms.Button();
+            addSupplierButton = new System.Windows.Forms.Button();
             this.leftsideMainPanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
-            this.homepageTabControl.SuspendLayout();
+            this.mainTabControl.SuspendLayout();
             this.homeTab.SuspendLayout();
-            this.homePanel.SuspendLayout();
+            this.homePageMainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.homepageDataGridView)).BeginInit();
+            this.homePageHeaderPanel.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statisticsTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.statisticsPanel)).BeginInit();
-            this.statisticsPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.statisticsHomepageNavigator)).BeginInit();
-            this.statisticsHomepageNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customerStatisticsPage)).BeginInit();
-            this.customerStatisticsPage.SuspendLayout();
-            this.customerStatisticsPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customerStatisticsChart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierStatisticsPage)).BeginInit();
-            this.supplierStatisticsPage.SuspendLayout();
-            this.salesStatisticsPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierStatisticsChart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statisticsPagePanel)).BeginInit();
+            this.statisticsPagePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.statisticsChart)).BeginInit();
             this.customersTab.SuspendLayout();
+            this.customersPageMainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customersTabDataGridView)).BeginInit();
+            this.customersPageHeaderPanel.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.suppliersTab.SuspendLayout();
+            this.suppliersPageMainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.suppliersTabDataGridView)).BeginInit();
+            this.suppliersPageHeaderPanel.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.salesAndPurchasingTab.SuspendLayout();
             this.salesAndPurchasingPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salesAndPurchasingNavigator)).BeginInit();
@@ -167,8 +188,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.purchasingDataGridView)).BeginInit();
             this.settingsTab.SuspendLayout();
             this.settingsPanel.SuspendLayout();
-            this.settingsChildPanel1.SuspendLayout();
-            this.settingsChildPanel2.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.languageSettingsComboBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.weightUnitComboBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.currencySettingsGroupBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.currencySettingsGroupBox.Panel)).BeginInit();
@@ -177,208 +199,212 @@
             ((System.ComponentModel.ISupportInitialize)(this.currencySettingsGroupSeparatorComboBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.currencySettingsDecimalSeparatorComboBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.currencySettingsComboBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierStatisticsChart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerStatisticsChart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerStatisticsPage)).BeginInit();
+            this.customerStatisticsPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // addProductButton
             // 
-            addProductButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            addProductButton.AutoSize = true;
+            addProductButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
             addProductButton.BackColor = System.Drawing.Color.White;
             addProductButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             addProductButton.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             addProductButton.Image = global::POSeidon.Properties.Resources.rsz_plus;
             addProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            addProductButton.Location = new System.Drawing.Point(3, 9);
+            addProductButton.Location = new System.Drawing.Point(3, 8);
             addProductButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             addProductButton.Name = "addProductButton";
             addProductButton.Padding = new System.Windows.Forms.Padding(5);
-            addProductButton.Size = new System.Drawing.Size(178, 72);
+            addProductButton.Size = new System.Drawing.Size(210, 84);
             addProductButton.TabIndex = 1;
             addProductButton.Text = "ADD PRODUCT";
             addProductButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             addProductButton.UseVisualStyleBackColor = false;
             addProductButton.Click += new System.EventHandler(this.AddProductButton_Click);
             // 
+            // addCustomerButton
+            // 
+            addCustomerButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            addCustomerButton.BackColor = System.Drawing.Color.White;
+            addCustomerButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            addCustomerButton.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            addCustomerButton.Image = global::POSeidon.Properties.Resources.rsz_plus;
+            addCustomerButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            addCustomerButton.Location = new System.Drawing.Point(3, 8);
+            addCustomerButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            addCustomerButton.Name = "addCustomerButton";
+            addCustomerButton.Padding = new System.Windows.Forms.Padding(5);
+            addCustomerButton.Size = new System.Drawing.Size(210, 84);
+            addCustomerButton.TabIndex = 1;
+            addCustomerButton.Text = "ADD CUSTOMER";
+            addCustomerButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            addCustomerButton.UseVisualStyleBackColor = false;
+            // 
+            // addSupplierButton
+            // 
+            addSupplierButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            addSupplierButton.BackColor = System.Drawing.Color.White;
+            addSupplierButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            addSupplierButton.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            addSupplierButton.Image = global::POSeidon.Properties.Resources.rsz_plus;
+            addSupplierButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            addSupplierButton.Location = new System.Drawing.Point(3, 8);
+            addSupplierButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            addSupplierButton.Name = "addSupplierButton";
+            addSupplierButton.Padding = new System.Windows.Forms.Padding(5);
+            addSupplierButton.Size = new System.Drawing.Size(210, 84);
+            addSupplierButton.TabIndex = 1;
+            addSupplierButton.Text = "ADD PRODUCT";
+            addSupplierButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            addSupplierButton.UseVisualStyleBackColor = false;
+            // 
             // leftsideMainPanel
             // 
-            this.leftsideMainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.leftsideMainPanel.AutoScroll = true;
             this.leftsideMainPanel.BackColor = System.Drawing.Color.PowderBlue;
+            this.leftsideMainPanel.Controls.Add(this.nameTextLabel);
+            this.leftsideMainPanel.Controls.Add(this.usernameTextLabel);
+            this.leftsideMainPanel.Controls.Add(this.nameLabel);
+            this.leftsideMainPanel.Controls.Add(this.usernameLabel);
             this.leftsideMainPanel.Controls.Add(this.shoppingCartLeftSidePanelButton);
             this.leftsideMainPanel.Controls.Add(this.logoutButton);
-            this.leftsideMainPanel.Controls.Add(this.iconButton);
-            this.leftsideMainPanel.Controls.Add(this.infoLabel);
-            this.leftsideMainPanel.Location = new System.Drawing.Point(8, 3);
-            this.leftsideMainPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.leftsideMainPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.leftsideMainPanel.Location = new System.Drawing.Point(0, 0);
+            this.leftsideMainPanel.Margin = new System.Windows.Forms.Padding(0);
             this.leftsideMainPanel.Name = "leftsideMainPanel";
-            this.leftsideMainPanel.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
-            this.leftsideMainPanel.Size = new System.Drawing.Size(202, 573);
+            this.leftsideMainPanel.Size = new System.Drawing.Size(202, 548);
             this.leftsideMainPanel.TabIndex = 0;
+            // 
+            // nameTextLabel
+            // 
+            this.nameTextLabel.AutoSize = true;
+            this.nameTextLabel.Location = new System.Drawing.Point(88, 75);
+            this.nameTextLabel.Name = "nameTextLabel";
+            this.nameTextLabel.Size = new System.Drawing.Size(55, 13);
+            this.nameTextLabel.TabIndex = 9;
+            this.nameTextLabel.Text = "POSeidon";
+            // 
+            // usernameTextLabel
+            // 
+            this.usernameTextLabel.AutoSize = true;
+            this.usernameTextLabel.Location = new System.Drawing.Point(88, 44);
+            this.usernameTextLabel.Name = "usernameTextLabel";
+            this.usernameTextLabel.Size = new System.Drawing.Size(35, 13);
+            this.usernameTextLabel.TabIndex = 8;
+            this.usernameTextLabel.Text = "admin";
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Location = new System.Drawing.Point(12, 75);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(38, 13);
+            this.nameLabel.TabIndex = 7;
+            this.nameLabel.Text = "Name:";
+            // 
+            // usernameLabel
+            // 
+            this.usernameLabel.AutoSize = true;
+            this.usernameLabel.Location = new System.Drawing.Point(12, 44);
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(58, 13);
+            this.usernameLabel.TabIndex = 6;
+            this.usernameLabel.Text = "Username:";
             // 
             // shoppingCartLeftSidePanelButton
             // 
-            this.shoppingCartLeftSidePanelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shoppingCartLeftSidePanelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.shoppingCartLeftSidePanelButton.AutoSize = true;
             this.shoppingCartLeftSidePanelButton.BackColor = System.Drawing.Color.Transparent;
             this.shoppingCartLeftSidePanelButton.BackgroundImage = global::POSeidon.Properties.Resources.order;
             this.shoppingCartLeftSidePanelButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.shoppingCartLeftSidePanelButton.Location = new System.Drawing.Point(8, 213);
+            this.shoppingCartLeftSidePanelButton.Location = new System.Drawing.Point(12, 448);
             this.shoppingCartLeftSidePanelButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.shoppingCartLeftSidePanelButton.Name = "shoppingCartLeftSidePanelButton";
-            this.shoppingCartLeftSidePanelButton.Size = new System.Drawing.Size(85, 68);
+            this.shoppingCartLeftSidePanelButton.Size = new System.Drawing.Size(49, 43);
             this.shoppingCartLeftSidePanelButton.TabIndex = 5;
             this.shoppingCartLeftSidePanelButton.UseVisualStyleBackColor = false;
             this.shoppingCartLeftSidePanelButton.Click += new System.EventHandler(this.ShoppingCartLeftSidePanelButton_Click);
             // 
             // logoutButton
             // 
-            this.logoutButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.logoutButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.logoutButton.AutoSize = true;
             this.logoutButton.BackColor = System.Drawing.Color.Transparent;
             this.logoutButton.BackgroundImage = global::POSeidon.Properties.Resources.rsz_1logout_50x60;
             this.logoutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.logoutButton.Location = new System.Drawing.Point(119, 220);
+            this.logoutButton.Location = new System.Drawing.Point(154, 449);
             this.logoutButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(64, 54);
+            this.logoutButton.Size = new System.Drawing.Size(43, 40);
             this.logoutButton.TabIndex = 4;
             this.logoutButton.UseVisualStyleBackColor = false;
             this.logoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
-            // iconButton
-            // 
-            this.iconButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.iconButton.Image = global::POSeidon.Properties.Resources.rsz_poseidon_trident;
-            this.iconButton.Location = new System.Drawing.Point(0, 0);
-            this.iconButton.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.iconButton.MaximumSize = new System.Drawing.Size(200, 199);
-            this.iconButton.MinimumSize = new System.Drawing.Size(200, 199);
-            this.iconButton.Name = "iconButton";
-            this.iconButton.Size = new System.Drawing.Size(200, 199);
-            this.iconButton.TabIndex = 0;
-            this.iconButton.UseVisualStyleBackColor = true;
-            // 
-            // infoLabel
-            // 
-            this.infoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.infoLabel.AutoSize = true;
-            this.infoLabel.BackColor = System.Drawing.SystemColors.Info;
-            this.infoLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.infoLabel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.infoLabel.Location = new System.Drawing.Point(27, 304);
-            this.infoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.infoLabel.MaximumSize = new System.Drawing.Size(150, 277);
-            this.infoLabel.MinimumSize = new System.Drawing.Size(150, 244);
-            this.infoLabel.Name = "infoLabel";
-            this.infoLabel.Padding = new System.Windows.Forms.Padding(30, 122, 30, 122);
-            this.infoLabel.Size = new System.Drawing.Size(150, 262);
-            this.infoLabel.TabIndex = 0;
-            this.infoLabel.Text = "Information";
-            this.infoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // mainPanel
             // 
-            this.mainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.mainPanel.AutoScroll = true;
             this.mainPanel.AutoSize = true;
-            this.mainPanel.Controls.Add(this.homepageTabControl);
-            this.mainPanel.Location = new System.Drawing.Point(208, 3);
-            this.mainPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.mainPanel.Controls.Add(this.mainTabControl);
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(202, 0);
+            this.mainPanel.Margin = new System.Windows.Forms.Padding(0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(796, 573);
+            this.mainPanel.Size = new System.Drawing.Size(978, 548);
             this.mainPanel.TabIndex = 1;
             // 
-            // homepageTabControl
+            // mainTabControl
             // 
-            this.homepageTabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.homepageTabControl.Controls.Add(this.homeTab);
-            this.homepageTabControl.Controls.Add(this.statisticsTab);
-            this.homepageTabControl.Controls.Add(this.customersTab);
-            this.homepageTabControl.Controls.Add(this.suppliersTab);
-            this.homepageTabControl.Controls.Add(this.salesAndPurchasingTab);
-            this.homepageTabControl.Controls.Add(this.settingsTab);
-            this.homepageTabControl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.homepageTabControl.ItemSize = new System.Drawing.Size(200, 50);
-            this.homepageTabControl.Location = new System.Drawing.Point(2, 6);
-            this.homepageTabControl.Margin = new System.Windows.Forms.Padding(2);
-            this.homepageTabControl.Name = "homepageTabControl";
-            this.homepageTabControl.Padding = new System.Drawing.Point(30, 3);
-            this.homepageTabControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.homepageTabControl.SelectedIndex = 0;
-            this.homepageTabControl.Size = new System.Drawing.Size(796, 547);
-            this.homepageTabControl.TabIndex = 3;
+            this.mainTabControl.Controls.Add(this.homeTab);
+            this.mainTabControl.Controls.Add(this.statisticsTab);
+            this.mainTabControl.Controls.Add(this.customersTab);
+            this.mainTabControl.Controls.Add(this.suppliersTab);
+            this.mainTabControl.Controls.Add(this.salesAndPurchasingTab);
+            this.mainTabControl.Controls.Add(this.settingsTab);
+            this.mainTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainTabControl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mainTabControl.ItemSize = new System.Drawing.Size(200, 50);
+            this.mainTabControl.Location = new System.Drawing.Point(0, 0);
+            this.mainTabControl.Margin = new System.Windows.Forms.Padding(2);
+            this.mainTabControl.Name = "mainTabControl";
+            this.mainTabControl.Padding = new System.Drawing.Point(30, 3);
+            this.mainTabControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.mainTabControl.SelectedIndex = 0;
+            this.mainTabControl.Size = new System.Drawing.Size(978, 548);
+            this.mainTabControl.TabIndex = 3;
             // 
             // homeTab
             // 
             this.homeTab.BackColor = System.Drawing.Color.Transparent;
-            this.homeTab.Controls.Add(this.homePanel);
+            this.homeTab.Controls.Add(this.homePageMainPanel);
+            this.homeTab.Controls.Add(this.homePageHeaderPanel);
             this.homeTab.Location = new System.Drawing.Point(4, 54);
             this.homeTab.Margin = new System.Windows.Forms.Padding(2);
             this.homeTab.Name = "homeTab";
-            this.homeTab.Padding = new System.Windows.Forms.Padding(2);
-            this.homeTab.Size = new System.Drawing.Size(788, 489);
+            this.homeTab.Size = new System.Drawing.Size(970, 490);
             this.homeTab.TabIndex = 0;
             this.homeTab.Text = "Home";
             // 
-            // homePanel
+            // homePageMainPanel
             // 
-            this.homePanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.homePanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.homePanel.BackColor = System.Drawing.Color.PowderBlue;
-            this.homePanel.Controls.Add(this.searchImageHomePanel);
-            this.homePanel.Controls.Add(this.productSearchTextBox);
-            this.homePanel.Controls.Add(this.homepageDataGridView);
-            this.homePanel.Controls.Add(addProductButton);
-            this.homePanel.Location = new System.Drawing.Point(4, 0);
-            this.homePanel.Margin = new System.Windows.Forms.Padding(2);
-            this.homePanel.Name = "homePanel";
-            this.homePanel.Size = new System.Drawing.Size(786, 560);
-            this.homePanel.TabIndex = 0;
-            // 
-            // searchImageHomePanel
-            // 
-            this.searchImageHomePanel.BackgroundImage = global::POSeidon.Properties.Resources.search;
-            this.searchImageHomePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.searchImageHomePanel.Location = new System.Drawing.Point(611, 43);
-            this.searchImageHomePanel.Name = "searchImageHomePanel";
-            this.searchImageHomePanel.Size = new System.Drawing.Size(40, 22);
-            this.searchImageHomePanel.TabIndex = 15;
-            // 
-            // productSearchTextBox
-            // 
-            this.productSearchTextBox.Location = new System.Drawing.Point(413, 43);
-            this.productSearchTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.productSearchTextBox.Name = "productSearchTextBox";
-            this.productSearchTextBox.Size = new System.Drawing.Size(193, 23);
-            this.productSearchTextBox.TabIndex = 8;
-            this.productSearchTextBox.TextChanged += new System.EventHandler(this.ProductSearchTextBox_TextChanged);
+            this.homePageMainPanel.Controls.Add(this.homepageDataGridView);
+            this.homePageMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.homePageMainPanel.Location = new System.Drawing.Point(0, 100);
+            this.homePageMainPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.homePageMainPanel.Name = "homePageMainPanel";
+            this.homePageMainPanel.Size = new System.Drawing.Size(970, 390);
+            this.homePageMainPanel.TabIndex = 8;
             // 
             // homepageDataGridView
             // 
             this.homepageDataGridView.AllowUserToAddRows = false;
             this.homepageDataGridView.AllowUserToDeleteRows = false;
+            this.homepageDataGridView.AllowUserToOrderColumns = true;
             this.homepageDataGridView.AllowUserToResizeColumns = false;
             this.homepageDataGridView.AllowUserToResizeRows = false;
-            this.homepageDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.homepageDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.homepageDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.homepageDataGridView.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -388,26 +414,26 @@
             this.productPriceHomePageDataGridViewTextBoxColumn,
             this.productStockHomePageDataGridViewTextBoxColumn,
             this.productAddHomePageDataGridViewImageColumn});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.homepageDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
-            this.homepageDataGridView.Location = new System.Drawing.Point(-2, 91);
-            this.homepageDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.homepageDataGridView.DefaultCellStyle = dataGridViewCellStyle11;
+            this.homepageDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.homepageDataGridView.Location = new System.Drawing.Point(0, 0);
             this.homepageDataGridView.MultiSelect = false;
             this.homepageDataGridView.Name = "homepageDataGridView";
             this.homepageDataGridView.ReadOnly = true;
             this.homepageDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.homepageDataGridView.RowTemplate.Height = 24;
             this.homepageDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.homepageDataGridView.Size = new System.Drawing.Size(788, 409);
+            this.homepageDataGridView.Size = new System.Drawing.Size(970, 390);
             this.homepageDataGridView.TabIndex = 7;
-            this.homepageDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HomepageDataGridView_CellClick);
+            this.homepageDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HomePageDataGridView_CellClick);
             // 
             // productNameHomePageDataGridViewTextBoxColumn
             // 
@@ -419,9 +445,9 @@
             // productPriceHomePageDataGridViewTextBoxColumn
             // 
             this.productPriceHomePageDataGridViewTextBoxColumn.DataPropertyName = "Price";
-            dataGridViewCellStyle1.Format = "C2";
-            dataGridViewCellStyle1.NullValue = null;
-            this.productPriceHomePageDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.Format = "C2";
+            dataGridViewCellStyle10.NullValue = null;
+            this.productPriceHomePageDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle10;
             this.productPriceHomePageDataGridViewTextBoxColumn.HeaderText = "Price";
             this.productPriceHomePageDataGridViewTextBoxColumn.Name = "productPriceHomePageDataGridViewTextBoxColumn";
             this.productPriceHomePageDataGridViewTextBoxColumn.ReadOnly = true;
@@ -440,183 +466,123 @@
             this.productAddHomePageDataGridViewImageColumn.Name = "productAddHomePageDataGridViewImageColumn";
             this.productAddHomePageDataGridViewImageColumn.ReadOnly = true;
             // 
+            // homePageHeaderPanel
+            // 
+            this.homePageHeaderPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.homePageHeaderPanel.BackColor = System.Drawing.Color.PowderBlue;
+            this.homePageHeaderPanel.Controls.Add(this.tableLayoutPanel1);
+            this.homePageHeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.homePageHeaderPanel.Location = new System.Drawing.Point(0, 0);
+            this.homePageHeaderPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.homePageHeaderPanel.Name = "homePageHeaderPanel";
+            this.homePageHeaderPanel.Size = new System.Drawing.Size(970, 100);
+            this.homePageHeaderPanel.TabIndex = 0;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel1.Controls.Add(addProductButton, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.productSearchTextBox, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 2, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(970, 100);
+            this.tableLayoutPanel1.TabIndex = 16;
+            // 
+            // productSearchTextBox
+            // 
+            this.productSearchTextBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.productSearchTextBox.Location = new System.Drawing.Point(704, 38);
+            this.productSearchTextBox.Name = "productSearchTextBox";
+            this.productSearchTextBox.Size = new System.Drawing.Size(231, 24);
+            this.productSearchTextBox.TabIndex = 16;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox1.Image = global::POSeidon.Properties.Resources.search;
+            this.pictureBox1.Location = new System.Drawing.Point(941, 36);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(26, 28);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            // 
             // statisticsTab
             // 
             this.statisticsTab.BackColor = System.Drawing.Color.Gainsboro;
-            this.statisticsTab.Controls.Add(this.statisticsPanel);
+            this.statisticsTab.Controls.Add(this.statisticsPagePanel);
             this.statisticsTab.Location = new System.Drawing.Point(4, 54);
             this.statisticsTab.Margin = new System.Windows.Forms.Padding(2);
             this.statisticsTab.Name = "statisticsTab";
             this.statisticsTab.Padding = new System.Windows.Forms.Padding(2);
-            this.statisticsTab.Size = new System.Drawing.Size(788, 489);
+            this.statisticsTab.Size = new System.Drawing.Size(970, 490);
             this.statisticsTab.TabIndex = 1;
             this.statisticsTab.Text = "Statistics";
             this.statisticsTab.Enter += new System.EventHandler(this.StatisticsTab_Enter);
             // 
-            // statisticsPanel
+            // statisticsPagePanel
             // 
-            this.statisticsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.statisticsPanel.Controls.Add(this.statisticsHomepageNavigator);
-            this.statisticsPanel.Location = new System.Drawing.Point(0, 0);
-            this.statisticsPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.statisticsPanel.Name = "statisticsPanel";
-            this.statisticsPanel.Size = new System.Drawing.Size(788, 500);
-            this.statisticsPanel.StateCommon.Color1 = System.Drawing.Color.Gainsboro;
-            this.statisticsPanel.TabIndex = 7;
+            this.statisticsPagePanel.Controls.Add(this.statisticsChart);
+            this.statisticsPagePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.statisticsPagePanel.Location = new System.Drawing.Point(2, 2);
+            this.statisticsPagePanel.Margin = new System.Windows.Forms.Padding(2);
+            this.statisticsPagePanel.Name = "statisticsPagePanel";
+            this.statisticsPagePanel.Size = new System.Drawing.Size(966, 486);
+            this.statisticsPagePanel.StateCommon.Color1 = System.Drawing.Color.Gainsboro;
+            this.statisticsPagePanel.TabIndex = 7;
             // 
-            // statisticsHomepageNavigator
+            // statisticsChart
             // 
-            this.statisticsHomepageNavigator.Button.ButtonDisplayLogic = ComponentFactory.Krypton.Navigator.ButtonDisplayLogic.None;
-            this.statisticsHomepageNavigator.Button.CloseButtonDisplay = ComponentFactory.Krypton.Navigator.ButtonDisplay.Hide;
-            this.statisticsHomepageNavigator.Group.GroupBorderStyle = ComponentFactory.Krypton.Toolkit.PaletteBorderStyle.InputControlRibbon;
-            this.statisticsHomepageNavigator.Location = new System.Drawing.Point(0, 4);
-            this.statisticsHomepageNavigator.Margin = new System.Windows.Forms.Padding(2);
-            this.statisticsHomepageNavigator.Name = "statisticsHomepageNavigator";
-            this.statisticsHomepageNavigator.NavigatorMode = ComponentFactory.Krypton.Navigator.NavigatorMode.HeaderBarCheckButtonGroup;
-            this.statisticsHomepageNavigator.Pages.AddRange(new ComponentFactory.Krypton.Navigator.KryptonPage[] {
-            this.customerStatisticsPage,
-            this.supplierStatisticsPage});
-            this.statisticsHomepageNavigator.SelectedIndex = 0;
-            this.statisticsHomepageNavigator.Size = new System.Drawing.Size(750, 596);
-            this.statisticsHomepageNavigator.TabIndex = 0;
-            this.statisticsHomepageNavigator.Text = "kryptonNavigator1";
-            // 
-            // customerStatisticsPage
-            // 
-            this.customerStatisticsPage.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
-            this.customerStatisticsPage.Controls.Add(this.customerStatisticsPanel);
-            this.customerStatisticsPage.Flags = 65534;
-            this.customerStatisticsPage.LastVisibleSet = true;
-            this.customerStatisticsPage.Margin = new System.Windows.Forms.Padding(2);
-            this.customerStatisticsPage.MinimumSize = new System.Drawing.Size(38, 41);
-            this.customerStatisticsPage.Name = "customerStatisticsPage";
-            this.customerStatisticsPage.Size = new System.Drawing.Size(748, 563);
-            this.customerStatisticsPage.Text = "Customer";
-            this.customerStatisticsPage.ToolTipTitle = "Page ToolTip";
-            this.customerStatisticsPage.UniqueName = "1fbf379b70634940bcf9c585c1b0ac13";
-            // 
-            // customerStatisticsPanel
-            // 
-            this.customerStatisticsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.customerStatisticsPanel.Controls.Add(this.customerStatisticsChart);
-            this.customerStatisticsPanel.Location = new System.Drawing.Point(67, 32);
-            this.customerStatisticsPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.customerStatisticsPanel.Name = "customerStatisticsPanel";
-            this.customerStatisticsPanel.Size = new System.Drawing.Size(610, 529);
-            this.customerStatisticsPanel.TabIndex = 7;
-            // 
-            // customerStatisticsChart
-            // 
-            this.customerStatisticsChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea7";
-            this.customerStatisticsChart.ChartAreas.Add(chartArea1);
-            this.customerStatisticsChart.Location = new System.Drawing.Point(20, 19);
-            this.customerStatisticsChart.Margin = new System.Windows.Forms.Padding(2);
-            this.customerStatisticsChart.Name = "customerStatisticsChart";
-            this.customerStatisticsChart.Padding = new System.Windows.Forms.Padding(8);
-            this.customerStatisticsChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series1.ChartArea = "ChartArea7";
-            series1.Name = "test";
-            series1.XValueMember = "ProductName";
-            series1.YValueMembers = "Amount";
-            this.customerStatisticsChart.Series.Add(series1);
-            this.customerStatisticsChart.Size = new System.Drawing.Size(569, 400);
-            this.customerStatisticsChart.TabIndex = 0;
-            this.customerStatisticsChart.Text = "Customer Statistics";
-            // 
-            // supplierStatisticsPage
-            // 
-            this.supplierStatisticsPage.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
-            this.supplierStatisticsPage.Controls.Add(this.salesStatisticsPanel);
-            this.supplierStatisticsPage.Flags = 65534;
-            this.supplierStatisticsPage.LastVisibleSet = true;
-            this.supplierStatisticsPage.Margin = new System.Windows.Forms.Padding(2);
-            this.supplierStatisticsPage.MinimumSize = new System.Drawing.Size(38, 41);
-            this.supplierStatisticsPage.Name = "supplierStatisticsPage";
-            this.supplierStatisticsPage.Size = new System.Drawing.Size(748, 563);
-            this.supplierStatisticsPage.Text = "Supplier";
-            this.supplierStatisticsPage.ToolTipTitle = "Page ToolTip";
-            this.supplierStatisticsPage.UniqueName = "1f51a78fbc9a446f981d86768a13541a";
-            // 
-            // salesStatisticsPanel
-            // 
-            this.salesStatisticsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.salesStatisticsPanel.Controls.Add(this.supplierStatisticsChart);
-            this.salesStatisticsPanel.Location = new System.Drawing.Point(67, 32);
-            this.salesStatisticsPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.salesStatisticsPanel.Name = "salesStatisticsPanel";
-            this.salesStatisticsPanel.Size = new System.Drawing.Size(610, 529);
-            this.salesStatisticsPanel.TabIndex = 8;
-            // 
-            // supplierStatisticsChart
-            // 
-            this.supplierStatisticsChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea2.Name = "ChartArea8";
-            this.supplierStatisticsChart.ChartAreas.Add(chartArea2);
-            legend1.Name = "Legend8";
-            this.supplierStatisticsChart.Legends.Add(legend1);
-            this.supplierStatisticsChart.Location = new System.Drawing.Point(20, 19);
-            this.supplierStatisticsChart.Margin = new System.Windows.Forms.Padding(2);
-            this.supplierStatisticsChart.Name = "supplierStatisticsChart";
-            this.supplierStatisticsChart.Padding = new System.Windows.Forms.Padding(8);
-            this.supplierStatisticsChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series2.ChartArea = "ChartArea8";
-            series2.Legend = "Legend8";
-            series2.Name = "Series8";
-            this.supplierStatisticsChart.Series.Add(series2);
-            this.supplierStatisticsChart.Size = new System.Drawing.Size(570, 494);
-            this.supplierStatisticsChart.TabIndex = 0;
-            this.supplierStatisticsChart.Text = "Sales Chart";
+            chartArea4.AxisY.Title = "Amount";
+            chartArea4.Name = "ChartArea1";
+            this.statisticsChart.ChartAreas.Add(chartArea4);
+            this.statisticsChart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.statisticsChart.Location = new System.Drawing.Point(0, 0);
+            this.statisticsChart.Name = "statisticsChart";
+            series4.ChartArea = "ChartArea1";
+            series4.Name = "Series1";
+            series4.XValueMember = "ProductName";
+            series4.YValueMembers = "Amount";
+            this.statisticsChart.Series.Add(series4);
+            this.statisticsChart.Size = new System.Drawing.Size(966, 486);
+            this.statisticsChart.TabIndex = 0;
+            this.statisticsChart.Text = "chart1";
             // 
             // customersTab
             // 
             this.customersTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(219)))), ((int)(((byte)(226)))));
-            this.customersTab.Controls.Add(this.addCustomerButton);
-            this.customersTab.Controls.Add(this.customersTabDataGridView);
+            this.customersTab.Controls.Add(this.customersPageMainPanel);
+            this.customersTab.Controls.Add(this.customersPageHeaderPanel);
             this.customersTab.Location = new System.Drawing.Point(4, 54);
             this.customersTab.Margin = new System.Windows.Forms.Padding(2);
             this.customersTab.Name = "customersTab";
-            this.customersTab.Size = new System.Drawing.Size(788, 489);
+            this.customersTab.Size = new System.Drawing.Size(970, 490);
             this.customersTab.TabIndex = 2;
             this.customersTab.Text = "Customers";
             // 
-            // addCustomerButton
+            // customersPageMainPanel
             // 
-            this.addCustomerButton.Location = new System.Drawing.Point(23, 31);
-            this.addCustomerButton.Margin = new System.Windows.Forms.Padding(2);
-            this.addCustomerButton.Name = "addCustomerButton";
-            this.addCustomerButton.Size = new System.Drawing.Size(156, 46);
-            this.addCustomerButton.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.addCustomerButton.StateCommon.Border.Rounding = 5;
-            this.addCustomerButton.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.addCustomerButton.StateNormal.Border.Rounding = 5;
-            this.addCustomerButton.TabIndex = 12;
-            this.addCustomerButton.Values.Text = "Add customer";
-            this.addCustomerButton.Click += new System.EventHandler(this.AddCustomerButton_Click);
+            this.customersPageMainPanel.Controls.Add(this.customersTabDataGridView);
+            this.customersPageMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customersPageMainPanel.Location = new System.Drawing.Point(0, 100);
+            this.customersPageMainPanel.Name = "customersPageMainPanel";
+            this.customersPageMainPanel.Size = new System.Drawing.Size(970, 390);
+            this.customersPageMainPanel.TabIndex = 14;
             // 
             // customersTabDataGridView
             // 
             this.customersTabDataGridView.AllowUserToAddRows = false;
+            this.customersTabDataGridView.AllowUserToDeleteRows = false;
             this.customersTabDataGridView.AllowUserToResizeColumns = false;
             this.customersTabDataGridView.AllowUserToResizeRows = false;
-            this.customersTabDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.customersTabDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.customersTabDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.customersTabDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.customersTabDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(188)))), ((int)(((byte)(208)))));
             this.customersTabDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -627,20 +593,23 @@
             this.customerEmailDataGridViewTextBoxColumn,
             this.customerAddressDataGridViewTextBoxColumn,
             this.deleteCustomerDataGridViewImageColumn});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.customersTabDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            this.customersTabDataGridView.Location = new System.Drawing.Point(0, 98);
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.customersTabDataGridView.DefaultCellStyle = dataGridViewCellStyle12;
+            this.customersTabDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customersTabDataGridView.Location = new System.Drawing.Point(0, 0);
             this.customersTabDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.customersTabDataGridView.MultiSelect = false;
             this.customersTabDataGridView.Name = "customersTabDataGridView";
             this.customersTabDataGridView.RowTemplate.Height = 24;
-            this.customersTabDataGridView.Size = new System.Drawing.Size(788, 401);
+            this.customersTabDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.customersTabDataGridView.Size = new System.Drawing.Size(970, 390);
             this.customersTabDataGridView.TabIndex = 10;
             // 
             // customerFirstNameDataGridViewTextBoxColumn
@@ -648,96 +617,108 @@
             this.customerFirstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
             this.customerFirstNameDataGridViewTextBoxColumn.HeaderText = "First Name";
             this.customerFirstNameDataGridViewTextBoxColumn.Name = "customerFirstNameDataGridViewTextBoxColumn";
+            this.customerFirstNameDataGridViewTextBoxColumn.Width = 108;
             // 
             // customerLastNameDataGridViewTextBoxColumn
             // 
             this.customerLastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
             this.customerLastNameDataGridViewTextBoxColumn.HeaderText = "Last Name";
             this.customerLastNameDataGridViewTextBoxColumn.Name = "customerLastNameDataGridViewTextBoxColumn";
+            this.customerLastNameDataGridViewTextBoxColumn.Width = 110;
             // 
             // customerPhoneDataGridViewTextBoxColumn
             // 
             this.customerPhoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
             this.customerPhoneDataGridViewTextBoxColumn.HeaderText = "Phone";
             this.customerPhoneDataGridViewTextBoxColumn.Name = "customerPhoneDataGridViewTextBoxColumn";
+            this.customerPhoneDataGridViewTextBoxColumn.Width = 82;
             // 
             // customerEmailDataGridViewTextBoxColumn
             // 
             this.customerEmailDataGridViewTextBoxColumn.DataPropertyName = "Email";
             this.customerEmailDataGridViewTextBoxColumn.HeaderText = "Email";
             this.customerEmailDataGridViewTextBoxColumn.Name = "customerEmailDataGridViewTextBoxColumn";
+            this.customerEmailDataGridViewTextBoxColumn.Width = 75;
             // 
             // customerAddressDataGridViewTextBoxColumn
             // 
             this.customerAddressDataGridViewTextBoxColumn.DataPropertyName = "Address";
             this.customerAddressDataGridViewTextBoxColumn.HeaderText = "Address";
             this.customerAddressDataGridViewTextBoxColumn.Name = "customerAddressDataGridViewTextBoxColumn";
+            this.customerAddressDataGridViewTextBoxColumn.Width = 90;
             // 
             // deleteCustomerDataGridViewImageColumn
             // 
             this.deleteCustomerDataGridViewImageColumn.HeaderText = "Delete";
             this.deleteCustomerDataGridViewImageColumn.Image = global::POSeidon.Properties.Resources.delete;
             this.deleteCustomerDataGridViewImageColumn.Name = "deleteCustomerDataGridViewImageColumn";
+            this.deleteCustomerDataGridViewImageColumn.Width = 64;
+            // 
+            // customersPageHeaderPanel
+            // 
+            this.customersPageHeaderPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.customersPageHeaderPanel.BackColor = System.Drawing.Color.PowderBlue;
+            this.customersPageHeaderPanel.Controls.Add(this.tableLayoutPanel2);
+            this.customersPageHeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.customersPageHeaderPanel.Location = new System.Drawing.Point(0, 0);
+            this.customersPageHeaderPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.customersPageHeaderPanel.Name = "customersPageHeaderPanel";
+            this.customersPageHeaderPanel.Size = new System.Drawing.Size(970, 100);
+            this.customersPageHeaderPanel.TabIndex = 13;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox2, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.customerSearchTextBox, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(addCustomerButton, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(970, 100);
+            this.tableLayoutPanel2.TabIndex = 16;
+            // 
+            // customerSearchTextBox
+            // 
+            this.customerSearchTextBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.customerSearchTextBox.Location = new System.Drawing.Point(704, 38);
+            this.customerSearchTextBox.Name = "customerSearchTextBox";
+            this.customerSearchTextBox.Size = new System.Drawing.Size(231, 24);
+            this.customerSearchTextBox.TabIndex = 17;
             // 
             // suppliersTab
             // 
             this.suppliersTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.suppliersTab.Controls.Add(this.searchImageSuppliersPanel);
-            this.suppliersTab.Controls.Add(this.suppliersSearchTextBox);
-            this.suppliersTab.Controls.Add(this.addSupplierButton);
-            this.suppliersTab.Controls.Add(this.suppliersTabDataGridView);
+            this.suppliersTab.Controls.Add(this.suppliersPageMainPanel);
+            this.suppliersTab.Controls.Add(this.suppliersPageHeaderPanel);
             this.suppliersTab.Location = new System.Drawing.Point(4, 54);
             this.suppliersTab.Margin = new System.Windows.Forms.Padding(2);
             this.suppliersTab.Name = "suppliersTab";
-            this.suppliersTab.Size = new System.Drawing.Size(788, 489);
+            this.suppliersTab.Size = new System.Drawing.Size(970, 490);
             this.suppliersTab.TabIndex = 5;
             this.suppliersTab.Text = "Suppliers";
             // 
-            // searchImageSuppliersPanel
+            // suppliersPageMainPanel
             // 
-            this.searchImageSuppliersPanel.BackgroundImage = global::POSeidon.Properties.Resources.search;
-            this.searchImageSuppliersPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.searchImageSuppliersPanel.Location = new System.Drawing.Point(594, 10);
-            this.searchImageSuppliersPanel.Name = "searchImageSuppliersPanel";
-            this.searchImageSuppliersPanel.Size = new System.Drawing.Size(41, 22);
-            this.searchImageSuppliersPanel.TabIndex = 14;
-            // 
-            // suppliersSearchTextBox
-            // 
-            this.suppliersSearchTextBox.Location = new System.Drawing.Point(427, 10);
-            this.suppliersSearchTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.suppliersSearchTextBox.Name = "suppliersSearchTextBox";
-            this.suppliersSearchTextBox.Size = new System.Drawing.Size(162, 23);
-            this.suppliersSearchTextBox.TabIndex = 10;
-            this.suppliersSearchTextBox.TextChanged += new System.EventHandler(this.SuppliersSearchTextBox_TextChanged);
-            // 
-            // addSupplierButton
-            // 
-            this.addSupplierButton.Location = new System.Drawing.Point(25, 31);
-            this.addSupplierButton.Margin = new System.Windows.Forms.Padding(2);
-            this.addSupplierButton.Name = "addSupplierButton";
-            this.addSupplierButton.Size = new System.Drawing.Size(156, 46);
-            this.addSupplierButton.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.addSupplierButton.StateCommon.Border.Rounding = 5;
-            this.addSupplierButton.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.addSupplierButton.StateNormal.Border.Rounding = 5;
-            this.addSupplierButton.TabIndex = 13;
-            this.addSupplierButton.Values.Text = "Add supplier";
-            this.addSupplierButton.Click += new System.EventHandler(this.AddSupplierButton_Click);
+            this.suppliersPageMainPanel.Controls.Add(this.suppliersTabDataGridView);
+            this.suppliersPageMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.suppliersPageMainPanel.Location = new System.Drawing.Point(0, 100);
+            this.suppliersPageMainPanel.Name = "suppliersPageMainPanel";
+            this.suppliersPageMainPanel.Size = new System.Drawing.Size(970, 390);
+            this.suppliersPageMainPanel.TabIndex = 17;
             // 
             // suppliersTabDataGridView
             // 
             this.suppliersTabDataGridView.AllowUserToAddRows = false;
+            this.suppliersTabDataGridView.AllowUserToDeleteRows = false;
             this.suppliersTabDataGridView.AllowUserToResizeColumns = false;
             this.suppliersTabDataGridView.AllowUserToResizeRows = false;
-            this.suppliersTabDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.suppliersTabDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.suppliersTabDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.suppliersTabDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.suppliersTabDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(210)))), ((int)(((byte)(232)))));
             this.suppliersTabDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -747,20 +728,23 @@
             this.supplierEmailDataGridViewTextBoxColumn,
             this.supplierAddressDataGridViewTextBoxColumn,
             this.deleteSupplierDataGridViewImageColumn});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.suppliersTabDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
-            this.suppliersTabDataGridView.Location = new System.Drawing.Point(0, 98);
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle13.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.suppliersTabDataGridView.DefaultCellStyle = dataGridViewCellStyle13;
+            this.suppliersTabDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.suppliersTabDataGridView.Location = new System.Drawing.Point(0, 0);
             this.suppliersTabDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.suppliersTabDataGridView.MultiSelect = false;
             this.suppliersTabDataGridView.Name = "suppliersTabDataGridView";
             this.suppliersTabDataGridView.RowTemplate.Height = 24;
-            this.suppliersTabDataGridView.Size = new System.Drawing.Size(788, 401);
+            this.suppliersTabDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.suppliersTabDataGridView.Size = new System.Drawing.Size(970, 390);
             this.suppliersTabDataGridView.TabIndex = 9;
             // 
             // supplierNameDataGridViewTextBoxColumn
@@ -768,30 +752,83 @@
             this.supplierNameDataGridViewTextBoxColumn.DataPropertyName = "Name";
             this.supplierNameDataGridViewTextBoxColumn.HeaderText = "Name";
             this.supplierNameDataGridViewTextBoxColumn.Name = "supplierNameDataGridViewTextBoxColumn";
+            this.supplierNameDataGridViewTextBoxColumn.Width = 80;
             // 
             // supplierPhoneDataGridViewTextBoxColumn
             // 
             this.supplierPhoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
             this.supplierPhoneDataGridViewTextBoxColumn.HeaderText = "Phone";
             this.supplierPhoneDataGridViewTextBoxColumn.Name = "supplierPhoneDataGridViewTextBoxColumn";
+            this.supplierPhoneDataGridViewTextBoxColumn.Width = 82;
             // 
             // supplierEmailDataGridViewTextBoxColumn
             // 
             this.supplierEmailDataGridViewTextBoxColumn.DataPropertyName = "Email";
             this.supplierEmailDataGridViewTextBoxColumn.HeaderText = "Email";
             this.supplierEmailDataGridViewTextBoxColumn.Name = "supplierEmailDataGridViewTextBoxColumn";
+            this.supplierEmailDataGridViewTextBoxColumn.Width = 75;
             // 
             // supplierAddressDataGridViewTextBoxColumn
             // 
             this.supplierAddressDataGridViewTextBoxColumn.DataPropertyName = "Address";
             this.supplierAddressDataGridViewTextBoxColumn.HeaderText = "Address";
             this.supplierAddressDataGridViewTextBoxColumn.Name = "supplierAddressDataGridViewTextBoxColumn";
+            this.supplierAddressDataGridViewTextBoxColumn.Width = 90;
             // 
             // deleteSupplierDataGridViewImageColumn
             // 
             this.deleteSupplierDataGridViewImageColumn.HeaderText = "Delete";
             this.deleteSupplierDataGridViewImageColumn.Image = global::POSeidon.Properties.Resources.delete;
             this.deleteSupplierDataGridViewImageColumn.Name = "deleteSupplierDataGridViewImageColumn";
+            this.deleteSupplierDataGridViewImageColumn.Width = 64;
+            // 
+            // suppliersPageHeaderPanel
+            // 
+            this.suppliersPageHeaderPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.suppliersPageHeaderPanel.BackColor = System.Drawing.Color.PowderBlue;
+            this.suppliersPageHeaderPanel.Controls.Add(this.tableLayoutPanel3);
+            this.suppliersPageHeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.suppliersPageHeaderPanel.Location = new System.Drawing.Point(0, 0);
+            this.suppliersPageHeaderPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.suppliersPageHeaderPanel.Name = "suppliersPageHeaderPanel";
+            this.suppliersPageHeaderPanel.Size = new System.Drawing.Size(970, 100);
+            this.suppliersPageHeaderPanel.TabIndex = 15;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox3, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.supplierSearchTextBox, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(addSupplierButton, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(970, 100);
+            this.tableLayoutPanel3.TabIndex = 16;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox3.Image = global::POSeidon.Properties.Resources.search;
+            this.pictureBox3.Location = new System.Drawing.Point(941, 36);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(26, 28);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 23;
+            this.pictureBox3.TabStop = false;
+            // 
+            // supplierSearchTextBox
+            // 
+            this.supplierSearchTextBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.supplierSearchTextBox.Location = new System.Drawing.Point(704, 38);
+            this.supplierSearchTextBox.Name = "supplierSearchTextBox";
+            this.supplierSearchTextBox.Size = new System.Drawing.Size(231, 24);
+            this.supplierSearchTextBox.TabIndex = 18;
             // 
             // salesAndPurchasingTab
             // 
@@ -800,28 +837,26 @@
             this.salesAndPurchasingTab.Location = new System.Drawing.Point(4, 54);
             this.salesAndPurchasingTab.Margin = new System.Windows.Forms.Padding(2);
             this.salesAndPurchasingTab.Name = "salesAndPurchasingTab";
-            this.salesAndPurchasingTab.Padding = new System.Windows.Forms.Padding(8);
-            this.salesAndPurchasingTab.Size = new System.Drawing.Size(788, 489);
+            this.salesAndPurchasingTab.Size = new System.Drawing.Size(970, 490);
             this.salesAndPurchasingTab.TabIndex = 3;
             this.salesAndPurchasingTab.Text = "Sales and Purchasing";
             // 
             // salesAndPurchasingPanel
             // 
-            this.salesAndPurchasingPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.salesAndPurchasingPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(207)))), ((int)(((byte)(237)))));
             this.salesAndPurchasingPanel.Controls.Add(this.salesAndPurchasingNavigator);
+            this.salesAndPurchasingPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.salesAndPurchasingPanel.Location = new System.Drawing.Point(0, 0);
             this.salesAndPurchasingPanel.Margin = new System.Windows.Forms.Padding(2);
             this.salesAndPurchasingPanel.Name = "salesAndPurchasingPanel";
-            this.salesAndPurchasingPanel.Size = new System.Drawing.Size(786, 489);
+            this.salesAndPurchasingPanel.Size = new System.Drawing.Size(970, 490);
             this.salesAndPurchasingPanel.TabIndex = 0;
             // 
             // salesAndPurchasingNavigator
             // 
             this.salesAndPurchasingNavigator.Button.ButtonDisplayLogic = ComponentFactory.Krypton.Navigator.ButtonDisplayLogic.None;
             this.salesAndPurchasingNavigator.Button.CloseButtonDisplay = ComponentFactory.Krypton.Navigator.ButtonDisplay.Hide;
+            this.salesAndPurchasingNavigator.Dock = System.Windows.Forms.DockStyle.Fill;
             this.salesAndPurchasingNavigator.Location = new System.Drawing.Point(0, 0);
             this.salesAndPurchasingNavigator.Margin = new System.Windows.Forms.Padding(2);
             this.salesAndPurchasingNavigator.Name = "salesAndPurchasingNavigator";
@@ -830,7 +865,7 @@
             this.salesNavigatorPage,
             this.purchasingNavigatorPage});
             this.salesAndPurchasingNavigator.SelectedIndex = 0;
-            this.salesAndPurchasingNavigator.Size = new System.Drawing.Size(778, 596);
+            this.salesAndPurchasingNavigator.Size = new System.Drawing.Size(970, 490);
             this.salesAndPurchasingNavigator.TabIndex = 0;
             this.salesAndPurchasingNavigator.Text = "Sales and Purchasing";
             // 
@@ -844,7 +879,7 @@
             this.salesNavigatorPage.Margin = new System.Windows.Forms.Padding(2);
             this.salesNavigatorPage.MinimumSize = new System.Drawing.Size(38, 41);
             this.salesNavigatorPage.Name = "salesNavigatorPage";
-            this.salesNavigatorPage.Size = new System.Drawing.Size(776, 567);
+            this.salesNavigatorPage.Size = new System.Drawing.Size(968, 461);
             this.salesNavigatorPage.Text = "Sales";
             this.salesNavigatorPage.ToolTipTitle = "Page ToolTip";
             this.salesNavigatorPage.UniqueName = "6c08f90acd56447b9d6f9ea6bd5cfcc4";
@@ -853,40 +888,120 @@
             // salesHistoryDataGridView
             // 
             this.salesHistoryDataGridView.AllowUserToAddRows = false;
+            this.salesHistoryDataGridView.AllowUserToDeleteRows = false;
             this.salesHistoryDataGridView.AllowUserToResizeColumns = false;
             this.salesHistoryDataGridView.AllowUserToResizeRows = false;
-            this.salesHistoryDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.salesHistoryDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.salesHistoryDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.salesHistoryDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.salesHistoryDataGridView.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.salesHistoryDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.salesHistoryDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.productNameSalesDataGridViewTextBoxColumn,
-            this.salePriceSalesDataGridViewTextBoxColumn,
-            this.productAmountSalesDataGridViewTextBoxColumn,
-            this.totalPriceSalesDataGridViewTextBoxColumn,
-            this.customerNameSalesDataGridViewTextBoxColumn,
-            this.customerPhoneSalesDataGridViewTextBoxColumn,
-            this.customerEmailSalesDataGridViewTextBoxColumn,
-            this.customerAddressSalesDataGridViewTextBoxColumn,
-            this.cancelLogSalesHistoryDataGridViewImageBoxColumn});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.salesHistoryDataGridView.DefaultCellStyle = dataGridViewCellStyle5;
-            this.salesHistoryDataGridView.Location = new System.Drawing.Point(2, 2);
+            this.productNameSalesHistoryDataGridViewTextBoxColumn,
+            this.productPriceSalesHistoryDataGridViewTextBoxColumn,
+            this.productAmountSalesHistoryDataGridViewTextBoxColumn,
+            this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn,
+            this.customerNameSalesHistoryDataGridViewTextBoxColumn,
+            this.customerPhoneSalesHistoryDataGridViewTextBoxColumn,
+            this.customerEmailSalesHistoryDataGridViewTextBoxColumn,
+            this.customerAddressSalesHistoryDataGridViewTextBoxColumn,
+            this.dateSalesHistoryDataGridViewTextBoxColumn});
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle16.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.salesHistoryDataGridView.DefaultCellStyle = dataGridViewCellStyle16;
+            this.salesHistoryDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.salesHistoryDataGridView.Location = new System.Drawing.Point(0, 0);
             this.salesHistoryDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.salesHistoryDataGridView.MultiSelect = false;
             this.salesHistoryDataGridView.Name = "salesHistoryDataGridView";
             this.salesHistoryDataGridView.RowTemplate.Height = 24;
-            this.salesHistoryDataGridView.Size = new System.Drawing.Size(783, 566);
+            this.salesHistoryDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.salesHistoryDataGridView.Size = new System.Drawing.Size(968, 461);
             this.salesHistoryDataGridView.TabIndex = 9;
+            this.salesHistoryDataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.SalesHistoryDataGridView_CellFormatting);
+            // 
+            // productNameSalesHistoryDataGridViewTextBoxColumn
+            // 
+            this.productNameSalesHistoryDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
+            this.productNameSalesHistoryDataGridViewTextBoxColumn.HeaderText = "Product";
+            this.productNameSalesHistoryDataGridViewTextBoxColumn.Name = "productNameSalesHistoryDataGridViewTextBoxColumn";
+            this.productNameSalesHistoryDataGridViewTextBoxColumn.ReadOnly = true;
+            this.productNameSalesHistoryDataGridViewTextBoxColumn.Width = 92;
+            // 
+            // productPriceSalesHistoryDataGridViewTextBoxColumn
+            // 
+            this.productPriceSalesHistoryDataGridViewTextBoxColumn.DataPropertyName = "ProductPrice";
+            dataGridViewCellStyle14.Format = "C2";
+            dataGridViewCellStyle14.NullValue = null;
+            this.productPriceSalesHistoryDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle14;
+            this.productPriceSalesHistoryDataGridViewTextBoxColumn.HeaderText = "Price";
+            this.productPriceSalesHistoryDataGridViewTextBoxColumn.Name = "productPriceSalesHistoryDataGridViewTextBoxColumn";
+            this.productPriceSalesHistoryDataGridViewTextBoxColumn.ReadOnly = true;
+            this.productPriceSalesHistoryDataGridViewTextBoxColumn.Width = 71;
+            // 
+            // productAmountSalesHistoryDataGridViewTextBoxColumn
+            // 
+            this.productAmountSalesHistoryDataGridViewTextBoxColumn.DataPropertyName = "ProductAmount";
+            this.productAmountSalesHistoryDataGridViewTextBoxColumn.HeaderText = "Amount";
+            this.productAmountSalesHistoryDataGridViewTextBoxColumn.Name = "productAmountSalesHistoryDataGridViewTextBoxColumn";
+            this.productAmountSalesHistoryDataGridViewTextBoxColumn.ReadOnly = true;
+            this.productAmountSalesHistoryDataGridViewTextBoxColumn.Width = 92;
+            // 
+            // productTotalPriceSalesHistoryDataGridViewTextBoxColumn
+            // 
+            this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn.DataPropertyName = "ProductTotalPrice";
+            dataGridViewCellStyle15.Format = "C2";
+            dataGridViewCellStyle15.NullValue = null;
+            this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle15;
+            this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn.HeaderText = "Total";
+            this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn.Name = "productTotalPriceSalesHistoryDataGridViewTextBoxColumn";
+            this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn.ReadOnly = true;
+            this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // customerNameSalesHistoryDataGridViewTextBoxColumn
+            // 
+            this.customerNameSalesHistoryDataGridViewTextBoxColumn.DataPropertyName = "CustomerName";
+            this.customerNameSalesHistoryDataGridViewTextBoxColumn.HeaderText = "Customer";
+            this.customerNameSalesHistoryDataGridViewTextBoxColumn.Name = "customerNameSalesHistoryDataGridViewTextBoxColumn";
+            this.customerNameSalesHistoryDataGridViewTextBoxColumn.ReadOnly = true;
+            this.customerNameSalesHistoryDataGridViewTextBoxColumn.Width = 103;
+            // 
+            // customerPhoneSalesHistoryDataGridViewTextBoxColumn
+            // 
+            this.customerPhoneSalesHistoryDataGridViewTextBoxColumn.DataPropertyName = "CustomerPhone";
+            this.customerPhoneSalesHistoryDataGridViewTextBoxColumn.HeaderText = "Phone";
+            this.customerPhoneSalesHistoryDataGridViewTextBoxColumn.Name = "customerPhoneSalesHistoryDataGridViewTextBoxColumn";
+            this.customerPhoneSalesHistoryDataGridViewTextBoxColumn.ReadOnly = true;
+            this.customerPhoneSalesHistoryDataGridViewTextBoxColumn.Width = 82;
+            // 
+            // customerEmailSalesHistoryDataGridViewTextBoxColumn
+            // 
+            this.customerEmailSalesHistoryDataGridViewTextBoxColumn.DataPropertyName = "CustomerEmail";
+            this.customerEmailSalesHistoryDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.customerEmailSalesHistoryDataGridViewTextBoxColumn.Name = "customerEmailSalesHistoryDataGridViewTextBoxColumn";
+            this.customerEmailSalesHistoryDataGridViewTextBoxColumn.ReadOnly = true;
+            this.customerEmailSalesHistoryDataGridViewTextBoxColumn.Width = 75;
+            // 
+            // customerAddressSalesHistoryDataGridViewTextBoxColumn
+            // 
+            this.customerAddressSalesHistoryDataGridViewTextBoxColumn.DataPropertyName = "CustomerAddress";
+            this.customerAddressSalesHistoryDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.customerAddressSalesHistoryDataGridViewTextBoxColumn.Name = "customerAddressSalesHistoryDataGridViewTextBoxColumn";
+            this.customerAddressSalesHistoryDataGridViewTextBoxColumn.ReadOnly = true;
+            this.customerAddressSalesHistoryDataGridViewTextBoxColumn.Width = 90;
+            // 
+            // dateSalesHistoryDataGridViewTextBoxColumn
+            // 
+            this.dateSalesHistoryDataGridViewTextBoxColumn.DataPropertyName = "Date";
+            this.dateSalesHistoryDataGridViewTextBoxColumn.HeaderText = "Date";
+            this.dateSalesHistoryDataGridViewTextBoxColumn.Name = "dateSalesHistoryDataGridViewTextBoxColumn";
+            this.dateSalesHistoryDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dateSalesHistoryDataGridViewTextBoxColumn.Width = 72;
             // 
             // purchasingNavigatorPage
             // 
@@ -898,7 +1013,7 @@
             this.purchasingNavigatorPage.Margin = new System.Windows.Forms.Padding(2);
             this.purchasingNavigatorPage.MinimumSize = new System.Drawing.Size(38, 41);
             this.purchasingNavigatorPage.Name = "purchasingNavigatorPage";
-            this.purchasingNavigatorPage.Size = new System.Drawing.Size(748, 567);
+            this.purchasingNavigatorPage.Size = new System.Drawing.Size(968, 461);
             this.purchasingNavigatorPage.Text = "Purchasing";
             this.purchasingNavigatorPage.ToolTipTitle = "Page ToolTip";
             this.purchasingNavigatorPage.UniqueName = "3753607d328a4c3a9448a9b19123061d";
@@ -906,165 +1021,223 @@
             // purchasingDataGridView
             // 
             this.purchasingDataGridView.AllowUserToAddRows = false;
+            this.purchasingDataGridView.AllowUserToDeleteRows = false;
             this.purchasingDataGridView.AllowUserToResizeColumns = false;
             this.purchasingDataGridView.AllowUserToResizeRows = false;
-            this.purchasingDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.purchasingDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.purchasingDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.purchasingDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.purchasingDataGridView.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.purchasingDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.purchasingDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.productNamePurchasingDataGridViewTextBoxColumn,
-            this.productAmountPurchasingDataGridViewTextBoxColumn,
-            this.totalCostPurchasingDataGridViewTextBoxColumn,
-            this.cancelLogPurchasingDataGridViewImageBoxColumn});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.purchasingDataGridView.DefaultCellStyle = dataGridViewCellStyle6;
-            this.purchasingDataGridView.Location = new System.Drawing.Point(-1, 2);
+            this.productPurchasingDataGridViewTextBoxColumn,
+            this.amountPurchasingDataGridViewTextBoxColumn,
+            this.supplierPurchasingDataGridViewTextBoxColumn,
+            this.phonePurchasingDataGridViewTextBoxColumn,
+            this.emailPurchasingDataGridViewTextBoxColumn,
+            this.addressPurchasingDataGridViewTextBoxColumn,
+            this.totalPurchasingDataGridViewTextBoxColumn,
+            this.datePurchasingDataGridViewTextBoxColumn});
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle18.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.purchasingDataGridView.DefaultCellStyle = dataGridViewCellStyle18;
+            this.purchasingDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.purchasingDataGridView.Location = new System.Drawing.Point(0, 0);
             this.purchasingDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.purchasingDataGridView.MultiSelect = false;
             this.purchasingDataGridView.Name = "purchasingDataGridView";
             this.purchasingDataGridView.RowTemplate.Height = 24;
-            this.purchasingDataGridView.Size = new System.Drawing.Size(745, 565);
+            this.purchasingDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.purchasingDataGridView.Size = new System.Drawing.Size(968, 461);
             this.purchasingDataGridView.TabIndex = 9;
+            this.purchasingDataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.PurchasingDataGridView_CellFormatting);
             // 
-            // productNamePurchasingDataGridViewTextBoxColumn
+            // productPurchasingDataGridViewTextBoxColumn
             // 
-            this.productNamePurchasingDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
-            this.productNamePurchasingDataGridViewTextBoxColumn.HeaderText = "Product";
-            this.productNamePurchasingDataGridViewTextBoxColumn.Name = "productNamePurchasingDataGridViewTextBoxColumn";
+            this.productPurchasingDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
+            this.productPurchasingDataGridViewTextBoxColumn.HeaderText = "Product";
+            this.productPurchasingDataGridViewTextBoxColumn.Name = "productPurchasingDataGridViewTextBoxColumn";
+            this.productPurchasingDataGridViewTextBoxColumn.ReadOnly = true;
+            this.productPurchasingDataGridViewTextBoxColumn.Width = 92;
             // 
-            // productAmountPurchasingDataGridViewTextBoxColumn
+            // amountPurchasingDataGridViewTextBoxColumn
             // 
-            this.productAmountPurchasingDataGridViewTextBoxColumn.DataPropertyName = "ProductAmount";
-            this.productAmountPurchasingDataGridViewTextBoxColumn.HeaderText = "Amount";
-            this.productAmountPurchasingDataGridViewTextBoxColumn.Name = "productAmountPurchasingDataGridViewTextBoxColumn";
+            this.amountPurchasingDataGridViewTextBoxColumn.DataPropertyName = "ProductAmount";
+            this.amountPurchasingDataGridViewTextBoxColumn.HeaderText = "Amount";
+            this.amountPurchasingDataGridViewTextBoxColumn.Name = "amountPurchasingDataGridViewTextBoxColumn";
+            this.amountPurchasingDataGridViewTextBoxColumn.ReadOnly = true;
+            this.amountPurchasingDataGridViewTextBoxColumn.Width = 92;
             // 
-            // totalCostPurchasingDataGridViewTextBoxColumn
+            // supplierPurchasingDataGridViewTextBoxColumn
             // 
-            this.totalCostPurchasingDataGridViewTextBoxColumn.DataPropertyName = "TotalCost";
-            this.totalCostPurchasingDataGridViewTextBoxColumn.HeaderText = "Total Cost";
-            this.totalCostPurchasingDataGridViewTextBoxColumn.Name = "totalCostPurchasingDataGridViewTextBoxColumn";
+            this.supplierPurchasingDataGridViewTextBoxColumn.DataPropertyName = "SupplierName";
+            this.supplierPurchasingDataGridViewTextBoxColumn.HeaderText = "Supplier";
+            this.supplierPurchasingDataGridViewTextBoxColumn.Name = "supplierPurchasingDataGridViewTextBoxColumn";
+            this.supplierPurchasingDataGridViewTextBoxColumn.ReadOnly = true;
+            this.supplierPurchasingDataGridViewTextBoxColumn.Width = 93;
             // 
-            // cancelLogPurchasingDataGridViewImageBoxColumn
+            // phonePurchasingDataGridViewTextBoxColumn
             // 
-            this.cancelLogPurchasingDataGridViewImageBoxColumn.HeaderText = "Cancel";
-            this.cancelLogPurchasingDataGridViewImageBoxColumn.Image = global::POSeidon.Properties.Resources.delete;
-            this.cancelLogPurchasingDataGridViewImageBoxColumn.Name = "cancelLogPurchasingDataGridViewImageBoxColumn";
+            this.phonePurchasingDataGridViewTextBoxColumn.DataPropertyName = "SupplierPhone";
+            this.phonePurchasingDataGridViewTextBoxColumn.HeaderText = "Phone";
+            this.phonePurchasingDataGridViewTextBoxColumn.Name = "phonePurchasingDataGridViewTextBoxColumn";
+            this.phonePurchasingDataGridViewTextBoxColumn.ReadOnly = true;
+            this.phonePurchasingDataGridViewTextBoxColumn.Width = 82;
+            // 
+            // emailPurchasingDataGridViewTextBoxColumn
+            // 
+            this.emailPurchasingDataGridViewTextBoxColumn.DataPropertyName = "SupplierEmail";
+            this.emailPurchasingDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailPurchasingDataGridViewTextBoxColumn.Name = "emailPurchasingDataGridViewTextBoxColumn";
+            this.emailPurchasingDataGridViewTextBoxColumn.ReadOnly = true;
+            this.emailPurchasingDataGridViewTextBoxColumn.Width = 75;
+            // 
+            // addressPurchasingDataGridViewTextBoxColumn
+            // 
+            this.addressPurchasingDataGridViewTextBoxColumn.DataPropertyName = "SupplierAddress";
+            this.addressPurchasingDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressPurchasingDataGridViewTextBoxColumn.Name = "addressPurchasingDataGridViewTextBoxColumn";
+            this.addressPurchasingDataGridViewTextBoxColumn.ReadOnly = true;
+            this.addressPurchasingDataGridViewTextBoxColumn.Width = 90;
+            // 
+            // totalPurchasingDataGridViewTextBoxColumn
+            // 
+            this.totalPurchasingDataGridViewTextBoxColumn.DataPropertyName = "TotalCost";
+            dataGridViewCellStyle17.Format = "C2";
+            dataGridViewCellStyle17.NullValue = null;
+            this.totalPurchasingDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle17;
+            this.totalPurchasingDataGridViewTextBoxColumn.HeaderText = "Total";
+            this.totalPurchasingDataGridViewTextBoxColumn.Name = "totalPurchasingDataGridViewTextBoxColumn";
+            this.totalPurchasingDataGridViewTextBoxColumn.ReadOnly = true;
+            this.totalPurchasingDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // datePurchasingDataGridViewTextBoxColumn
+            // 
+            this.datePurchasingDataGridViewTextBoxColumn.DataPropertyName = "Date";
+            this.datePurchasingDataGridViewTextBoxColumn.HeaderText = "Date";
+            this.datePurchasingDataGridViewTextBoxColumn.Name = "datePurchasingDataGridViewTextBoxColumn";
+            this.datePurchasingDataGridViewTextBoxColumn.ReadOnly = true;
+            this.datePurchasingDataGridViewTextBoxColumn.Width = 72;
             // 
             // settingsTab
             // 
             this.settingsTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(207)))), ((int)(((byte)(237)))));
             this.settingsTab.Controls.Add(this.settingsPanel);
-            this.settingsTab.Controls.Add(this.passwordLabel);
             this.settingsTab.Location = new System.Drawing.Point(4, 54);
             this.settingsTab.Margin = new System.Windows.Forms.Padding(2);
             this.settingsTab.Name = "settingsTab";
-            this.settingsTab.Size = new System.Drawing.Size(788, 489);
+            this.settingsTab.Size = new System.Drawing.Size(970, 490);
             this.settingsTab.TabIndex = 4;
             this.settingsTab.Text = "Settings";
             this.settingsTab.Enter += new System.EventHandler(this.SettingsTab_Enter);
             // 
             // settingsPanel
             // 
-            this.settingsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.settingsPanel.AutoScroll = true;
-            this.settingsPanel.Controls.Add(this.settingsChildPanel1);
-            this.settingsPanel.Controls.Add(this.settingsChildPanel2);
-            this.settingsPanel.Controls.Add(this.saveButton);
-            this.settingsPanel.Location = new System.Drawing.Point(0, 35);
+            this.settingsPanel.Controls.Add(this.tableLayoutPanel4);
+            this.settingsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.settingsPanel.Location = new System.Drawing.Point(0, 0);
             this.settingsPanel.Margin = new System.Windows.Forms.Padding(2);
             this.settingsPanel.Name = "settingsPanel";
-            this.settingsPanel.Size = new System.Drawing.Size(788, 463);
+            this.settingsPanel.Size = new System.Drawing.Size(970, 490);
             this.settingsPanel.TabIndex = 10;
             // 
-            // settingsChildPanel1
+            // tableLayoutPanel4
             // 
-            this.settingsChildPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.settingsChildPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.settingsChildPanel1.Controls.Add(this.settingsCheckbox2);
-            this.settingsChildPanel1.Controls.Add(this.settingsCheckbox1);
-            this.settingsChildPanel1.Location = new System.Drawing.Point(12, 15);
-            this.settingsChildPanel1.Margin = new System.Windows.Forms.Padding(2);
-            this.settingsChildPanel1.Name = "settingsChildPanel1";
-            this.settingsChildPanel1.Size = new System.Drawing.Size(283, 145);
-            this.settingsChildPanel1.TabIndex = 12;
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.panel1, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.currencySettingsGroupBox, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.16327F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.83673F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(970, 490);
+            this.tableLayoutPanel4.TabIndex = 21;
             // 
-            // settingsCheckbox2
+            // panel1
             // 
-            this.settingsCheckbox2.AutoSize = true;
-            this.settingsCheckbox2.Location = new System.Drawing.Point(9, 15);
-            this.settingsCheckbox2.Margin = new System.Windows.Forms.Padding(2);
-            this.settingsCheckbox2.Name = "settingsCheckbox2";
-            this.settingsCheckbox2.Size = new System.Drawing.Size(226, 23);
-            this.settingsCheckbox2.TabIndex = 11;
-            this.settingsCheckbox2.Text = "Relogin to see sales analytics";
-            this.settingsCheckbox2.UseVisualStyleBackColor = true;
+            this.panel1.Controls.Add(this.languageSettingsLabel);
+            this.panel1.Controls.Add(this.languageSettingsComboBox);
+            this.panel1.Controls.Add(this.saveButton);
+            this.panel1.Controls.Add(this.weightUnitSettingsLabel);
+            this.panel1.Controls.Add(this.weightUnitComboBox);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 288);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(964, 199);
+            this.panel1.TabIndex = 17;
             // 
-            // settingsCheckbox1
+            // languageSettingsLabel
             // 
-            this.settingsCheckbox1.AutoSize = true;
-            this.settingsCheckbox1.Location = new System.Drawing.Point(9, 64);
-            this.settingsCheckbox1.Margin = new System.Windows.Forms.Padding(2);
-            this.settingsCheckbox1.Name = "settingsCheckbox1";
-            this.settingsCheckbox1.Size = new System.Drawing.Size(250, 23);
-            this.settingsCheckbox1.TabIndex = 10;
-            this.settingsCheckbox1.Text = "Relogin to see customer statistics";
-            this.settingsCheckbox1.UseVisualStyleBackColor = true;
+            this.languageSettingsLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.languageSettingsLabel.Location = new System.Drawing.Point(324, 64);
+            this.languageSettingsLabel.Name = "languageSettingsLabel";
+            this.languageSettingsLabel.Size = new System.Drawing.Size(67, 20);
+            this.languageSettingsLabel.TabIndex = 19;
+            this.languageSettingsLabel.Values.Text = "Language:";
             // 
-            // settingsChildPanel2
+            // languageSettingsComboBox
             // 
-            this.settingsChildPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.settingsChildPanel2.AutoSize = true;
-            this.settingsChildPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.settingsChildPanel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.settingsChildPanel2.Controls.Add(this.weightUnitComboBox);
-            this.settingsChildPanel2.Controls.Add(this.weightUnitSettingsLabel);
-            this.settingsChildPanel2.Controls.Add(this.currencySettingsGroupBox);
-            this.settingsChildPanel2.Location = new System.Drawing.Point(326, 15);
-            this.settingsChildPanel2.Margin = new System.Windows.Forms.Padding(2);
-            this.settingsChildPanel2.Name = "settingsChildPanel2";
-            this.settingsChildPanel2.Padding = new System.Windows.Forms.Padding(22, 24, 22, 24);
-            this.settingsChildPanel2.Size = new System.Drawing.Size(388, 375);
-            this.settingsChildPanel2.TabIndex = 10;
+            this.languageSettingsComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.languageSettingsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.languageSettingsComboBox.DropDownWidth = 121;
+            this.languageSettingsComboBox.Location = new System.Drawing.Point(435, 63);
+            this.languageSettingsComboBox.Name = "languageSettingsComboBox";
+            this.languageSettingsComboBox.Size = new System.Drawing.Size(121, 21);
+            this.languageSettingsComboBox.TabIndex = 20;
             // 
-            // weightUnitComboBox
+            // saveButton
             // 
-            this.weightUnitComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.weightUnitComboBox.DropDownWidth = 121;
-            this.weightUnitComboBox.Location = new System.Drawing.Point(149, 319);
-            this.weightUnitComboBox.Name = "weightUnitComboBox";
-            this.weightUnitComboBox.Size = new System.Drawing.Size(121, 21);
-            this.weightUnitComboBox.TabIndex = 18;
+            this.saveButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.saveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.saveButton.FlatAppearance.BorderSize = 0;
+            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.saveButton.Location = new System.Drawing.Point(553, 108);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(100, 57);
+            this.saveButton.TabIndex = 4;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = false;
+            this.saveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // weightUnitSettingsLabel
             // 
-            this.weightUnitSettingsLabel.Location = new System.Drawing.Point(37, 320);
+            this.weightUnitSettingsLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.weightUnitSettingsLabel.Location = new System.Drawing.Point(324, 17);
             this.weightUnitSettingsLabel.Name = "weightUnitSettingsLabel";
             this.weightUnitSettingsLabel.Size = new System.Drawing.Size(79, 20);
             this.weightUnitSettingsLabel.TabIndex = 17;
             this.weightUnitSettingsLabel.Values.Text = "Weight Unit:";
             // 
+            // weightUnitComboBox
+            // 
+            this.weightUnitComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.weightUnitComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.weightUnitComboBox.DropDownWidth = 121;
+            this.weightUnitComboBox.Location = new System.Drawing.Point(435, 16);
+            this.weightUnitComboBox.Name = "weightUnitComboBox";
+            this.weightUnitComboBox.Size = new System.Drawing.Size(121, 21);
+            this.weightUnitComboBox.TabIndex = 18;
+            // 
             // currencySettingsGroupBox
             // 
+            this.currencySettingsGroupBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.currencySettingsGroupBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.currencySettingsGroupBox.CaptionOverlap = 0D;
             this.currencySettingsGroupBox.GroupBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ControlToolTip;
             this.currencySettingsGroupBox.GroupBorderStyle = ComponentFactory.Krypton.Toolkit.PaletteBorderStyle.ButtonAlternate;
-            this.currencySettingsGroupBox.Location = new System.Drawing.Point(16, 27);
+            this.currencySettingsGroupBox.Location = new System.Drawing.Point(310, 3);
+            this.currencySettingsGroupBox.MinimumSize = new System.Drawing.Size(350, 250);
             this.currencySettingsGroupBox.Name = "currencySettingsGroupBox";
             // 
             // currencySettingsGroupBox.Panel
@@ -1081,7 +1254,7 @@
             this.currencySettingsGroupBox.Panel.Controls.Add(this.currencySettingsLabel);
             this.currencySettingsGroupBox.Panel.Controls.Add(this.currencySettingsSymbolPlacementLabel);
             this.currencySettingsGroupBox.Panel.Controls.Add(this.currencySettingsComboBox);
-            this.currencySettingsGroupBox.Size = new System.Drawing.Size(343, 270);
+            this.currencySettingsGroupBox.Size = new System.Drawing.Size(350, 250);
             this.currencySettingsGroupBox.TabIndex = 16;
             this.currencySettingsGroupBox.Values.Heading = "Currency Settings";
             // 
@@ -1191,31 +1364,6 @@
             this.currencySettingsComboBox.Size = new System.Drawing.Size(178, 21);
             this.currencySettingsComboBox.TabIndex = 12;
             // 
-            // saveButton
-            // 
-            this.saveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            this.saveButton.FlatAppearance.BorderSize = 0;
-            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.saveButton.Location = new System.Drawing.Point(308, 404);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(100, 37);
-            this.saveButton.TabIndex = 4;
-            this.saveButton.Text = "Save";
-            this.saveButton.UseVisualStyleBackColor = false;
-            // 
-            // passwordLabel
-            // 
-            this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.passwordLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.passwordLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.passwordLabel.Location = new System.Drawing.Point(346, 2);
-            this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(91, 32);
-            this.passwordLabel.TabIndex = 3;
-            this.passwordLabel.Text = "SETTINGS";
-            this.passwordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // dataGridViewImageColumn1
             // 
             this.dataGridViewImageColumn1.HeaderText = "Add";
@@ -1230,115 +1378,130 @@
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 201;
             // 
-            // productNameSalesDataGridViewTextBoxColumn
-            // 
-            this.productNameSalesDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
-            this.productNameSalesDataGridViewTextBoxColumn.HeaderText = "Product";
-            this.productNameSalesDataGridViewTextBoxColumn.Name = "productNameSalesDataGridViewTextBoxColumn";
-            this.productNameSalesDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // salePriceSalesDataGridViewTextBoxColumn
-            // 
-            this.salePriceSalesDataGridViewTextBoxColumn.DataPropertyName = "ProductPrice";
-            this.salePriceSalesDataGridViewTextBoxColumn.HeaderText = "Price";
-            this.salePriceSalesDataGridViewTextBoxColumn.Name = "salePriceSalesDataGridViewTextBoxColumn";
-            this.salePriceSalesDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productAmountSalesDataGridViewTextBoxColumn
-            // 
-            this.productAmountSalesDataGridViewTextBoxColumn.DataPropertyName = "ProductAmount";
-            this.productAmountSalesDataGridViewTextBoxColumn.HeaderText = "Amount";
-            this.productAmountSalesDataGridViewTextBoxColumn.Name = "productAmountSalesDataGridViewTextBoxColumn";
-            this.productAmountSalesDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // totalPriceSalesDataGridViewTextBoxColumn
-            // 
-            this.totalPriceSalesDataGridViewTextBoxColumn.DataPropertyName = "ProductTotalPrice";
-            this.totalPriceSalesDataGridViewTextBoxColumn.HeaderText = "Total Price";
-            this.totalPriceSalesDataGridViewTextBoxColumn.Name = "totalPriceSalesDataGridViewTextBoxColumn";
-            this.totalPriceSalesDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // customerNameSalesDataGridViewTextBoxColumn
-            // 
-            this.customerNameSalesDataGridViewTextBoxColumn.DataPropertyName = "CustomerName";
-            this.customerNameSalesDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.customerNameSalesDataGridViewTextBoxColumn.Name = "customerNameSalesDataGridViewTextBoxColumn";
-            this.customerNameSalesDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // customerPhoneSalesDataGridViewTextBoxColumn
-            // 
-            this.customerPhoneSalesDataGridViewTextBoxColumn.DataPropertyName = "CustomerPhone";
-            this.customerPhoneSalesDataGridViewTextBoxColumn.HeaderText = "Phone";
-            this.customerPhoneSalesDataGridViewTextBoxColumn.Name = "customerPhoneSalesDataGridViewTextBoxColumn";
-            this.customerPhoneSalesDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // customerEmailSalesDataGridViewTextBoxColumn
-            // 
-            this.customerEmailSalesDataGridViewTextBoxColumn.DataPropertyName = "CustomerEmail";
-            this.customerEmailSalesDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.customerEmailSalesDataGridViewTextBoxColumn.Name = "customerEmailSalesDataGridViewTextBoxColumn";
-            this.customerEmailSalesDataGridViewTextBoxColumn.ReadOnly = true;
-            this.customerEmailSalesDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // customerAddressSalesDataGridViewTextBoxColumn
-            // 
-            this.customerAddressSalesDataGridViewTextBoxColumn.DataPropertyName = "CustomerAddress";
-            this.customerAddressSalesDataGridViewTextBoxColumn.HeaderText = "Address";
-            this.customerAddressSalesDataGridViewTextBoxColumn.Name = "customerAddressSalesDataGridViewTextBoxColumn";
-            this.customerAddressSalesDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // cancelLogSalesHistoryDataGridViewImageBoxColumn
             // 
             this.cancelLogSalesHistoryDataGridViewImageBoxColumn.HeaderText = "Cancel";
             this.cancelLogSalesHistoryDataGridViewImageBoxColumn.Image = global::POSeidon.Properties.Resources.delete;
             this.cancelLogSalesHistoryDataGridViewImageBoxColumn.Name = "cancelLogSalesHistoryDataGridViewImageBoxColumn";
             // 
+            // supplierStatisticsChart
+            // 
+            this.supplierStatisticsChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea5.Name = "ChartArea8";
+            this.supplierStatisticsChart.ChartAreas.Add(chartArea5);
+            legend2.Name = "Legend8";
+            this.supplierStatisticsChart.Legends.Add(legend2);
+            this.supplierStatisticsChart.Location = new System.Drawing.Point(20, 19);
+            this.supplierStatisticsChart.Margin = new System.Windows.Forms.Padding(2);
+            this.supplierStatisticsChart.Name = "supplierStatisticsChart";
+            this.supplierStatisticsChart.Padding = new System.Windows.Forms.Padding(8);
+            this.supplierStatisticsChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series5.ChartArea = "ChartArea8";
+            series5.Legend = "Legend8";
+            series5.Name = "Series8";
+            this.supplierStatisticsChart.Series.Add(series5);
+            this.supplierStatisticsChart.Size = new System.Drawing.Size(570, 494);
+            this.supplierStatisticsChart.TabIndex = 0;
+            // 
+            // customerStatisticsPanel
+            // 
+            this.customerStatisticsPanel.Location = new System.Drawing.Point(67, 32);
+            this.customerStatisticsPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.customerStatisticsPanel.Name = "customerStatisticsPanel";
+            this.customerStatisticsPanel.Size = new System.Drawing.Size(610, 529);
+            this.customerStatisticsPanel.TabIndex = 7;
+            // 
+            // customerStatisticsChart
+            // 
+            this.customerStatisticsChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea6.Name = "ChartArea7";
+            this.customerStatisticsChart.ChartAreas.Add(chartArea6);
+            this.customerStatisticsChart.Location = new System.Drawing.Point(20, 19);
+            this.customerStatisticsChart.Margin = new System.Windows.Forms.Padding(2);
+            this.customerStatisticsChart.Name = "customerStatisticsChart";
+            this.customerStatisticsChart.Padding = new System.Windows.Forms.Padding(8);
+            this.customerStatisticsChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
+            series6.ChartArea = "ChartArea7";
+            series6.Name = "test";
+            series6.XValueMember = "ProductName";
+            series6.YValueMembers = "Amount";
+            this.customerStatisticsChart.Series.Add(series6);
+            this.customerStatisticsChart.Size = new System.Drawing.Size(569, 400);
+            this.customerStatisticsChart.TabIndex = 0;
+            // 
+            // customerStatisticsPage
+            // 
+            this.customerStatisticsPage.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
+            this.customerStatisticsPage.Controls.Add(this.customerStatisticsPanel);
+            this.customerStatisticsPage.Flags = 65534;
+            this.customerStatisticsPage.LastVisibleSet = true;
+            this.customerStatisticsPage.Margin = new System.Windows.Forms.Padding(2);
+            this.customerStatisticsPage.MinimumSize = new System.Drawing.Size(38, 41);
+            this.customerStatisticsPage.Name = "customerStatisticsPage";
+            this.customerStatisticsPage.Size = new System.Drawing.Size(748, 563);
+            this.customerStatisticsPage.Text = "Customer";
+            this.customerStatisticsPage.ToolTipTitle = "Page ToolTip";
+            this.customerStatisticsPage.UniqueName = "1fbf379b70634940bcf9c585c1b0ac13";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox2.Image = global::POSeidon.Properties.Resources.search;
+            this.pictureBox2.Location = new System.Drawing.Point(941, 36);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(26, 28);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 23;
+            this.pictureBox2.TabStop = false;
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
-            this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1008, 575);
+            this.ClientSize = new System.Drawing.Size(1180, 548);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.leftsideMainPanel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1030, 625);
-            this.MinimumSize = new System.Drawing.Size(1026, 591);
+            this.MaximumSize = new System.Drawing.Size(1920, 1080);
+            this.MinimumSize = new System.Drawing.Size(640, 480);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "POSeidon";
             this.leftsideMainPanel.ResumeLayout(false);
             this.leftsideMainPanel.PerformLayout();
             this.mainPanel.ResumeLayout(false);
-            this.homepageTabControl.ResumeLayout(false);
+            this.mainTabControl.ResumeLayout(false);
             this.homeTab.ResumeLayout(false);
-            this.homePanel.ResumeLayout(false);
-            this.homePanel.PerformLayout();
+            this.homePageMainPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.homepageDataGridView)).EndInit();
+            this.homePageHeaderPanel.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.statisticsTab.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.statisticsPanel)).EndInit();
-            this.statisticsPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.statisticsHomepageNavigator)).EndInit();
-            this.statisticsHomepageNavigator.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.customerStatisticsPage)).EndInit();
-            this.customerStatisticsPage.ResumeLayout(false);
-            this.customerStatisticsPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.customerStatisticsChart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierStatisticsPage)).EndInit();
-            this.supplierStatisticsPage.ResumeLayout(false);
-            this.salesStatisticsPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.supplierStatisticsChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statisticsPagePanel)).EndInit();
+            this.statisticsPagePanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.statisticsChart)).EndInit();
             this.customersTab.ResumeLayout(false);
+            this.customersPageMainPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.customersTabDataGridView)).EndInit();
+            this.customersPageHeaderPanel.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.suppliersTab.ResumeLayout(false);
-            this.suppliersTab.PerformLayout();
+            this.suppliersPageMainPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.suppliersTabDataGridView)).EndInit();
+            this.suppliersPageHeaderPanel.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.salesAndPurchasingTab.ResumeLayout(false);
             this.salesAndPurchasingPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.salesAndPurchasingNavigator)).EndInit();
@@ -1351,11 +1514,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.purchasingDataGridView)).EndInit();
             this.settingsTab.ResumeLayout(false);
             this.settingsPanel.ResumeLayout(false);
-            this.settingsPanel.PerformLayout();
-            this.settingsChildPanel1.ResumeLayout(false);
-            this.settingsChildPanel1.PerformLayout();
-            this.settingsChildPanel2.ResumeLayout(false);
-            this.settingsChildPanel2.PerformLayout();
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.languageSettingsComboBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.weightUnitComboBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.currencySettingsGroupBox.Panel)).EndInit();
             this.currencySettingsGroupBox.Panel.ResumeLayout(false);
@@ -1365,6 +1527,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.currencySettingsGroupSeparatorComboBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.currencySettingsDecimalSeparatorComboBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.currencySettingsComboBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierStatisticsChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerStatisticsChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerStatisticsPage)).EndInit();
+            this.customerStatisticsPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1373,94 +1540,109 @@
         #endregion
 
         private System.Windows.Forms.Panel leftsideMainPanel;
-        private System.Windows.Forms.TabControl homepageTabControl;
-        private System.Windows.Forms.TabPage homeTab;
-        private System.Windows.Forms.Label infoLabel;
-        private System.Windows.Forms.Button iconButton;
         private System.Windows.Forms.Button logoutButton;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel mainPanel;
-        private System.Windows.Forms.Panel homePanel;
-        private System.Windows.Forms.DataGridView homepageDataGridView;
-        private System.Windows.Forms.TabPage statisticsTab;
-        private System.Windows.Forms.TabPage customersTab;
-        private System.Windows.Forms.TabPage salesAndPurchasingTab;
-        private System.Windows.Forms.TabPage settingsTab;
-        private System.Windows.Forms.Panel settingsChildPanel2;
-        private System.Windows.Forms.CheckBox settingsCheckbox2;
-        private System.Windows.Forms.CheckBox settingsCheckbox1;
-        private System.Windows.Forms.Button saveButton;
-        private System.Windows.Forms.Label passwordLabel;
-        private System.Windows.Forms.Panel settingsPanel;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox currencySettingsComboBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonGroupBox currencySettingsGroupBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonCheckBox currencySettingsPutSpaceCheckBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonRadioButton currencySettingsSymbolPlacementRightRadioButton;
-        private ComponentFactory.Krypton.Toolkit.KryptonRadioButton currencySettingsSymbolPlacementLeftRadioButton;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel currencySettingsLabel;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel currencySettingsSymbolPlacementLabel;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox currencySettingsGroupSeparatorComboBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox currencySettingsDecimalSeparatorComboBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel currencySettingsGroupSeparatorLabel;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel currencySettingsDecimalSeparatorLabel;
-        private ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown currencySettingsGroupSizeNumericUpDown;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel currencySettingsGroupSizeLabel;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox weightUnitComboBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel weightUnitSettingsLabel;
         private System.Windows.Forms.Button shoppingCartLeftSidePanelButton;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
-        private System.Windows.Forms.Panel settingsChildPanel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel statisticsPanel;
-        private ComponentFactory.Krypton.Navigator.KryptonNavigator statisticsHomepageNavigator;
-        private ComponentFactory.Krypton.Navigator.KryptonPage customerStatisticsPage;
-        private ComponentFactory.Krypton.Navigator.KryptonPage supplierStatisticsPage;
-        private System.Windows.Forms.Panel customerStatisticsPanel;
-        private System.Windows.Forms.DataVisualization.Charting.Chart customerStatisticsChart;
-        private System.Windows.Forms.Panel salesStatisticsPanel;
-        private System.Windows.Forms.DataVisualization.Charting.Chart supplierStatisticsChart;
-        private System.Windows.Forms.TabPage suppliersTab;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
-        private System.Windows.Forms.DataGridView customersTabDataGridView;
-        private System.Windows.Forms.DataGridView suppliersTabDataGridView;
-        private System.Windows.Forms.Panel salesAndPurchasingPanel;
-        private ComponentFactory.Krypton.Navigator.KryptonNavigator salesAndPurchasingNavigator;
-        private ComponentFactory.Krypton.Navigator.KryptonPage salesNavigatorPage;
-        private ComponentFactory.Krypton.Navigator.KryptonPage purchasingNavigatorPage;
-        private System.Windows.Forms.DataGridView salesHistoryDataGridView;
-        private System.Windows.Forms.DataGridView purchasingDataGridView;
+        private System.Windows.Forms.TabControl mainTabControl;
+        private System.Windows.Forms.TabPage homeTab;
+        private System.Windows.Forms.Panel homePageMainPanel;
+        private System.Windows.Forms.DataGridView homepageDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn productNameHomePageDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productPriceHomePageDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productStockHomePageDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn productAddHomePageDataGridViewImageColumn;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox productSearchTextBox;
-        private System.Windows.Forms.DataGridViewTextBoxColumn supplierNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn supplierPhoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn supplierEmailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn supplierAddressDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewImageColumn deleteSupplierDataGridViewImageColumn;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox suppliersSearchTextBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton addCustomerButton;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton addSupplierButton;
+        private System.Windows.Forms.TabPage statisticsTab;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel statisticsPagePanel;
+        private System.Windows.Forms.Panel customerStatisticsPanel;
+        private System.Windows.Forms.TabPage customersTab;
+        private System.Windows.Forms.DataGridView customersTabDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn customerFirstNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn customerLastNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn customerPhoneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn customerEmailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn customerAddressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn deleteCustomerDataGridViewImageColumn;
-        private System.Windows.Forms.Panel searchImageHomePanel;
-        private System.Windows.Forms.Panel searchImageSuppliersPanel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productNamePurchasingDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productAmountPurchasingDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn totalCostPurchasingDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TabPage suppliersTab;
+        private System.Windows.Forms.DataGridView suppliersTabDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn supplierNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn supplierPhoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn supplierEmailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn supplierAddressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewImageColumn deleteSupplierDataGridViewImageColumn;
+        private System.Windows.Forms.TabPage salesAndPurchasingTab;
+        private System.Windows.Forms.Panel salesAndPurchasingPanel;
+        private ComponentFactory.Krypton.Navigator.KryptonNavigator salesAndPurchasingNavigator;
+        private ComponentFactory.Krypton.Navigator.KryptonPage salesNavigatorPage;
+        private System.Windows.Forms.DataGridView salesHistoryDataGridView;
+        private ComponentFactory.Krypton.Navigator.KryptonPage purchasingNavigatorPage;
+        private System.Windows.Forms.DataGridView purchasingDataGridView;
+        private System.Windows.Forms.TabPage settingsTab;
+        private System.Windows.Forms.Panel settingsPanel;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox weightUnitComboBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel weightUnitSettingsLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonGroupBox currencySettingsGroupBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown currencySettingsGroupSizeNumericUpDown;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel currencySettingsGroupSizeLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox currencySettingsGroupSeparatorComboBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox currencySettingsDecimalSeparatorComboBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel currencySettingsGroupSeparatorLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel currencySettingsDecimalSeparatorLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckBox currencySettingsPutSpaceCheckBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonRadioButton currencySettingsSymbolPlacementRightRadioButton;
+        private ComponentFactory.Krypton.Toolkit.KryptonRadioButton currencySettingsSymbolPlacementLeftRadioButton;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel currencySettingsLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel currencySettingsSymbolPlacementLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox currencySettingsComboBox;
+        private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.DataGridViewImageColumn cancelLogPurchasingDataGridViewImageBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productNameSalesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn salePriceSalesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productAmountSalesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn totalPriceSalesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn customerNameSalesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn customerPhoneSalesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn customerEmailSalesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn customerAddressSalesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totalCostPurchasingDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productAmountPurchasingDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productNamePurchasingDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn cancelLogSalesHistoryDataGridViewImageBoxColumn;
+        private System.Windows.Forms.DataVisualization.Charting.Chart supplierStatisticsChart;
+        private System.Windows.Forms.DataVisualization.Charting.Chart customerStatisticsChart;
+        private ComponentFactory.Krypton.Navigator.KryptonPage customerStatisticsPage;
+        private System.Windows.Forms.DataVisualization.Charting.Chart statisticsChart;
+        private System.Windows.Forms.Panel homePageHeaderPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel customersPageHeaderPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Panel suppliersPageHeaderPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TextBox productSearchTextBox;
+        private System.Windows.Forms.TextBox customerSearchTextBox;
+        private System.Windows.Forms.Panel customersPageMainPanel;
+        private System.Windows.Forms.Panel suppliersPageMainPanel;
+        private System.Windows.Forms.TextBox supplierSearchTextBox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productNameSalesHistoryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productPriceSalesHistoryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productAmountSalesHistoryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productTotalPriceSalesHistoryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerNameSalesHistoryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerPhoneSalesHistoryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerEmailSalesHistoryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerAddressSalesHistoryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateSalesHistoryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productPurchasingDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn amountPurchasingDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn supplierPurchasingDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phonePurchasingDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailPurchasingDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addressPurchasingDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totalPurchasingDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datePurchasingDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Panel panel1;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel languageSettingsLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox languageSettingsComboBox;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Label nameTextLabel;
+        private System.Windows.Forms.Label usernameTextLabel;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.Label usernameLabel;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

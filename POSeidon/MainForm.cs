@@ -9,6 +9,8 @@ namespace POSeidon
 {
     public partial class MainForm : Form
     {
+        private BindingSource itemCountBindingSource;
+
         public MainForm()
         {
             InitializeComponent();
@@ -24,6 +26,8 @@ namespace POSeidon
             weightUnitComboBox.DataSource = Controller.Settings.AvailableWeightUnits;
             purchasingDataGridView.AutoGenerateColumns = false;
             purchasingDataGridView.DataSource = Controller.SupplierLogs;
+            usernameTextLabel.Text = Controller.User.Username;
+            nameTextLabel.Text = Controller.User.FullName;
         }
 
         private void LogoutButton_Click(object sender, EventArgs e)
@@ -71,7 +75,7 @@ namespace POSeidon
             weightUnitComboBox.SelectedItem = Controller.Settings.WeightUnit;
         }
 
-        private void HomepageDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void HomePageDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             var gridView = sender as DataGridView;
             
@@ -115,7 +119,7 @@ namespace POSeidon
         private void SuppliersSearchTextBox_TextChanged(object sender, EventArgs e)
         {
             var suppliers = from x in Controller.Suppliers
-                            where x.Name.IndexOf(suppliersSearchTextBox.Text, StringComparison.OrdinalIgnoreCase) >= 0
+                            where x.Name.IndexOf(supplierSearchTextBox.Text, StringComparison.OrdinalIgnoreCase) >= 0
                             select x;
             suppliersTabDataGridView.DataSource = suppliers.ToList();
         }
@@ -141,14 +145,51 @@ namespace POSeidon
                            ProductName = g.Key,
                            Amount = g.Sum()
                        };
-            customerStatisticsChart.DataSource = data.ToList();
-            customerStatisticsChart.DataBind();
+            statisticsChart.DataSource = data.ToList();
+            statisticsChart.DataBind();
         }
 
         private void AddSupplierButton_Click(object sender, EventArgs e)
         {
             addSupplierForm addSupplierForm = new addSupplierForm();
             addSupplierForm.ShowDialog();
+        }
+
+        private void SalesHistoryDataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (salesHistoryDataGridView.Columns[e.ColumnIndex].HeaderText == "Amount")
+            {
+                CustomerLog log = (CustomerLog) salesHistoryDataGridView.Rows[e.RowIndex].DataBoundItem;
+                if (log.IsProductCountable)
+                {
+                    e.Value += " pcs";
+                }
+                else
+                {
+                    e.Value += $" {Controller.Settings.WeightUnit.Symbol}";
+                }
+            }
+        }
+
+        private void PurchasingDataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (purchasingDataGridView.Columns[e.ColumnIndex].HeaderText == "Amount")
+            {
+                SupplierLog log = (SupplierLog) purchasingDataGridView.Rows[e.RowIndex].DataBoundItem;
+                if (log.IsProductCountable)
+                {
+                    e.Value += " pcs";
+                }
+                else
+                {
+                    e.Value += $" {Controller.Settings.WeightUnit.Symbol}";
+                }
+            }
+        }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

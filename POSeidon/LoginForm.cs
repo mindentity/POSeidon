@@ -15,7 +15,7 @@ namespace POSeidon
         {
             try
             {
-                DBUtils.Auth(usernameTextBox.Text, passwordTextBox.Text);
+                Controller.Login(usernameTextBox.Text, passwordTextBox.Text);
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             } catch (Exception ex)

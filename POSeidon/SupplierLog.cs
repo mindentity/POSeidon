@@ -8,6 +8,7 @@
         }
         public string ProductName { get; set; }
         public double ProductAmount { get; set; }
+        public bool IsProductCountable { get; set; }
         public string SupplierName { get; set; }
         public string SupplierPhone { get; set; }
         public string SupplierEmail { get; set; }

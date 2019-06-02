@@ -14,6 +14,7 @@ namespace POSeidon
         public static BindingList<Customer> Customers { get; set; }
         public static Settings Settings { get; set; }
         public static ShoppingCart ShoppingCart { get; set; }
+        public static User User { get; set; }
 
         static Controller()
         {
@@ -27,6 +28,19 @@ namespace POSeidon
             {
                 Items = new List<ShoppingCartItem>()
             };
+        }
+
+        public static void Login(string username, string password)
+        {
+            try
+            {
+                DBUtils.Auth(username, password);
+                User = DBUtils.GetUserByUsername(username);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         public static bool AddProduct(Product product, double amount, Supplier supplier, decimal totalCost)
