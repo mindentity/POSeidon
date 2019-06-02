@@ -39,7 +39,20 @@ namespace POSeidon
                     shoppingCartDataGridView.Rows[e.RowIndex].DataBoundItem,
                     shoppingCartDataGridView.Columns[e.ColumnIndex].DataPropertyName
                 );
+                if (shoppingCartDataGridView.Columns[e.ColumnIndex].HeaderText == "Price")
+                {
+                    var item = (ShoppingCartItem)shoppingCartDataGridView.Rows[e.RowIndex].DataBoundItem;
+                    if (item.Product.IsCountable)
+                    {
+                        e.Value = $"{String.Format("{0:C}", e.Value)} / pcs";
+                    }
+                    else
+                    {
+                        e.Value = $"{String.Format("{0:C}", e.Value)} / kg";
+                    }
+                }
             }
+            
         }
 
         private void ShoppingCartDataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
@@ -50,13 +63,16 @@ namespace POSeidon
                 if (!item.Product.IsCountable)
                 {
                     var cell = new DataGridViewComboBoxCell();
-                    foreach (var weightUnit in Controller.Settings.AvailableWeightUnits)
-                    {
-                        cell.Items.Add(weightUnit.Symbol);
-                    }
-                    cell.Value = cell.Items[0];
+                    cell.DisplayMember = "Symbol";
+                    cell.ValueMember = "Ratio";
+                    cell.DataSource = Controller.Settings.AvailableWeightUnits;
+                    cell.Value = 1.0;
                     row.Cells[3] = cell;
                     row.Cells[3].ReadOnly = false;
+                }
+                else
+                {
+                    row.Cells[3].Value = "pcs";
                 }
             }
         }
@@ -69,10 +85,10 @@ namespace POSeidon
                 var item = shoppingCartDataGridView.Rows[e.RowIndex].DataBoundItem as ShoppingCartItem;
                 try
                 {
-                    
+                    var ratio = (double) shoppingCartDataGridView["weightUnitShoppingCartDataGridViewTextBoxColumn", e.RowIndex].Value;
                     var oldAmount = (double) shoppingCartDataGridView[e.ColumnIndex, e.RowIndex].Value;
                     var newAmount = Double.Parse(e.FormattedValue.ToString());
-                    if (newAmount >= 0 && newAmount <= item.Product.StockAmount)
+                    if (newAmount >= 0 && newAmount * ratio <= item.Product.StockAmount)
                     {
                         Controller.ShoppingCart.TotalPrice += (decimal)(newAmount - oldAmount) * item.Product.Price;
 
@@ -107,8 +123,17 @@ namespace POSeidon
 
         private void ShoppingCartDataGridView_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == 2)
+            string columnTitle = shoppingCartDataGridView.Columns[e.ColumnIndex].HeaderText;
+            if (columnTitle == "Amount" || columnTitle == "Unit")
             {
+                var item = (ShoppingCartItem) shoppingCartDataGridView.Rows[e.RowIndex].DataBoundItem;
+                decimal total = item.Product.Price * (decimal) item.Amount;
+                if (!item.Product.IsCountable)
+                {
+                    var ratio = (double) shoppingCartDataGridView["weightUnitShoppingCartDataGridViewTextBoxColumn", e.RowIndex].Value;
+                    total *= (decimal) ratio;
+                }
+                shoppingCartDataGridView["totalPriceShoppingCartDataGridViewTextBoxColumn", e.RowIndex].Value = total.ToString("C");
                 totalPriceBindingSource.ResetCurrentItem();
             }
         }
@@ -135,6 +160,10 @@ namespace POSeidon
                 ShoppingCartItem item = items.ElementAt(e.RowIndex);
                 Controller.ShoppingCart.RemoveItem(item);
                 Controller.ShoppingCart.Items.ResetBindings();
+                if (Controller.ShoppingCart.Items.Count == 0)
+                {
+                    this.Close();
+                }
             }
         }
     }

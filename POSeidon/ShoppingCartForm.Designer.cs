@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShoppingCartForm));
             this.shoppingCartFormPanel = new System.Windows.Forms.Panel();
             this.customerComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
@@ -42,6 +41,7 @@
             this.productPriceShoppingCartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productAmountShoppingCartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.weightUnitShoppingCartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalPriceShoppingCartDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.removeShoppingCartDataGridViewButtonColumn = new System.Windows.Forms.DataGridViewButtonColumn();
             this.shoppingCartFormPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customerComboBox)).BeginInit();
@@ -129,6 +129,7 @@
             this.productPriceShoppingCartDataGridViewTextBoxColumn,
             this.productAmountShoppingCartDataGridViewTextBoxColumn,
             this.weightUnitShoppingCartDataGridViewTextBoxColumn,
+            this.totalPriceShoppingCartDataGridViewTextBoxColumn,
             this.removeShoppingCartDataGridViewButtonColumn});
             this.shoppingCartDataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.shoppingCartDataGridView.Location = new System.Drawing.Point(2, 19);
@@ -172,11 +173,15 @@
             // 
             this.weightUnitShoppingCartDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.weightUnitShoppingCartDataGridViewTextBoxColumn.DataPropertyName = "WeightUnit";
-            dataGridViewCellStyle2.NullValue = "pcs";
-            this.weightUnitShoppingCartDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
             this.weightUnitShoppingCartDataGridViewTextBoxColumn.HeaderText = "Unit";
             this.weightUnitShoppingCartDataGridViewTextBoxColumn.Name = "weightUnitShoppingCartDataGridViewTextBoxColumn";
             this.weightUnitShoppingCartDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // totalPriceShoppingCartDataGridViewTextBoxColumn
+            // 
+            this.totalPriceShoppingCartDataGridViewTextBoxColumn.HeaderText = "Total";
+            this.totalPriceShoppingCartDataGridViewTextBoxColumn.Name = "totalPriceShoppingCartDataGridViewTextBoxColumn";
+            this.totalPriceShoppingCartDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // removeShoppingCartDataGridViewButtonColumn
             // 
@@ -219,6 +224,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn productPriceShoppingCartDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productAmountShoppingCartDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn weightUnitShoppingCartDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totalPriceShoppingCartDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewButtonColumn removeShoppingCartDataGridViewButtonColumn;
     }
 }
