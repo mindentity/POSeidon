@@ -77,7 +77,7 @@ namespace POSeidon
             
             if (e.ColumnIndex >= 0 && gridView.Columns[e.ColumnIndex] is DataGridViewImageColumn && e.RowIndex >= 0)
             {
-                BindingList<Product> products = gridView.DataSource as BindingList<Product>;
+                List<Product> products = (List<Product>) gridView.DataSource;
                 Product product = products.ElementAt(e.RowIndex);
                 if (Controller.ShoppingCart.AddProduct(product))
                 {
