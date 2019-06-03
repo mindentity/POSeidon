@@ -15,18 +15,36 @@ namespace POSeidon
             InitializeComponent();
             homePageDataGridView.AutoGenerateColumns = false;
             homePageDataGridView.DataSource = Controller.Products;
+
             salesHistoryDataGridView.AutoGenerateColumns = false;
             salesHistoryDataGridView.DataSource = Controller.CustomerLogs;
-            suppliersTabDataGridView.AutoGenerateColumns = false;
-            suppliersTabDataGridView.DataSource = Controller.Suppliers;
-            customersTabDataGridView.AutoGenerateColumns = false;
-            customersTabDataGridView.DataSource = Controller.Customers;
-            currencySettingsComboBox.DataSource = Controller.Settings.AvailableCurrencies;
-            weightUnitComboBox.DataSource = Controller.Settings.AvailableWeightUnits;
+
             purchasingDataGridView.AutoGenerateColumns = false;
             purchasingDataGridView.DataSource = Controller.SupplierLogs;
+
+            suppliersTabDataGridView.AutoGenerateColumns = false;
+            suppliersTabDataGridView.DataSource = Controller.Suppliers;
+
+            customersTabDataGridView.AutoGenerateColumns = false;
+            customersTabDataGridView.DataSource = Controller.Customers;
+
+            usersPageDataGridView.AutoGenerateColumns = false;
+            usersPageDataGridView.DataSource = Controller.Users;
+
+            currencySettingsComboBox.DataSource = Controller.Settings.AvailableCurrencies;
+            weightUnitComboBox.DataSource = Controller.Settings.AvailableWeightUnits;
+
             usernameTextLabel.Text = Controller.User.Username;
             nameTextLabel.Text = Controller.User.FullName;
+
+            if (Controller.User.IsAdmin)
+            {
+                isAdminUsersDataGridViewCheckBoxColumn.ReadOnly = false;
+            }
+            else
+            {
+                isAdminUsersDataGridViewCheckBoxColumn.ReadOnly = true;
+            }
         }
 
         private void LogoutButton_Click(object sender, EventArgs e)
@@ -149,7 +167,7 @@ namespace POSeidon
 
         private void AddSupplierButton_Click(object sender, EventArgs e)
         {
-            addSupplierForm addSupplierForm = new addSupplierForm();
+            AddSupplierForm addSupplierForm = new AddSupplierForm();
             addSupplierForm.ShowDialog();
         }
 
@@ -213,6 +231,60 @@ namespace POSeidon
             else
             {
                 MessageBox.Show("Failed to save the settings!", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void UsersPageDataGridView_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                var user = usersPageDataGridView.Rows[e.RowIndex].DataBoundItem as User;
+                Controller.UpdateUser(user);
+            }
+        }
+
+        private void HomePageDataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (homePageDataGridView.Columns[e.ColumnIndex].HeaderText == "Price")
+            {
+                var product = (Product) homePageDataGridView.Rows[e.RowIndex].DataBoundItem;
+                if (product.IsCountable)
+                {
+                    e.Value = $"{String.Format("{0:C}", e.Value)} / pcs";
+                }
+                else
+                {
+                    e.Value = $"{String.Format("{0:C}", e.Value)} / kg";
+                }
+            }
+        }
+
+        private void AddUserButton_Click(object sender, EventArgs e)
+        {
+            AddUserForm addUserForm = new AddUserForm();
+            addUserForm.ShowDialog();
+        }
+
+        private void UsersPageDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex >= 0 && usersPageDataGridView.Columns[e.ColumnIndex] is DataGridViewImageColumn && e.RowIndex >= 0)
+            {
+                BindingList<User> users = (BindingList<User>) usersPageDataGridView.DataSource;
+                User user = users.ElementAt(e.RowIndex);
+                if (Controller.User.IsAdmin == false)
+                {
+                    MessageBox.Show("You do not have permission for this operation!", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+                else if (Controller.DeleteUser(user))
+                {
+                    MessageBox.Show("User deleted.", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                else
+                {
+                    MessageBox.Show("Failed to delete user!", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }

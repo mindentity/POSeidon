@@ -28,46 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.Button addProductButton;
             System.Windows.Forms.Button addCustomerButton;
             System.Windows.Forms.Button addSupplierButton;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.Button addUserButton;
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.leftsideMainPanel = new System.Windows.Forms.Panel();
             this.nameTextLabel = new System.Windows.Forms.Label();
             this.usernameTextLabel = new System.Windows.Forms.Label();
             this.nameLabel = new System.Windows.Forms.Label();
             this.usernameLabel = new System.Windows.Forms.Label();
-            this.shoppingCartLeftSidePanelButton = new System.Windows.Forms.Button();
-            this.logoutButton = new System.Windows.Forms.Button();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.mainTabControl = new System.Windows.Forms.TabControl();
             this.homeTab = new System.Windows.Forms.TabPage();
             this.homePageMainPanel = new System.Windows.Forms.Panel();
             this.homePageDataGridView = new System.Windows.Forms.DataGridView();
-            this.productNameHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productPriceHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productStockHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productAddHomePageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.homePageHeaderPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.productSearchTextBox = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.statisticsTab = new System.Windows.Forms.TabPage();
             this.statisticsPagePanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.statisticsChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -79,10 +73,8 @@
             this.customerPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customerEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customerAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deleteCustomerDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.customersPageHeaderPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.customerSearchTextBox = new System.Windows.Forms.TextBox();
             this.suppliersTab = new System.Windows.Forms.TabPage();
             this.suppliersPageMainPanel = new System.Windows.Forms.Panel();
@@ -91,10 +83,8 @@
             this.supplierPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplierEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplierAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deleteSupplierDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.suppliersPageHeaderPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.supplierSearchTextBox = new System.Windows.Forms.TextBox();
             this.salesAndPurchasingTab = new System.Windows.Forms.TabPage();
             this.salesAndPurchasingPanel = new System.Windows.Forms.Panel();
@@ -140,16 +130,41 @@
             this.currencySettingsLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.currencySettingsSymbolPlacementLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.currencySettingsComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.cancelLogSalesHistoryDataGridViewImageBoxColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.supplierStatisticsChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.customerStatisticsPanel = new System.Windows.Forms.Panel();
             this.customerStatisticsChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.customerStatisticsPage = new ComponentFactory.Krypton.Navigator.KryptonPage();
+            this.usersTab = new System.Windows.Forms.TabPage();
+            this.usersPageHeaderPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.usersSearchTextBox = new System.Windows.Forms.TextBox();
+            this.usersPageMainPanel = new System.Windows.Forms.Panel();
+            this.usersPageDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.deleteCustomerDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.deleteSupplierDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.shoppingCartLeftSidePanelButton = new System.Windows.Forms.Button();
+            this.logoutButton = new System.Windows.Forms.Button();
+            this.cancelLogSalesHistoryDataGridViewImageBoxColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.usernameUsersDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNameUsersDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameUsersDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isAdminUsersDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.deleteUsersDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.productNameHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productPriceHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productStockHomePageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productAddHomePageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             addProductButton = new System.Windows.Forms.Button();
             addCustomerButton = new System.Windows.Forms.Button();
             addSupplierButton = new System.Windows.Forms.Button();
+            addUserButton = new System.Windows.Forms.Button();
             this.leftsideMainPanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
             this.mainTabControl.SuspendLayout();
@@ -158,7 +173,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.homePageDataGridView)).BeginInit();
             this.homePageHeaderPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statisticsTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statisticsPagePanel)).BeginInit();
             this.statisticsPagePanel.SuspendLayout();
@@ -168,13 +182,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.customersTabDataGridView)).BeginInit();
             this.customersPageHeaderPanel.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.suppliersTab.SuspendLayout();
             this.suppliersPageMainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.suppliersTabDataGridView)).BeginInit();
             this.suppliersPageHeaderPanel.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.salesAndPurchasingTab.SuspendLayout();
             this.salesAndPurchasingPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salesAndPurchasingNavigator)).BeginInit();
@@ -202,64 +214,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.customerStatisticsChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerStatisticsPage)).BeginInit();
             this.customerStatisticsPage.SuspendLayout();
+            this.usersTab.SuspendLayout();
+            this.usersPageHeaderPanel.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            this.usersPageMainPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.usersPageDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
-            // 
-            // addProductButton
-            // 
-            addProductButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            addProductButton.BackColor = System.Drawing.Color.White;
-            addProductButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            addProductButton.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            addProductButton.Image = global::POSeidon.Properties.Resources.rsz_plus;
-            addProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            addProductButton.Location = new System.Drawing.Point(3, 8);
-            addProductButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            addProductButton.Name = "addProductButton";
-            addProductButton.Padding = new System.Windows.Forms.Padding(5);
-            addProductButton.Size = new System.Drawing.Size(210, 84);
-            addProductButton.TabIndex = 1;
-            addProductButton.Text = "ADD PRODUCT";
-            addProductButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            addProductButton.UseVisualStyleBackColor = false;
-            addProductButton.Click += new System.EventHandler(this.AddProductButton_Click);
-            // 
-            // addCustomerButton
-            // 
-            addCustomerButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            addCustomerButton.BackColor = System.Drawing.Color.White;
-            addCustomerButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            addCustomerButton.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            addCustomerButton.Image = global::POSeidon.Properties.Resources.rsz_plus;
-            addCustomerButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            addCustomerButton.Location = new System.Drawing.Point(3, 8);
-            addCustomerButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            addCustomerButton.Name = "addCustomerButton";
-            addCustomerButton.Padding = new System.Windows.Forms.Padding(5);
-            addCustomerButton.Size = new System.Drawing.Size(210, 84);
-            addCustomerButton.TabIndex = 1;
-            addCustomerButton.Text = "ADD CUSTOMER";
-            addCustomerButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            addCustomerButton.UseVisualStyleBackColor = false;
-            addCustomerButton.Click += new System.EventHandler(this.AddCustomerButton_Click);
-            // 
-            // addSupplierButton
-            // 
-            addSupplierButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            addSupplierButton.BackColor = System.Drawing.Color.White;
-            addSupplierButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            addSupplierButton.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            addSupplierButton.Image = global::POSeidon.Properties.Resources.rsz_plus;
-            addSupplierButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            addSupplierButton.Location = new System.Drawing.Point(3, 8);
-            addSupplierButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            addSupplierButton.Name = "addSupplierButton";
-            addSupplierButton.Padding = new System.Windows.Forms.Padding(5);
-            addSupplierButton.Size = new System.Drawing.Size(210, 84);
-            addSupplierButton.TabIndex = 1;
-            addSupplierButton.Text = "ADD PRODUCT";
-            addSupplierButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            addSupplierButton.UseVisualStyleBackColor = false;
-            addSupplierButton.Click += new System.EventHandler(this.AddSupplierButton_Click);
             // 
             // leftsideMainPanel
             // 
@@ -314,36 +278,6 @@
             this.usernameLabel.TabIndex = 6;
             this.usernameLabel.Text = "Username:";
             // 
-            // shoppingCartLeftSidePanelButton
-            // 
-            this.shoppingCartLeftSidePanelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.shoppingCartLeftSidePanelButton.AutoSize = true;
-            this.shoppingCartLeftSidePanelButton.BackColor = System.Drawing.Color.Transparent;
-            this.shoppingCartLeftSidePanelButton.BackgroundImage = global::POSeidon.Properties.Resources.order;
-            this.shoppingCartLeftSidePanelButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.shoppingCartLeftSidePanelButton.Location = new System.Drawing.Point(12, 448);
-            this.shoppingCartLeftSidePanelButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.shoppingCartLeftSidePanelButton.Name = "shoppingCartLeftSidePanelButton";
-            this.shoppingCartLeftSidePanelButton.Size = new System.Drawing.Size(49, 43);
-            this.shoppingCartLeftSidePanelButton.TabIndex = 5;
-            this.shoppingCartLeftSidePanelButton.UseVisualStyleBackColor = false;
-            this.shoppingCartLeftSidePanelButton.Click += new System.EventHandler(this.ShoppingCartLeftSidePanelButton_Click);
-            // 
-            // logoutButton
-            // 
-            this.logoutButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.logoutButton.AutoSize = true;
-            this.logoutButton.BackColor = System.Drawing.Color.Transparent;
-            this.logoutButton.BackgroundImage = global::POSeidon.Properties.Resources.rsz_1logout_50x60;
-            this.logoutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.logoutButton.Location = new System.Drawing.Point(154, 449);
-            this.logoutButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(43, 40);
-            this.logoutButton.TabIndex = 4;
-            this.logoutButton.UseVisualStyleBackColor = false;
-            this.logoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
-            // 
             // mainPanel
             // 
             this.mainPanel.AutoScroll = true;
@@ -363,6 +297,7 @@
             this.mainTabControl.Controls.Add(this.customersTab);
             this.mainTabControl.Controls.Add(this.suppliersTab);
             this.mainTabControl.Controls.Add(this.salesAndPurchasingTab);
+            this.mainTabControl.Controls.Add(this.usersTab);
             this.mainTabControl.Controls.Add(this.settingsTab);
             this.mainTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainTabControl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -414,15 +349,15 @@
             this.productPriceHomePageDataGridViewTextBoxColumn,
             this.productStockHomePageDataGridViewTextBoxColumn,
             this.productAddHomePageDataGridViewImageColumn});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.homePageDataGridView.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.homePageDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.homePageDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.homePageDataGridView.Location = new System.Drawing.Point(0, 0);
             this.homePageDataGridView.MultiSelect = false;
@@ -434,37 +369,7 @@
             this.homePageDataGridView.Size = new System.Drawing.Size(970, 390);
             this.homePageDataGridView.TabIndex = 7;
             this.homePageDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HomePageDataGridView_CellClick);
-            // 
-            // productNameHomePageDataGridViewTextBoxColumn
-            // 
-            this.productNameHomePageDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.productNameHomePageDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.productNameHomePageDataGridViewTextBoxColumn.Name = "productNameHomePageDataGridViewTextBoxColumn";
-            this.productNameHomePageDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productPriceHomePageDataGridViewTextBoxColumn
-            // 
-            this.productPriceHomePageDataGridViewTextBoxColumn.DataPropertyName = "Price";
-            dataGridViewCellStyle10.Format = "C2";
-            dataGridViewCellStyle10.NullValue = null;
-            this.productPriceHomePageDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle10;
-            this.productPriceHomePageDataGridViewTextBoxColumn.HeaderText = "Price";
-            this.productPriceHomePageDataGridViewTextBoxColumn.Name = "productPriceHomePageDataGridViewTextBoxColumn";
-            this.productPriceHomePageDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productStockHomePageDataGridViewTextBoxColumn
-            // 
-            this.productStockHomePageDataGridViewTextBoxColumn.DataPropertyName = "StockAmountText";
-            this.productStockHomePageDataGridViewTextBoxColumn.HeaderText = "Stock Amount";
-            this.productStockHomePageDataGridViewTextBoxColumn.Name = "productStockHomePageDataGridViewTextBoxColumn";
-            this.productStockHomePageDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productAddHomePageDataGridViewImageColumn
-            // 
-            this.productAddHomePageDataGridViewImageColumn.HeaderText = "Add";
-            this.productAddHomePageDataGridViewImageColumn.Image = ((System.Drawing.Image)(resources.GetObject("productAddHomePageDataGridViewImageColumn.Image")));
-            this.productAddHomePageDataGridViewImageColumn.Name = "productAddHomePageDataGridViewImageColumn";
-            this.productAddHomePageDataGridViewImageColumn.ReadOnly = true;
+            this.homePageDataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.HomePageDataGridView_CellFormatting);
             // 
             // homePageHeaderPanel
             // 
@@ -504,17 +409,6 @@
             this.productSearchTextBox.TabIndex = 16;
             this.productSearchTextBox.TextChanged += new System.EventHandler(this.ProductSearchTextBox_TextChanged);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox1.Image = global::POSeidon.Properties.Resources.search;
-            this.pictureBox1.Location = new System.Drawing.Point(941, 36);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(26, 28);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
-            // 
             // statisticsTab
             // 
             this.statisticsTab.BackColor = System.Drawing.Color.Gainsboro;
@@ -541,17 +435,17 @@
             // 
             // statisticsChart
             // 
-            chartArea4.AxisY.Title = "Amount";
-            chartArea4.Name = "ChartArea1";
-            this.statisticsChart.ChartAreas.Add(chartArea4);
+            chartArea1.AxisY.Title = "Amount";
+            chartArea1.Name = "ChartArea1";
+            this.statisticsChart.ChartAreas.Add(chartArea1);
             this.statisticsChart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.statisticsChart.Location = new System.Drawing.Point(0, 0);
             this.statisticsChart.Name = "statisticsChart";
-            series4.ChartArea = "ChartArea1";
-            series4.Name = "Series1";
-            series4.XValueMember = "ProductName";
-            series4.YValueMembers = "Amount";
-            this.statisticsChart.Series.Add(series4);
+            series1.ChartArea = "ChartArea1";
+            series1.Name = "Series1";
+            series1.XValueMember = "ProductName";
+            series1.YValueMembers = "Amount";
+            this.statisticsChart.Series.Add(series1);
             this.statisticsChart.Size = new System.Drawing.Size(966, 486);
             this.statisticsChart.TabIndex = 0;
             this.statisticsChart.Text = "chart1";
@@ -594,15 +488,15 @@
             this.customerEmailDataGridViewTextBoxColumn,
             this.customerAddressDataGridViewTextBoxColumn,
             this.deleteCustomerDataGridViewImageColumn});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.customersTabDataGridView.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.customersTabDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.customersTabDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customersTabDataGridView.Location = new System.Drawing.Point(0, 0);
             this.customersTabDataGridView.Margin = new System.Windows.Forms.Padding(2);
@@ -648,13 +542,6 @@
             this.customerAddressDataGridViewTextBoxColumn.Name = "customerAddressDataGridViewTextBoxColumn";
             this.customerAddressDataGridViewTextBoxColumn.Width = 90;
             // 
-            // deleteCustomerDataGridViewImageColumn
-            // 
-            this.deleteCustomerDataGridViewImageColumn.HeaderText = "Delete";
-            this.deleteCustomerDataGridViewImageColumn.Image = global::POSeidon.Properties.Resources.delete;
-            this.deleteCustomerDataGridViewImageColumn.Name = "deleteCustomerDataGridViewImageColumn";
-            this.deleteCustomerDataGridViewImageColumn.Width = 64;
-            // 
             // customersPageHeaderPanel
             // 
             this.customersPageHeaderPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -683,17 +570,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(970, 100);
             this.tableLayoutPanel2.TabIndex = 16;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox2.Image = global::POSeidon.Properties.Resources.search;
-            this.pictureBox2.Location = new System.Drawing.Point(941, 36);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 28);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 23;
-            this.pictureBox2.TabStop = false;
             // 
             // customerSearchTextBox
             // 
@@ -740,15 +616,15 @@
             this.supplierEmailDataGridViewTextBoxColumn,
             this.supplierAddressDataGridViewTextBoxColumn,
             this.deleteSupplierDataGridViewImageColumn});
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle13.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.suppliersTabDataGridView.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.suppliersTabDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
             this.suppliersTabDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.suppliersTabDataGridView.Location = new System.Drawing.Point(0, 0);
             this.suppliersTabDataGridView.Margin = new System.Windows.Forms.Padding(2);
@@ -787,13 +663,6 @@
             this.supplierAddressDataGridViewTextBoxColumn.Name = "supplierAddressDataGridViewTextBoxColumn";
             this.supplierAddressDataGridViewTextBoxColumn.Width = 90;
             // 
-            // deleteSupplierDataGridViewImageColumn
-            // 
-            this.deleteSupplierDataGridViewImageColumn.HeaderText = "Delete";
-            this.deleteSupplierDataGridViewImageColumn.Image = global::POSeidon.Properties.Resources.delete;
-            this.deleteSupplierDataGridViewImageColumn.Name = "deleteSupplierDataGridViewImageColumn";
-            this.deleteSupplierDataGridViewImageColumn.Width = 64;
-            // 
             // suppliersPageHeaderPanel
             // 
             this.suppliersPageHeaderPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -822,17 +691,6 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(970, 100);
             this.tableLayoutPanel3.TabIndex = 16;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox3.Image = global::POSeidon.Properties.Resources.search;
-            this.pictureBox3.Location = new System.Drawing.Point(941, 36);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(26, 28);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 23;
-            this.pictureBox3.TabStop = false;
             // 
             // supplierSearchTextBox
             // 
@@ -918,15 +776,15 @@
             this.customerEmailSalesHistoryDataGridViewTextBoxColumn,
             this.customerAddressSalesHistoryDataGridViewTextBoxColumn,
             this.dateSalesHistoryDataGridViewTextBoxColumn});
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle16.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.salesHistoryDataGridView.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.salesHistoryDataGridView.DefaultCellStyle = dataGridViewCellStyle7;
             this.salesHistoryDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.salesHistoryDataGridView.Location = new System.Drawing.Point(0, 0);
             this.salesHistoryDataGridView.Margin = new System.Windows.Forms.Padding(2);
@@ -949,9 +807,9 @@
             // productPriceSalesHistoryDataGridViewTextBoxColumn
             // 
             this.productPriceSalesHistoryDataGridViewTextBoxColumn.DataPropertyName = "ProductPrice";
-            dataGridViewCellStyle14.Format = "C2";
-            dataGridViewCellStyle14.NullValue = null;
-            this.productPriceSalesHistoryDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle5.Format = "C2";
+            dataGridViewCellStyle5.NullValue = null;
+            this.productPriceSalesHistoryDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
             this.productPriceSalesHistoryDataGridViewTextBoxColumn.HeaderText = "Price";
             this.productPriceSalesHistoryDataGridViewTextBoxColumn.Name = "productPriceSalesHistoryDataGridViewTextBoxColumn";
             this.productPriceSalesHistoryDataGridViewTextBoxColumn.ReadOnly = true;
@@ -968,9 +826,9 @@
             // productTotalPriceSalesHistoryDataGridViewTextBoxColumn
             // 
             this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn.DataPropertyName = "ProductTotalPrice";
-            dataGridViewCellStyle15.Format = "C2";
-            dataGridViewCellStyle15.NullValue = null;
-            this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle6.Format = "C2";
+            dataGridViewCellStyle6.NullValue = null;
+            this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
             this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn.HeaderText = "Total";
             this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn.Name = "productTotalPriceSalesHistoryDataGridViewTextBoxColumn";
             this.productTotalPriceSalesHistoryDataGridViewTextBoxColumn.ReadOnly = true;
@@ -1050,15 +908,15 @@
             this.addressPurchasingDataGridViewTextBoxColumn,
             this.totalPurchasingDataGridViewTextBoxColumn,
             this.datePurchasingDataGridViewTextBoxColumn});
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle18.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.purchasingDataGridView.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.purchasingDataGridView.DefaultCellStyle = dataGridViewCellStyle9;
             this.purchasingDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.purchasingDataGridView.Location = new System.Drawing.Point(0, 0);
             this.purchasingDataGridView.Margin = new System.Windows.Forms.Padding(2);
@@ -1121,9 +979,9 @@
             // totalPurchasingDataGridViewTextBoxColumn
             // 
             this.totalPurchasingDataGridViewTextBoxColumn.DataPropertyName = "TotalCost";
-            dataGridViewCellStyle17.Format = "C2";
-            dataGridViewCellStyle17.NullValue = null;
-            this.totalPurchasingDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle8.Format = "C2";
+            dataGridViewCellStyle8.NullValue = null;
+            this.totalPurchasingDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle8;
             this.totalPurchasingDataGridViewTextBoxColumn.HeaderText = "Total";
             this.totalPurchasingDataGridViewTextBoxColumn.Name = "totalPurchasingDataGridViewTextBoxColumn";
             this.totalPurchasingDataGridViewTextBoxColumn.ReadOnly = true;
@@ -1359,44 +1217,24 @@
             this.currencySettingsComboBox.Size = new System.Drawing.Size(178, 21);
             this.currencySettingsComboBox.TabIndex = 12;
             // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.HeaderText = "Add";
-            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Width = 246;
-            // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.HeaderText = "Delete";
-            this.dataGridViewImageColumn2.Image = global::POSeidon.Properties.Resources.delete;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.Width = 201;
-            // 
-            // cancelLogSalesHistoryDataGridViewImageBoxColumn
-            // 
-            this.cancelLogSalesHistoryDataGridViewImageBoxColumn.HeaderText = "Cancel";
-            this.cancelLogSalesHistoryDataGridViewImageBoxColumn.Image = global::POSeidon.Properties.Resources.delete;
-            this.cancelLogSalesHistoryDataGridViewImageBoxColumn.Name = "cancelLogSalesHistoryDataGridViewImageBoxColumn";
-            // 
             // supplierStatisticsChart
             // 
             this.supplierStatisticsChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea5.Name = "ChartArea8";
-            this.supplierStatisticsChart.ChartAreas.Add(chartArea5);
-            legend2.Name = "Legend8";
-            this.supplierStatisticsChart.Legends.Add(legend2);
+            chartArea2.Name = "ChartArea8";
+            this.supplierStatisticsChart.ChartAreas.Add(chartArea2);
+            legend1.Name = "Legend8";
+            this.supplierStatisticsChart.Legends.Add(legend1);
             this.supplierStatisticsChart.Location = new System.Drawing.Point(20, 19);
             this.supplierStatisticsChart.Margin = new System.Windows.Forms.Padding(2);
             this.supplierStatisticsChart.Name = "supplierStatisticsChart";
             this.supplierStatisticsChart.Padding = new System.Windows.Forms.Padding(8);
             this.supplierStatisticsChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series5.ChartArea = "ChartArea8";
-            series5.Legend = "Legend8";
-            series5.Name = "Series8";
-            this.supplierStatisticsChart.Series.Add(series5);
+            series2.ChartArea = "ChartArea8";
+            series2.Legend = "Legend8";
+            series2.Name = "Series8";
+            this.supplierStatisticsChart.Series.Add(series2);
             this.supplierStatisticsChart.Size = new System.Drawing.Size(570, 494);
             this.supplierStatisticsChart.TabIndex = 0;
             // 
@@ -1413,18 +1251,18 @@
             this.customerStatisticsChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea6.Name = "ChartArea7";
-            this.customerStatisticsChart.ChartAreas.Add(chartArea6);
+            chartArea3.Name = "ChartArea7";
+            this.customerStatisticsChart.ChartAreas.Add(chartArea3);
             this.customerStatisticsChart.Location = new System.Drawing.Point(20, 19);
             this.customerStatisticsChart.Margin = new System.Windows.Forms.Padding(2);
             this.customerStatisticsChart.Name = "customerStatisticsChart";
             this.customerStatisticsChart.Padding = new System.Windows.Forms.Padding(8);
             this.customerStatisticsChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series6.ChartArea = "ChartArea7";
-            series6.Name = "test";
-            series6.XValueMember = "ProductName";
-            series6.YValueMembers = "Amount";
-            this.customerStatisticsChart.Series.Add(series6);
+            series3.ChartArea = "ChartArea7";
+            series3.Name = "test";
+            series3.XValueMember = "ProductName";
+            series3.YValueMembers = "Amount";
+            this.customerStatisticsChart.Series.Add(series3);
             this.customerStatisticsChart.Size = new System.Drawing.Size(569, 400);
             this.customerStatisticsChart.TabIndex = 0;
             // 
@@ -1441,6 +1279,344 @@
             this.customerStatisticsPage.Text = "Customer";
             this.customerStatisticsPage.ToolTipTitle = "Page ToolTip";
             this.customerStatisticsPage.UniqueName = "1fbf379b70634940bcf9c585c1b0ac13";
+            // 
+            // usersTab
+            // 
+            this.usersTab.Controls.Add(this.usersPageMainPanel);
+            this.usersTab.Controls.Add(this.usersPageHeaderPanel);
+            this.usersTab.Location = new System.Drawing.Point(4, 54);
+            this.usersTab.Name = "usersTab";
+            this.usersTab.Padding = new System.Windows.Forms.Padding(3);
+            this.usersTab.Size = new System.Drawing.Size(970, 490);
+            this.usersTab.TabIndex = 6;
+            this.usersTab.Text = "Users";
+            this.usersTab.UseVisualStyleBackColor = true;
+            // 
+            // usersPageHeaderPanel
+            // 
+            this.usersPageHeaderPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.usersPageHeaderPanel.BackColor = System.Drawing.Color.PowderBlue;
+            this.usersPageHeaderPanel.Controls.Add(this.tableLayoutPanel5);
+            this.usersPageHeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.usersPageHeaderPanel.Location = new System.Drawing.Point(3, 3);
+            this.usersPageHeaderPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.usersPageHeaderPanel.Name = "usersPageHeaderPanel";
+            this.usersPageHeaderPanel.Size = new System.Drawing.Size(964, 100);
+            this.usersPageHeaderPanel.TabIndex = 14;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 3;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel5.Controls.Add(this.pictureBox4, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.usersSearchTextBox, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(addUserButton, 0, 0);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(964, 100);
+            this.tableLayoutPanel5.TabIndex = 16;
+            // 
+            // usersSearchTextBox
+            // 
+            this.usersSearchTextBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.usersSearchTextBox.Location = new System.Drawing.Point(698, 38);
+            this.usersSearchTextBox.Name = "usersSearchTextBox";
+            this.usersSearchTextBox.Size = new System.Drawing.Size(231, 24);
+            this.usersSearchTextBox.TabIndex = 17;
+            // 
+            // usersPageMainPanel
+            // 
+            this.usersPageMainPanel.Controls.Add(this.usersPageDataGridView);
+            this.usersPageMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.usersPageMainPanel.Location = new System.Drawing.Point(3, 103);
+            this.usersPageMainPanel.Name = "usersPageMainPanel";
+            this.usersPageMainPanel.Size = new System.Drawing.Size(964, 384);
+            this.usersPageMainPanel.TabIndex = 15;
+            // 
+            // usersPageDataGridView
+            // 
+            this.usersPageDataGridView.AllowUserToAddRows = false;
+            this.usersPageDataGridView.AllowUserToDeleteRows = false;
+            this.usersPageDataGridView.AllowUserToResizeColumns = false;
+            this.usersPageDataGridView.AllowUserToResizeRows = false;
+            this.usersPageDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.usersPageDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.usersPageDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.usersPageDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.usernameUsersDataGridViewTextBoxColumn,
+            this.firstNameUsersDataGridViewTextBoxColumn,
+            this.lastNameUsersDataGridViewTextBoxColumn,
+            this.isAdminUsersDataGridViewCheckBoxColumn,
+            this.deleteUsersDataGridViewTextBoxColumn});
+            this.usersPageDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.usersPageDataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.usersPageDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.usersPageDataGridView.MultiSelect = false;
+            this.usersPageDataGridView.Name = "usersPageDataGridView";
+            this.usersPageDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.usersPageDataGridView.Size = new System.Drawing.Size(964, 384);
+            this.usersPageDataGridView.TabIndex = 0;
+            this.usersPageDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.UsersPageDataGridView_CellClick);
+            this.usersPageDataGridView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.UsersPageDataGridView_CellValueChanged);
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.HeaderText = "Add";
+            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Width = 246;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.HeaderText = "Delete";
+            this.dataGridViewImageColumn2.Image = global::POSeidon.Properties.Resources.delete;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.Width = 201;
+            // 
+            // dataGridViewImageColumn3
+            // 
+            this.dataGridViewImageColumn3.HeaderText = "Delete";
+            this.dataGridViewImageColumn3.Image = global::POSeidon.Properties.Resources.delete;
+            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
+            this.dataGridViewImageColumn3.Width = 48;
+            // 
+            // addProductButton
+            // 
+            addProductButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            addProductButton.BackColor = System.Drawing.Color.White;
+            addProductButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            addProductButton.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            addProductButton.Image = global::POSeidon.Properties.Resources.rsz_plus;
+            addProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            addProductButton.Location = new System.Drawing.Point(3, 8);
+            addProductButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            addProductButton.Name = "addProductButton";
+            addProductButton.Padding = new System.Windows.Forms.Padding(5);
+            addProductButton.Size = new System.Drawing.Size(183, 84);
+            addProductButton.TabIndex = 1;
+            addProductButton.Text = "ADD PRODUCT";
+            addProductButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            addProductButton.UseVisualStyleBackColor = false;
+            addProductButton.Click += new System.EventHandler(this.AddProductButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox1.Image = global::POSeidon.Properties.Resources.search;
+            this.pictureBox1.Location = new System.Drawing.Point(941, 36);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(26, 28);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            // 
+            // deleteCustomerDataGridViewImageColumn
+            // 
+            this.deleteCustomerDataGridViewImageColumn.HeaderText = "Delete";
+            this.deleteCustomerDataGridViewImageColumn.Image = global::POSeidon.Properties.Resources.delete;
+            this.deleteCustomerDataGridViewImageColumn.Name = "deleteCustomerDataGridViewImageColumn";
+            this.deleteCustomerDataGridViewImageColumn.Width = 64;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox2.Image = global::POSeidon.Properties.Resources.search;
+            this.pictureBox2.Location = new System.Drawing.Point(941, 36);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(26, 28);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 23;
+            this.pictureBox2.TabStop = false;
+            // 
+            // addCustomerButton
+            // 
+            addCustomerButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            addCustomerButton.BackColor = System.Drawing.Color.White;
+            addCustomerButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            addCustomerButton.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            addCustomerButton.Image = global::POSeidon.Properties.Resources.rsz_plus;
+            addCustomerButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            addCustomerButton.Location = new System.Drawing.Point(3, 8);
+            addCustomerButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            addCustomerButton.Name = "addCustomerButton";
+            addCustomerButton.Padding = new System.Windows.Forms.Padding(5);
+            addCustomerButton.Size = new System.Drawing.Size(197, 84);
+            addCustomerButton.TabIndex = 1;
+            addCustomerButton.Text = "ADD CUSTOMER";
+            addCustomerButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            addCustomerButton.UseVisualStyleBackColor = false;
+            addCustomerButton.Click += new System.EventHandler(this.AddCustomerButton_Click);
+            // 
+            // deleteSupplierDataGridViewImageColumn
+            // 
+            this.deleteSupplierDataGridViewImageColumn.HeaderText = "Delete";
+            this.deleteSupplierDataGridViewImageColumn.Image = global::POSeidon.Properties.Resources.delete;
+            this.deleteSupplierDataGridViewImageColumn.Name = "deleteSupplierDataGridViewImageColumn";
+            this.deleteSupplierDataGridViewImageColumn.Width = 64;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox3.Image = global::POSeidon.Properties.Resources.search;
+            this.pictureBox3.Location = new System.Drawing.Point(941, 36);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(26, 28);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 23;
+            this.pictureBox3.TabStop = false;
+            // 
+            // addSupplierButton
+            // 
+            addSupplierButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            addSupplierButton.BackColor = System.Drawing.Color.White;
+            addSupplierButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            addSupplierButton.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            addSupplierButton.Image = global::POSeidon.Properties.Resources.rsz_plus;
+            addSupplierButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            addSupplierButton.Location = new System.Drawing.Point(3, 8);
+            addSupplierButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            addSupplierButton.Name = "addSupplierButton";
+            addSupplierButton.Padding = new System.Windows.Forms.Padding(5);
+            addSupplierButton.Size = new System.Drawing.Size(179, 84);
+            addSupplierButton.TabIndex = 1;
+            addSupplierButton.Text = "ADD SUPPLIER";
+            addSupplierButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            addSupplierButton.UseVisualStyleBackColor = false;
+            addSupplierButton.Click += new System.EventHandler(this.AddSupplierButton_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox4.Image = global::POSeidon.Properties.Resources.search;
+            this.pictureBox4.Location = new System.Drawing.Point(935, 36);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(26, 28);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 23;
+            this.pictureBox4.TabStop = false;
+            // 
+            // addUserButton
+            // 
+            addUserButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            addUserButton.BackColor = System.Drawing.Color.White;
+            addUserButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            addUserButton.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            addUserButton.Image = global::POSeidon.Properties.Resources.rsz_plus;
+            addUserButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            addUserButton.Location = new System.Drawing.Point(3, 8);
+            addUserButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            addUserButton.Name = "addUserButton";
+            addUserButton.Padding = new System.Windows.Forms.Padding(5);
+            addUserButton.Size = new System.Drawing.Size(146, 84);
+            addUserButton.TabIndex = 1;
+            addUserButton.Text = "ADD USER";
+            addUserButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            addUserButton.UseVisualStyleBackColor = false;
+            addUserButton.Click += new System.EventHandler(this.AddUserButton_Click);
+            // 
+            // shoppingCartLeftSidePanelButton
+            // 
+            this.shoppingCartLeftSidePanelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.shoppingCartLeftSidePanelButton.AutoSize = true;
+            this.shoppingCartLeftSidePanelButton.BackColor = System.Drawing.Color.Transparent;
+            this.shoppingCartLeftSidePanelButton.BackgroundImage = global::POSeidon.Properties.Resources.order;
+            this.shoppingCartLeftSidePanelButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.shoppingCartLeftSidePanelButton.Location = new System.Drawing.Point(12, 448);
+            this.shoppingCartLeftSidePanelButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.shoppingCartLeftSidePanelButton.Name = "shoppingCartLeftSidePanelButton";
+            this.shoppingCartLeftSidePanelButton.Size = new System.Drawing.Size(49, 43);
+            this.shoppingCartLeftSidePanelButton.TabIndex = 5;
+            this.shoppingCartLeftSidePanelButton.UseVisualStyleBackColor = false;
+            this.shoppingCartLeftSidePanelButton.Click += new System.EventHandler(this.ShoppingCartLeftSidePanelButton_Click);
+            // 
+            // logoutButton
+            // 
+            this.logoutButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.logoutButton.AutoSize = true;
+            this.logoutButton.BackColor = System.Drawing.Color.Transparent;
+            this.logoutButton.BackgroundImage = global::POSeidon.Properties.Resources.rsz_1logout_50x60;
+            this.logoutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.logoutButton.Location = new System.Drawing.Point(154, 449);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Size = new System.Drawing.Size(43, 40);
+            this.logoutButton.TabIndex = 4;
+            this.logoutButton.UseVisualStyleBackColor = false;
+            this.logoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
+            // 
+            // cancelLogSalesHistoryDataGridViewImageBoxColumn
+            // 
+            this.cancelLogSalesHistoryDataGridViewImageBoxColumn.HeaderText = "Cancel";
+            this.cancelLogSalesHistoryDataGridViewImageBoxColumn.Image = global::POSeidon.Properties.Resources.delete;
+            this.cancelLogSalesHistoryDataGridViewImageBoxColumn.Name = "cancelLogSalesHistoryDataGridViewImageBoxColumn";
+            // 
+            // usernameUsersDataGridViewTextBoxColumn
+            // 
+            this.usernameUsersDataGridViewTextBoxColumn.DataPropertyName = "Username";
+            this.usernameUsersDataGridViewTextBoxColumn.HeaderText = "Username";
+            this.usernameUsersDataGridViewTextBoxColumn.Name = "usernameUsersDataGridViewTextBoxColumn";
+            this.usernameUsersDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // firstNameUsersDataGridViewTextBoxColumn
+            // 
+            this.firstNameUsersDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            this.firstNameUsersDataGridViewTextBoxColumn.HeaderText = "First Name";
+            this.firstNameUsersDataGridViewTextBoxColumn.Name = "firstNameUsersDataGridViewTextBoxColumn";
+            // 
+            // lastNameUsersDataGridViewTextBoxColumn
+            // 
+            this.lastNameUsersDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            this.lastNameUsersDataGridViewTextBoxColumn.HeaderText = "Last Name";
+            this.lastNameUsersDataGridViewTextBoxColumn.Name = "lastNameUsersDataGridViewTextBoxColumn";
+            // 
+            // isAdminUsersDataGridViewCheckBoxColumn
+            // 
+            this.isAdminUsersDataGridViewCheckBoxColumn.DataPropertyName = "IsAdmin";
+            this.isAdminUsersDataGridViewCheckBoxColumn.HeaderText = "Admin";
+            this.isAdminUsersDataGridViewCheckBoxColumn.Name = "isAdminUsersDataGridViewCheckBoxColumn";
+            // 
+            // deleteUsersDataGridViewTextBoxColumn
+            // 
+            this.deleteUsersDataGridViewTextBoxColumn.HeaderText = "Delete";
+            this.deleteUsersDataGridViewTextBoxColumn.Image = global::POSeidon.Properties.Resources.delete;
+            this.deleteUsersDataGridViewTextBoxColumn.Name = "deleteUsersDataGridViewTextBoxColumn";
+            this.deleteUsersDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productNameHomePageDataGridViewTextBoxColumn
+            // 
+            this.productNameHomePageDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.productNameHomePageDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.productNameHomePageDataGridViewTextBoxColumn.Name = "productNameHomePageDataGridViewTextBoxColumn";
+            this.productNameHomePageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productPriceHomePageDataGridViewTextBoxColumn
+            // 
+            this.productPriceHomePageDataGridViewTextBoxColumn.DataPropertyName = "Price";
+            dataGridViewCellStyle1.Format = "C2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.productPriceHomePageDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            this.productPriceHomePageDataGridViewTextBoxColumn.HeaderText = "Price";
+            this.productPriceHomePageDataGridViewTextBoxColumn.Name = "productPriceHomePageDataGridViewTextBoxColumn";
+            this.productPriceHomePageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productStockHomePageDataGridViewTextBoxColumn
+            // 
+            this.productStockHomePageDataGridViewTextBoxColumn.DataPropertyName = "StockAmountText";
+            this.productStockHomePageDataGridViewTextBoxColumn.HeaderText = "Stock Amount";
+            this.productStockHomePageDataGridViewTextBoxColumn.Name = "productStockHomePageDataGridViewTextBoxColumn";
+            this.productStockHomePageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productAddHomePageDataGridViewImageColumn
+            // 
+            this.productAddHomePageDataGridViewImageColumn.HeaderText = "Add";
+            this.productAddHomePageDataGridViewImageColumn.Image = ((System.Drawing.Image)(resources.GetObject("productAddHomePageDataGridViewImageColumn.Image")));
+            this.productAddHomePageDataGridViewImageColumn.Name = "productAddHomePageDataGridViewImageColumn";
+            this.productAddHomePageDataGridViewImageColumn.ReadOnly = true;
             // 
             // MainForm
             // 
@@ -1468,7 +1644,6 @@
             this.homePageHeaderPanel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.statisticsTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.statisticsPagePanel)).EndInit();
             this.statisticsPagePanel.ResumeLayout(false);
@@ -1479,14 +1654,12 @@
             this.customersPageHeaderPanel.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.suppliersTab.ResumeLayout(false);
             this.suppliersPageMainPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.suppliersTabDataGridView)).EndInit();
             this.suppliersPageHeaderPanel.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.salesAndPurchasingTab.ResumeLayout(false);
             this.salesAndPurchasingPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.salesAndPurchasingNavigator)).EndInit();
@@ -1516,6 +1689,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.customerStatisticsChart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerStatisticsPage)).EndInit();
             this.customerStatisticsPage.ResumeLayout(false);
+            this.usersTab.ResumeLayout(false);
+            this.usersPageHeaderPanel.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
+            this.usersPageMainPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.usersPageDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1533,10 +1716,6 @@
         private System.Windows.Forms.TabPage homeTab;
         private System.Windows.Forms.Panel homePageMainPanel;
         private System.Windows.Forms.DataGridView homePageDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productNameHomePageDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productPriceHomePageDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productStockHomePageDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewImageColumn productAddHomePageDataGridViewImageColumn;
         private System.Windows.Forms.TabPage statisticsTab;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel statisticsPagePanel;
         private System.Windows.Forms.Panel customerStatisticsPanel;
@@ -1626,5 +1805,22 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TabPage usersTab;
+        private System.Windows.Forms.Panel usersPageMainPanel;
+        private System.Windows.Forms.DataGridView usersPageDataGridView;
+        private System.Windows.Forms.Panel usersPageHeaderPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.TextBox usersSearchTextBox;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn usernameUsersDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn firstNameUsersDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameUsersDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn isAdminUsersDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewImageColumn deleteUsersDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productNameHomePageDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productPriceHomePageDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productStockHomePageDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewImageColumn productAddHomePageDataGridViewImageColumn;
     }
 }

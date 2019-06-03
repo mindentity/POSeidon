@@ -322,6 +322,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.existingProductWeightUnitComboBox.StateCommon.ComboBox.Border.Rounding = 5;
             this.existingProductWeightUnitComboBox.TabIndex = 6;
+            this.existingProductWeightUnitComboBox.Visible = false;
             // 
             // newProductPage
             // 

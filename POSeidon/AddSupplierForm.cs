@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace POSeidon
 {
-    public partial class addSupplierForm : Form
+    public partial class AddSupplierForm : Form
     {
-        public addSupplierForm()
+        public AddSupplierForm()
         {
             InitializeComponent();
         }

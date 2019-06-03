@@ -1,6 +1,6 @@
 ﻿namespace POSeidon
 {
-    partial class addSupplierForm
+    partial class AddSupplierForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addSupplierForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddSupplierForm));
             this.addSupplierFormPanel = new System.Windows.Forms.Panel();
             this.addButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.addressTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -158,7 +158,7 @@
             this.nameLabel.TabIndex = 0;
             this.nameLabel.Values.Text = "Name:";
             // 
-            // addSupplierForm
+            // AddSupplierForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -168,7 +168,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
-            this.Name = "addSupplierForm";
+            this.Name = "AddSupplierForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Supplier";
             this.addSupplierFormPanel.ResumeLayout(false);

@@ -12,6 +12,7 @@ namespace POSeidon
         public static BindingList<Product> Products { get; set; }
         public static BindingList<Supplier> Suppliers { get; set; }
         public static BindingList<Customer> Customers { get; set; }
+        public static BindingList<User> Users { get; set; }
         public static Settings Settings { get; set; }
         public static ShoppingCart ShoppingCart { get; set; }
         public static User User { get; set; }
@@ -23,6 +24,7 @@ namespace POSeidon
             Products = new BindingList<Product>(DBUtils.GetAllProducts().ToList());
             Suppliers = new BindingList<Supplier>(DBUtils.GetAllSuppliers().ToList());
             Customers = new BindingList<Customer>(DBUtils.GetAllCustomers().ToList());
+            Users = new BindingList<User>(DBUtils.GetAllUsers().ToList());
             Settings = DBUtils.GetSettings();
             ShoppingCart = new ShoppingCart
             {
@@ -41,6 +43,36 @@ namespace POSeidon
             {
                 throw ex;
             }
+        }
+
+        public static bool DeleteUser(User user)
+        {
+            if (DBUtils.DeleteUser(user))
+            {
+                Users.ResetBindings();
+                return true;
+            }
+            return false;
+        }
+
+        public static bool AddUser(string firstName, string lastName, string username, string password, bool isAdmin=false)
+        {
+            if (DBUtils.CreateUser(firstName, lastName, username, password, isAdmin))
+            {
+                Users.ResetBindings();
+                return true;
+            }
+            return false;
+        }
+
+        public static bool UpdateUser(User user)
+        {
+            if (DBUtils.UpdateUser(user))
+            {
+                Users.ResetBindings();
+                return true;
+            }
+            return false;
         }
 
         public static bool AddProduct(Product product, double amount, Supplier supplier, decimal totalCost)
