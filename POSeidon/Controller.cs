@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Globalization;
 using System.Linq;
+using System.Threading;
 
 namespace POSeidon
 {
@@ -30,6 +32,11 @@ namespace POSeidon
             {
                 Items = new BindingList<ShoppingCartItem>()
             };
+        }
+
+        public static void SetLanguage()
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(Settings.Language);
         }
 
         public static void Login(string username, string password)

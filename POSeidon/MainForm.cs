@@ -89,6 +89,14 @@ namespace POSeidon
                     break;
             }
             weightUnitComboBox.SelectedItem = Controller.Settings.WeightUnit;
+            if (Controller.Settings.Language == "tr-TR")
+            {
+                languageSettingsComboBox.SelectedIndex = 1;
+            }
+            else
+            {
+                languageSettingsComboBox.SelectedIndex = 0;
+            }
         }
 
         private void HomePageDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -223,10 +231,19 @@ namespace POSeidon
             var cultureInfo = Thread.CurrentThread.CurrentCulture.Clone() as CultureInfo;
             cultureInfo.NumberFormat = Controller.Settings.NumberFormat;
             Controller.Settings.WeightUnit = (WeightUnit)weightUnitComboBox.SelectedItem;
+            if (languageSettingsComboBox.SelectedIndex == 0)
+            {
+                Controller.Settings.Language = "en-US";
+            }
+            else if (languageSettingsComboBox.SelectedIndex == 1)
+            {
+                Controller.Settings.Language = "tr-TR";
+            }
             if (DBUtils.UpdateSettings())
             {
                 Thread.CurrentThread.CurrentCulture = cultureInfo;
-                MessageBox.Show("Settings are saved.", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Controller.SetLanguage();
+                MessageBox.Show("Settings are saved.\n\nLanguage changes will be applied on next launch.", "POSeidon", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {

@@ -117,13 +117,216 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="shoppingCartFormPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="shoppingCartFormPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="customerComboBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="customerComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 418</value>
+  </data>
+  <data name="customerComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 21</value>
+  </data>
+  <data name="customerComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;customerComboBox.Name" xml:space="preserve">
+    <value>customerComboBox</value>
+  </data>
+  <data name="&gt;&gt;customerComboBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonComboBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;customerComboBox.Parent" xml:space="preserve">
+    <value>shoppingCartFormPanel</value>
+  </data>
+  <data name="&gt;&gt;customerComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="customerCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 419</value>
+  </data>
+  <data name="customerCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 20</value>
+  </data>
+  <data name="customerCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="customerCheckBox.Values.Text" xml:space="preserve">
+    <value>Customer:</value>
+  </data>
+  <data name="&gt;&gt;customerCheckBox.Name" xml:space="preserve">
+    <value>customerCheckBox</value>
+  </data>
+  <data name="&gt;&gt;customerCheckBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonCheckBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;customerCheckBox.Parent" xml:space="preserve">
+    <value>shoppingCartFormPanel</value>
+  </data>
+  <data name="&gt;&gt;customerCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="totalPriceTextBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="totalPriceTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>583, 416</value>
+  </data>
+  <data name="totalPriceTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="totalPriceTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;totalPriceTextBox.Name" xml:space="preserve">
+    <value>totalPriceTextBox</value>
+  </data>
+  <data name="&gt;&gt;totalPriceTextBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonTextBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;totalPriceTextBox.Parent" xml:space="preserve">
+    <value>shoppingCartFormPanel</value>
+  </data>
+  <data name="&gt;&gt;totalPriceTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="totalPriceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>537, 419</value>
+  </data>
+  <data name="totalPriceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 20</value>
+  </data>
+  <data name="totalPriceLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="totalPriceLabel.Values.Text" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="&gt;&gt;totalPriceLabel.Name" xml:space="preserve">
+    <value>totalPriceLabel</value>
+  </data>
+  <data name="&gt;&gt;totalPriceLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;totalPriceLabel.Parent" xml:space="preserve">
+    <value>shoppingCartFormPanel</value>
+  </data>
+  <data name="&gt;&gt;totalPriceLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="checkoutButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="checkoutButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>703, 416</value>
+  </data>
+  <data name="checkoutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 23</value>
+  </data>
+  <data name="checkoutButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="checkoutButton.Text" xml:space="preserve">
+    <value>Checkout</value>
+  </data>
+  <data name="&gt;&gt;checkoutButton.Name" xml:space="preserve">
+    <value>checkoutButton</value>
+  </data>
+  <data name="&gt;&gt;checkoutButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkoutButton.Parent" xml:space="preserve">
+    <value>shoppingCartFormPanel</value>
+  </data>
+  <data name="&gt;&gt;checkoutButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="productNameShoppingCartDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="productPriceShoppingCartDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="productAmountShoppingCartDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="weightUnitShoppingCartDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Unit</value>
+  </data>
   <metadata name="totalPriceShoppingCartDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="totalPriceShoppingCartDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Total</value>
+  </data>
   <metadata name="removeShoppingCartDataGridViewButtonColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="removeShoppingCartDataGridViewButtonColumn.HeaderText" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="shoppingCartDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 19</value>
+  </data>
+  <data name="shoppingCartDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>797, 384</value>
+  </data>
+  <data name="shoppingCartDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;shoppingCartDataGridView.Name" xml:space="preserve">
+    <value>shoppingCartDataGridView</value>
+  </data>
+  <data name="&gt;&gt;shoppingCartDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;shoppingCartDataGridView.Parent" xml:space="preserve">
+    <value>shoppingCartFormPanel</value>
+  </data>
+  <data name="&gt;&gt;shoppingCartDataGridView.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="shoppingCartFormPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="shoppingCartFormPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="shoppingCartFormPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>802, 450</value>
+  </data>
+  <data name="shoppingCartFormPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;shoppingCartFormPanel.Name" xml:space="preserve">
+    <value>shoppingCartFormPanel</value>
+  </data>
+  <data name="&gt;&gt;shoppingCartFormPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;shoppingCartFormPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;shoppingCartFormPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAADB1AAAwdQAAAAAAAAAA
@@ -147,5 +350,53 @@
         3v/d3d3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAA==
 </value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Shopping Cart</value>
+  </data>
+  <data name="&gt;&gt;productNameShoppingCartDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>productNameShoppingCartDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;productNameShoppingCartDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productPriceShoppingCartDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>productPriceShoppingCartDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;productPriceShoppingCartDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productAmountShoppingCartDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>productAmountShoppingCartDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;productAmountShoppingCartDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;weightUnitShoppingCartDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>weightUnitShoppingCartDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;weightUnitShoppingCartDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;totalPriceShoppingCartDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>totalPriceShoppingCartDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;totalPriceShoppingCartDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;removeShoppingCartDataGridViewButtonColumn.Name" xml:space="preserve">
+    <value>removeShoppingCartDataGridViewButtonColumn</value>
+  </data>
+  <data name="&gt;&gt;removeShoppingCartDataGridViewButtonColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ShoppingCartForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

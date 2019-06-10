@@ -37,10 +37,16 @@ namespace POSeidon
         {
             using (var db = new LiteDatabase(Config["Database"]["FilePath"]))
             {
+                var language = Thread.CurrentThread.CurrentUICulture.Name;
+                if (language != "tr-TR")
+                {
+                    language = "en-US";
+                }
                 var col = db.GetCollection<Settings>("settings");
                 var settings = new Settings
                 {
-                    NumberFormat = Thread.CurrentThread.CurrentCulture.NumberFormat
+                    NumberFormat = Thread.CurrentThread.CurrentCulture.NumberFormat,
+                    Language = language
                 };
                 col.Insert(settings);
             }

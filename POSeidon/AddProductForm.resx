@@ -118,6 +118,1247 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="existingProductRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 16</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="existingProductRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="existingProductRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="existingProductRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="existingProductRadioButton.Values.Text" xml:space="preserve">
+    <value>Existing product</value>
+  </data>
+  <data name="&gt;&gt;existingProductRadioButton.Name" xml:space="preserve">
+    <value>existingProductRadioButton</value>
+  </data>
+  <data name="&gt;&gt;existingProductRadioButton.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonRadioButton, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;existingProductRadioButton.Parent" xml:space="preserve">
+    <value>addProductTypePanel</value>
+  </data>
+  <data name="&gt;&gt;existingProductRadioButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="newProductRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 67</value>
+  </data>
+  <data name="newProductRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="newProductRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 20</value>
+  </data>
+  <data name="newProductRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="newProductRadioButton.Values.Text" xml:space="preserve">
+    <value>New product</value>
+  </data>
+  <data name="&gt;&gt;newProductRadioButton.Name" xml:space="preserve">
+    <value>newProductRadioButton</value>
+  </data>
+  <data name="&gt;&gt;newProductRadioButton.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonRadioButton, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductRadioButton.Parent" xml:space="preserve">
+    <value>addProductTypePanel</value>
+  </data>
+  <data name="&gt;&gt;newProductRadioButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="addProductNavigator.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="addProductNavigator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="addProductNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="existingProductPurchasePriceTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 80</value>
+  </data>
+  <data name="existingProductPurchasePriceTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="existingProductPurchasePriceTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 27</value>
+  </data>
+  <data name="existingProductPurchasePriceTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;existingProductPurchasePriceTextBox.Name" xml:space="preserve">
+    <value>existingProductPurchasePriceTextBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductPurchasePriceTextBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonTextBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;existingProductPurchasePriceTextBox.Parent" xml:space="preserve">
+    <value>existingProductSupplierInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductPurchasePriceTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="existingProductPurchasePriceAddProductLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 80</value>
+  </data>
+  <data name="existingProductPurchasePriceAddProductLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="existingProductPurchasePriceAddProductLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 20</value>
+  </data>
+  <data name="existingProductPurchasePriceAddProductLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="existingProductPurchasePriceAddProductLabel.Values.Text" xml:space="preserve">
+    <value>Purchase Price:</value>
+  </data>
+  <data name="&gt;&gt;existingProductPurchasePriceAddProductLabel.Name" xml:space="preserve">
+    <value>existingProductPurchasePriceAddProductLabel</value>
+  </data>
+  <data name="&gt;&gt;existingProductPurchasePriceAddProductLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;existingProductPurchasePriceAddProductLabel.Parent" xml:space="preserve">
+    <value>existingProductSupplierInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductPurchasePriceAddProductLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="existingProductSupplierLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 34</value>
+  </data>
+  <data name="existingProductSupplierLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="existingProductSupplierLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 20</value>
+  </data>
+  <data name="existingProductSupplierLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="existingProductSupplierLabel.Values.Text" xml:space="preserve">
+    <value>Supplier:</value>
+  </data>
+  <data name="&gt;&gt;existingProductSupplierLabel.Name" xml:space="preserve">
+    <value>existingProductSupplierLabel</value>
+  </data>
+  <data name="&gt;&gt;existingProductSupplierLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;existingProductSupplierLabel.Parent" xml:space="preserve">
+    <value>existingProductSupplierInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductSupplierLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="existingProductSupplierComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 33</value>
+  </data>
+  <data name="existingProductSupplierComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="existingProductSupplierComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 25</value>
+  </data>
+  <data name="existingProductSupplierComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;existingProductSupplierComboBox.Name" xml:space="preserve">
+    <value>existingProductSupplierComboBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductSupplierComboBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonComboBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;existingProductSupplierComboBox.Parent" xml:space="preserve">
+    <value>existingProductSupplierInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductSupplierComboBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="addExistingProductButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 160</value>
+  </data>
+  <data name="addExistingProductButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="addExistingProductButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 33</value>
+  </data>
+  <data name="addExistingProductButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="addExistingProductButton.Values.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;addExistingProductButton.Name" xml:space="preserve">
+    <value>addExistingProductButton</value>
+  </data>
+  <data name="&gt;&gt;addExistingProductButton.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonButton, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;addExistingProductButton.Parent" xml:space="preserve">
+    <value>existingProductSupplierInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;addExistingProductButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="existingProductSupplierInfoGroupBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="existingProductSupplierInfoGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 206</value>
+  </data>
+  <data name="existingProductSupplierInfoGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>519, 268</value>
+  </data>
+  <data name="existingProductSupplierInfoGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="existingProductSupplierInfoGroupBox.Text" xml:space="preserve">
+    <value>Supplier Info</value>
+  </data>
+  <data name="&gt;&gt;existingProductSupplierInfoGroupBox.Name" xml:space="preserve">
+    <value>existingProductSupplierInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductSupplierInfoGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;existingProductSupplierInfoGroupBox.Parent" xml:space="preserve">
+    <value>existingProductPage</value>
+  </data>
+  <data name="&gt;&gt;existingProductSupplierInfoGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="existingProductPriceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 84</value>
+  </data>
+  <data name="existingProductPriceLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="existingProductPriceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 20</value>
+  </data>
+  <data name="existingProductPriceLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="existingProductPriceLabel.Values.Text" xml:space="preserve">
+    <value>Price:</value>
+  </data>
+  <data name="&gt;&gt;existingProductPriceLabel.Name" xml:space="preserve">
+    <value>existingProductPriceLabel</value>
+  </data>
+  <data name="&gt;&gt;existingProductPriceLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;existingProductPriceLabel.Parent" xml:space="preserve">
+    <value>existingProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductPriceLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="existingProductNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 31</value>
+  </data>
+  <data name="existingProductNameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="existingProductNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 20</value>
+  </data>
+  <data name="existingProductNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="existingProductNameLabel.Values.Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="&gt;&gt;existingProductNameLabel.Name" xml:space="preserve">
+    <value>existingProductNameLabel</value>
+  </data>
+  <data name="&gt;&gt;existingProductNameLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;existingProductNameLabel.Parent" xml:space="preserve">
+    <value>existingProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductNameLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="existingProductAmountLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 131</value>
+  </data>
+  <data name="existingProductAmountLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="existingProductAmountLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 20</value>
+  </data>
+  <data name="existingProductAmountLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="existingProductAmountLabel.Values.Text" xml:space="preserve">
+    <value>Amount:</value>
+  </data>
+  <data name="&gt;&gt;existingProductAmountLabel.Name" xml:space="preserve">
+    <value>existingProductAmountLabel</value>
+  </data>
+  <data name="&gt;&gt;existingProductAmountLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;existingProductAmountLabel.Parent" xml:space="preserve">
+    <value>existingProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductAmountLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="existingProductPriceTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>165, 81</value>
+  </data>
+  <data name="existingProductPriceTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="existingProductPriceTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 27</value>
+  </data>
+  <data name="existingProductPriceTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;existingProductPriceTextBox.Name" xml:space="preserve">
+    <value>existingProductPriceTextBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductPriceTextBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonTextBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;existingProductPriceTextBox.Parent" xml:space="preserve">
+    <value>existingProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductPriceTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="existingProductComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>165, 30</value>
+  </data>
+  <data name="existingProductComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="existingProductComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 25</value>
+  </data>
+  <data name="existingProductComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;existingProductComboBox.Name" xml:space="preserve">
+    <value>existingProductComboBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductComboBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonComboBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;existingProductComboBox.Parent" xml:space="preserve">
+    <value>existingProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductComboBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="existingProductWeightUnitLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="existingProductWeightUnitLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>398, 128</value>
+  </data>
+  <data name="existingProductWeightUnitLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="existingProductWeightUnitLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 21</value>
+  </data>
+  <data name="existingProductWeightUnitLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="existingProductWeightUnitLabel.Values.Text" xml:space="preserve">
+    <value>pcs</value>
+  </data>
+  <data name="&gt;&gt;existingProductWeightUnitLabel.Name" xml:space="preserve">
+    <value>existingProductWeightUnitLabel</value>
+  </data>
+  <data name="&gt;&gt;existingProductWeightUnitLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;existingProductWeightUnitLabel.Parent" xml:space="preserve">
+    <value>existingProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductWeightUnitLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="existingProductAmountTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>164, 128</value>
+  </data>
+  <data name="existingProductAmountTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="existingProductAmountTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 27</value>
+  </data>
+  <data name="existingProductAmountTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;existingProductAmountTextBox.Name" xml:space="preserve">
+    <value>existingProductAmountTextBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductAmountTextBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonTextBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;existingProductAmountTextBox.Parent" xml:space="preserve">
+    <value>existingProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductAmountTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="existingProductWeightUnitComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>390, 126</value>
+  </data>
+  <data name="existingProductWeightUnitComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="existingProductWeightUnitComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 25</value>
+  </data>
+  <data name="existingProductWeightUnitComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="existingProductWeightUnitComboBox.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;existingProductWeightUnitComboBox.Name" xml:space="preserve">
+    <value>existingProductWeightUnitComboBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductWeightUnitComboBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonComboBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;existingProductWeightUnitComboBox.Parent" xml:space="preserve">
+    <value>existingProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductWeightUnitComboBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="existingProductInfoGroupBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="existingProductInfoGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="existingProductInfoGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>519, 206</value>
+  </data>
+  <data name="existingProductInfoGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="existingProductInfoGroupBox.Text" xml:space="preserve">
+    <value>Product Info</value>
+  </data>
+  <data name="&gt;&gt;existingProductInfoGroupBox.Name" xml:space="preserve">
+    <value>existingProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;existingProductInfoGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;existingProductInfoGroupBox.Parent" xml:space="preserve">
+    <value>existingProductPage</value>
+  </data>
+  <data name="&gt;&gt;existingProductInfoGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="existingProductPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="existingProductPage.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>67, 66</value>
+  </data>
+  <data name="existingProductPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>519, 474</value>
+  </data>
+  <data name="existingProductPage.Text" xml:space="preserve">
+    <value>Existing Product</value>
+  </data>
+  <data name="existingProductPage.ToolTipTitle" xml:space="preserve">
+    <value>Page ToolTip</value>
+  </data>
+  <data name="&gt;&gt;existingProductPage.Name" xml:space="preserve">
+    <value>existingProductPage</value>
+  </data>
+  <data name="&gt;&gt;existingProductPage.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Navigator.KryptonPage, Krypton Navigator, Version=5.472.737.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;existingProductPage.Parent" xml:space="preserve">
+    <value>addProductNavigator.PageContainer</value>
+  </data>
+  <data name="&gt;&gt;existingProductPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierInfoGroupBox.Name" xml:space="preserve">
+    <value>newProductSupplierInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierInfoGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierInfoGroupBox.Parent" xml:space="preserve">
+    <value>newProductPage</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierInfoGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;newProductProductInfoGroupBox.Name" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductProductInfoGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;newProductProductInfoGroupBox.Parent" xml:space="preserve">
+    <value>newProductPage</value>
+  </data>
+  <data name="&gt;&gt;newProductProductInfoGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="newProductPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="newProductPage.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>67, 66</value>
+  </data>
+  <data name="newProductPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>517, 447</value>
+  </data>
+  <data name="newProductPage.Text" xml:space="preserve">
+    <value>New Product</value>
+  </data>
+  <data name="newProductPage.ToolTipTitle" xml:space="preserve">
+    <value>Page ToolTip</value>
+  </data>
+  <data name="&gt;&gt;newProductPage.Name" xml:space="preserve">
+    <value>newProductPage</value>
+  </data>
+  <data name="&gt;&gt;newProductPage.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Navigator.KryptonPage, Krypton Navigator, Version=5.472.737.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductPage.Parent" xml:space="preserve">
+    <value>addProductNavigator.PageContainer</value>
+  </data>
+  <data name="&gt;&gt;newProductPage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="addProductNavigator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>519, 474</value>
+  </data>
+  <data name="addProductNavigator.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;addProductNavigator.Name" xml:space="preserve">
+    <value>addProductNavigator</value>
+  </data>
+  <data name="&gt;&gt;addProductNavigator.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Navigator.KryptonNavigator, Krypton Navigator, Version=5.472.737.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;addProductNavigator.Parent" xml:space="preserve">
+    <value>addProductPanel</value>
+  </data>
+  <data name="&gt;&gt;addProductNavigator.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;newProductPurchasePriceTextBox.Name" xml:space="preserve">
+    <value>newProductPurchasePriceTextBox</value>
+  </data>
+  <data name="&gt;&gt;newProductPurchasePriceTextBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonTextBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductPurchasePriceTextBox.Parent" xml:space="preserve">
+    <value>newProductSupplierInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductPurchasePriceTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;newProductPurchasePriceLabel.Name" xml:space="preserve">
+    <value>newProductPurchasePriceLabel</value>
+  </data>
+  <data name="&gt;&gt;newProductPurchasePriceLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductPurchasePriceLabel.Parent" xml:space="preserve">
+    <value>newProductSupplierInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductPurchasePriceLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierLabel.Name" xml:space="preserve">
+    <value>newProductSupplierLabel</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierLabel.Parent" xml:space="preserve">
+    <value>newProductSupplierInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierComboBox.Name" xml:space="preserve">
+    <value>newProductSupplierComboBox</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierComboBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonComboBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierComboBox.Parent" xml:space="preserve">
+    <value>newProductSupplierInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierComboBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;addNewProductButton.Name" xml:space="preserve">
+    <value>addNewProductButton</value>
+  </data>
+  <data name="&gt;&gt;addNewProductButton.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonButton, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;addNewProductButton.Parent" xml:space="preserve">
+    <value>newProductSupplierInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;addNewProductButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="newProductSupplierInfoGroupBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="newProductSupplierInfoGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 206</value>
+  </data>
+  <data name="newProductSupplierInfoGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>517, 241</value>
+  </data>
+  <data name="newProductSupplierInfoGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="newProductSupplierInfoGroupBox.Text" xml:space="preserve">
+    <value>Supplier Info</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierInfoGroupBox.Name" xml:space="preserve">
+    <value>newProductSupplierInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierInfoGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierInfoGroupBox.Parent" xml:space="preserve">
+    <value>newProductPage</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierInfoGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="newProductPurchasePriceTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 82</value>
+  </data>
+  <data name="newProductPurchasePriceTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="newProductPurchasePriceTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 27</value>
+  </data>
+  <data name="newProductPurchasePriceTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;newProductPurchasePriceTextBox.Name" xml:space="preserve">
+    <value>newProductPurchasePriceTextBox</value>
+  </data>
+  <data name="&gt;&gt;newProductPurchasePriceTextBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonTextBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductPurchasePriceTextBox.Parent" xml:space="preserve">
+    <value>newProductSupplierInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductPurchasePriceTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="newProductPurchasePriceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 82</value>
+  </data>
+  <data name="newProductPurchasePriceLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="newProductPurchasePriceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 20</value>
+  </data>
+  <data name="newProductPurchasePriceLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="newProductPurchasePriceLabel.Values.Text" xml:space="preserve">
+    <value>Purchase Price:</value>
+  </data>
+  <data name="&gt;&gt;newProductPurchasePriceLabel.Name" xml:space="preserve">
+    <value>newProductPurchasePriceLabel</value>
+  </data>
+  <data name="&gt;&gt;newProductPurchasePriceLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductPurchasePriceLabel.Parent" xml:space="preserve">
+    <value>newProductSupplierInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductPurchasePriceLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="newProductSupplierLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 36</value>
+  </data>
+  <data name="newProductSupplierLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="newProductSupplierLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 20</value>
+  </data>
+  <data name="newProductSupplierLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="newProductSupplierLabel.Values.Text" xml:space="preserve">
+    <value>Supplier:</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierLabel.Name" xml:space="preserve">
+    <value>newProductSupplierLabel</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierLabel.Parent" xml:space="preserve">
+    <value>newProductSupplierInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="newProductSupplierComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 35</value>
+  </data>
+  <data name="newProductSupplierComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="newProductSupplierComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 25</value>
+  </data>
+  <data name="newProductSupplierComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierComboBox.Name" xml:space="preserve">
+    <value>newProductSupplierComboBox</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierComboBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonComboBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierComboBox.Parent" xml:space="preserve">
+    <value>newProductSupplierInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductSupplierComboBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="addNewProductButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 160</value>
+  </data>
+  <data name="addNewProductButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="addNewProductButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 33</value>
+  </data>
+  <data name="addNewProductButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="addNewProductButton.Values.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;addNewProductButton.Name" xml:space="preserve">
+    <value>addNewProductButton</value>
+  </data>
+  <data name="&gt;&gt;addNewProductButton.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonButton, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;addNewProductButton.Parent" xml:space="preserve">
+    <value>newProductSupplierInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;addNewProductButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;newProductNameLabel.Name" xml:space="preserve">
+    <value>newProductNameLabel</value>
+  </data>
+  <data name="&gt;&gt;newProductNameLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductNameLabel.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductNameLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;newProductPriceLabel.Name" xml:space="preserve">
+    <value>newProductPriceLabel</value>
+  </data>
+  <data name="&gt;&gt;newProductPriceLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductPriceLabel.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductPriceLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;newProductAmountTextBox.Name" xml:space="preserve">
+    <value>newProductAmountTextBox</value>
+  </data>
+  <data name="&gt;&gt;newProductAmountTextBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonTextBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductAmountTextBox.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductAmountTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;newProductWeightUnitLabel.Name" xml:space="preserve">
+    <value>newProductWeightUnitLabel</value>
+  </data>
+  <data name="&gt;&gt;newProductWeightUnitLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductWeightUnitLabel.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductWeightUnitLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;newProductAmountLabel.Name" xml:space="preserve">
+    <value>newProductAmountLabel</value>
+  </data>
+  <data name="&gt;&gt;newProductAmountLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductAmountLabel.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductAmountLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;newProductPriceTextBox.Name" xml:space="preserve">
+    <value>newProductPriceTextBox</value>
+  </data>
+  <data name="&gt;&gt;newProductPriceTextBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonTextBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductPriceTextBox.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductPriceTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;newProductNameTextBox.Name" xml:space="preserve">
+    <value>newProductNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;newProductNameTextBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonTextBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductNameTextBox.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductNameTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;newProductWeightUnitComboBox.Name" xml:space="preserve">
+    <value>newProductWeightUnitComboBox</value>
+  </data>
+  <data name="&gt;&gt;newProductWeightUnitComboBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonComboBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductWeightUnitComboBox.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductWeightUnitComboBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;productTypeLabel.Name" xml:space="preserve">
+    <value>productTypeLabel</value>
+  </data>
+  <data name="&gt;&gt;productTypeLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;productTypeLabel.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;productTypeLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;newProductTypeComboBox.Name" xml:space="preserve">
+    <value>newProductTypeComboBox</value>
+  </data>
+  <data name="&gt;&gt;newProductTypeComboBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonComboBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductTypeComboBox.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductTypeComboBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="newProductProductInfoGroupBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="newProductProductInfoGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="newProductProductInfoGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>517, 206</value>
+  </data>
+  <data name="newProductProductInfoGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="newProductProductInfoGroupBox.Text" xml:space="preserve">
+    <value>Product Info</value>
+  </data>
+  <data name="&gt;&gt;newProductProductInfoGroupBox.Name" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductProductInfoGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;newProductProductInfoGroupBox.Parent" xml:space="preserve">
+    <value>newProductPage</value>
+  </data>
+  <data name="&gt;&gt;newProductProductInfoGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="newProductNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 30</value>
+  </data>
+  <data name="newProductNameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="newProductNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 20</value>
+  </data>
+  <data name="newProductNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="newProductNameLabel.Values.Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="&gt;&gt;newProductNameLabel.Name" xml:space="preserve">
+    <value>newProductNameLabel</value>
+  </data>
+  <data name="&gt;&gt;newProductNameLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductNameLabel.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductNameLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="newProductPriceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 73</value>
+  </data>
+  <data name="newProductPriceLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="newProductPriceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 20</value>
+  </data>
+  <data name="newProductPriceLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="newProductPriceLabel.Values.Text" xml:space="preserve">
+    <value>Price:</value>
+  </data>
+  <data name="&gt;&gt;newProductPriceLabel.Name" xml:space="preserve">
+    <value>newProductPriceLabel</value>
+  </data>
+  <data name="&gt;&gt;newProductPriceLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductPriceLabel.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductPriceLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="newProductAmountTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 158</value>
+  </data>
+  <data name="newProductAmountTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="newProductAmountTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 27</value>
+  </data>
+  <data name="newProductAmountTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;newProductAmountTextBox.Name" xml:space="preserve">
+    <value>newProductAmountTextBox</value>
+  </data>
+  <data name="&gt;&gt;newProductAmountTextBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonTextBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductAmountTextBox.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductAmountTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="newProductWeightUnitLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="newProductWeightUnitLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 159</value>
+  </data>
+  <data name="newProductWeightUnitLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="newProductWeightUnitLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 20</value>
+  </data>
+  <data name="newProductWeightUnitLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="newProductWeightUnitLabel.Values.Text" xml:space="preserve">
+    <value>pcs</value>
+  </data>
+  <data name="&gt;&gt;newProductWeightUnitLabel.Name" xml:space="preserve">
+    <value>newProductWeightUnitLabel</value>
+  </data>
+  <data name="&gt;&gt;newProductWeightUnitLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductWeightUnitLabel.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductWeightUnitLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="newProductAmountLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 155</value>
+  </data>
+  <data name="newProductAmountLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="newProductAmountLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 20</value>
+  </data>
+  <data name="newProductAmountLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="newProductAmountLabel.Values.Text" xml:space="preserve">
+    <value>Amount:</value>
+  </data>
+  <data name="&gt;&gt;newProductAmountLabel.Name" xml:space="preserve">
+    <value>newProductAmountLabel</value>
+  </data>
+  <data name="&gt;&gt;newProductAmountLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductAmountLabel.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductAmountLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="newProductPriceTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 73</value>
+  </data>
+  <data name="newProductPriceTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="newProductPriceTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 27</value>
+  </data>
+  <data name="newProductPriceTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;newProductPriceTextBox.Name" xml:space="preserve">
+    <value>newProductPriceTextBox</value>
+  </data>
+  <data name="&gt;&gt;newProductPriceTextBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonTextBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductPriceTextBox.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductPriceTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="newProductNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 30</value>
+  </data>
+  <data name="newProductNameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="newProductNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 27</value>
+  </data>
+  <data name="newProductNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;newProductNameTextBox.Name" xml:space="preserve">
+    <value>newProductNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;newProductNameTextBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonTextBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductNameTextBox.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductNameTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="newProductWeightUnitComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>398, 157</value>
+  </data>
+  <data name="newProductWeightUnitComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="newProductWeightUnitComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 25</value>
+  </data>
+  <data name="newProductWeightUnitComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;newProductWeightUnitComboBox.Name" xml:space="preserve">
+    <value>newProductWeightUnitComboBox</value>
+  </data>
+  <data name="&gt;&gt;newProductWeightUnitComboBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonComboBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductWeightUnitComboBox.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductWeightUnitComboBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="productTypeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 115</value>
+  </data>
+  <data name="productTypeLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="productTypeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 20</value>
+  </data>
+  <data name="productTypeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="productTypeLabel.Values.Text" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="&gt;&gt;productTypeLabel.Name" xml:space="preserve">
+    <value>productTypeLabel</value>
+  </data>
+  <data name="&gt;&gt;productTypeLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;productTypeLabel.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;productTypeLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="newProductTypeComboBox.Items" xml:space="preserve">
+    <value>Countable</value>
+  </data>
+  <data name="newProductTypeComboBox.Items1" xml:space="preserve">
+    <value>Uncountable</value>
+  </data>
+  <data name="newProductTypeComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 115</value>
+  </data>
+  <data name="newProductTypeComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="newProductTypeComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 25</value>
+  </data>
+  <data name="newProductTypeComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;newProductTypeComboBox.Name" xml:space="preserve">
+    <value>newProductTypeComboBox</value>
+  </data>
+  <data name="&gt;&gt;newProductTypeComboBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonComboBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;newProductTypeComboBox.Parent" xml:space="preserve">
+    <value>newProductProductInfoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;newProductTypeComboBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="addProductTypePanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="addProductTypePanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="addProductTypePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 37</value>
+  </data>
+  <data name="addProductTypePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 103</value>
+  </data>
+  <data name="addProductTypePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;addProductTypePanel.Name" xml:space="preserve">
+    <value>addProductTypePanel</value>
+  </data>
+  <data name="&gt;&gt;addProductTypePanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addProductTypePanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;addProductTypePanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="addProductPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 37</value>
+  </data>
+  <data name="addProductPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>523, 478</value>
+  </data>
+  <data name="addProductPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;addProductPanel.Name" xml:space="preserve">
+    <value>addProductPanel</value>
+  </data>
+  <data name="&gt;&gt;addProductPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addProductPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;addProductPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>836, 545</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 7.8pt</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAADB1AAAwdQAAAAAAAAAA
@@ -141,5 +1382,20 @@
         3v/d3d3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAA==
 </value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Add Product</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AddProductForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

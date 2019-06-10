@@ -117,19 +117,423 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="addProductButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="addProductButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="addProductButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11pt, style=Bold</value>
+  </data>
+  <data name="addProductButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="addProductButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 8</value>
+  </data>
+  <data name="addProductButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="addProductButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="addProductButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 84</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="addProductButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="addProductButton.Text" xml:space="preserve">
+    <value>ADD PRODUCT</value>
+  </data>
+  <data name="addProductButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;addProductButton.Name" xml:space="preserve">
+    <value>addProductButton</value>
+  </data>
+  <data name="&gt;&gt;addProductButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addProductButton.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;addProductButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="addCustomerButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="addCustomerButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="addCustomerButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11pt, style=Bold</value>
+  </data>
+  <data name="addCustomerButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="addCustomerButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 8</value>
+  </data>
+  <data name="addCustomerButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="addCustomerButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="addCustomerButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 84</value>
+  </data>
+  <data name="addCustomerButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="addCustomerButton.Text" xml:space="preserve">
+    <value>ADD CUSTOMER</value>
+  </data>
+  <data name="addCustomerButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;addCustomerButton.Name" xml:space="preserve">
+    <value>addCustomerButton</value>
+  </data>
+  <data name="&gt;&gt;addCustomerButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addCustomerButton.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;addCustomerButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="addSupplierButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="addSupplierButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="addSupplierButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11pt, style=Bold</value>
+  </data>
+  <data name="addSupplierButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="addSupplierButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 8</value>
+  </data>
+  <data name="addSupplierButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="addSupplierButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="addSupplierButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 84</value>
+  </data>
+  <data name="addSupplierButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="addSupplierButton.Text" xml:space="preserve">
+    <value>ADD SUPPLIER</value>
+  </data>
+  <data name="addSupplierButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;addSupplierButton.Name" xml:space="preserve">
+    <value>addSupplierButton</value>
+  </data>
+  <data name="&gt;&gt;addSupplierButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addSupplierButton.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;addSupplierButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="addUserButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="addUserButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="addUserButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11pt, style=Bold</value>
+  </data>
+  <data name="addUserButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="addUserButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 8</value>
+  </data>
+  <data name="addUserButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="addUserButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="addUserButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 84</value>
+  </data>
+  <data name="addUserButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="addUserButton.Text" xml:space="preserve">
+    <value>ADD USER</value>
+  </data>
+  <data name="addUserButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;addUserButton.Name" xml:space="preserve">
+    <value>addUserButton</value>
+  </data>
+  <data name="&gt;&gt;addUserButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addUserButton.Parent" xml:space="preserve">
+    <value>tableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;addUserButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="leftsideMainPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nameTextLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nameTextLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 75</value>
+  </data>
+  <data name="nameTextLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="nameTextLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="nameTextLabel.Text" xml:space="preserve">
+    <value>POSeidon</value>
+  </data>
+  <data name="&gt;&gt;nameTextLabel.Name" xml:space="preserve">
+    <value>nameTextLabel</value>
+  </data>
+  <data name="&gt;&gt;nameTextLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nameTextLabel.Parent" xml:space="preserve">
+    <value>leftsideMainPanel</value>
+  </data>
+  <data name="&gt;&gt;nameTextLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="usernameTextLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="usernameTextLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 44</value>
+  </data>
+  <data name="usernameTextLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="usernameTextLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="usernameTextLabel.Text" xml:space="preserve">
+    <value>admin</value>
+  </data>
+  <data name="&gt;&gt;usernameTextLabel.Name" xml:space="preserve">
+    <value>usernameTextLabel</value>
+  </data>
+  <data name="&gt;&gt;usernameTextLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;usernameTextLabel.Parent" xml:space="preserve">
+    <value>leftsideMainPanel</value>
+  </data>
+  <data name="&gt;&gt;usernameTextLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="nameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 75</value>
+  </data>
+  <data name="nameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="nameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="nameLabel.Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="&gt;&gt;nameLabel.Name" xml:space="preserve">
+    <value>nameLabel</value>
+  </data>
+  <data name="&gt;&gt;nameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nameLabel.Parent" xml:space="preserve">
+    <value>leftsideMainPanel</value>
+  </data>
+  <data name="&gt;&gt;nameLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="usernameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="usernameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 44</value>
+  </data>
+  <data name="usernameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="usernameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="usernameLabel.Text" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="&gt;&gt;usernameLabel.Name" xml:space="preserve">
+    <value>usernameLabel</value>
+  </data>
+  <data name="&gt;&gt;usernameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;usernameLabel.Parent" xml:space="preserve">
+    <value>leftsideMainPanel</value>
+  </data>
+  <data name="&gt;&gt;usernameLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="shoppingCartLeftSidePanelButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="shoppingCartLeftSidePanelButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="shoppingCartLeftSidePanelButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="shoppingCartLeftSidePanelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 448</value>
+  </data>
+  <data name="shoppingCartLeftSidePanelButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="shoppingCartLeftSidePanelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="shoppingCartLeftSidePanelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;shoppingCartLeftSidePanelButton.Name" xml:space="preserve">
+    <value>shoppingCartLeftSidePanelButton</value>
+  </data>
+  <data name="&gt;&gt;shoppingCartLeftSidePanelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;shoppingCartLeftSidePanelButton.Parent" xml:space="preserve">
+    <value>leftsideMainPanel</value>
+  </data>
+  <data name="&gt;&gt;shoppingCartLeftSidePanelButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="logoutButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="logoutButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="logoutButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="logoutButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 449</value>
+  </data>
+  <data name="logoutButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="logoutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 40</value>
+  </data>
+  <data name="logoutButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;logoutButton.Name" xml:space="preserve">
+    <value>logoutButton</value>
+  </data>
+  <data name="&gt;&gt;logoutButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;logoutButton.Parent" xml:space="preserve">
+    <value>leftsideMainPanel</value>
+  </data>
+  <data name="&gt;&gt;logoutButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="leftsideMainPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="leftsideMainPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="leftsideMainPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="leftsideMainPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 548</value>
+  </data>
+  <data name="leftsideMainPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;leftsideMainPanel.Name" xml:space="preserve">
+    <value>leftsideMainPanel</value>
+  </data>
+  <data name="&gt;&gt;leftsideMainPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;leftsideMainPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;leftsideMainPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="mainPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mainPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <metadata name="productNameHomePageDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="productNameHomePageDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
   <metadata name="productPriceHomePageDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="productPriceHomePageDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Price</value>
+  </data>
   <metadata name="productStockHomePageDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="productStockHomePageDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Stock Amount</value>
+  </data>
   <metadata name="productAddHomePageDataGridViewImageColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="productAddHomePageDataGridViewImageColumn.HeaderText" xml:space="preserve">
+    <value>Add</value>
+  </data>
   <data name="productAddHomePageDataGridViewImageColumn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
@@ -174,117 +578,2037 @@
         4Bv0tRkMjw38yh/A9NcIonvAkCvweWtkUyoh/wNVEkk1U0XkPgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="addProductButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
+  <data name="homePageDataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="homePageDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="homePageDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 390</value>
+  </data>
+  <data name="homePageDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;homePageDataGridView.Name" xml:space="preserve">
+    <value>homePageDataGridView</value>
+  </data>
+  <data name="&gt;&gt;homePageDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;homePageDataGridView.Parent" xml:space="preserve">
+    <value>homePageMainPanel</value>
+  </data>
+  <data name="&gt;&gt;homePageDataGridView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="homePageMainPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="homePageMainPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 100</value>
+  </data>
+  <data name="homePageMainPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="homePageMainPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 390</value>
+  </data>
+  <data name="homePageMainPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;homePageMainPanel.Name" xml:space="preserve">
+    <value>homePageMainPanel</value>
+  </data>
+  <data name="&gt;&gt;homePageMainPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;homePageMainPanel.Parent" xml:space="preserve">
+    <value>homeTab</value>
+  </data>
+  <data name="&gt;&gt;homePageMainPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="homePageHeaderPanel.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="productSearchTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="productSearchTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>704, 38</value>
+  </data>
+  <data name="productSearchTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 24</value>
+  </data>
+  <data name="productSearchTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;productSearchTextBox.Name" xml:space="preserve">
+    <value>productSearchTextBox</value>
+  </data>
+  <data name="&gt;&gt;productSearchTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productSearchTextBox.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;productSearchTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>941, 36</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 28</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 100</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>homePageHeaderPanel</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="addProductButton" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="productSearchTextBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pictureBox1" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50,Absolute,32" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="homePageHeaderPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="homePageHeaderPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="homePageHeaderPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="homePageHeaderPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 100</value>
+  </data>
+  <data name="homePageHeaderPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;homePageHeaderPanel.Name" xml:space="preserve">
+    <value>homePageHeaderPanel</value>
+  </data>
+  <data name="&gt;&gt;homePageHeaderPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;homePageHeaderPanel.Parent" xml:space="preserve">
+    <value>homeTab</value>
+  </data>
+  <data name="&gt;&gt;homePageHeaderPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="homeTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 54</value>
+  </data>
+  <data name="homeTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="homeTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 490</value>
+  </data>
+  <data name="homeTab.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="homeTab.Text" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="&gt;&gt;homeTab.Name" xml:space="preserve">
+    <value>homeTab</value>
+  </data>
+  <data name="&gt;&gt;homeTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;homeTab.Parent" xml:space="preserve">
+    <value>mainTabControl</value>
+  </data>
+  <data name="&gt;&gt;homeTab.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="statisticsChart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="statisticsChart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="statisticsChart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>966, 486</value>
+  </data>
+  <data name="statisticsChart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="statisticsChart.Text" xml:space="preserve">
+    <value>chart1</value>
+  </data>
+  <data name="&gt;&gt;statisticsChart.Name" xml:space="preserve">
+    <value>statisticsChart</value>
+  </data>
+  <data name="&gt;&gt;statisticsChart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;statisticsChart.Parent" xml:space="preserve">
+    <value>statisticsPagePanel</value>
+  </data>
+  <data name="&gt;&gt;statisticsChart.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="statisticsPagePanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="statisticsPagePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="statisticsPagePanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="statisticsPagePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>966, 486</value>
+  </data>
+  <data name="statisticsPagePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;statisticsPagePanel.Name" xml:space="preserve">
+    <value>statisticsPagePanel</value>
+  </data>
+  <data name="&gt;&gt;statisticsPagePanel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonPanel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;statisticsPagePanel.Parent" xml:space="preserve">
+    <value>statisticsTab</value>
+  </data>
+  <data name="&gt;&gt;statisticsPagePanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="statisticsTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 54</value>
+  </data>
+  <data name="statisticsTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="statisticsTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="statisticsTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 490</value>
+  </data>
+  <data name="statisticsTab.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="statisticsTab.Text" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="&gt;&gt;statisticsTab.Name" xml:space="preserve">
+    <value>statisticsTab</value>
+  </data>
+  <data name="&gt;&gt;statisticsTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statisticsTab.Parent" xml:space="preserve">
+    <value>mainTabControl</value>
+  </data>
+  <data name="&gt;&gt;statisticsTab.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="customerFirstNameDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="customerFirstNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="customerFirstNameDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
   <metadata name="customerLastNameDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="customerLastNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="customerLastNameDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
   <metadata name="customerPhoneDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="customerPhoneDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="customerPhoneDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
   <metadata name="customerEmailDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="customerEmailDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="customerEmailDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
   <metadata name="customerAddressDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="customerAddressDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="customerAddressDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
   <metadata name="deleteCustomerDataGridViewImageColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="addCustomerButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
+  <data name="deleteCustomerDataGridViewImageColumn.HeaderText" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="deleteCustomerDataGridViewImageColumn.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="customersTabDataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="customersTabDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="customersTabDataGridView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="customersTabDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 390</value>
+  </data>
+  <data name="customersTabDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;customersTabDataGridView.Name" xml:space="preserve">
+    <value>customersTabDataGridView</value>
+  </data>
+  <data name="&gt;&gt;customersTabDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customersTabDataGridView.Parent" xml:space="preserve">
+    <value>customersPageMainPanel</value>
+  </data>
+  <data name="&gt;&gt;customersTabDataGridView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="customersPageMainPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="customersPageMainPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 100</value>
+  </data>
+  <data name="customersPageMainPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 390</value>
+  </data>
+  <data name="customersPageMainPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;customersPageMainPanel.Name" xml:space="preserve">
+    <value>customersPageMainPanel</value>
+  </data>
+  <data name="&gt;&gt;customersPageMainPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customersPageMainPanel.Parent" xml:space="preserve">
+    <value>customersTab</value>
+  </data>
+  <data name="&gt;&gt;customersPageMainPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="customersPageHeaderPanel.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="pictureBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>941, 36</value>
+  </data>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 28</value>
+  </data>
+  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="customerSearchTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="customerSearchTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>704, 38</value>
+  </data>
+  <data name="customerSearchTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 24</value>
+  </data>
+  <data name="customerSearchTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;customerSearchTextBox.Name" xml:space="preserve">
+    <value>customerSearchTextBox</value>
+  </data>
+  <data name="&gt;&gt;customerSearchTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customerSearchTextBox.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;customerSearchTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 100</value>
+  </data>
+  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
+    <value>customersPageHeaderPanel</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pictureBox2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="customerSearchTextBox" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="addCustomerButton" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50,Absolute,32" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="customersPageHeaderPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="customersPageHeaderPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="customersPageHeaderPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="customersPageHeaderPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 100</value>
+  </data>
+  <data name="customersPageHeaderPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;customersPageHeaderPanel.Name" xml:space="preserve">
+    <value>customersPageHeaderPanel</value>
+  </data>
+  <data name="&gt;&gt;customersPageHeaderPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customersPageHeaderPanel.Parent" xml:space="preserve">
+    <value>customersTab</value>
+  </data>
+  <data name="&gt;&gt;customersPageHeaderPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="customersTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 54</value>
+  </data>
+  <data name="customersTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="customersTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 490</value>
+  </data>
+  <data name="customersTab.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="customersTab.Text" xml:space="preserve">
+    <value>Customers</value>
+  </data>
+  <data name="&gt;&gt;customersTab.Name" xml:space="preserve">
+    <value>customersTab</value>
+  </data>
+  <data name="&gt;&gt;customersTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customersTab.Parent" xml:space="preserve">
+    <value>mainTabControl</value>
+  </data>
+  <data name="&gt;&gt;customersTab.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <metadata name="supplierNameDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="supplierNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="supplierNameDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
   <metadata name="supplierPhoneDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="supplierPhoneDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="supplierPhoneDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
   <metadata name="supplierEmailDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="supplierEmailDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="supplierEmailDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
   <metadata name="supplierAddressDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="supplierAddressDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="supplierAddressDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
   <metadata name="deleteSupplierDataGridViewImageColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="addSupplierButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
+  <data name="deleteSupplierDataGridViewImageColumn.HeaderText" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="deleteSupplierDataGridViewImageColumn.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="suppliersTabDataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="suppliersTabDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="suppliersTabDataGridView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="suppliersTabDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 390</value>
+  </data>
+  <data name="suppliersTabDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;suppliersTabDataGridView.Name" xml:space="preserve">
+    <value>suppliersTabDataGridView</value>
+  </data>
+  <data name="&gt;&gt;suppliersTabDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;suppliersTabDataGridView.Parent" xml:space="preserve">
+    <value>suppliersPageMainPanel</value>
+  </data>
+  <data name="&gt;&gt;suppliersTabDataGridView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="suppliersPageMainPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="suppliersPageMainPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 100</value>
+  </data>
+  <data name="suppliersPageMainPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 390</value>
+  </data>
+  <data name="suppliersPageMainPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;suppliersPageMainPanel.Name" xml:space="preserve">
+    <value>suppliersPageMainPanel</value>
+  </data>
+  <data name="&gt;&gt;suppliersPageMainPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;suppliersPageMainPanel.Parent" xml:space="preserve">
+    <value>suppliersTab</value>
+  </data>
+  <data name="&gt;&gt;suppliersPageMainPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="suppliersPageHeaderPanel.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="pictureBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>941, 36</value>
+  </data>
+  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 28</value>
+  </data>
+  <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
+    <value>pictureBox3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="supplierSearchTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="supplierSearchTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>704, 38</value>
+  </data>
+  <data name="supplierSearchTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 24</value>
+  </data>
+  <data name="supplierSearchTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;supplierSearchTextBox.Name" xml:space="preserve">
+    <value>supplierSearchTextBox</value>
+  </data>
+  <data name="&gt;&gt;supplierSearchTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;supplierSearchTextBox.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;supplierSearchTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 100</value>
+  </data>
+  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
+    <value>suppliersPageHeaderPanel</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pictureBox3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="supplierSearchTextBox" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="addSupplierButton" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50,Absolute,32" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="suppliersPageHeaderPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="suppliersPageHeaderPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="suppliersPageHeaderPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="suppliersPageHeaderPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 100</value>
+  </data>
+  <data name="suppliersPageHeaderPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;suppliersPageHeaderPanel.Name" xml:space="preserve">
+    <value>suppliersPageHeaderPanel</value>
+  </data>
+  <data name="&gt;&gt;suppliersPageHeaderPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;suppliersPageHeaderPanel.Parent" xml:space="preserve">
+    <value>suppliersTab</value>
+  </data>
+  <data name="&gt;&gt;suppliersPageHeaderPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="suppliersTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 54</value>
+  </data>
+  <data name="suppliersTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="suppliersTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 490</value>
+  </data>
+  <data name="suppliersTab.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="suppliersTab.Text" xml:space="preserve">
+    <value>Suppliers</value>
+  </data>
+  <data name="&gt;&gt;suppliersTab.Name" xml:space="preserve">
+    <value>suppliersTab</value>
+  </data>
+  <data name="&gt;&gt;suppliersTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;suppliersTab.Parent" xml:space="preserve">
+    <value>mainTabControl</value>
+  </data>
+  <data name="&gt;&gt;suppliersTab.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="salesAndPurchasingNavigator.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="salesAndPurchasingNavigator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="salesAndPurchasingNavigator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="salesNavigatorPage.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <metadata name="productNameSalesHistoryDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="productNameSalesHistoryDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="productNameSalesHistoryDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
   <metadata name="productPriceSalesHistoryDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="productPriceSalesHistoryDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="productPriceSalesHistoryDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
   <metadata name="productAmountSalesHistoryDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="productAmountSalesHistoryDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="productAmountSalesHistoryDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
   <metadata name="productTotalPriceSalesHistoryDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="productTotalPriceSalesHistoryDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="productTotalPriceSalesHistoryDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
   <metadata name="customerNameSalesHistoryDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="customerNameSalesHistoryDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="customerNameSalesHistoryDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
   <metadata name="customerPhoneSalesHistoryDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="customerPhoneSalesHistoryDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="customerPhoneSalesHistoryDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
   <metadata name="customerEmailSalesHistoryDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="customerEmailSalesHistoryDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="customerEmailSalesHistoryDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
   <metadata name="customerAddressSalesHistoryDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="customerAddressSalesHistoryDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="customerAddressSalesHistoryDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
   <metadata name="dateSalesHistoryDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="dateSalesHistoryDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="dateSalesHistoryDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="salesHistoryDataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="salesHistoryDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="salesHistoryDataGridView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="salesHistoryDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>968, 461</value>
+  </data>
+  <data name="salesHistoryDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;salesHistoryDataGridView.Name" xml:space="preserve">
+    <value>salesHistoryDataGridView</value>
+  </data>
+  <data name="&gt;&gt;salesHistoryDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;salesHistoryDataGridView.Parent" xml:space="preserve">
+    <value>salesNavigatorPage</value>
+  </data>
+  <data name="&gt;&gt;salesHistoryDataGridView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="salesNavigatorPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="salesNavigatorPage.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>38, 41</value>
+  </data>
+  <data name="salesNavigatorPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>968, 461</value>
+  </data>
+  <data name="salesNavigatorPage.Text" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="salesNavigatorPage.ToolTipTitle" xml:space="preserve">
+    <value>Page ToolTip</value>
+  </data>
+  <data name="&gt;&gt;salesNavigatorPage.Name" xml:space="preserve">
+    <value>salesNavigatorPage</value>
+  </data>
+  <data name="&gt;&gt;salesNavigatorPage.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Navigator.KryptonPage, Krypton Navigator, Version=5.472.737.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;salesNavigatorPage.Parent" xml:space="preserve">
+    <value>salesAndPurchasingNavigator.PageContainer</value>
+  </data>
+  <data name="&gt;&gt;salesNavigatorPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="purchasingNavigatorPage.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <metadata name="productPurchasingDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="productPurchasingDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="productPurchasingDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
   <metadata name="amountPurchasingDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="amountPurchasingDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="amountPurchasingDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
   <metadata name="supplierPurchasingDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="supplierPurchasingDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Supplier</value>
+  </data>
+  <data name="supplierPurchasingDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
   <metadata name="phonePurchasingDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="phonePurchasingDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="phonePurchasingDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
   <metadata name="emailPurchasingDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="emailPurchasingDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="emailPurchasingDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
   <metadata name="addressPurchasingDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="addressPurchasingDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="addressPurchasingDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
   <metadata name="totalPurchasingDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="totalPurchasingDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="totalPurchasingDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
   <metadata name="datePurchasingDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="datePurchasingDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="datePurchasingDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="purchasingDataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="purchasingDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="purchasingDataGridView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="purchasingDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>968, 461</value>
+  </data>
+  <data name="purchasingDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;purchasingDataGridView.Name" xml:space="preserve">
+    <value>purchasingDataGridView</value>
+  </data>
+  <data name="&gt;&gt;purchasingDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;purchasingDataGridView.Parent" xml:space="preserve">
+    <value>purchasingNavigatorPage</value>
+  </data>
+  <data name="&gt;&gt;purchasingDataGridView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="purchasingNavigatorPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="purchasingNavigatorPage.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>38, 41</value>
+  </data>
+  <data name="purchasingNavigatorPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>968, 461</value>
+  </data>
+  <data name="purchasingNavigatorPage.Text" xml:space="preserve">
+    <value>Purchasing</value>
+  </data>
+  <data name="purchasingNavigatorPage.ToolTipTitle" xml:space="preserve">
+    <value>Page ToolTip</value>
+  </data>
+  <data name="&gt;&gt;purchasingNavigatorPage.Name" xml:space="preserve">
+    <value>purchasingNavigatorPage</value>
+  </data>
+  <data name="&gt;&gt;purchasingNavigatorPage.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Navigator.KryptonPage, Krypton Navigator, Version=5.472.737.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;purchasingNavigatorPage.Parent" xml:space="preserve">
+    <value>salesAndPurchasingNavigator.PageContainer</value>
+  </data>
+  <data name="&gt;&gt;purchasingNavigatorPage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="salesAndPurchasingNavigator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 490</value>
+  </data>
+  <data name="salesAndPurchasingNavigator.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="salesAndPurchasingNavigator.Text" xml:space="preserve">
+    <value>Sales and Purchasing</value>
+  </data>
+  <data name="&gt;&gt;salesAndPurchasingNavigator.Name" xml:space="preserve">
+    <value>salesAndPurchasingNavigator</value>
+  </data>
+  <data name="&gt;&gt;salesAndPurchasingNavigator.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Navigator.KryptonNavigator, Krypton Navigator, Version=5.472.737.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;salesAndPurchasingNavigator.Parent" xml:space="preserve">
+    <value>salesAndPurchasingPanel</value>
+  </data>
+  <data name="&gt;&gt;salesAndPurchasingNavigator.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="salesAndPurchasingPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="salesAndPurchasingPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="salesAndPurchasingPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="salesAndPurchasingPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 490</value>
+  </data>
+  <data name="salesAndPurchasingPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;salesAndPurchasingPanel.Name" xml:space="preserve">
+    <value>salesAndPurchasingPanel</value>
+  </data>
+  <data name="&gt;&gt;salesAndPurchasingPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;salesAndPurchasingPanel.Parent" xml:space="preserve">
+    <value>salesAndPurchasingTab</value>
+  </data>
+  <data name="&gt;&gt;salesAndPurchasingPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="salesAndPurchasingTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 54</value>
+  </data>
+  <data name="salesAndPurchasingTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="salesAndPurchasingTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 490</value>
+  </data>
+  <data name="salesAndPurchasingTab.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="salesAndPurchasingTab.Text" xml:space="preserve">
+    <value>Sales and Purchasing</value>
+  </data>
+  <data name="&gt;&gt;salesAndPurchasingTab.Name" xml:space="preserve">
+    <value>salesAndPurchasingTab</value>
+  </data>
+  <data name="&gt;&gt;salesAndPurchasingTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;salesAndPurchasingTab.Parent" xml:space="preserve">
+    <value>mainTabControl</value>
+  </data>
+  <data name="&gt;&gt;salesAndPurchasingTab.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <metadata name="usernameUsersDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="usernameUsersDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Username</value>
+  </data>
   <metadata name="firstNameUsersDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="firstNameUsersDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>First Name</value>
+  </data>
   <metadata name="lastNameUsersDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="lastNameUsersDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
   <metadata name="isAdminUsersDataGridViewCheckBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="isAdminUsersDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>Admin</value>
+  </data>
   <metadata name="deleteUsersDataGridViewTextBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="addUserButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
+  <data name="deleteUsersDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="usersPageDataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="usersPageDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="usersPageDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>964, 384</value>
+  </data>
+  <data name="usersPageDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;usersPageDataGridView.Name" xml:space="preserve">
+    <value>usersPageDataGridView</value>
+  </data>
+  <data name="&gt;&gt;usersPageDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;usersPageDataGridView.Parent" xml:space="preserve">
+    <value>usersPageMainPanel</value>
+  </data>
+  <data name="&gt;&gt;usersPageDataGridView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="usersPageMainPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="usersPageMainPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 103</value>
+  </data>
+  <data name="usersPageMainPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>964, 384</value>
+  </data>
+  <data name="usersPageMainPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;usersPageMainPanel.Name" xml:space="preserve">
+    <value>usersPageMainPanel</value>
+  </data>
+  <data name="&gt;&gt;usersPageMainPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;usersPageMainPanel.Parent" xml:space="preserve">
+    <value>usersTab</value>
+  </data>
+  <data name="&gt;&gt;usersPageMainPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="usersPageHeaderPanel.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="tableLayoutPanel5.ColumnCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="pictureBox4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>935, 36</value>
+  </data>
+  <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 28</value>
+  </data>
+  <data name="pictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
+    <value>pictureBox4</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Parent" xml:space="preserve">
+    <value>tableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="usersSearchTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="usersSearchTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>698, 38</value>
+  </data>
+  <data name="usersSearchTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 24</value>
+  </data>
+  <data name="usersSearchTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;usersSearchTextBox.Name" xml:space="preserve">
+    <value>usersSearchTextBox</value>
+  </data>
+  <data name="&gt;&gt;usersSearchTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;usersSearchTextBox.Parent" xml:space="preserve">
+    <value>tableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;usersSearchTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanel5.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>964, 100</value>
+  </data>
+  <data name="tableLayoutPanel5.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel5.Name" xml:space="preserve">
+    <value>tableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel5.Parent" xml:space="preserve">
+    <value>usersPageHeaderPanel</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel5.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pictureBox4" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="usersSearchTextBox" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="addUserButton" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50,Absolute,32" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="usersPageHeaderPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="usersPageHeaderPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="usersPageHeaderPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="usersPageHeaderPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>964, 100</value>
+  </data>
+  <data name="usersPageHeaderPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;usersPageHeaderPanel.Name" xml:space="preserve">
+    <value>usersPageHeaderPanel</value>
+  </data>
+  <data name="&gt;&gt;usersPageHeaderPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;usersPageHeaderPanel.Parent" xml:space="preserve">
+    <value>usersTab</value>
+  </data>
+  <data name="&gt;&gt;usersPageHeaderPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="usersTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 54</value>
+  </data>
+  <data name="usersTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="usersTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 490</value>
+  </data>
+  <data name="usersTab.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="usersTab.Text" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="&gt;&gt;usersTab.Name" xml:space="preserve">
+    <value>usersTab</value>
+  </data>
+  <data name="&gt;&gt;usersTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;usersTab.Parent" xml:space="preserve">
+    <value>mainTabControl</value>
+  </data>
+  <data name="&gt;&gt;usersTab.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="settingsPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tableLayoutPanel4.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="languageSettingsLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="languageSettingsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>324, 64</value>
+  </data>
+  <data name="languageSettingsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 20</value>
+  </data>
+  <data name="languageSettingsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="languageSettingsLabel.Values.Text" xml:space="preserve">
+    <value>Language:</value>
+  </data>
+  <data name="&gt;&gt;languageSettingsLabel.Name" xml:space="preserve">
+    <value>languageSettingsLabel</value>
+  </data>
+  <data name="&gt;&gt;languageSettingsLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;languageSettingsLabel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;languageSettingsLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="languageSettingsComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="languageSettingsComboBox.Items" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="languageSettingsComboBox.Items1" xml:space="preserve">
+    <value>Türkçe</value>
+  </data>
+  <data name="languageSettingsComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 63</value>
+  </data>
+  <data name="languageSettingsComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="languageSettingsComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;languageSettingsComboBox.Name" xml:space="preserve">
+    <value>languageSettingsComboBox</value>
+  </data>
+  <data name="&gt;&gt;languageSettingsComboBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonComboBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;languageSettingsComboBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;languageSettingsComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="saveButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="saveButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="saveButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="saveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>553, 108</value>
+  </data>
+  <data name="saveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 57</value>
+  </data>
+  <data name="saveButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="saveButton.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Name" xml:space="preserve">
+    <value>saveButton</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;saveButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="weightUnitSettingsLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="weightUnitSettingsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>324, 17</value>
+  </data>
+  <data name="weightUnitSettingsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 20</value>
+  </data>
+  <data name="weightUnitSettingsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="weightUnitSettingsLabel.Values.Text" xml:space="preserve">
+    <value>Weight Unit:</value>
+  </data>
+  <data name="&gt;&gt;weightUnitSettingsLabel.Name" xml:space="preserve">
+    <value>weightUnitSettingsLabel</value>
+  </data>
+  <data name="&gt;&gt;weightUnitSettingsLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;weightUnitSettingsLabel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;weightUnitSettingsLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="weightUnitComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="weightUnitComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 16</value>
+  </data>
+  <data name="weightUnitComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="weightUnitComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;weightUnitComboBox.Name" xml:space="preserve">
+    <value>weightUnitComboBox</value>
+  </data>
+  <data name="&gt;&gt;weightUnitComboBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonComboBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;weightUnitComboBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;weightUnitComboBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 288</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>964, 199</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="currencySettingsGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="currencySettingsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 3</value>
+  </data>
+  <data name="currencySettingsGroupBox.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>350, 250</value>
+  </data>
+  <data name="currencySettingsGroupSeparatorComboBox.Items" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="currencySettingsGroupSeparatorComboBox.Items1" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="currencySettingsGroupSeparatorComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 164</value>
+  </data>
+  <data name="currencySettingsGroupSeparatorComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="currencySettingsGroupSeparatorComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsGroupSeparatorComboBox.Name" xml:space="preserve">
+    <value>currencySettingsGroupSeparatorComboBox</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsGroupSeparatorComboBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonComboBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsGroupSeparatorComboBox.Parent" xml:space="preserve">
+    <value>currencySettingsGroupBox.Panel</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsGroupSeparatorComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="currencySettingsDecimalSeparatorComboBox.Items" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="currencySettingsDecimalSeparatorComboBox.Items1" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="currencySettingsDecimalSeparatorComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 124</value>
+  </data>
+  <data name="currencySettingsDecimalSeparatorComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="currencySettingsDecimalSeparatorComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsDecimalSeparatorComboBox.Name" xml:space="preserve">
+    <value>currencySettingsDecimalSeparatorComboBox</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsDecimalSeparatorComboBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonComboBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsDecimalSeparatorComboBox.Parent" xml:space="preserve">
+    <value>currencySettingsGroupBox.Panel</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsDecimalSeparatorComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="currencySettingsGroupSeparatorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 166</value>
+  </data>
+  <data name="currencySettingsGroupSeparatorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 20</value>
+  </data>
+  <data name="currencySettingsGroupSeparatorLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="currencySettingsGroupSeparatorLabel.Values.Text" xml:space="preserve">
+    <value>Group Separator:</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsGroupSeparatorLabel.Name" xml:space="preserve">
+    <value>currencySettingsGroupSeparatorLabel</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsGroupSeparatorLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsGroupSeparatorLabel.Parent" xml:space="preserve">
+    <value>currencySettingsGroupBox.Panel</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsGroupSeparatorLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="currencySettingsDecimalSeparatorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 126</value>
+  </data>
+  <data name="currencySettingsDecimalSeparatorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 20</value>
+  </data>
+  <data name="currencySettingsDecimalSeparatorLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="currencySettingsDecimalSeparatorLabel.Values.Text" xml:space="preserve">
+    <value>Decimal Separator:</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsDecimalSeparatorLabel.Name" xml:space="preserve">
+    <value>currencySettingsDecimalSeparatorLabel</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsDecimalSeparatorLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsDecimalSeparatorLabel.Parent" xml:space="preserve">
+    <value>currencySettingsGroupBox.Panel</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsDecimalSeparatorLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="currencySettingsPutSpaceCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 96</value>
+  </data>
+  <data name="currencySettingsPutSpaceCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>290, 20</value>
+  </data>
+  <data name="currencySettingsPutSpaceCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="currencySettingsPutSpaceCheckBox.Values.Text" xml:space="preserve">
+    <value>Put a space between the amount and the symbol</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsPutSpaceCheckBox.Name" xml:space="preserve">
+    <value>currencySettingsPutSpaceCheckBox</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsPutSpaceCheckBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonCheckBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsPutSpaceCheckBox.Parent" xml:space="preserve">
+    <value>currencySettingsGroupBox.Panel</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsPutSpaceCheckBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="currencySettingsSymbolPlacementRightRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 57</value>
+  </data>
+  <data name="currencySettingsSymbolPlacementRightRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 20</value>
+  </data>
+  <data name="currencySettingsSymbolPlacementRightRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="currencySettingsSymbolPlacementRightRadioButton.Values.Text" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsSymbolPlacementRightRadioButton.Name" xml:space="preserve">
+    <value>currencySettingsSymbolPlacementRightRadioButton</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsSymbolPlacementRightRadioButton.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonRadioButton, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsSymbolPlacementRightRadioButton.Parent" xml:space="preserve">
+    <value>currencySettingsGroupBox.Panel</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsSymbolPlacementRightRadioButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="currencySettingsSymbolPlacementLeftRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 58</value>
+  </data>
+  <data name="currencySettingsSymbolPlacementLeftRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="currencySettingsSymbolPlacementLeftRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="currencySettingsSymbolPlacementLeftRadioButton.Values.Text" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsSymbolPlacementLeftRadioButton.Name" xml:space="preserve">
+    <value>currencySettingsSymbolPlacementLeftRadioButton</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsSymbolPlacementLeftRadioButton.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonRadioButton, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsSymbolPlacementLeftRadioButton.Parent" xml:space="preserve">
+    <value>currencySettingsGroupBox.Panel</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsSymbolPlacementLeftRadioButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="currencySettingsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 15</value>
+  </data>
+  <data name="currencySettingsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 20</value>
+  </data>
+  <data name="currencySettingsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="currencySettingsLabel.Values.Text" xml:space="preserve">
+    <value>Currency:</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsLabel.Name" xml:space="preserve">
+    <value>currencySettingsLabel</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsLabel.Parent" xml:space="preserve">
+    <value>currencySettingsGroupBox.Panel</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="currencySettingsSymbolPlacementLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 58</value>
+  </data>
+  <data name="currencySettingsSymbolPlacementLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 20</value>
+  </data>
+  <data name="currencySettingsSymbolPlacementLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="currencySettingsSymbolPlacementLabel.Values.Text" xml:space="preserve">
+    <value>Symbol Placement:</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsSymbolPlacementLabel.Name" xml:space="preserve">
+    <value>currencySettingsSymbolPlacementLabel</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsSymbolPlacementLabel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsSymbolPlacementLabel.Parent" xml:space="preserve">
+    <value>currencySettingsGroupBox.Panel</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsSymbolPlacementLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="currencySettingsComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 15</value>
+  </data>
+  <data name="currencySettingsComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 21</value>
+  </data>
+  <data name="currencySettingsComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsComboBox.Name" xml:space="preserve">
+    <value>currencySettingsComboBox</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsComboBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonComboBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsComboBox.Parent" xml:space="preserve">
+    <value>currencySettingsGroupBox.Panel</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsComboBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsGroupBox.Panel.Name" xml:space="preserve">
+    <value>currencySettingsGroupBox.Panel</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsGroupBox.Panel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonGroupPanel, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsGroupBox.Panel.Parent" xml:space="preserve">
+    <value>currencySettingsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsGroupBox.Panel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="currencySettingsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 250</value>
+  </data>
+  <data name="currencySettingsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="currencySettingsGroupBox.Values.Heading" xml:space="preserve">
+    <value>Currency Settings</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsGroupBox.Name" xml:space="preserve">
+    <value>currencySettingsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsGroupBox.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonGroupBox, Krypton Toolkit, Version=5.472.968.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsGroupBox.Parent" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;currencySettingsGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanel4.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 490</value>
+  </data>
+  <data name="tableLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Name" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Parent" xml:space="preserve">
+    <value>settingsPanel</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panel1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="currencySettingsGroupBox" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,58.16327,Percent,41.83673,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="settingsPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="settingsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="settingsPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="settingsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 490</value>
+  </data>
+  <data name="settingsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;settingsPanel.Name" xml:space="preserve">
+    <value>settingsPanel</value>
+  </data>
+  <data name="&gt;&gt;settingsPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;settingsPanel.Parent" xml:space="preserve">
+    <value>settingsTab</value>
+  </data>
+  <data name="&gt;&gt;settingsPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="settingsTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 54</value>
+  </data>
+  <data name="settingsTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="settingsTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 490</value>
+  </data>
+  <data name="settingsTab.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="settingsTab.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;settingsTab.Name" xml:space="preserve">
+    <value>settingsTab</value>
+  </data>
+  <data name="&gt;&gt;settingsTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;settingsTab.Parent" xml:space="preserve">
+    <value>mainTabControl</value>
+  </data>
+  <data name="&gt;&gt;settingsTab.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="mainTabControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="mainTabControl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 10.2pt</value>
+  </data>
+  <data name="mainTabControl.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 50</value>
+  </data>
+  <data name="mainTabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="mainTabControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="mainTabControl.Padding" type="System.Drawing.Point, System.Drawing">
+    <value>30, 3</value>
+  </data>
+  <data name="mainTabControl.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="mainTabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>978, 548</value>
+  </data>
+  <data name="mainTabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;mainTabControl.Name" xml:space="preserve">
+    <value>mainTabControl</value>
+  </data>
+  <data name="&gt;&gt;mainTabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mainTabControl.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;mainTabControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="mainPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="mainPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 0</value>
+  </data>
+  <data name="mainPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mainPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>978, 548</value>
+  </data>
+  <data name="mainPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Name" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="supplierStatisticsChart.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="supplierStatisticsChart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 19</value>
+  </data>
+  <data name="supplierStatisticsChart.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="supplierStatisticsChart.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
+  </data>
+  <data name="supplierStatisticsChart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>570, 494</value>
+  </data>
+  <data name="supplierStatisticsChart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;supplierStatisticsChart.Name" xml:space="preserve">
+    <value>supplierStatisticsChart</value>
+  </data>
+  <data name="&gt;&gt;supplierStatisticsChart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="customerStatisticsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 32</value>
+  </data>
+  <data name="customerStatisticsPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="customerStatisticsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>610, 529</value>
+  </data>
+  <data name="customerStatisticsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;customerStatisticsPanel.Name" xml:space="preserve">
+    <value>customerStatisticsPanel</value>
+  </data>
+  <data name="&gt;&gt;customerStatisticsPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customerStatisticsPanel.Parent" xml:space="preserve">
+    <value>customerStatisticsPage</value>
+  </data>
+  <data name="&gt;&gt;customerStatisticsPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="customerStatisticsChart.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="customerStatisticsChart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 19</value>
+  </data>
+  <data name="customerStatisticsChart.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="customerStatisticsChart.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
+  </data>
+  <data name="customerStatisticsChart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>569, 400</value>
+  </data>
+  <data name="customerStatisticsChart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;customerStatisticsChart.Name" xml:space="preserve">
+    <value>customerStatisticsChart</value>
+  </data>
+  <data name="&gt;&gt;customerStatisticsChart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="customerStatisticsPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="customerStatisticsPage.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>38, 41</value>
+  </data>
+  <data name="customerStatisticsPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>748, 563</value>
+  </data>
+  <data name="customerStatisticsPage.Text" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="customerStatisticsPage.ToolTipTitle" xml:space="preserve">
+    <value>Page ToolTip</value>
+  </data>
+  <data name="&gt;&gt;customerStatisticsPage.Name" xml:space="preserve">
+    <value>customerStatisticsPage</value>
+  </data>
+  <data name="&gt;&gt;customerStatisticsPage.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Navigator.KryptonPage, Krypton Navigator, Version=5.472.737.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="dataGridViewImageColumn1.HeaderText" xml:space="preserve">
+    <value>Add</value>
+  </data>
   <data name="dataGridViewImageColumn1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
@@ -329,12 +2653,45 @@
         4Bv0tRkMjw38yh/A9NcIonvAkCvweWtkUyoh/wNVEkk1U0XkPgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="dataGridViewImageColumn1.Width" type="System.Int32, mscorlib">
+    <value>246</value>
+  </data>
+  <data name="dataGridViewImageColumn2.HeaderText" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="dataGridViewImageColumn2.Width" type="System.Int32, mscorlib">
+    <value>201</value>
+  </data>
+  <data name="dataGridViewImageColumn3.HeaderText" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="dataGridViewImageColumn3.Width" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
   <metadata name="cancelLogSalesHistoryDataGridViewImageBoxColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="cancelLogSalesHistoryDataGridViewImageBoxColumn.HeaderText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>96, 96</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1180, 548</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAADB1AAAwdQAAAAAAAAAA
@@ -358,5 +2715,272 @@
         3v/d3d3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAA==
 </value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1920, 1080</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>640, 480</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>POSeidon</value>
+  </data>
+  <data name="&gt;&gt;productNameHomePageDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>productNameHomePageDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;productNameHomePageDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productPriceHomePageDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>productPriceHomePageDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;productPriceHomePageDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productStockHomePageDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>productStockHomePageDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;productStockHomePageDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productAddHomePageDataGridViewImageColumn.Name" xml:space="preserve">
+    <value>productAddHomePageDataGridViewImageColumn</value>
+  </data>
+  <data name="&gt;&gt;productAddHomePageDataGridViewImageColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customerFirstNameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>customerFirstNameDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;customerFirstNameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customerLastNameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>customerLastNameDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;customerLastNameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customerPhoneDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>customerPhoneDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;customerPhoneDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customerEmailDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>customerEmailDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;customerEmailDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customerAddressDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>customerAddressDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;customerAddressDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;deleteCustomerDataGridViewImageColumn.Name" xml:space="preserve">
+    <value>deleteCustomerDataGridViewImageColumn</value>
+  </data>
+  <data name="&gt;&gt;deleteCustomerDataGridViewImageColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;supplierNameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>supplierNameDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;supplierNameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;supplierPhoneDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>supplierPhoneDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;supplierPhoneDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;supplierEmailDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>supplierEmailDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;supplierEmailDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;supplierAddressDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>supplierAddressDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;supplierAddressDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;deleteSupplierDataGridViewImageColumn.Name" xml:space="preserve">
+    <value>deleteSupplierDataGridViewImageColumn</value>
+  </data>
+  <data name="&gt;&gt;deleteSupplierDataGridViewImageColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productNameSalesHistoryDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>productNameSalesHistoryDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;productNameSalesHistoryDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productPriceSalesHistoryDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>productPriceSalesHistoryDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;productPriceSalesHistoryDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productAmountSalesHistoryDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>productAmountSalesHistoryDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;productAmountSalesHistoryDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productTotalPriceSalesHistoryDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>productTotalPriceSalesHistoryDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;productTotalPriceSalesHistoryDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customerNameSalesHistoryDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>customerNameSalesHistoryDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;customerNameSalesHistoryDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customerPhoneSalesHistoryDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>customerPhoneSalesHistoryDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;customerPhoneSalesHistoryDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customerEmailSalesHistoryDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>customerEmailSalesHistoryDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;customerEmailSalesHistoryDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customerAddressSalesHistoryDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>customerAddressSalesHistoryDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;customerAddressSalesHistoryDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateSalesHistoryDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>dateSalesHistoryDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;dateSalesHistoryDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productPurchasingDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>productPurchasingDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;productPurchasingDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;amountPurchasingDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>amountPurchasingDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;amountPurchasingDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;supplierPurchasingDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>supplierPurchasingDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;supplierPurchasingDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;phonePurchasingDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>phonePurchasingDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;phonePurchasingDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emailPurchasingDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>emailPurchasingDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;emailPurchasingDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addressPurchasingDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>addressPurchasingDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;addressPurchasingDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;totalPurchasingDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>totalPurchasingDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;totalPurchasingDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;datePurchasingDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>datePurchasingDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;datePurchasingDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;usernameUsersDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>usernameUsersDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;usernameUsersDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;firstNameUsersDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>firstNameUsersDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;firstNameUsersDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lastNameUsersDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>lastNameUsersDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;lastNameUsersDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;isAdminUsersDataGridViewCheckBoxColumn.Name" xml:space="preserve">
+    <value>isAdminUsersDataGridViewCheckBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;isAdminUsersDataGridViewCheckBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;deleteUsersDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>deleteUsersDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;deleteUsersDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewImageColumn1.Name" xml:space="preserve">
+    <value>dataGridViewImageColumn1</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewImageColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewImageColumn2.Name" xml:space="preserve">
+    <value>dataGridViewImageColumn2</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewImageColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewImageColumn3.Name" xml:space="preserve">
+    <value>dataGridViewImageColumn3</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewImageColumn3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cancelLogSalesHistoryDataGridViewImageBoxColumn.Name" xml:space="preserve">
+    <value>cancelLogSalesHistoryDataGridViewImageBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;cancelLogSalesHistoryDataGridViewImageBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddUserForm));
             this.lastNameTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lastNameLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.addButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -47,133 +48,89 @@
             // 
             // lastNameTextBox
             // 
-            this.lastNameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lastNameTextBox.Location = new System.Drawing.Point(225, 220);
-            this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.lastNameTextBox, "lastNameTextBox");
             this.lastNameTextBox.Name = "lastNameTextBox";
-            this.lastNameTextBox.Size = new System.Drawing.Size(270, 27);
             this.lastNameTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.lastNameTextBox.StateCommon.Border.Rounding = 5;
-            this.lastNameTextBox.TabIndex = 20;
             // 
             // lastNameLabel
             // 
-            this.lastNameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lastNameLabel.Location = new System.Drawing.Point(56, 220);
-            this.lastNameLabel.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.lastNameLabel, "lastNameLabel");
             this.lastNameLabel.Name = "lastNameLabel";
-            this.lastNameLabel.Size = new System.Drawing.Size(71, 20);
-            this.lastNameLabel.TabIndex = 29;
-            this.lastNameLabel.Values.Text = "Last Name:";
+            this.lastNameLabel.Values.Text = resources.GetString("lastNameLabel.Values.Text");
             // 
             // addButton
             // 
-            this.addButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addButton.Location = new System.Drawing.Point(384, 274);
-            this.addButton.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.addButton, "addButton");
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(111, 32);
             this.addButton.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.addButton.StateCommon.Border.Rounding = 5;
-            this.addButton.TabIndex = 24;
-            this.addButton.Values.Text = "ADD";
+            this.addButton.Values.Text = resources.GetString("addButton.Values.Text");
             this.addButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // passwordAgainTextBox
             // 
-            this.passwordAgainTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.passwordAgainTextBox.Location = new System.Drawing.Point(225, 120);
-            this.passwordAgainTextBox.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.passwordAgainTextBox, "passwordAgainTextBox");
             this.passwordAgainTextBox.Name = "passwordAgainTextBox";
-            this.passwordAgainTextBox.Size = new System.Drawing.Size(270, 27);
             this.passwordAgainTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.passwordAgainTextBox.StateCommon.Border.Rounding = 5;
-            this.passwordAgainTextBox.TabIndex = 23;
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.passwordTextBox.Location = new System.Drawing.Point(225, 72);
-            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.passwordTextBox, "passwordTextBox");
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(270, 27);
             this.passwordTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.passwordTextBox.StateCommon.Border.Rounding = 5;
-            this.passwordTextBox.TabIndex = 22;
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.usernameTextBox.Location = new System.Drawing.Point(225, 22);
-            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.usernameTextBox, "usernameTextBox");
             this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(270, 27);
             this.usernameTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.usernameTextBox.StateCommon.Border.Rounding = 5;
-            this.usernameTextBox.TabIndex = 21;
             // 
             // firstNameTextBox
             // 
-            this.firstNameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.firstNameTextBox.Location = new System.Drawing.Point(225, 168);
-            this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.firstNameTextBox, "firstNameTextBox");
             this.firstNameTextBox.Name = "firstNameTextBox";
-            this.firstNameTextBox.Size = new System.Drawing.Size(270, 27);
             this.firstNameTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.firstNameTextBox.StateCommon.Border.Rounding = 5;
-            this.firstNameTextBox.TabIndex = 19;
             // 
             // passwordLabel
             // 
-            this.passwordLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.passwordLabel.Location = new System.Drawing.Point(56, 74);
-            this.passwordLabel.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.passwordLabel, "passwordLabel");
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(65, 20);
-            this.passwordLabel.TabIndex = 28;
-            this.passwordLabel.Values.Text = "Password:";
+            this.passwordLabel.Values.Text = resources.GetString("passwordLabel.Values.Text");
             // 
             // passwordAgainLabel
             // 
-            this.passwordAgainLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.passwordAgainLabel.Location = new System.Drawing.Point(56, 122);
-            this.passwordAgainLabel.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.passwordAgainLabel, "passwordAgainLabel");
             this.passwordAgainLabel.Name = "passwordAgainLabel";
-            this.passwordAgainLabel.Size = new System.Drawing.Size(107, 20);
-            this.passwordAgainLabel.TabIndex = 27;
-            this.passwordAgainLabel.Values.Text = "Password (Again):";
+            this.passwordAgainLabel.Values.Text = resources.GetString("passwordAgainLabel.Values.Text");
             // 
             // usernameLabel
             // 
-            this.usernameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.usernameLabel.Location = new System.Drawing.Point(56, 22);
-            this.usernameLabel.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.usernameLabel, "usernameLabel");
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(68, 20);
-            this.usernameLabel.TabIndex = 26;
-            this.usernameLabel.Values.Text = "Username:";
+            this.usernameLabel.Values.Text = resources.GetString("usernameLabel.Values.Text");
             // 
             // firstNameLabel
             // 
-            this.firstNameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.firstNameLabel.Location = new System.Drawing.Point(56, 170);
-            this.firstNameLabel.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.firstNameLabel, "firstNameLabel");
             this.firstNameLabel.Name = "firstNameLabel";
-            this.firstNameLabel.Size = new System.Drawing.Size(72, 20);
-            this.firstNameLabel.TabIndex = 25;
-            this.firstNameLabel.Values.Text = "First Name:";
+            this.firstNameLabel.Values.Text = resources.GetString("firstNameLabel.Values.Text");
             // 
             // addUserFormPanel
             // 
@@ -190,39 +147,28 @@
             this.addUserFormPanel.Controls.Add(this.addButton);
             this.addUserFormPanel.Controls.Add(this.lastNameLabel);
             this.addUserFormPanel.Controls.Add(this.lastNameTextBox);
-            this.addUserFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addUserFormPanel.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.addUserFormPanel, "addUserFormPanel");
             this.addUserFormPanel.Name = "addUserFormPanel";
-            this.addUserFormPanel.Size = new System.Drawing.Size(575, 338);
-            this.addUserFormPanel.TabIndex = 30;
             // 
             // adminCheckBox
             // 
-            this.adminCheckBox.Location = new System.Drawing.Point(225, 268);
+            resources.ApplyResources(this.adminCheckBox, "adminCheckBox");
             this.adminCheckBox.Name = "adminCheckBox";
-            this.adminCheckBox.Size = new System.Drawing.Size(19, 13);
-            this.adminCheckBox.TabIndex = 30;
-            this.adminCheckBox.Values.Text = "";
+            this.adminCheckBox.Values.Text = resources.GetString("adminCheckBox.Values.Text");
             // 
             // adminLabel
             // 
-            this.adminLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.adminLabel.Location = new System.Drawing.Point(56, 266);
-            this.adminLabel.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.adminLabel, "adminLabel");
             this.adminLabel.Name = "adminLabel";
-            this.adminLabel.Size = new System.Drawing.Size(49, 20);
-            this.adminLabel.TabIndex = 31;
-            this.adminLabel.Values.Text = "Admin:";
+            this.adminLabel.Values.Text = resources.GetString("adminLabel.Values.Text");
             // 
             // AddUserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(575, 338);
             this.Controls.Add(this.addUserFormPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AddUserForm";
-            this.Text = "Add User";
             this.addUserFormPanel.ResumeLayout(false);
             this.addUserFormPanel.PerformLayout();
             this.ResumeLayout(false);

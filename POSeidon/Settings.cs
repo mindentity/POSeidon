@@ -11,6 +11,7 @@ namespace POSeidon
         public IList<Currency> AvailableCurrencies { get; set; }
         public IList<WeightUnit> AvailableWeightUnits { get; set; }
         public WeightUnit WeightUnit { get; set; }
+        public string Language { get; set; }
 
         public Settings()
         {

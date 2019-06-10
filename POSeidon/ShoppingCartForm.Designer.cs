@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShoppingCartForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShoppingCartForm));
             this.shoppingCartFormPanel = new System.Windows.Forms.Panel();
             this.customerComboBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.customerCheckBox = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
@@ -51,68 +51,47 @@
             // 
             // shoppingCartFormPanel
             // 
-            this.shoppingCartFormPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shoppingCartFormPanel.AutoSize = true;
+            resources.ApplyResources(this.shoppingCartFormPanel, "shoppingCartFormPanel");
             this.shoppingCartFormPanel.Controls.Add(this.customerComboBox);
             this.shoppingCartFormPanel.Controls.Add(this.customerCheckBox);
             this.shoppingCartFormPanel.Controls.Add(this.totalPriceTextBox);
             this.shoppingCartFormPanel.Controls.Add(this.totalPriceLabel);
             this.shoppingCartFormPanel.Controls.Add(this.checkoutButton);
             this.shoppingCartFormPanel.Controls.Add(this.shoppingCartDataGridView);
-            this.shoppingCartFormPanel.Location = new System.Drawing.Point(1, 1);
-            this.shoppingCartFormPanel.Margin = new System.Windows.Forms.Padding(2);
             this.shoppingCartFormPanel.Name = "shoppingCartFormPanel";
-            this.shoppingCartFormPanel.Size = new System.Drawing.Size(802, 450);
-            this.shoppingCartFormPanel.TabIndex = 0;
             // 
             // customerComboBox
             // 
             this.customerComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.customerComboBox.DropDownWidth = 129;
-            this.customerComboBox.Enabled = false;
-            this.customerComboBox.Location = new System.Drawing.Point(96, 418);
+            resources.ApplyResources(this.customerComboBox, "customerComboBox");
             this.customerComboBox.Name = "customerComboBox";
-            this.customerComboBox.Size = new System.Drawing.Size(207, 21);
-            this.customerComboBox.TabIndex = 7;
             // 
             // customerCheckBox
             // 
-            this.customerCheckBox.Location = new System.Drawing.Point(11, 419);
+            resources.ApplyResources(this.customerCheckBox, "customerCheckBox");
             this.customerCheckBox.Name = "customerCheckBox";
-            this.customerCheckBox.Size = new System.Drawing.Size(79, 20);
-            this.customerCheckBox.TabIndex = 6;
-            this.customerCheckBox.Values.Text = "Customer:";
+            this.customerCheckBox.Values.Text = resources.GetString("customerCheckBox.Values.Text");
             this.customerCheckBox.CheckedChanged += new System.EventHandler(this.CustomerCheckBox_CheckedChanged);
             // 
             // totalPriceTextBox
             // 
-            this.totalPriceTextBox.Enabled = false;
-            this.totalPriceTextBox.Location = new System.Drawing.Point(583, 416);
+            resources.ApplyResources(this.totalPriceTextBox, "totalPriceTextBox");
             this.totalPriceTextBox.Name = "totalPriceTextBox";
             this.totalPriceTextBox.ReadOnly = true;
-            this.totalPriceTextBox.Size = new System.Drawing.Size(100, 23);
             this.totalPriceTextBox.StateDisabled.Content.Color1 = System.Drawing.Color.Teal;
-            this.totalPriceTextBox.TabIndex = 5;
             // 
             // totalPriceLabel
             // 
-            this.totalPriceLabel.Location = new System.Drawing.Point(537, 419);
+            resources.ApplyResources(this.totalPriceLabel, "totalPriceLabel");
             this.totalPriceLabel.Name = "totalPriceLabel";
-            this.totalPriceLabel.Size = new System.Drawing.Size(40, 20);
-            this.totalPriceLabel.TabIndex = 4;
-            this.totalPriceLabel.Values.Text = "Total:";
+            this.totalPriceLabel.Values.Text = resources.GetString("totalPriceLabel.Values.Text");
             // 
             // checkoutButton
             // 
             this.checkoutButton.BackColor = System.Drawing.Color.Orange;
-            this.checkoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkoutButton.Location = new System.Drawing.Point(703, 416);
+            resources.ApplyResources(this.checkoutButton, "checkoutButton");
             this.checkoutButton.Name = "checkoutButton";
-            this.checkoutButton.Size = new System.Drawing.Size(74, 23);
-            this.checkoutButton.TabIndex = 3;
-            this.checkoutButton.Text = "Checkout";
             this.checkoutButton.UseVisualStyleBackColor = false;
             this.checkoutButton.Click += new System.EventHandler(this.CheckoutButton_Click);
             // 
@@ -134,12 +113,10 @@
             this.totalPriceShoppingCartDataGridViewTextBoxColumn,
             this.removeShoppingCartDataGridViewButtonColumn});
             this.shoppingCartDataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.shoppingCartDataGridView.Location = new System.Drawing.Point(2, 19);
+            resources.ApplyResources(this.shoppingCartDataGridView, "shoppingCartDataGridView");
             this.shoppingCartDataGridView.MultiSelect = false;
             this.shoppingCartDataGridView.Name = "shoppingCartDataGridView";
             this.shoppingCartDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.shoppingCartDataGridView.Size = new System.Drawing.Size(797, 384);
-            this.shoppingCartDataGridView.TabIndex = 2;
             this.shoppingCartDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ShoppingCartDataGridView_CellClick);
             this.shoppingCartDataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.ShoppingCartDataGridView_CellFormatting);
             this.shoppingCartDataGridView.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.ShoppingCartDataGridView_CellValidating);
@@ -149,7 +126,7 @@
             // 
             this.productNameShoppingCartDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.productNameShoppingCartDataGridViewTextBoxColumn.DataPropertyName = "Product.Name";
-            this.productNameShoppingCartDataGridViewTextBoxColumn.HeaderText = "Product";
+            resources.ApplyResources(this.productNameShoppingCartDataGridViewTextBoxColumn, "productNameShoppingCartDataGridViewTextBoxColumn");
             this.productNameShoppingCartDataGridViewTextBoxColumn.Name = "productNameShoppingCartDataGridViewTextBoxColumn";
             this.productNameShoppingCartDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -160,7 +137,7 @@
             dataGridViewCellStyle1.Format = "C2";
             dataGridViewCellStyle1.NullValue = null;
             this.productPriceShoppingCartDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
-            this.productPriceShoppingCartDataGridViewTextBoxColumn.HeaderText = "Price";
+            resources.ApplyResources(this.productPriceShoppingCartDataGridViewTextBoxColumn, "productPriceShoppingCartDataGridViewTextBoxColumn");
             this.productPriceShoppingCartDataGridViewTextBoxColumn.Name = "productPriceShoppingCartDataGridViewTextBoxColumn";
             this.productPriceShoppingCartDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -168,14 +145,14 @@
             // 
             this.productAmountShoppingCartDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.productAmountShoppingCartDataGridViewTextBoxColumn.DataPropertyName = "Amount";
-            this.productAmountShoppingCartDataGridViewTextBoxColumn.HeaderText = "Amount";
+            resources.ApplyResources(this.productAmountShoppingCartDataGridViewTextBoxColumn, "productAmountShoppingCartDataGridViewTextBoxColumn");
             this.productAmountShoppingCartDataGridViewTextBoxColumn.Name = "productAmountShoppingCartDataGridViewTextBoxColumn";
             // 
             // weightUnitShoppingCartDataGridViewTextBoxColumn
             // 
             this.weightUnitShoppingCartDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.weightUnitShoppingCartDataGridViewTextBoxColumn.DataPropertyName = "WeightUnit";
-            this.weightUnitShoppingCartDataGridViewTextBoxColumn.HeaderText = "Unit";
+            resources.ApplyResources(this.weightUnitShoppingCartDataGridViewTextBoxColumn, "weightUnitShoppingCartDataGridViewTextBoxColumn");
             this.weightUnitShoppingCartDataGridViewTextBoxColumn.Name = "weightUnitShoppingCartDataGridViewTextBoxColumn";
             this.weightUnitShoppingCartDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -183,29 +160,25 @@
             // 
             dataGridViewCellStyle2.NullValue = "$0.00";
             this.totalPriceShoppingCartDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
-            this.totalPriceShoppingCartDataGridViewTextBoxColumn.HeaderText = "Total";
+            resources.ApplyResources(this.totalPriceShoppingCartDataGridViewTextBoxColumn, "totalPriceShoppingCartDataGridViewTextBoxColumn");
             this.totalPriceShoppingCartDataGridViewTextBoxColumn.Name = "totalPriceShoppingCartDataGridViewTextBoxColumn";
             this.totalPriceShoppingCartDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // removeShoppingCartDataGridViewButtonColumn
             // 
-            this.removeShoppingCartDataGridViewButtonColumn.HeaderText = "Remove";
+            resources.ApplyResources(this.removeShoppingCartDataGridViewButtonColumn, "removeShoppingCartDataGridViewButtonColumn");
             this.removeShoppingCartDataGridViewButtonColumn.Name = "removeShoppingCartDataGridViewButtonColumn";
             this.removeShoppingCartDataGridViewButtonColumn.Text = "Remove";
             this.removeShoppingCartDataGridViewButtonColumn.UseColumnTextForButtonValue = true;
             // 
             // ShoppingCartForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.shoppingCartFormPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "ShoppingCartForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Shopping Cart";
             this.shoppingCartFormPanel.ResumeLayout(false);
             this.shoppingCartFormPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customerComboBox)).EndInit();
