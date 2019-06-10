@@ -28,6 +28,14 @@ namespace POSeidon
             shoppingCartDataGridView.CellValueChanged += ShoppingCartDataGridView_CellValueChanged;
             customerComboBox.DataSource = Controller.Customers;
             customerComboBox.DisplayMember = "FullName";
+            if (Controller.Customers.Count > 0)
+            {
+                customerCheckBox.Enabled = true;
+            }
+            else
+            {
+                customerCheckBox.Enabled = false;
+            }
         }
 
         private void ShoppingCartDataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
